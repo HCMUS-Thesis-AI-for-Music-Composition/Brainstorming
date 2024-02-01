@@ -1,0 +1,992 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta name="description" content="Chord charts, music theory, and Roman numeral harmonic analysis of songs by Silent Partner" />
+<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/animation.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello-codes.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello.css" />
+<link rel="stylesheet" type="text/css" href="/build/css/style.min.css?ts=20231107163750" />
+<script type="text/javascript" src="/js/google-tag-manager.js"></script>
+<title>
+    Silent Partner - Hooktheory  </title>
+
+  
+
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		   More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons-2020-06/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons-2020-06/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons-2020-06/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons-2020-06/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons-2020-06/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons-2020-06/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons-2020-06/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons-2020-06/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons-2020-06/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons-2020-06/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons-2020-06/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicons-2020-06/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons-2020-06/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons-2020-06/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- google knowledge graph -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.hooktheory.com",
+  "sameAs" : ["http://www.facebook.com/hooktheory",
+    "http://www.twitter.com/hooktheory",
+    "http://plus.google.com/+HooktheoryLLC"], 
+  "logo": "http://www.hooktheory.com/images/logos/Hooktheory-Logo-2014-Small-Helvetica-Bold.svg"
+}
+</script>
+
+
+</head>
+
+
+<body class="">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGCT9PH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+  
+  
+  
+    <noscript>
+	<div 	class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+			role="alert">
+		<button type="button" 
+				class="close" 
+				data-dismiss="alert" 
+				aria-label="Close">
+			<span aria-hidden="true">
+				&times;
+			</span>
+		</button>
+		<div class="text-center">
+			Please <a href="http://enable-javascript.com" target="_blank">enable JavaScript</a> when using Hooktheory.
+		</div>
+	</div>
+</noscript>
+	
+
+  
+<div 	id="no-web-audio"
+		style="display: none;"
+		class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+		role="alert">
+	<button type="button" 
+			class="close" 
+			data-dismiss="alert" 
+			aria-label="Close">
+		<span aria-hidden="true">
+			&times;
+		</span>
+	</button>
+	<div class="text-center">
+		Hooktheory requires WebAudio and this browser doesn't support it. Please use a recent version of Chrome, Firefox, Safari, Edge, or Opera instead.
+	</div>
+</div>
+
+<script>
+
+	if (typeof window.AudioContext === "undefined" && 
+		typeof window.webkitAudioContext === "undefined") {
+		document.getElementById("no-web-audio").style.display = "block";
+	}
+</script>    	
+
+
+
+
+  <!-- <div class="div-abs-header"> -->
+      
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-site" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+              <a class="navbar-brand" href="/">
+
+      <!-- step 1: need the logo and the 'hooktheory' in vertical center w.r.t each other,
+achieved through flex.flex-align-items.center  But then you need that whole
+thing to be vertically centered in the 50 px nav, which is achieved by making that
+entire thing a flex child of a flex.flex-direction-column.flex-justify-center
+then you add the tagline within the 'hooktheory' div.  Also there is some css
+to get the line-height of the hooktheory text and the tagline to match
+the font size  -->
+
+      <div class="flex flex-direction-column flex-justify-center flex-grow-1">
+        <div class="flex flex-align-items-center">
+          <div class="">
+            <img class="noscale height-35" src="/images/logos/hooktheory-logo-2021-with-name-lower-case-and-tagline-lower-case.svg" alt = "Hooktheory logo">          </div>
+
+          <!-- add flex-align-items-center to make the tagline centered -->
+          <!-- <div class="flex flex-direction-column ">
+        <div class="font-size-brand-name font-weight-600">HOOK<span class="color-theory-logo">THEORY</span></div>
+        <div class="font-size-brand-tagline font-weight-600">CREATE AMAZING MUSIC</div>
+      </div> -->
+        </div>
+      </div>
+    </a>
+  
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-site">
+          <ul class="nav navbar-nav">
+                <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Products<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu white-space-normal">
+        <li>
+          <a href="/hookpad" title="Hookpad">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-hookpad.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Hookpad</div>
+                <div class="font-size-xs">Create beats, songs, and musical ideas with built-in music theory and AI from over 40k songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/books" title="Music theory books">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-books.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Music Theory Books</div>
+                <div class="font-size-xs">Discover an intuitive and deep understanding of how music works.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/chord-crush" title="Chord Crush">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-chord-crush.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Chord Crush</div>
+                <div class="font-size-xs">Learn to hear chords by ear.  Train with real songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/education" title="Classroom">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-classroom.png" loading="lazy" class="lazyload" alt="Hooktheory classroom">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Classroom</div>
+                <div class="font-size-xs">Teach music and songwriting in ways that keep students engaged, excited, and inspired.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+      </ul>
+
+
+    </li>
+
+  <li class=""><a href="/about" title="Hooktheory’s story, philosophy, and who we are." class="" target="">About</a></li><li class=""><a href="/stories" title="Hooktheory stories from our community" class="" target="">Stories</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Resources<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/videos" title="Hookpad tutorials & how-tos from Ryan & Dennis" class="" target="">Hookpad Video Tutorials</a></li><li class=""><a href="/support/hookpad" title="" class="" target="">Hookpad User Guide</a></li><li class=""><a href="/support/keyboard" title="" class="" target="">Hookpad Keyboard Shortcuts</a></li><li class=""><a href="https://forum.hooktheory.com/t/hookpad-release-notes/93" title="" class="" target="">Hookpad Release Notes</a></li><li class="divider"></li><li class=""><a href="/support/chordcrush" title="" class="" target="">Chord Crush User Guide</a></li><li class="divider"></li><li class=""><a href="/support/classroom" title="" class="" target="">Classroom User Guide</a></li><li class=""><a href="/support/assessment" title="" class="" target="">Classroom Assessment Kit User Guide</a></li><li class="divider"></li><li class=""><a href="/theorytab" title="Database of tabs that show the theory behind songs." class="" target="">TheoryTab Database</a></li><li class=""><a href="/trends" title="Stats, trends, and probabilities of chord progressions." class="" target="">TheoryTab Trends</a></li><li class=""><a href="/support/tabs" title="" class="" target="">TheoryTab Contributor Guide</a></li><li class="divider"></li><li class=""><a href="/cheat-sheet/key/c/major" title="" class="" target="">Key Cheat Sheets</a></li><li class=""><a href="/infographics" title="" class="" target="">Infographics</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="" class="" target="">Popular Chord Progressions</a></li><li class=""><a href="/chordle/" title="A daily chord game" class="" target="">Chordle</a></li><li class=""><a href="/gear" title="Gear recommendations from Hooktheory" class="" target="">Gear Recommendations</a></li><li class=""><a href="/newsletter" title="How-To’s For Hobby Musicians Newsletter.  Get occasional tips and how-tos form Ryan, Dave, Chris and Dennis to help you improve and expand your music making." class="" target="">Newsletter</a></li><li class=""><a href="https://www.hooktheory.com/blog/index.php" title="News and articles from Hooktheory" class="" target="">Blog</a></li><li class="divider"></li><li class=""><a href="https://forum.hooktheory.com" title="Join the Hooktheory community." class="" target="">Community Forum</a></li>      </ul>
+    </li>
+  <li class=""><a href="/support" title="Get help, support forum, docs and user guides." class="" target="">Support</a></li>          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="/user/login/login">Sign In</a></li>    <li class="">
+      <a class=" cart" href="/cart">
+
+        <div class="flex flex-align-items-center">
+          <div>
+            <img class="height-30" src="/images/svg/shopping-cart.svg">
+          </div>
+          <div class="margin-left-5">Cart</div>
+          <!-- Cart -->
+
+                  </div>
+      </a>
+    </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+<!-- </div>
+
+<div class="div-abs-sub-header div-elevate"> -->
+  
+<!-- Desktop Nav -->
+
+<div class="hidden-xs hidden-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-left-20 padding-right-20">
+    <div class="font-weight-bold font-size-lg margin-right-20">
+      <a class="navbar-link" href="/theorytab">TheoryTab DB</a>
+    </div>
+
+    <div class="position-relative margin-right-20">
+      <div id = "theorytab-numsongs" class = 'hidden'>Search 47752 songs</div>
+      <div id="theorytab-searchbox"></div>
+      <div id="theorytab-stats"></div>
+      <div id="theorytab-hits"></div>
+      <!-- <div id="theorytab-infinite-hits"></div> -->
+
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/theorytab/about">About</a>
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/trends">Trends</a>
+    </div>
+
+    <!-- Dropdowns -->
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </div>
+      </div>
+
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Mobile Nav (Two Rows) -->
+
+
+<nav class="visible-xs visible-sm navbar navbar-default">
+  <div class=" container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- The data-target is IMPORTANT needs to match the -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-song-db" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/theorytab">TheoryTab DB</a>
+
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse-song-db">
+      <ul class="nav navbar-nav navbar-left">
+        <li class=""><a href="/theorytab/about" title="Tabs that show the theory behind songs." class="" target="">About</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Top<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        More<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="visible-xs visible-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-top-0">
+    <div class="position-relative width-100-percent">
+      <div id="theorytab-searchbox-mobile"></div>
+      <div id="theorytab-hits-mobile"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+
+
+
+
+
+<!-- </div>
+
+<div class="div-abs-content-has-sub-header" id="tab-scroll"> -->
+  
+<!--[if lt IE 9]>
+<div class="message red">Hooktheory is not supported on versions of Internet Explorer older than 9.  To continue using Hooktheory, please upgrade to Internet Explorer 9 (requires Vista or Windows 7) or switch to Firefox, Chrome, or Safari.<br><br>Sorry for the inconvenience,<br>The Hooktheory Team</div>
+<![endif]-->
+
+
+  <div class="container container-v-pad"><div class="row"><div class="col-xs-12"><div class="breadcrumbs">
+<a href="/">Home</a> &raquo; <a href="/theorytab/index">TheoryTab Database</a> &raquo; <a href="/theorytab/artists">Artists</a> &raquo; <a href="/theorytab/artists/s">S</a> &raquo; <span>Silent Partner</span></div><div style="margin-bottom: 10px; margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div><div class="row"><div class="col-xs-12 
+      col-sm-6 col-sm-offset-3
+      col-md-4 col-md-offset-4"><h1 class="">Silent Partner</h1><ul class="yt-list "><li class=" round-t overlay-trigger"><a 	href="/theorytab/view/silent-partner/above-and-beyond" 
+									class="a-no-decoration"
+									title="Above And Beyond by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-tl"><img data-src="https://img.youtube.com/vi/wyadfwT1Ol8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Above And Beyond</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/another-perspective" 
+									class="a-no-decoration"
+									title="Another Perspective by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/BWgoCrtAuMY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Another Perspective</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/beach-front-property" 
+									class="a-no-decoration"
+									title="Beach Front Property by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/WjocPZ5OqUw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Beach Front Property</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/believer" 
+									class="a-no-decoration"
+									title="Believer by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Wr0hLgVkpEo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Believer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/big-screen" 
+									class="a-no-decoration"
+									title="Big Screen by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2WCvlSHGCaE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Big Screen</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/blue-skies" 
+									class="a-no-decoration"
+									title="Blue Skies by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5kDO8hLu9iI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Blue Skies</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/bottomless-cup" 
+									class="a-no-decoration"
+									title="Bottomless Cup by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6E0WbIuQQIA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bottomless Cup</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/bright-future" 
+									class="a-no-decoration"
+									title="Bright Future by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/j-eUXXW95Rg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bright Future</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/called-upon" 
+									class="a-no-decoration"
+									title="Called Upon by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cwRADVqEe1g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Called Upon</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/camaguey" 
+									class="a-no-decoration"
+									title="Camaguey by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qPm0Cq4FUbU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Camaguey</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/capital" 
+									class="a-no-decoration"
+									title="Capital by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sycR3Sh4a_U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Capital</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/chances" 
+									class="a-no-decoration"
+									title="Chances by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/YThDJG8yW9k/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Chances</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/clocks-set" 
+									class="a-no-decoration"
+									title="Clocks Set by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/pVa8tQZdZjk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Clocks Set</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/close-my-mouth" 
+									class="a-no-decoration"
+									title="Close My Mouth by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/z_L_An2k6Co/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Close My Mouth</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/cloud-patterns" 
+									class="a-no-decoration"
+									title="Cloud Patterns by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/wCvgc6Gahk4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cloud Patterns</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/cockpit" 
+									class="a-no-decoration"
+									title="Cockpit by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/a2Ifgt4LG_4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cockpit</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/country-blues" 
+									class="a-no-decoration"
+									title="Country Blues by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/GXHtQsgwRrU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Country Blues</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/court-and-page" 
+									class="a-no-decoration"
+									title="Court And Page by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/joJ25P-4DNU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Court And Page</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/cue" 
+									class="a-no-decoration"
+									title="Cue by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/CS8cHfYb2fQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cue</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/dark-step" 
+									class="a-no-decoration"
+									title="Dark Step by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/4r_pXMJ8vlE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dark Step</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/days-are-long" 
+									class="a-no-decoration"
+									title="Days Are Long by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/dMWPj0wu1Dw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Days Are Long</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/desert-sky" 
+									class="a-no-decoration"
+									title="Desert Sky by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ax5WfUvUIS8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Desert Sky</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/do-do-do" 
+									class="a-no-decoration"
+									title="Do Do Do by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/B0z4qunAcqc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Do Do Do</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/dog-and-pony-show" 
+									class="a-no-decoration"
+									title="Dog And Pony Show by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Dw20ZkMwI10/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dog And Pony Show</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/dont-turn-back" 
+									class="a-no-decoration"
+									title="Don't Turn Back by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/k2P_1-xFjfY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Don't Turn Back</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/dusty-tears" 
+									class="a-no-decoration"
+									title="Dusty Tears by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SERddGDvMLA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dusty Tears</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/ether" 
+									class="a-no-decoration"
+									title="Ether by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/r6En29azNBA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ether</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/every-step" 
+									class="a-no-decoration"
+									title="Every Step by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/JX8Jo66w4tA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Every Step</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/family-tradition" 
+									class="a-no-decoration"
+									title="Family Tradition by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/AqLrPF6geDk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Family Tradition</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/friction-looks" 
+									class="a-no-decoration"
+									title="Friction Looks by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/r0yxIedsd-A/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Friction Looks</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/full-speed-ahead" 
+									class="a-no-decoration"
+									title="Full Speed Ahead by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hfG4mwOZVpM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Full Speed Ahead</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/grace-behind-the-curtain" 
+									class="a-no-decoration"
+									title="Grace Behind The Curtain by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/CnbMQeyQ4vY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Grace Behind The Curtain</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/grass" 
+									class="a-no-decoration"
+									title="Grass by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VlohuOGWzG8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Grass</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/greenery" 
+									class="a-no-decoration"
+									title="Greenery by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qeIkbW49B6A/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Greenery</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/higher" 
+									class="a-no-decoration"
+									title="Higher by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hLXUtz5p-2g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Higher</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/hit-the-switch" 
+									class="a-no-decoration"
+									title="Hit The Switch by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Hpnr9qpxs-I/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hit The Switch</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/how-it-began" 
+									class="a-no-decoration"
+									title="How It Began by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vkUp43K9Z-s/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">How It Began</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/humidity" 
+									class="a-no-decoration"
+									title="Humidity by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_ULi5Tex7To/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Humidity</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/jack-in-the-box" 
+									class="a-no-decoration"
+									title="Jack In The Box by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ALAqKNXvPSM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Jack In The Box</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/lake-eerie" 
+									class="a-no-decoration"
+									title="Lake Eerie by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ec8jFEoXKxw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lake Eerie</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/last-call" 
+									class="a-no-decoration"
+									title="Last Call by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_I8oDMRixgk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Last Call</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/light-the-torch" 
+									class="a-no-decoration"
+									title="Light The Torch by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/IlW6RbNgFDI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Light The Torch</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/log-cabin" 
+									class="a-no-decoration"
+									title="Log Cabin by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/JGzwFL8WKvY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Log Cabin</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/lonely-nights" 
+									class="a-no-decoration"
+									title="Lonely Nights by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hRBXXXzi7tA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lonely Nights</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/lurking" 
+									class="a-no-decoration"
+									title="Lurking by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ggZ-nyzmjTg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lurking</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/march-to-victory" 
+									class="a-no-decoration"
+									title="March To Victory by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/yEktSBG6SO8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">March To Victory</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/mob-battle" 
+									class="a-no-decoration"
+									title="Mob Battle by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/otQwpk3pm_A/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mob Battle</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/neck-pillow" 
+									class="a-no-decoration"
+									title="Neck Pillow by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/JWPZ6mHWycg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Neck Pillow</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/new-on-the-block" 
+									class="a-no-decoration"
+									title="New On The Block by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/slmcY1Ievcg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">New On The Block</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/noble-dub" 
+									class="a-no-decoration"
+									title="Noble Dub by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cQDfk0IPp2Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Noble Dub</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/north" 
+									class="a-no-decoration"
+									title="North by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mjgrDryFWFU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">North</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/old-friend" 
+									class="a-no-decoration"
+									title="Old Friend by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/otAlmCnBgt0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Old Friend</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/on-hold" 
+									class="a-no-decoration"
+									title="On Hold by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VZOGU8KAgSc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">On Hold</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/orientation" 
+									class="a-no-decoration"
+									title="Orientation by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/DIqf1DsXNYk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Orientation</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/parasail" 
+									class="a-no-decoration"
+									title="Parasail by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/MzO4zfNO0kQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Parasail</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/payday" 
+									class="a-no-decoration"
+									title="Payday by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/k24RCtCTelk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Payday</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/phases" 
+									class="a-no-decoration"
+									title="Phases by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Tb9fzr-glvM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Phases</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/pina-colada" 
+									class="a-no-decoration"
+									title="Pina Colada by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/DFbTB22S4R4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pina Colada</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/pink-lemonade" 
+									class="a-no-decoration"
+									title="Pink Lemonade by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UjSJbDj1suM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pink Lemonade</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/real-world" 
+									class="a-no-decoration"
+									title="Real World by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/CoqH0meAewo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Real World</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/right-place-right-time" 
+									class="a-no-decoration"
+									title="Right Place Right Time by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mcVEobrErMM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Right Place Right Time</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/root" 
+									class="a-no-decoration"
+									title="Root by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5Z--iS9tw2U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Root</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/runaways" 
+									class="a-no-decoration"
+									title="Runaways by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sClF_3AmFLo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Runaways</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sandbox" 
+									class="a-no-decoration"
+									title="Sandbox by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ho3D_o1qlWM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sandbox</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/scapes" 
+									class="a-no-decoration"
+									title="Scapes by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/szdJSfPbsew/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Scapes</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sinking-ship" 
+									class="a-no-decoration"
+									title="Sinking Ship by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/LM2i_wOo-Ck/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sinking Ship</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sleepy-jake" 
+									class="a-no-decoration"
+									title="Sleepy Jake by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/PrWOBcP1mVM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sleepy Jake</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sophomore-makeout" 
+									class="a-no-decoration"
+									title="Sophomore Makeout by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/g2HzEvU1roY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sophomore Makeout</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/space-walk" 
+									class="a-no-decoration"
+									title="Space Walk by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8b1lIBtRYSY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Space Walk</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/spring-in-my-step" 
+									class="a-no-decoration"
+									title="Spring In My Step by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/siCmqvfw_1g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Spring In My Step</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/stay-with-you" 
+									class="a-no-decoration"
+									title="Stay With You by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qJdSk0xQnkE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Stay With You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sugar-zone" 
+									class="a-no-decoration"
+									title="Sugar Zone by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/F3TzxXfoEHo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sugar Zone</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/summer-smile" 
+									class="a-no-decoration"
+									title="Summer Smile by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6wlbB1PTzJU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Summer Smile</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sunday-plans" 
+									class="a-no-decoration"
+									title="Sunday Plans by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/b4SJD6RIfVI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sunday Plans</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/sweet-and-low" 
+									class="a-no-decoration"
+									title="Sweet And Low by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/XOEpIn3omss/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sweet And Low</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/take-you-home" 
+									class="a-no-decoration"
+									title="Take You Home by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/aojiPGCgjD0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Take You Home</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/the-only-girl" 
+									class="a-no-decoration"
+									title="The Only Girl by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/kT_qHfoiEnQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Only Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/the-place-inside" 
+									class="a-no-decoration"
+									title="The Place Inside by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/PRP5bV7RTV8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Place Inside</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/the-woods" 
+									class="a-no-decoration"
+									title="The Woods by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/dU5bvAeHgc0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Woods</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/the-wrong-time" 
+									class="a-no-decoration"
+									title="The Wrong Time by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/x9lV3ukch3M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Wrong Time</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/tonto" 
+									class="a-no-decoration"
+									title="Tonto by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ol_D-4AYgEE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tonto</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/tractor-pull" 
+									class="a-no-decoration"
+									title="Tractor Pull by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vFuY8kDCRBA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tractor Pull</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/true-love" 
+									class="a-no-decoration"
+									title="True Love by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SvYsFFeto84/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">True Love</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/tucson" 
+									class="a-no-decoration"
+									title="Tucson by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/tBDni_f4aZQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tucson</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/twin-shine" 
+									class="a-no-decoration"
+									title="Twin Shine by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/j8pbIT_p-C8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Twin Shine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/watch-it-glow" 
+									class="a-no-decoration"
+									title="Watch It Glow by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/fQ8MwJ8Ptw8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Watch It Glow</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/weekend-in-the-city" 
+									class="a-no-decoration"
+									title="Weekend In The City by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/zroM6isRLEY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Weekend In The City</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/silent-partner/whistling-down-the-road" 
+									class="a-no-decoration"
+									title="Whistling Down the Road by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hExrCWx2Wr4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Whistling Down the Road</p></div></td></tr></table></a></td><td></li><li class=" round-b overlay-trigger"><a 	href="/theorytab/view/silent-partner/youre-no-help" 
+									class="a-no-decoration"
+									title="You're No Help by Silent Partner"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-bl"><img data-src="https://img.youtube.com/vi/wK6bwkuUYRo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You're No Help</p></div></td></tr></table></a></td><td></li></ul></div><div class="col-xs-12"><div style="margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hooktheory"></script> -->
+  
+    <div class="">
+      <!-- wrap wrap-footer -->
+      <footer>
+
+
+        <div class="container container-v-pad text-align-center">
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/about" title="Hooktheory’s story, philosophy, and who we are." class="">About</a>
+                </div>
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/newsletter" title="How To’s For Hobby Musicians Newsletter" class=""> Newsletter</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/education" title="Teach music and songwriting in ways that keep students engaged, excited, and inspired." class="">Education Licensing</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="https://hooktheory.idevaffiliate.com/" title="Affiliate Program" class="">Affiliate Program</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/press/kit" title="Press Kit" class="">Press Kit</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/support" title="Support" class="">Support</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/contact" title="Contact" class="">Contact</a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+                
+
+
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">Hooktheory &copy;
+                  2024                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/terms" title="Terms of Service" class="">Terms
+                  </a>
+                </div>
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/privacy" title="Privacy policy" class="">Privacy
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/coppa" title="Children's Online Privacy Protection Act (COPPA) Policy" class="">COPPA
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/dmca" title="Digital Millennium Copyright Act (DMCA) Policy" class="">DMCA</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/courses/signup" class="a-footer">Student Join Course</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/redeem" class="a-footer">Redeem</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/refund-policy" class="a-footer">Refunds</a>
+                </div>
+
+
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+
+              
+    <div class="flex flex-justify-center">
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.tiktok.com/@hooktheory?lang=en" title="Visit the Hooktheory Tik Tok page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-tiktok"></ion-icon>
+        </a>
+      </div>
+
+
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.instagram.com/hooktheory" title="Visit the Hooktheory Instagram page">
+          <!-- <i class="icon-instagram-filled"></i> -->
+          <ion-icon size="" name="logo-instagram"></ion-icon>
+
+        </a>
+      </div>
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.youtube.com/hooktheory" title="Visit the Hooktheory YouTube page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+      <!-- <div class="font-size-lg  padding-10 ">
+    <a class = "a-footer" href="https://www.vimeo.com/hooktheory" title="Visit the Hooktheory Vimeo page"><i class="icon-vimeo-squared"></i></a>
+  </div> -->
+
+
+
+      <div class="font-size-lg  padding-10 ">
+
+        <a class="a-footer" href="https://www.twitter.com/hooktheory" title="Visit the Hooktheory Twitter page">
+
+          <!-- <i class="icon-twitter"></i> -->
+
+          <ion-icon size="" name="logo-twitter"></ion-icon>
+
+
+        </a>
+      </div>
+
+      <div class="font-size-lg  padding-10 ">
+        <a class="a-footer" href="https://www.facebook.com/hooktheory" title="Visit the Hooktheory Facebook page">
+          <!-- <i class="icon-facebook-official"></i> -->
+          <ion-icon size="" name="logo-facebook"></ion-icon>
+
+        </a>
+      </div>
+
+    </div>
+
+  
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              
+    <div class="flex flex-justify-center flex-direction-column flex-align-items-center">
+
+      <div class="">
+        Designed and built by Hooktheory in California
+      </div>
+
+      <div class="margin-top-20">
+        <a href="/"><img src="/images/logos/hooktheory-logo-2021.svg" class="width-50 noscale" /></a>
+      </div>
+    </div>
+
+              </div>
+          </div>
+        </div>
+
+
+      </footer>
+    </div>
+
+
+
+  <!-- </div> -->
+
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+
+
+
+  <!-- Javascript -->
+
+  <script>
+    var csrfToken = "UmNTRkpVMjlxdkliZDhWaEp0Z2E2cUNzUGpMdGF4fmow88Pouj7-g0H0LZIOHtsmWwkzL8SHwfdBKs0UMQEkPg==";
+    var csrfTokenName = "YII_CSRF_TOKEN";
+
+    // Enable :active CSS styles
+    document.addEventListener("touchstart", function() {}, false);
+  </script>
+
+
+
+
+
+  
+
+  
+  <!-- lazyload all <img> :not(.not-lazy) -->
+  
+
+
+  <script>
+    // if ('loading' in HTMLImageElement.prototype) {
+    //   const images = document.querySelectorAll('img[loading="lazy" class="lazyload" ]');
+    //   images.forEach(img => {
+    //     img.src = img.dataset.src;
+    //   });
+
+    //   const iframes = document.querySelectorAll('iframe[loading="lazy" class="lazyload" ]');
+    //   iframes.forEach(v => {
+    //     v.src = v.dataset.src;
+    //   });
+
+
+    // } else {
+
+    /* 
+     - Replace <img src> with <img data-src> to avoid an eager load in unsupported browsers. If the loading attribute is supported, swap data-src for src.
+    - If loading is not supported, load a fallback (lazysizes) and initiate it. As per lazysizes docs, you use the lazyload class as a way to indicate to lazysizes which images to lazy-load.
+
+    */
+    // Dynamically import the LazySizes library
+    const script = document.createElement('script');
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js';
+    document.body.appendChild(script);
+    //}
+  </script>
+
+  <!-- Ion Icons Support 2022  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/TypeWatch/2.2.1/jquery.typewatch.min.js"></script>
+<script type="text/javascript" src="/build/js/www.min.js?ts=20230808223421"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch@0.6.0/dist/instant-meilisearch.umd.min.js"></script>
+<script type="text/javascript" src="/js/meilisearch/meilisearchApp.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+	  // Store browser version as JS variable on DOM
+		var browser = {};
+		// Mobile
+		browser.ios 		= ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+		browser.android 	= ( navigator.userAgent.match(/(Android)/g) ? true : false );
+		browser.fireos 		= navigator.userAgent.indexOf("amazon-fireos") > -1;
+		
+		browser.mobile = browser.ios || browser.android || browser.fireos;
+		
+	});
+$(function () {
+	var options = {
+		delay: { "show": 100, "hide": 100 }
+	}
+  	$('[data-toggle="tooltip"]').tooltip(options);
+})
+/*]]>*/
+</script>
+</body>
+
+
+
+
+
+</html>

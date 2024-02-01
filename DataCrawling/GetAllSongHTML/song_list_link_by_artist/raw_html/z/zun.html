@@ -1,0 +1,1198 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta name="description" content="Chord charts, music theory, and Roman numeral harmonic analysis of songs by ZUN" />
+<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/animation.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello-codes.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello.css" />
+<link rel="stylesheet" type="text/css" href="/build/css/style.min.css?ts=20231107163753" />
+<script type="text/javascript" src="/js/google-tag-manager.js"></script>
+<title>
+    ZUN - Hooktheory  </title>
+
+  
+
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		   More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons-2020-06/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons-2020-06/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons-2020-06/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons-2020-06/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons-2020-06/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons-2020-06/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons-2020-06/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons-2020-06/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons-2020-06/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons-2020-06/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons-2020-06/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicons-2020-06/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons-2020-06/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons-2020-06/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- google knowledge graph -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.hooktheory.com",
+  "sameAs" : ["http://www.facebook.com/hooktheory",
+    "http://www.twitter.com/hooktheory",
+    "http://plus.google.com/+HooktheoryLLC"], 
+  "logo": "http://www.hooktheory.com/images/logos/Hooktheory-Logo-2014-Small-Helvetica-Bold.svg"
+}
+</script>
+
+
+</head>
+
+
+<body class="">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGCT9PH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+  
+  
+  
+    <noscript>
+	<div 	class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+			role="alert">
+		<button type="button" 
+				class="close" 
+				data-dismiss="alert" 
+				aria-label="Close">
+			<span aria-hidden="true">
+				&times;
+			</span>
+		</button>
+		<div class="text-center">
+			Please <a href="http://enable-javascript.com" target="_blank">enable JavaScript</a> when using Hooktheory.
+		</div>
+	</div>
+</noscript>
+	
+
+  
+<div 	id="no-web-audio"
+		style="display: none;"
+		class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+		role="alert">
+	<button type="button" 
+			class="close" 
+			data-dismiss="alert" 
+			aria-label="Close">
+		<span aria-hidden="true">
+			&times;
+		</span>
+	</button>
+	<div class="text-center">
+		Hooktheory requires WebAudio and this browser doesn't support it. Please use a recent version of Chrome, Firefox, Safari, Edge, or Opera instead.
+	</div>
+</div>
+
+<script>
+
+	if (typeof window.AudioContext === "undefined" && 
+		typeof window.webkitAudioContext === "undefined") {
+		document.getElementById("no-web-audio").style.display = "block";
+	}
+</script>    	
+
+
+
+
+  <!-- <div class="div-abs-header"> -->
+      
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-site" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+              <a class="navbar-brand" href="/">
+
+      <!-- step 1: need the logo and the 'hooktheory' in vertical center w.r.t each other,
+achieved through flex.flex-align-items.center  But then you need that whole
+thing to be vertically centered in the 50 px nav, which is achieved by making that
+entire thing a flex child of a flex.flex-direction-column.flex-justify-center
+then you add the tagline within the 'hooktheory' div.  Also there is some css
+to get the line-height of the hooktheory text and the tagline to match
+the font size  -->
+
+      <div class="flex flex-direction-column flex-justify-center flex-grow-1">
+        <div class="flex flex-align-items-center">
+          <div class="">
+            <img class="noscale height-35" src="/images/logos/hooktheory-logo-2021-with-name-lower-case-and-tagline-lower-case.svg" alt = "Hooktheory logo">          </div>
+
+          <!-- add flex-align-items-center to make the tagline centered -->
+          <!-- <div class="flex flex-direction-column ">
+        <div class="font-size-brand-name font-weight-600">HOOK<span class="color-theory-logo">THEORY</span></div>
+        <div class="font-size-brand-tagline font-weight-600">CREATE AMAZING MUSIC</div>
+      </div> -->
+        </div>
+      </div>
+    </a>
+  
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-site">
+          <ul class="nav navbar-nav">
+                <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Products<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu white-space-normal">
+        <li>
+          <a href="/hookpad" title="Hookpad">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-hookpad.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Hookpad</div>
+                <div class="font-size-xs">Create beats, songs, and musical ideas with built-in music theory and AI from over 40k songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/books" title="Music theory books">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-books.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Music Theory Books</div>
+                <div class="font-size-xs">Discover an intuitive and deep understanding of how music works.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/chord-crush" title="Chord Crush">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-chord-crush.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Chord Crush</div>
+                <div class="font-size-xs">Learn to hear chords by ear.  Train with real songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/education" title="Classroom">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-classroom.png" loading="lazy" class="lazyload" alt="Hooktheory classroom">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Classroom</div>
+                <div class="font-size-xs">Teach music and songwriting in ways that keep students engaged, excited, and inspired.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+      </ul>
+
+
+    </li>
+
+  <li class=""><a href="/about" title="Hooktheory’s story, philosophy, and who we are." class="" target="">About</a></li><li class=""><a href="/stories" title="Hooktheory stories from our community" class="" target="">Stories</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Resources<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/videos" title="Hookpad tutorials & how-tos from Ryan & Dennis" class="" target="">Hookpad Video Tutorials</a></li><li class=""><a href="/support/hookpad" title="" class="" target="">Hookpad User Guide</a></li><li class=""><a href="/support/keyboard" title="" class="" target="">Hookpad Keyboard Shortcuts</a></li><li class=""><a href="https://forum.hooktheory.com/t/hookpad-release-notes/93" title="" class="" target="">Hookpad Release Notes</a></li><li class="divider"></li><li class=""><a href="/support/chordcrush" title="" class="" target="">Chord Crush User Guide</a></li><li class="divider"></li><li class=""><a href="/support/classroom" title="" class="" target="">Classroom User Guide</a></li><li class=""><a href="/support/assessment" title="" class="" target="">Classroom Assessment Kit User Guide</a></li><li class="divider"></li><li class=""><a href="/theorytab" title="Database of tabs that show the theory behind songs." class="" target="">TheoryTab Database</a></li><li class=""><a href="/trends" title="Stats, trends, and probabilities of chord progressions." class="" target="">TheoryTab Trends</a></li><li class=""><a href="/support/tabs" title="" class="" target="">TheoryTab Contributor Guide</a></li><li class="divider"></li><li class=""><a href="/cheat-sheet/key/c/major" title="" class="" target="">Key Cheat Sheets</a></li><li class=""><a href="/infographics" title="" class="" target="">Infographics</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="" class="" target="">Popular Chord Progressions</a></li><li class=""><a href="/chordle/" title="A daily chord game" class="" target="">Chordle</a></li><li class=""><a href="/gear" title="Gear recommendations from Hooktheory" class="" target="">Gear Recommendations</a></li><li class=""><a href="/newsletter" title="How-To’s For Hobby Musicians Newsletter.  Get occasional tips and how-tos form Ryan, Dave, Chris and Dennis to help you improve and expand your music making." class="" target="">Newsletter</a></li><li class=""><a href="https://www.hooktheory.com/blog/index.php" title="News and articles from Hooktheory" class="" target="">Blog</a></li><li class="divider"></li><li class=""><a href="https://forum.hooktheory.com" title="Join the Hooktheory community." class="" target="">Community Forum</a></li>      </ul>
+    </li>
+  <li class=""><a href="/support" title="Get help, support forum, docs and user guides." class="" target="">Support</a></li>          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="/user/login/login">Sign In</a></li>    <li class="">
+      <a class=" cart" href="/cart">
+
+        <div class="flex flex-align-items-center">
+          <div>
+            <img class="height-30" src="/images/svg/shopping-cart.svg">
+          </div>
+          <div class="margin-left-5">Cart</div>
+          <!-- Cart -->
+
+                  </div>
+      </a>
+    </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+<!-- </div>
+
+<div class="div-abs-sub-header div-elevate"> -->
+  
+<!-- Desktop Nav -->
+
+<div class="hidden-xs hidden-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-left-20 padding-right-20">
+    <div class="font-weight-bold font-size-lg margin-right-20">
+      <a class="navbar-link" href="/theorytab">TheoryTab DB</a>
+    </div>
+
+    <div class="position-relative margin-right-20">
+      <div id = "theorytab-numsongs" class = 'hidden'>Search 47752 songs</div>
+      <div id="theorytab-searchbox"></div>
+      <div id="theorytab-stats"></div>
+      <div id="theorytab-hits"></div>
+      <!-- <div id="theorytab-infinite-hits"></div> -->
+
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/theorytab/about">About</a>
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/trends">Trends</a>
+    </div>
+
+    <!-- Dropdowns -->
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </div>
+      </div>
+
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Mobile Nav (Two Rows) -->
+
+
+<nav class="visible-xs visible-sm navbar navbar-default">
+  <div class=" container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- The data-target is IMPORTANT needs to match the -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-song-db" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/theorytab">TheoryTab DB</a>
+
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse-song-db">
+      <ul class="nav navbar-nav navbar-left">
+        <li class=""><a href="/theorytab/about" title="Tabs that show the theory behind songs." class="" target="">About</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Top<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        More<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="visible-xs visible-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-top-0">
+    <div class="position-relative width-100-percent">
+      <div id="theorytab-searchbox-mobile"></div>
+      <div id="theorytab-hits-mobile"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+
+
+
+
+
+<!-- </div>
+
+<div class="div-abs-content-has-sub-header" id="tab-scroll"> -->
+  
+<!--[if lt IE 9]>
+<div class="message red">Hooktheory is not supported on versions of Internet Explorer older than 9.  To continue using Hooktheory, please upgrade to Internet Explorer 9 (requires Vista or Windows 7) or switch to Firefox, Chrome, or Safari.<br><br>Sorry for the inconvenience,<br>The Hooktheory Team</div>
+<![endif]-->
+
+
+  <div class="container container-v-pad"><div class="row"><div class="col-xs-12"><div class="breadcrumbs">
+<a href="/">Home</a> &raquo; <a href="/theorytab/index">TheoryTab Database</a> &raquo; <a href="/theorytab/artists">Artists</a> &raquo; <a href="/theorytab/artists/z">Z</a> &raquo; <span>ZUN</span></div><div style="margin-bottom: 10px; margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div><div class="row"><div class="col-xs-12 
+      col-sm-6 col-sm-offset-3
+      col-md-4 col-md-offset-4"><h1 class="">ZUN</h1><ul class="yt-list "><li class=" round-t overlay-trigger"><a 	href="/theorytab/view/zun/a-brave-and-leisurely-beast" 
+									class="a-no-decoration"
+									title="A Brave and Leisurely Beast by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-tl"><img data-src="https://img.youtube.com/vi/CQgB8HqTtrE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Brave and Leisurely Beast</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-dream-that-is-more-scarlet-than-red" 
+									class="a-no-decoration"
+									title="A Dream That is More Scarlet Than Red by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HZvnP0svJzk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Dream That is More Scarlet Than Red</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-drunkards-lemuria" 
+									class="a-no-decoration"
+									title="A Drunkard's Lemuria by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/-bYMyyVcbMQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Drunkard's Lemuria</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-god-that-loves-people---romantic-fall" 
+									class="a-no-decoration"
+									title="A God That Loves People - Romantic Fall by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/jJbHpAUcvkE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A God That Loves People - Romantic Fall</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-maidens-illusionary-funeral---necro-fantasy" 
+									class="a-no-decoration"
+									title="A Maiden's Illusionary Funeral - Necro-Fantasy by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8yGYuaXnOtY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Maiden's Illusionary Funeral - Necro-Fantasy</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-midsummer-fairys-dream" 
+									class="a-no-decoration"
+									title="A Midsummer Fairy's Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2Wsqhd5oyEg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Midsummer Fairy's Dream</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-pair-of-priests" 
+									class="a-no-decoration"
+									title="A Pair of Priests by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qHj7DWSvFrk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Pair of Priests</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-star-of-hope-arises-in-the-blue-sky" 
+									class="a-no-decoration"
+									title="A Star of Hope Arises in the Blue Sky by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Nt3kUp1qAoM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Star of Hope Arises in the Blue Sky</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-tiny-tiny-clever-commander" 
+									class="a-no-decoration"
+									title="A Tiny Tiny Clever Commander by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/oayu297xrns/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Tiny Tiny Clever Commander</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/a-world-of-nightmares-never-seen-before" 
+									class="a-no-decoration"
+									title="A World of Nightmares Never Seen Before by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7YKhiqA9L_U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A World of Nightmares Never Seen Before</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/akutagawa-ryuunosukes-kappa---candid-friend" 
+									class="a-no-decoration"
+									title="Akutagawa Ryuunosuke's Kappa - Candid Friend by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/FtE9Xg4ewfA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Akutagawa Ryuunosuke's Kappa - Candid Friend</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/alice-in-wonderland" 
+									class="a-no-decoration"
+									title="Alice in Wonderland by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_ZwOGMEAbQo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Alice in Wonderland</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/bad-apple" 
+									class="a-no-decoration"
+									title="Bad Apple by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/3kXx6f7qaa8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bad Apple</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/bamboo-forest-of-the-full-moon" 
+									class="a-no-decoration"
+									title="Bamboo Forest of the Full Moon by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5ICZ0AAgDuA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bamboo Forest of the Full Moon</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/battlefield-of-hanahazama" 
+									class="a-no-decoration"
+									title="Battlefield of Hanahazama by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/fp8hxDtqmR0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Battlefield of Hanahazama</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/beast-metropolis" 
+									class="a-no-decoration"
+									title="Beast Metropolis by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/1KoJxo9mMvA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Beast Metropolis</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/because-princess-inada-is-scolding-me" 
+									class="a-no-decoration"
+									title="Because Princess Inada Is Scolding Me by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UFugieKYIH4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Because Princess Inada Is Scolding Me</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/bell-of-avici---infinite-nightmare" 
+									class="a-no-decoration"
+									title="Bell of Avici - Infinite Nightmare by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ELTFhIDG0d4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bell of Avici - Infinite Nightmare</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/beloved-tomboyish-girl" 
+									class="a-no-decoration"
+									title="Beloved Tomboyish Girl by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/JIZ12EQ2SFg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Beloved Tomboyish Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/beware-the-umbrella-left-there-forever" 
+									class="a-no-decoration"
+									title="Beware the Umbrella Left There Forever by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/AmslIIu9WTA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Beware the Umbrella Left There Forever</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/beyond-planck-in-an-instant" 
+									class="a-no-decoration"
+									title="Beyond Planck in an Instant by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/T7qu1prSFQU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Beyond Planck in an Instant</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/black-markets-can-happen-anywhere-anytime" 
+									class="a-no-decoration"
+									title="Black Markets Can Happen Anywhere Anytime by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/oOxo3hA87_I/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Black Markets Can Happen Anywhere Anytime</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/bloom-nobly---border-of-life" 
+									class="a-no-decoration"
+									title="Bloom Nobly - Border of Life by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Zis2TtxdFjQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Bloom Nobly - Border of Life</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/blue-sea-of-53-minutes" 
+									class="a-no-decoration"
+									title="Blue Sea of 53 Minutes by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6owdOvGC1m0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Blue Sea of 53 Minutes</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/captain-murasa" 
+									class="a-no-decoration"
+									title="Captain Murasa by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/zJ_2NTthBnU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Captain Murasa</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/catastrophe-in-bhava-agra---wonderful-heaven" 
+									class="a-no-decoration"
+									title="Catastrophe in Bhava-agra - Wonderful Heaven by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ZpimM9FF_cI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Catastrophe in Bhava-agra - Wonderful Heaven</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/cemetery-of-onbashira---grave-of-being" 
+									class="a-no-decoration"
+									title="Cemetery of Onbashira - Grave of Being by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/3UBnlgyivcY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cemetery of Onbashira - Grave of Being</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/cheat-against-the-impossible-danmaku" 
+									class="a-no-decoration"
+									title="Cheat Against the Impossible Danmaku by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8chxxi2Icdg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cheat Against the Impossible Danmaku</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/child-of-are" 
+									class="a-no-decoration"
+									title="Child of Are by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/DPgmRAwl0ZA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Child of Are</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/complete-darkness" 
+									class="a-no-decoration"
+									title="Complete Darkness by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/glGtklFzZ2k/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Complete Darkness</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/concealed-four-seasons" 
+									class="a-no-decoration"
+									title="Concealed Four Seasons by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/euXOWkLoDoI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Concealed Four Seasons</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/corpse-voyage---be-of-good-cheer" 
+									class="a-no-decoration"
+									title="Corpse Voyage - Be of Good Cheer by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ct_Vs6LtJ4w/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Corpse Voyage - Be of Good Cheer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/crimson-in-the-black-sea---legendary-fish" 
+									class="a-no-decoration"
+									title="Crimson in the Black Sea - Legendary Fish by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mi_wxBoHg0E/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Crimson in the Black Sea - Legendary Fish</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/deaf-to-all-but-the-song" 
+									class="a-no-decoration"
+									title="Deaf to All but the Song by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/t4y-pQb-UDA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Deaf to All but the Song</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/deep-mountain-encounter" 
+									class="a-no-decoration"
+									title="Deep-Mountain Encounter by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8e5xhr_lQb8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Deep-Mountain Encounter</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/desire-drive" 
+									class="a-no-decoration"
+									title="Desire Drive by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/jHbGKNLKr8A/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Desire Drive</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dichromatic-lotus-butterfly---ancients" 
+									class="a-no-decoration"
+									title="Dichromatic Lotus Butterfly - Ancients by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xFovQWYiJEw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dichromatic Lotus Butterfly - Ancients</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dim-dream" 
+									class="a-no-decoration"
+									title="Dim Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/BBtSp1EZdI8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dim Dream</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/does-the-forbidden-door-lead-to-this-world" 
+									class="a-no-decoration"
+									title="Does the Forbidden Door Lead to This World by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_Rh9x95quvk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Does the Forbidden Door Lead to This World</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/doll-judgement" 
+									class="a-no-decoration"
+									title="Doll Judgement by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/lVwstM4vZC8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Doll Judgement</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dolls-story---doll-of-misery" 
+									class="a-no-decoration"
+									title="Doll's Story - Doll of Misery by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/OHEBWZR7U4Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Doll's Story - Doll of Misery</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dolls-in-pseudo-paradise---eternal-shrine-maiden" 
+									class="a-no-decoration"
+									title="Dolls in Pseudo Paradise - Eternal Shrine Maiden by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/tMERIdT_5lg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dolls in Pseudo Paradise - Eternal Shrine Maiden</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dream-land" 
+									class="a-no-decoration"
+									title="Dream Land by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ycwsVpTRzCg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dream Land</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dreamy-pilot" 
+									class="a-no-decoration"
+									title="Dreamy Pilot by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Jx3OcN_sFmk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dreamy Pilot</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/dullahan-under-the-willows" 
+									class="a-no-decoration"
+									title="Dullahan Under the Willows by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0smPNpVHOH8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dullahan Under the Willows</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/emotional-skyscraper---cosmic-mind" 
+									class="a-no-decoration"
+									title="Emotional Skyscraper - Cosmic Mind by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qhlXhaS3OkU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Emotional Skyscraper - Cosmic Mind</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/enigmatic-doll---god-knows" 
+									class="a-no-decoration"
+									title="Enigmatic Doll - God Knows by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/O5LLPU-qWpY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Enigmatic Doll - God Knows</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/eternal-shrine-maiden" 
+									class="a-no-decoration"
+									title="Eternal Shrine Maiden by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SzOUqOCRXOs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Eternal Shrine Maiden</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/eternal-spring-dream" 
+									class="a-no-decoration"
+									title="Eternal Spring Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/1vIdz0QcbMc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Eternal Spring Dream</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/eternal-transient-reign" 
+									class="a-no-decoration"
+									title="Eternal Transient Reign by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SIpfrZVGtqk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Eternal Transient Reign</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/everlasting-red-spider-lily" 
+									class="a-no-decoration"
+									title="Everlasting Red Spider Lily by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Everlasting Red Spider Lily</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/extend-ash---hourai-victim" 
+									class="a-no-decoration"
+									title="Extend Ash - Hourai Victim by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/r3fZ1Pfz2og/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Extend Ash - Hourai Victim</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/faith-is-for-the-transient-people" 
+									class="a-no-decoration"
+									title="Faith is for the Transient People by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/q4gqGhN0xnE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Faith is for the Transient People</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/fall-of-fall---autumnal-waterfall" 
+									class="a-no-decoration"
+									title="Fall of Fall - Autumnal Waterfall by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/GWNDB1juaeo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Fall of Fall - Autumnal Waterfall</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/faraway-voyage-of-380-000-kilometers" 
+									class="a-no-decoration"
+									title="Faraway Voyage of 380 000 Kilometers by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/a8Wdta9YFYk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Faraway Voyage of 380 000 Kilometers</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/fate-of-60-years" 
+									class="a-no-decoration"
+									title="Fate of 60 Years by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0kMyTYcmvJw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Fate of 60 Years</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/flowering-night" 
+									class="a-no-decoration"
+									title="Flowering Night by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5wFRIWFraWQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Flowering Night</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/frozen-capital-of-eternity" 
+									class="a-no-decoration"
+									title="Frozen Capital of Eternity by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TYwul_WIvvs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Frozen Capital of Eternity</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/futatsuiwa-from-sado" 
+									class="a-no-decoration"
+									title="Futatsuiwa from Sado by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/F-mrUZIMTbU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Futatsuiwa from Sado</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/gathering-the-mysterious-from-all-around-japan" 
+									class="a-no-decoration"
+									title="Gathering the Mysterious from All Around Japan by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/eLHtB4R1Qbs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Gathering the Mysterious from All Around Japan</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/gensokyo-millenium---history-of-the-moon" 
+									class="a-no-decoration"
+									title="Gensokyo Millenium - History of the Moon by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/v-xhqldl_mw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Gensokyo Millenium - History of the Moon</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/gensokyo-past-and-present---flower-land" 
+									class="a-no-decoration"
+									title="Gensokyo Past and Present - Flower Land by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/44XWB99ts8E/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Gensokyo Past and Present - Flower Land</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/ghost-lead" 
+									class="a-no-decoration"
+									title="Ghost Lead by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/3l7jAAORxZs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ghost Lead</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/ghostly-band---phantom-ensemble" 
+									class="a-no-decoration"
+									title="Ghostly Band - Phantom Ensemble by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ilWjpT0JPIk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ghostly Band - Phantom Ensemble</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/girls-divinity---pandoras-box" 
+									class="a-no-decoration"
+									title="Girl's Divinity - Pandora's Box by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/CZAw1qTrgbY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Girl's Divinity - Pandora's Box</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/green-sanatorium" 
+									class="a-no-decoration"
+									title="Green Sanatorium by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qJB0JWabytE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Green Sanatorium</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/green-eyed-jealousy" 
+									class="a-no-decoration"
+									title="Green-Eyed Jealousy by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hxrr7tYkCg4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Green-Eyed Jealousy</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/greenwich-in-the-sky" 
+									class="a-no-decoration"
+									title="Greenwich in the Sky by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ee06kROMzuQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Greenwich in the Sky</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/hartmanns-youkai-girl" 
+									class="a-no-decoration"
+									title="Hartmann's Youkai Girl by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/4syvy2vjvQY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hartmann's Youkai Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/heartfelt-fancy" 
+									class="a-no-decoration"
+									title="Heartfelt Fancy by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5Bda8sKdoIk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Heartfelt Fancy</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/heian-alien" 
+									class="a-no-decoration"
+									title="Heian Alien by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/JMXaJvxGAxo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Heian Alien</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/hiroari-shoots-a-strange-bird---till-when" 
+									class="a-no-decoration"
+									title="Hiroari Shoots a Strange Bird - Till When by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xi_ZC_Hyhmo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hiroari Shoots a Strange Bird - Till When</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/humans-and-youkai-coming-and-going-at-the-canal" 
+									class="a-no-decoration"
+									title="Humans and Youkai Coming and Going at the Canal by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SNanbLgCK-Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Humans and Youkai Coming and Going at the Canal</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/iamp-pre-battle-theme---eastern-wind" 
+									class="a-no-decoration"
+									title="IaMP Pre-Battle Theme - Eastern Wind by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NMmvl_TZWz4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">IaMP Pre-Battle Theme - Eastern Wind</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/akutagawa-ryuunosukes-kappa---candid-friend" 
+									class="a-no-decoration"
+									title="idea by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/FtE9Xg4ewfA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">idea</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/illusionary-joururi" 
+									class="a-no-decoration"
+									title="Illusionary Joururi by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ccViLC9oKEg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Illusionary Joururi</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/immemorial-marketeers" 
+									class="a-no-decoration"
+									title="Immemorial Marketeers by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/FIST6QAqwaA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Immemorial Marketeers</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/interdimensional-voyage-of-a-ghostly-ship" 
+									class="a-no-decoration"
+									title="Interdimensional Voyage of a Ghostly Ship by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ofuPQIPotn0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Interdimensional Voyage of a Ghostly Ship</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/inventive-city" 
+									class="a-no-decoration"
+									title="Inventive City by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ijTMUcryVWI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Inventive City</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/izanagi-object" 
+									class="a-no-decoration"
+									title="Izanagi Object by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0Y2_odHZcts/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Izanagi Object</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/kids-festival---innocent-treasures" 
+									class="a-no-decoration"
+									title="Kid's Festival - Innocent Treasures by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/yn3GPjhtYJ8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Kid's Festival - Innocent Treasures</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/kitten-of-great-fortune" 
+									class="a-no-decoration"
+									title="Kitten of Great Fortune by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/yeleqYd0t5o/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Kitten of Great Fortune</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/kobito-of-the-shining-needle---little-princess" 
+									class="a-no-decoration"
+									title="Kobito of the Shining Needle - Little Princess by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/jv1yYDzvFtQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Kobito of the Shining Needle - Little Princess</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/last-occultism---esotericist-of-the-present-world" 
+									class="a-no-decoration"
+									title="Last Occultism - Esotericist of the Present World by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/m2DrKruxJUw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Last Occultism - Esotericist of the Present World</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/last-remote" 
+									class="a-no-decoration"
+									title="Last Remote by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qX5kXNo-O8U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Last Remote</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/legend-of-the-great-gods" 
+									class="a-no-decoration"
+									title="Legend of the Great Gods by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/POUxrKNkbA4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Legend of the Great Gods</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/locked-girl---the-girls-secret-room" 
+									class="a-no-decoration"
+									title="Locked Girl - The Girl's Secret Room by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/QdzFCwTr0ps/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Locked Girl - The Girl's Secret Room</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lost-emotion" 
+									class="a-no-decoration"
+									title="Lost Emotion by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/siyvKSUWPOY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lost Emotion</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lost-river" 
+									class="a-no-decoration"
+									title="Lost River by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/GXv6Ct_EwSA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lost River</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/love-colored-master-spark" 
+									class="a-no-decoration"
+									title="Love-colored Master Spark by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7RBJ4NMOBV0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Love-colored Master Spark</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lucid-dreamer" 
+									class="a-no-decoration"
+									title="Lucid Dreamer by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/47n0yDVMvJ8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lucid Dreamer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lullaby-of-deserted-hell" 
+									class="a-no-decoration"
+									title="Lullaby of Deserted Hell by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/4-QacmltD4g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lullaby of Deserted Hell</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lunate-elf" 
+									class="a-no-decoration"
+									title="Lunate Elf by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NWv1yRDCN18/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lunate Elf</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lunatic-dreamer" 
+									class="a-no-decoration"
+									title="Lunatic Dreamer by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/C8cNhhXxdzg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lunatic Dreamer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/lunatic-eyes---invisible-full-moon" 
+									class="a-no-decoration"
+									title="Lunatic Eyes - Invisible Full Moon by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/lY_KORpQPdI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lunatic Eyes - Invisible Full Moon</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/magical-storm" 
+									class="a-no-decoration"
+									title="Magical Storm by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/FOBZcqnyqFs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Magical Storm</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/magus-night" 
+									class="a-no-decoration"
+									title="Magus Night by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/LI1gNmUnD_M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Magus Night</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/maniacal-princess" 
+									class="a-no-decoration"
+									title="Maniacal Princess by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/3ZyjaO9p0wQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Maniacal Princess</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/maple-wise" 
+									class="a-no-decoration"
+									title="Maple Wise by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/zsNMs7_LEBo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Maple Wise</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/mermaid-from-the-uncharted-land" 
+									class="a-no-decoration"
+									title="Mermaid from the Uncharted Land by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/f7Uk5eMIvfY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mermaid from the Uncharted Land</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/merry-the-magician" 
+									class="a-no-decoration"
+									title="Merry the Magician by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8gmnHMkkfqw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Merry the Magician</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/midnight-spell-card" 
+									class="a-no-decoration"
+									title="Midnight Spell Card by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_anViztHevI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Midnight Spell Card</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/mist-lake" 
+									class="a-no-decoration"
+									title="Mist Lake by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/bodys69FTEk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mist Lake</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/mystic-dream" 
+									class="a-no-decoration"
+									title="Mystic Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/48Cd1AP9_rM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mystic Dream</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/mystical-oriental-dream---ancient-temple" 
+									class="a-no-decoration"
+									title="Mystical Oriental Dream - Ancient Temple by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/nW93YFbawPU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mystical Oriental Dream - Ancient Temple</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/native-faith" 
+									class="a-no-decoration"
+									title="Native Faith by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/RFA6lH0E5I4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Native Faith</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/necrofantasia" 
+									class="a-no-decoration"
+									title="Necrofantasia by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/aG-ySZRWXfI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Necrofantasia</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/nemesis-stronghold" 
+									class="a-no-decoration"
+									title="Nemesis' Stronghold by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/v1so7d0UI-Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Nemesis' Stronghold</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/night-falls---evening-star" 
+									class="a-no-decoration"
+									title="Night Falls - Evening Star by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/WNIPHL0Qy3Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Night Falls - Evening Star</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/night-sakura-of-dead-spirits" 
+									class="a-no-decoration"
+									title="Night Sakura of Dead Spirits by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/bBksreajDGg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Night Sakura of Dead Spirits</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/nightmare-diary" 
+									class="a-no-decoration"
+									title="Nightmare Diary by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/XxHKXrmAKmA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Nightmare Diary</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/no-more-going-through-doors" 
+									class="a-no-decoration"
+									title="No More Going Through Doors by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ZoglwNF1ZJw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">No More Going Through Doors</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/nostalgic-blood-of-the-east---old-world" 
+									class="a-no-decoration"
+									title="Nostalgic Blood of the East - Old World by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/bif5xgLR8Gk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Nostalgic Blood of the East - Old World</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/now-until-the-moment-you-die" 
+									class="a-no-decoration"
+									title="Now Until the Moment You Die by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/YiN9rqnxw20/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Now Until the Moment You Die</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/old-yuanxian" 
+									class="a-no-decoration"
+									title="Old Yuanxian by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/K96VIem5os4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Old Yuanxian</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/onigashima-in-fairy-land---missing-power" 
+									class="a-no-decoration"
+									title="Onigashima in Fairy Land - Missing Power by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/pcobOGPSDz4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Onigashima in Fairy Land - Missing Power</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/pandemonic-planet" 
+									class="a-no-decoration"
+									title="Pandemonic Planet by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/OBcPxbFyOw8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pandemonic Planet</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/paradise---deep-mountain" 
+									class="a-no-decoration"
+									title="Paradise - Deep Mountain by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/iuc7L50iUhw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Paradise - Deep Mountain</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/pierrot-of-the-star-spangled-banner" 
+									class="a-no-decoration"
+									title="Pierrot of the Star-Spangled Banner by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/jZSHwpiFMAA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pierrot of the Star-Spangled Banner</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/plastic-mind" 
+									class="a-no-decoration"
+									title="Plastic Mind by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ijituRe039w/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Plastic Mind</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/players-score" 
+									class="a-no-decoration"
+									title="Player's Score by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_p7KU8d2PNg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Player's Score</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/primordial-beat---pristine-beat" 
+									class="a-no-decoration"
+									title="Primordial Beat - Pristine Beat by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/DfSbCg22OWw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Primordial Beat - Pristine Beat</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/prince-shoutokus-pegasus---dark-pegasus" 
+									class="a-no-decoration"
+									title="Prince Shoutoku's Pegasus - Dark Pegasus by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ZRdXeRkijZI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Prince Shoutoku's Pegasus - Dark Pegasus</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/pumpkin-of-september" 
+									class="a-no-decoration"
+									title="Pumpkin of September by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/llNeU25mvYI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pumpkin of September</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/pure-furies---whereabouts-of-the-heart" 
+									class="a-no-decoration"
+									title="Pure Furies - Whereabouts of the Heart by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/EbTW88c1K0g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Pure Furies - Whereabouts of the Heart</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/purest-sky-and-sea" 
+									class="a-no-decoration"
+									title="Purest Sky and Sea by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mY5CpztTFn0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Purest Sky and Sea</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/reach-for-the-moon---immortal-smoke" 
+									class="a-no-decoration"
+									title="Reach for the Moon - Immortal Smoke by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/OOefbCXJ0Sc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Reach for the Moon - Immortal Smoke</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/reincarnation" 
+									class="a-no-decoration"
+									title="Reincarnation by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/J8p2HGRZfII/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Reincarnation</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/retrospective-kyoto" 
+									class="a-no-decoration"
+									title="Retrospective Kyoto by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/W0jsj_c5ejQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Retrospective Kyoto</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/reverse-ideology" 
+									class="a-no-decoration"
+									title="Reverse Ideology by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UCaexiaNWHA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Reverse Ideology</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/romantic-children" 
+									class="a-no-decoration"
+									title="Romantic Children by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8UZJbdvHKSI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Romantic Children</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/rural-makai-city-esoteria" 
+									class="a-no-decoration"
+									title="Rural Makai City Esoteria by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/fvQX04YzjVE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Rural Makai City Esoteria</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/satellite-cafe-terrace" 
+									class="a-no-decoration"
+									title="Satellite Cafe Terrace by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7BreHjGzv6g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Satellite Cafe Terrace</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/satori-maiden---third-eye" 
+									class="a-no-decoration"
+									title="Satori Maiden - Third Eye by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/12AHLzW4kks/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Satori Maiden - Third Eye</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/schrodingers-bakeneko" 
+									class="a-no-decoration"
+									title="Schrodinger's Bakeneko by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/z4F8xP-BHmQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Schrodinger's Bakeneko</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/secret-god-matara---hidden-star-in-all-seasons" 
+									class="a-no-decoration"
+									title="Secret God Matara - Hidden Star in All Seasons by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/IzCfAU-O1bU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Secret God Matara - Hidden Star in All Seasons</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/septette-for-the-dead-princess" 
+									class="a-no-decoration"
+									title="Septette for the Dead Princess by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/aJQ5HsXlPTo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Septette for the Dead Princess</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/seraphic-chicken" 
+									class="a-no-decoration"
+									title="Seraphic Chicken by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/-z45uYP_bDw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Seraphic Chicken</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/shanghai-alice-of-meiji-17" 
+									class="a-no-decoration"
+									title="Shanghai Alice of Meiji 17 by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/h4FVKSHjg-0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Shanghai Alice of Meiji 17</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/shoutoku-legend---true-administrator" 
+									class="a-no-decoration"
+									title="Shoutoku Legend - True Administrator by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Ykyz5tcJ-NE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Shoutoku Legend - True Administrator</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/solar-sect-of-mystic-wisdom---nuclear-fusion" 
+									class="a-no-decoration"
+									title="Solar Sect of Mystic Wisdom - Nuclear Fusion by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Xy_-7OXophY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Solar Sect of Mystic Wisdom - Nuclear Fusion</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/spring-lane---colorful-path" 
+									class="a-no-decoration"
+									title="Spring Lane - Colorful Path by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/StnyX4_PfPk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Spring Lane - Colorful Path</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/strawberry-crisis" 
+									class="a-no-decoration"
+									title="Strawberry Crisis by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/q02DlsQfpgE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Strawberry Crisis</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/swimming-in-a-cherry-blossom-colored-sea" 
+									class="a-no-decoration"
+									title="Swimming in a Cherry Blossom Colored Sea by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Tn3AJDX7aSY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Swimming in a Cherry Blossom Colored Sea</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-capital-city-of-flowers-in-the-sky" 
+									class="a-no-decoration"
+									title="The Capital City of Flowers in the Sky by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/jQAliyNOVUo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Capital City of Flowers in the Sky</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-centennial-festival-for-magical-girls" 
+									class="a-no-decoration"
+									title="The Centennial Festival for Magical Girls by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Zs7zF8AxQCc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Centennial Festival for Magical Girls</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-concealed-four-seasons" 
+									class="a-no-decoration"
+									title="The Concealed Four Seasons by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/lTlyTBP3hS0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Concealed Four Seasons</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-dark-blowhole" 
+									class="a-no-decoration"
+									title="The Dark Blowhole by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/c7WhJta1_sw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Dark Blowhole</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-deviants-unobstructed-light" 
+									class="a-no-decoration"
+									title="The Deviants' Unobstructed Light by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/nWNsLAfriaQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Deviants' Unobstructed Light</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-exaggerated-castle-keep" 
+									class="a-no-decoration"
+									title="The Exaggerated Castle Keep by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/BTRQaASsw5U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Exaggerated Castle Keep</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-gensokyo-the-gods-loved" 
+									class="a-no-decoration"
+									title="The Gensokyo the Gods Loved by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/wbjbNGgL8p8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Gensokyo the Gods Loved</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-great-fairy-wars---fairy-wars" 
+									class="a-no-decoration"
+									title="The Great Fairy Wars - Fairy Wars by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qZkJDJO8f8c/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Great Fairy Wars - Fairy Wars</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-hundredth-black-market" 
+									class="a-no-decoration"
+									title="The Hundredth Black Market by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/MY-HdOG5lX4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Hundredth Black Market</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-lamentations-known-only-by-jizo" 
+									class="a-no-decoration"
+									title="The Lamentations Known Only by Jizo by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/H8nKIxv0t0Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Lamentations Known Only by Jizo</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-long-awaited-omagatoki" 
+									class="a-no-decoration"
+									title="The Long-Awaited Omagatoki by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qttE17B3LtY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Long-Awaited Omagatoki</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-long-awaited-oumagatoki" 
+									class="a-no-decoration"
+									title="The Long-Awaited Oumagatoki by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/PMZYBuvK1YY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Long-Awaited Oumagatoki</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-maid-and-the-pocket-watch-of-blood" 
+									class="a-no-decoration"
+									title="The Maid and the Pocket Watch of Blood by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cBWOIyKZ6is/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Maid and the Pocket Watch of Blood</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-mysterious-shrine-maiden-flying-through-space" 
+									class="a-no-decoration"
+									title="The Mysterious Shrine Maiden Flying Through Space by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/aEslHsC7v8Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Mysterious Shrine Maiden Flying Through Space</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-mystery-in-your-town" 
+									class="a-no-decoration"
+									title="The Mystery in Your Town by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2OUUMpblo3k/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Mystery in Your Town</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-perpetual-snow-of-karakusa-blossoms" 
+									class="a-no-decoration"
+									title="The Perpetual Snow of Karakusa Blossoms by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UWpyN1MkIZo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Perpetual Snow of Karakusa Blossoms</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-primal-scene-of-japan-the-girl-saw" 
+									class="a-no-decoration"
+									title="The Primal Scene of Japan the Girl Saw by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/okDBNnAjItU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Primal Scene of Japan the Girl Saw</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-rabbit-has-landed" 
+									class="a-no-decoration"
+									title="The Rabbit Has Landed by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Fv5eQfLGaTY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Rabbit Has Landed</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-road-of-the-apotropaic-god---dark-road" 
+									class="a-no-decoration"
+									title="The Road of the Apotropaic God - Dark Road by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/43nF8t6EcAk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Road of the Apotropaic God - Dark Road</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-sea-where-ones-home-planet-reflects" 
+									class="a-no-decoration"
+									title="The Sea Where One's Home Planet Reflects by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mkL21rtzEwc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Sea Where One's Home Planet Reflects</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-sealed-away-youkai---lost-place" 
+									class="a-no-decoration"
+									title="The Sealed-Away Youkai - Lost Place by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/KK252WLTycw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Sealed-Away Youkai - Lost Place</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-shining-needle-castle-sinking-in-the-air" 
+									class="a-no-decoration"
+									title="The Shining Needle Castle Sinking in the Air by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/v8xtmqN6jpc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Shining Needle Castle Sinking in the Air</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-stone-baby-and-the-submerged-bovine" 
+									class="a-no-decoration"
+									title="The Stone Baby and the Submerged Bovine by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/tc4on-Nvx94/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Stone Baby and the Submerged Bovine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-taboo-membrane-wall" 
+									class="a-no-decoration"
+									title="The Taboo Membrane Wall by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/z8GVUjQ3HT8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Taboo Membrane Wall</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-tiger-patterned-vaisravana" 
+									class="a-no-decoration"
+									title="The Tiger-Patterned Vaisravana by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/XDNsk2UXYE4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Tiger-Patterned Vaisravana</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-traditional-old-man-and-the-stylish-girl" 
+									class="a-no-decoration"
+									title="The Traditional Old Man and the Stylish Girl by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sIidB012kqw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Traditional Old Man and the Stylish Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-venerable-ancient-battlefield" 
+									class="a-no-decoration"
+									title="The Venerable Ancient Battlefield by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HHFYORrFp8U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Venerable Ancient Battlefield</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-wheel-of-fortune-turning-over" 
+									class="a-no-decoration"
+									title="The Wheel of Fortune Turning Over by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TNGpuvEXh4g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Wheel of Fortune Turning Over</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-wheelchairs-future-in-space" 
+									class="a-no-decoration"
+									title="The Wheelchair's Future in Space by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7g_8c4SaLaQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Wheelchair's Future in Space</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/the-yorimashi-sits-between-dream-and-reality" 
+									class="a-no-decoration"
+									title="The Yorimashi Sits Between Dream and Reality by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Em_TL17-kyI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Yorimashi Sits Between Dream and Reality</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/theme-of-eastern-story" 
+									class="a-no-decoration"
+									title="Theme of Eastern Story by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/WGEEAhl0EDw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Theme of Eastern Story</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/tonight-stars-an-easygoing-egoist" 
+									class="a-no-decoration"
+									title="Tonight Stars an Easygoing Egoist by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/e28gguOW_zM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tonight Stars an Easygoing Egoist</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/touhou-3---eastern-mystical-love-consultation" 
+									class="a-no-decoration"
+									title="Touhou 3 - Eastern Mystical Love Consultation by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/uTMhoK8olvk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Touhou 3 - Eastern Mystical Love Consultation</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/touhou-5-mystic-square---alice-in-wonderland" 
+									class="a-no-decoration"
+									title="Touhou 5 Mystic Square - Alice in Wonderland by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_ZwOGMEAbQo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Touhou 5 Mystic Square - Alice in Wonderland</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/u-n-owen-was-her" 
+									class="a-no-decoration"
+									title="U N Owen Was Her by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xcvouNwZbI0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">U N Owen Was Her</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/ufo-romance-in-the-night-sky" 
+									class="a-no-decoration"
+									title="UFO Romance in the Night Sky by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VUDqOIBY9FA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">UFO Romance in the Night Sky</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/unknown-x---unfound-adventure" 
+									class="a-no-decoration"
+									title="Unknown X - Unfound Adventure by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/wSHabIYpKdE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Unknown X - Unfound Adventure</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/unlocated-hell" 
+									class="a-no-decoration"
+									title="Unlocated Hell by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/g6quAOBCqEM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Unlocated Hell</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/vampiric-cryptid-chupacabra" 
+									class="a-no-decoration"
+									title="Vampiric Cryptid Chupacabra by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/QARAjy8CBWw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Vampiric Cryptid Chupacabra</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/vanishing-dream---lost-dream" 
+									class="a-no-decoration"
+									title="Vanishing Dream - Lost Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/-xdlv9ypFbs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Vanishing Dream - Lost Dream</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/voyage-1969" 
+									class="a-no-decoration"
+									title="Voyage 1969 by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/dev74ItqMwo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Voyage 1969</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/warrior-maiden---heart-of-valkyrie" 
+									class="a-no-decoration"
+									title="Warrior Maiden - Heart of Valkyrie by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SMv4lG0l0kI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Warrior Maiden - Heart of Valkyrie</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/white-illusionary-traveler" 
+									class="a-no-decoration"
+									title="White Illusionary Traveler by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/uLuWKMWGS0c/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">White Illusionary Traveler</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/wind-circulation---wind-tour" 
+									class="a-no-decoration"
+									title="Wind Circulation - Wind Tour by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/1yjXKW5sRxc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Wind Circulation - Wind Tour</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/wind-god-girl" 
+									class="a-no-decoration"
+									title="Wind God Girl by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NmlXXPVxQ3Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Wind God Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/winds-of-time" 
+									class="a-no-decoration"
+									title="Winds of Time by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/lEbHy9Be0Qo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Winds of Time</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/zun/witching-dream" 
+									class="a-no-decoration"
+									title="Witching Dream by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2iVplhDGeNs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Witching Dream</p></div></td></tr></table></a></td><td></li><li class=" round-b overlay-trigger"><a 	href="/theorytab/view/zun/youkai-space-travel" 
+									class="a-no-decoration"
+									title="Youkai Space Travel by ZUN"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-bl"><img data-src="https://img.youtube.com/vi/4iaLqXHt_iI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Youkai Space Travel</p></div></td></tr></table></a></td><td></li></ul></div><div class="col-xs-12"><div style="margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hooktheory"></script> -->
+  
+    <div class="">
+      <!-- wrap wrap-footer -->
+      <footer>
+
+
+        <div class="container container-v-pad text-align-center">
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/about" title="Hooktheory’s story, philosophy, and who we are." class="">About</a>
+                </div>
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/newsletter" title="How To’s For Hobby Musicians Newsletter" class=""> Newsletter</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/education" title="Teach music and songwriting in ways that keep students engaged, excited, and inspired." class="">Education Licensing</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="https://hooktheory.idevaffiliate.com/" title="Affiliate Program" class="">Affiliate Program</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/press/kit" title="Press Kit" class="">Press Kit</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/support" title="Support" class="">Support</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/contact" title="Contact" class="">Contact</a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+                
+
+
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">Hooktheory &copy;
+                  2024                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/terms" title="Terms of Service" class="">Terms
+                  </a>
+                </div>
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/privacy" title="Privacy policy" class="">Privacy
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/coppa" title="Children's Online Privacy Protection Act (COPPA) Policy" class="">COPPA
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/dmca" title="Digital Millennium Copyright Act (DMCA) Policy" class="">DMCA</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/courses/signup" class="a-footer">Student Join Course</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/redeem" class="a-footer">Redeem</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/refund-policy" class="a-footer">Refunds</a>
+                </div>
+
+
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+
+              
+    <div class="flex flex-justify-center">
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.tiktok.com/@hooktheory?lang=en" title="Visit the Hooktheory Tik Tok page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-tiktok"></ion-icon>
+        </a>
+      </div>
+
+
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.instagram.com/hooktheory" title="Visit the Hooktheory Instagram page">
+          <!-- <i class="icon-instagram-filled"></i> -->
+          <ion-icon size="" name="logo-instagram"></ion-icon>
+
+        </a>
+      </div>
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.youtube.com/hooktheory" title="Visit the Hooktheory YouTube page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+      <!-- <div class="font-size-lg  padding-10 ">
+    <a class = "a-footer" href="https://www.vimeo.com/hooktheory" title="Visit the Hooktheory Vimeo page"><i class="icon-vimeo-squared"></i></a>
+  </div> -->
+
+
+
+      <div class="font-size-lg  padding-10 ">
+
+        <a class="a-footer" href="https://www.twitter.com/hooktheory" title="Visit the Hooktheory Twitter page">
+
+          <!-- <i class="icon-twitter"></i> -->
+
+          <ion-icon size="" name="logo-twitter"></ion-icon>
+
+
+        </a>
+      </div>
+
+      <div class="font-size-lg  padding-10 ">
+        <a class="a-footer" href="https://www.facebook.com/hooktheory" title="Visit the Hooktheory Facebook page">
+          <!-- <i class="icon-facebook-official"></i> -->
+          <ion-icon size="" name="logo-facebook"></ion-icon>
+
+        </a>
+      </div>
+
+    </div>
+
+  
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              
+    <div class="flex flex-justify-center flex-direction-column flex-align-items-center">
+
+      <div class="">
+        Designed and built by Hooktheory in California
+      </div>
+
+      <div class="margin-top-20">
+        <a href="/"><img src="/images/logos/hooktheory-logo-2021.svg" class="width-50 noscale" /></a>
+      </div>
+    </div>
+
+              </div>
+          </div>
+        </div>
+
+
+      </footer>
+    </div>
+
+
+
+  <!-- </div> -->
+
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+
+
+
+  <!-- Javascript -->
+
+  <script>
+    var csrfToken = "RlR3RjFzNHQ0UXN3clNnTHJfb3V6RzE0N1ZDcE02X0p9RyqbQEwSgV3IaYbTxNwzyO2YI_nFsUc0txDiCBZXIg==";
+    var csrfTokenName = "YII_CSRF_TOKEN";
+
+    // Enable :active CSS styles
+    document.addEventListener("touchstart", function() {}, false);
+  </script>
+
+
+
+
+
+  
+
+  
+  <!-- lazyload all <img> :not(.not-lazy) -->
+  
+
+
+  <script>
+    // if ('loading' in HTMLImageElement.prototype) {
+    //   const images = document.querySelectorAll('img[loading="lazy" class="lazyload" ]');
+    //   images.forEach(img => {
+    //     img.src = img.dataset.src;
+    //   });
+
+    //   const iframes = document.querySelectorAll('iframe[loading="lazy" class="lazyload" ]');
+    //   iframes.forEach(v => {
+    //     v.src = v.dataset.src;
+    //   });
+
+
+    // } else {
+
+    /* 
+     - Replace <img src> with <img data-src> to avoid an eager load in unsupported browsers. If the loading attribute is supported, swap data-src for src.
+    - If loading is not supported, load a fallback (lazysizes) and initiate it. As per lazysizes docs, you use the lazyload class as a way to indicate to lazysizes which images to lazy-load.
+
+    */
+    // Dynamically import the LazySizes library
+    const script = document.createElement('script');
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js';
+    document.body.appendChild(script);
+    //}
+  </script>
+
+  <!-- Ion Icons Support 2022  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/TypeWatch/2.2.1/jquery.typewatch.min.js"></script>
+<script type="text/javascript" src="/build/js/www.min.js?ts=20230808225817"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch@0.6.0/dist/instant-meilisearch.umd.min.js"></script>
+<script type="text/javascript" src="/js/meilisearch/meilisearchApp.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+	  // Store browser version as JS variable on DOM
+		var browser = {};
+		// Mobile
+		browser.ios 		= ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+		browser.android 	= ( navigator.userAgent.match(/(Android)/g) ? true : false );
+		browser.fireos 		= navigator.userAgent.indexOf("amazon-fireos") > -1;
+		
+		browser.mobile = browser.ios || browser.android || browser.fireos;
+		
+	});
+$(function () {
+	var options = {
+		delay: { "show": 100, "hide": 100 }
+	}
+  	$('[data-toggle="tooltip"]').tooltip(options);
+})
+/*]]>*/
+</script>
+</body>
+
+
+
+
+
+</html>

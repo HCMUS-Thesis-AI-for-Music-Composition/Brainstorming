@@ -1,4 +1,5 @@
 import os
+import json
 
 
 def relative_to_absolute_path(relative_path, root_path):
@@ -12,3 +13,14 @@ def get_file_path_list_in_dir(dir_path):
         file_path = f"{dir_path}/{file_name}"
         list_file_path.append(file_path)
     return list_file_path
+
+# Đọc data từ file json
+def read_data_from_json_file(file_name):
+    with open(file_name, encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return data
+
+# Ghi data vào file json
+def write_data_to_json_file(data, file_name):
+    with open(file_name, 'w', encoding='utf-8') as json_file:
+        json.dump(data, json_file, ensure_ascii=False, indent=4)

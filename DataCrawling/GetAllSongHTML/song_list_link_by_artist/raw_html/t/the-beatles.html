@@ -1,0 +1,1146 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta name="description" content="Chord charts, music theory, and Roman numeral harmonic analysis of songs by The Beatles" />
+<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/animation.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello-codes.css" />
+<link rel="stylesheet" type="text/css" href="/lib/fontello-1b936d28/css/fontello.css" />
+<link rel="stylesheet" type="text/css" href="/build/css/style.min.css?ts=20231107163750" />
+<script type="text/javascript" src="/js/google-tag-manager.js"></script>
+<title>
+    The Beatles - Hooktheory  </title>
+
+  
+
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		   More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons-2020-06/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons-2020-06/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons-2020-06/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons-2020-06/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons-2020-06/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons-2020-06/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons-2020-06/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons-2020-06/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons-2020-06/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons-2020-06/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons-2020-06/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicons-2020-06/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons-2020-06/favicon-16x16.png">
+<link rel="manifest" href="/images/favicons-2020-06/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- google knowledge graph -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.hooktheory.com",
+  "sameAs" : ["http://www.facebook.com/hooktheory",
+    "http://www.twitter.com/hooktheory",
+    "http://plus.google.com/+HooktheoryLLC"], 
+  "logo": "http://www.hooktheory.com/images/logos/Hooktheory-Logo-2014-Small-Helvetica-Bold.svg"
+}
+</script>
+
+
+</head>
+
+
+<body class="">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGCT9PH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+  
+  
+  
+    <noscript>
+	<div 	class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+			role="alert">
+		<button type="button" 
+				class="close" 
+				data-dismiss="alert" 
+				aria-label="Close">
+			<span aria-hidden="true">
+				&times;
+			</span>
+		</button>
+		<div class="text-center">
+			Please <a href="http://enable-javascript.com" target="_blank">enable JavaScript</a> when using Hooktheory.
+		</div>
+	</div>
+</noscript>
+	
+
+  
+<div 	id="no-web-audio"
+		style="display: none;"
+		class="alert alert-warning alert-dismissible alert-bottom-bleed alert-square alert-above-header" 
+		role="alert">
+	<button type="button" 
+			class="close" 
+			data-dismiss="alert" 
+			aria-label="Close">
+		<span aria-hidden="true">
+			&times;
+		</span>
+	</button>
+	<div class="text-center">
+		Hooktheory requires WebAudio and this browser doesn't support it. Please use a recent version of Chrome, Firefox, Safari, Edge, or Opera instead.
+	</div>
+</div>
+
+<script>
+
+	if (typeof window.AudioContext === "undefined" && 
+		typeof window.webkitAudioContext === "undefined") {
+		document.getElementById("no-web-audio").style.display = "block";
+	}
+</script>    	
+
+
+
+
+  <!-- <div class="div-abs-header"> -->
+      
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-site" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+              <a class="navbar-brand" href="/">
+
+      <!-- step 1: need the logo and the 'hooktheory' in vertical center w.r.t each other,
+achieved through flex.flex-align-items.center  But then you need that whole
+thing to be vertically centered in the 50 px nav, which is achieved by making that
+entire thing a flex child of a flex.flex-direction-column.flex-justify-center
+then you add the tagline within the 'hooktheory' div.  Also there is some css
+to get the line-height of the hooktheory text and the tagline to match
+the font size  -->
+
+      <div class="flex flex-direction-column flex-justify-center flex-grow-1">
+        <div class="flex flex-align-items-center">
+          <div class="">
+            <img class="noscale height-35" src="/images/logos/hooktheory-logo-2021-with-name-lower-case-and-tagline-lower-case.svg" alt = "Hooktheory logo">          </div>
+
+          <!-- add flex-align-items-center to make the tagline centered -->
+          <!-- <div class="flex flex-direction-column ">
+        <div class="font-size-brand-name font-weight-600">HOOK<span class="color-theory-logo">THEORY</span></div>
+        <div class="font-size-brand-tagline font-weight-600">CREATE AMAZING MUSIC</div>
+      </div> -->
+        </div>
+      </div>
+    </a>
+  
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-site">
+          <ul class="nav navbar-nav">
+                <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Products<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu white-space-normal">
+        <li>
+          <a href="/hookpad" title="Hookpad">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-hookpad.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Hookpad</div>
+                <div class="font-size-xs">Create beats, songs, and musical ideas with built-in music theory and AI from over 40k songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/books" title="Music theory books">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-books.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Music Theory Books</div>
+                <div class="font-size-xs">Discover an intuitive and deep understanding of how music works.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="/chord-crush" title="Chord Crush">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-chord-crush.png" loading="lazy" class="lazyload" alt="Hookpad on MacBook">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Chord Crush</div>
+                <div class="font-size-xs">Learn to hear chords by ear.  Train with real songs.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="/education" title="Classroom">
+            <div class=" flex flex-align-items-center padding-5">
+              <div>
+                <div class="width-70">
+                  <img data-src="/images/controllers/site/product-thumb/product-thumb-classroom.png" loading="lazy" class="lazyload" alt="Hooktheory classroom">
+                </div>
+              </div>
+
+              <div class="width-300 margin-left-20">
+                <div>Classroom</div>
+                <div class="font-size-xs">Teach music and songwriting in ways that keep students engaged, excited, and inspired.
+                </div>
+              </div>
+
+            </div>
+          </a>
+        </li>
+
+
+      </ul>
+
+
+    </li>
+
+  <li class=""><a href="/about" title="Hooktheory’s story, philosophy, and who we are." class="" target="">About</a></li><li class=""><a href="/stories" title="Hooktheory stories from our community" class="" target="">Stories</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Resources<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/videos" title="Hookpad tutorials & how-tos from Ryan & Dennis" class="" target="">Hookpad Video Tutorials</a></li><li class=""><a href="/support/hookpad" title="" class="" target="">Hookpad User Guide</a></li><li class=""><a href="/support/keyboard" title="" class="" target="">Hookpad Keyboard Shortcuts</a></li><li class=""><a href="https://forum.hooktheory.com/t/hookpad-release-notes/93" title="" class="" target="">Hookpad Release Notes</a></li><li class="divider"></li><li class=""><a href="/support/chordcrush" title="" class="" target="">Chord Crush User Guide</a></li><li class="divider"></li><li class=""><a href="/support/classroom" title="" class="" target="">Classroom User Guide</a></li><li class=""><a href="/support/assessment" title="" class="" target="">Classroom Assessment Kit User Guide</a></li><li class="divider"></li><li class=""><a href="/theorytab" title="Database of tabs that show the theory behind songs." class="" target="">TheoryTab Database</a></li><li class=""><a href="/trends" title="Stats, trends, and probabilities of chord progressions." class="" target="">TheoryTab Trends</a></li><li class=""><a href="/support/tabs" title="" class="" target="">TheoryTab Contributor Guide</a></li><li class="divider"></li><li class=""><a href="/cheat-sheet/key/c/major" title="" class="" target="">Key Cheat Sheets</a></li><li class=""><a href="/infographics" title="" class="" target="">Infographics</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="" class="" target="">Popular Chord Progressions</a></li><li class=""><a href="/chordle/" title="A daily chord game" class="" target="">Chordle</a></li><li class=""><a href="/gear" title="Gear recommendations from Hooktheory" class="" target="">Gear Recommendations</a></li><li class=""><a href="/newsletter" title="How-To’s For Hobby Musicians Newsletter.  Get occasional tips and how-tos form Ryan, Dave, Chris and Dennis to help you improve and expand your music making." class="" target="">Newsletter</a></li><li class=""><a href="https://www.hooktheory.com/blog/index.php" title="News and articles from Hooktheory" class="" target="">Blog</a></li><li class="divider"></li><li class=""><a href="https://forum.hooktheory.com" title="Join the Hooktheory community." class="" target="">Community Forum</a></li>      </ul>
+    </li>
+  <li class=""><a href="/support" title="Get help, support forum, docs and user guides." class="" target="">Support</a></li>          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="/user/login/login">Sign In</a></li>    <li class="">
+      <a class=" cart" href="/cart">
+
+        <div class="flex flex-align-items-center">
+          <div>
+            <img class="height-30" src="/images/svg/shopping-cart.svg">
+          </div>
+          <div class="margin-left-5">Cart</div>
+          <!-- Cart -->
+
+                  </div>
+      </a>
+    </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+<!-- </div>
+
+<div class="div-abs-sub-header div-elevate"> -->
+  
+<!-- Desktop Nav -->
+
+<div class="hidden-xs hidden-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-left-20 padding-right-20">
+    <div class="font-weight-bold font-size-lg margin-right-20">
+      <a class="navbar-link" href="/theorytab">TheoryTab DB</a>
+    </div>
+
+    <div class="position-relative margin-right-20">
+      <div id = "theorytab-numsongs" class = 'hidden'>Search 47752 songs</div>
+      <div id="theorytab-searchbox"></div>
+      <div id="theorytab-stats"></div>
+      <div id="theorytab-hits"></div>
+      <!-- <div id="theorytab-infinite-hits"></div> -->
+
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/theorytab/about">About</a>
+    </div>
+
+    <div class="margin-right-20">
+      <a class="navbar-link" href="/trends">Trends</a>
+    </div>
+
+    <!-- Dropdowns -->
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        Top&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </div>
+      </div>
+
+    <div class="margin-right-20">
+          <div class="dropdown">
+      <!-- <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </button> -->
+
+      <div class="navbar-link dropdown-toggle cursor-pointer-on-hover" data-toggle="dropdown">
+        More&nbsp;<span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Mobile Nav (Two Rows) -->
+
+
+<nav class="visible-xs visible-sm navbar navbar-default">
+  <div class=" container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- The data-target is IMPORTANT needs to match the -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-song-db" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/theorytab">TheoryTab DB</a>
+
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse-song-db">
+      <ul class="nav navbar-nav navbar-left">
+        <li class=""><a href="/theorytab/about" title="Tabs that show the theory behind songs." class="" target="">About</a></li>    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Top<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/charts/chart/top" title="Songs with the most views" class="" target="">Top Songs</a></li><li class=""><a href="/theorytab/charts/chart/top-artists" title="Artists with the most views" class="" target="">Top Artists</a></li><li class=""><a href="/theorytab/common-chord-progressions" title="Frequently used, famous, and ubiquitous chord progressions." class="" target="">Top Chords</a></li>      </ul>
+    </li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        More<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class=""><a href="/theorytab/difficulties/beginner" title="Songs that have only <i>I</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner Tabs</a></li><li class=""><a href="/theorytab/difficulties/beginner-ii" title="Songs that have only <i>I</i>, <i>ii</i>, <i>iii</i>, <i>IV</i>, <i>V</i>, and <i>vi</i> chords." class="" target="">Beginner II Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate" title="Songs that have either a 7 chord (i.e., <i>vi<sup>7</sup></i>), a <i>vii&deg;</i> chord, or an inversion (i.e., V<sup>6</sup> or iii<sup>6</sup><sub>4</sub>)." class="" target="">Intermediate Tabs</a></li><li class=""><a href="/theorytab/difficulties/intermediate-ii" title="Songs that have an applied chord (i.e., <i>V</i>/<i>vi</i>) or an inverted 7th chord (i.e., <i>vi<sup>4</sup><sub>2</sub></i>)." class="" target="">Intermediate II Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced" title="Songs that have a borrowed chord (i.e., <i>iv</i>) or that have an applied chord and an inverted 7th chord." class="" target="">Advanced Tabs</a></li><li class=""><a href="/theorytab/difficulties/advanced-ii" title="Songs with borrowed chords that also have an applied chord or an inverted 7th chord." class="" target="">Advanced II Tabs</a></li><li class="divider"></li><li class=""><a href="/theorytab/artists/a" title="Browse all artists" class="" target="">Browse Artists</a></li><li class=""><a href="/theorytab/genres" title="Browse all genres" class="" target="">Browse Genres</a></li><li class="divider"></li><li class=""><a href="/theorytab/community" title="Recent comments and top contributors." class="" target="">Community</a></li><li class=""><a href="/support/tabs" title="Learn How to Add or Edit TheoryTabs" class="" target="">Learn How to Contribute</a></li><li class=""><a href="https://hookpad.hooktheory.com?isWiki=true" title="Add a New TheoryTab.  Hold shift and refresh Hookpad to get the latest version." class="" target="blank">Add a New TheoryTab</a></li><li class=""><a href="/theorytab/broken" title="These Theorytabs need some TLC ❤️‍🩹. Help us fix broken YouTube links" class="" target="blank">Help Fix Broken Tabs</a></li>      </ul>
+    </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="visible-xs visible-sm navbar-default">
+  <div class="container flex flex-align-items-center padding-10 padding-top-0">
+    <div class="position-relative width-100-percent">
+      <div id="theorytab-searchbox-mobile"></div>
+      <div id="theorytab-hits-mobile"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+
+
+
+
+
+<!-- </div>
+
+<div class="div-abs-content-has-sub-header" id="tab-scroll"> -->
+  
+<!--[if lt IE 9]>
+<div class="message red">Hooktheory is not supported on versions of Internet Explorer older than 9.  To continue using Hooktheory, please upgrade to Internet Explorer 9 (requires Vista or Windows 7) or switch to Firefox, Chrome, or Safari.<br><br>Sorry for the inconvenience,<br>The Hooktheory Team</div>
+<![endif]-->
+
+
+  <div class="container container-v-pad"><div class="row"><div class="col-xs-12"><div class="breadcrumbs">
+<a href="/">Home</a> &raquo; <a href="/theorytab/index">TheoryTab Database</a> &raquo; <a href="/theorytab/artists">Artists</a> &raquo; <a href="/theorytab/artists/t">T</a> &raquo; <span>The Beatles</span></div><div style="margin-bottom: 10px; margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div><div class="row"><div class="col-xs-12 
+      col-sm-6 col-sm-offset-3
+      col-md-4 col-md-offset-4"><h1 class="">The Beatles</h1><ul class="yt-list "><li class=" round-t overlay-trigger"><a 	href="/theorytab/view/the-beatles/a-day-in-the-life" 
+									class="a-no-decoration"
+									title="A Day in the Life by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-tl"><img data-src="https://img.youtube.com/vi/UYeV7jLBXvA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Day in the Life</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/a-hard-days-night" 
+									class="a-no-decoration"
+									title="A Hard Day's Night by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/AMSiHdrHl0g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">A Hard Day's Night</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/across-the-universe" 
+									class="a-no-decoration"
+									title="Across the Universe by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/90M60PzmxEE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Across the Universe</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/all-ive-got-to-do" 
+									class="a-no-decoration"
+									title="All I've Got To Do by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/anMW41uvb_s/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">All I've Got To Do</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/all-my-loving" 
+									class="a-no-decoration"
+									title="All My Loving by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TSpiwK5fig0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">All My Loving</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/all-together-now" 
+									class="a-no-decoration"
+									title="All Together Now by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/73lj5qJbrms/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">All Together Now</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/all-you-need-is-love" 
+									class="a-no-decoration"
+									title="All You Need Is Love by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_7xMfIp-irg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">All You Need Is Love</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/and-i-love-her" 
+									class="a-no-decoration"
+									title="And I Love Her by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5tc0gLSSU1M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">And I Love Her</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/and-your-bird-can-sing" 
+									class="a-no-decoration"
+									title="And Your Bird Can Sing by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Uq0aeEYLkIE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">And Your Bird Can Sing</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ask-me-why" 
+									class="a-no-decoration"
+									title="Ask Me Why by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2ttGjtfQ7EA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ask Me Why</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/baby-youre-a-rich-man" 
+									class="a-no-decoration"
+									title="Baby You're A Rich Man by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/i5m-sgtwFck/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Baby You're A Rich Man</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/babys-in-black" 
+									class="a-no-decoration"
+									title="Baby's In Black by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TJFpUb7JGYo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Baby's In Black</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/back-in-the-ussr" 
+									class="a-no-decoration"
+									title="Back In The USSR by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0ArlUSVDQIw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Back In The USSR</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/because" 
+									class="a-no-decoration"
+									title="Because by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hL0tnrl2L_U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Because</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/being-for-the-benefit-of-mr-kite" 
+									class="a-no-decoration"
+									title="Being For The Benefit Of Mr Kite by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/bJVWZy4QOy0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Being For The Benefit Of Mr Kite</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/besame-mucho" 
+									class="a-no-decoration"
+									title="Besame Mucho by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/dg48JepkiRo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Besame Mucho</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/birthday" 
+									class="a-no-decoration"
+									title="Birthday by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/dhdOPhTHeoE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Birthday</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/blackbird" 
+									class="a-no-decoration"
+									title="Blackbird by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Man4Xw8Xypo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Blackbird</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/blue-jay-way" 
+									class="a-no-decoration"
+									title="Blue Jay Way by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Coz0TmK2ZIg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Blue Jay Way</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/cant-buy-me-love" 
+									class="a-no-decoration"
+									title="Can't Buy Me Love by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/h3WJiqc_bEs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Can't Buy Me Love</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/carry-that-weight" 
+									class="a-no-decoration"
+									title="Carry That Weight by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6B224XDJw6g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Carry That Weight</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/circles" 
+									class="a-no-decoration"
+									title="Circles by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cuhEkbC9JmI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Circles</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/come-together" 
+									class="a-no-decoration"
+									title="Come Together by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/45cYwDMibGo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Come Together</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/cry-baby-cry" 
+									class="a-no-decoration"
+									title="Cry Baby Cry by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8Zeyej5bfZE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Cry Baby Cry</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/day-tripper" 
+									class="a-no-decoration"
+									title="Day Tripper by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2IbPn5j2YKk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Day Tripper</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/dear-prudence" 
+									class="a-no-decoration"
+									title="Dear Prudence by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/wQA59IkCF5I/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Dear Prudence</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/do-you-want-to-know-a-secret" 
+									class="a-no-decoration"
+									title="Do You Want To Know A Secret by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/uRQ7ecvU56k/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Do You Want To Know A Secret</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/doctor-robert" 
+									class="a-no-decoration"
+									title="Doctor Robert by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Tb9L3iAUhc0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Doctor Robert</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/dont-bother-me" 
+									class="a-no-decoration"
+									title="Don't Bother Me by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/k03IQbaTcxc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Don't Bother Me</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/dont-let-me-down" 
+									class="a-no-decoration"
+									title="Don't Let Me Down by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xk7f6i0CNfs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Don't Let Me Down</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/dont-pass-me-by" 
+									class="a-no-decoration"
+									title="Don't Pass Me By by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/PTKEiQHHsuk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Don't Pass Me By</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/drive-my-car" 
+									class="a-no-decoration"
+									title="Drive My Car by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/kfSQkZuIx84/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Drive My Car</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/eight-days-a-week" 
+									class="a-no-decoration"
+									title="Eight Days A Week by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/XTfmuDjwQTw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Eight Days A Week</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/eleanor-rigby" 
+									class="a-no-decoration"
+									title="Eleanor Rigby by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HuS5NuXRb5Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Eleanor Rigby</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/everybodys-got-something-to-hide" 
+									class="a-no-decoration"
+									title="Everybody's Got Something to Hide by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/eyV3zCq1OHM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Everybody's Got Something to Hide</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/fixing-a-hole" 
+									class="a-no-decoration"
+									title="Fixing A Hole by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UPBd8eHQqIw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Fixing A Hole</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/flying" 
+									class="a-no-decoration"
+									title="Flying by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Z1ONJQLdZrk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Flying</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/for-no-one" 
+									class="a-no-decoration"
+									title="For No One by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/hgJ7dmr_ysU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">For No One</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/for-you-blue" 
+									class="a-no-decoration"
+									title="For You Blue by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TIFHRaZERHg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">For You Blue</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/from-me-to-you" 
+									class="a-no-decoration"
+									title="From Me To You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/-XTB3bCYMK0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">From Me To You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/get-back" 
+									class="a-no-decoration"
+									title="Get Back by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/IKJqecxswCA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Get Back</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/getting-better" 
+									class="a-no-decoration"
+									title="Getting Better by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/EGlo9LzmOME/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Getting Better</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/girl" 
+									class="a-no-decoration"
+									title="Girl by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/-8l3ntDR_lI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Girl</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/glass-onion" 
+									class="a-no-decoration"
+									title="Glass Onion by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2tSIZLuCKUI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Glass Onion</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/golden-slumbers" 
+									class="a-no-decoration"
+									title="Golden Slumbers by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/AcQjM7gV6mI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Golden Slumbers</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/good-day-sunshine" 
+									class="a-no-decoration"
+									title="Good Day Sunshine by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6e01nNA02vw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Good Day Sunshine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/good-morning-good-morning" 
+									class="a-no-decoration"
+									title="Good Morning Good Morning by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sjb9AxDkwAQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Good Morning Good Morning</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/good-night" 
+									class="a-no-decoration"
+									title="Good Night by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Qp_djIuQ2Cw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Good Night</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/got-to-get-you-into-my-life" 
+									class="a-no-decoration"
+									title="Got To Get You Into My Life by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/r95-7zfgtLw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Got To Get You Into My Life</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/happiness-is-a-warm-gun" 
+									class="a-no-decoration"
+									title="Happiness is a Warm Gun by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vdvnOH060Qg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Happiness is a Warm Gun</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/hello-goodbye" 
+									class="a-no-decoration"
+									title="Hello Goodbye by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/rblYSKz_VnI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hello Goodbye</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/help" 
+									class="a-no-decoration"
+									title="Help by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2Q_ZzBGPdqE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Help</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/helter-skelter" 
+									class="a-no-decoration"
+									title="Helter Skelter by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vWW2SzoAXMo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Helter Skelter</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/her-majesty" 
+									class="a-no-decoration"
+									title="Her Majesty by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Mh1hKt5kQ_4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Her Majesty</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/here-comes-the-sun" 
+									class="a-no-decoration"
+									title="Here Comes the Sun by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xUNqsfFUwhY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Here Comes the Sun</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/here-there-and-everywhere" 
+									class="a-no-decoration"
+									title="Here There And Everywhere by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/xdcSFVXd3MU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Here There And Everywhere</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/hey-bulldog" 
+									class="a-no-decoration"
+									title="Hey Bulldog by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/M4vbJQ-MrKo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hey Bulldog</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/hey-jude" 
+									class="a-no-decoration"
+									title="Hey Jude by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/A_MjCqQoLLA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hey Jude</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/hold-me-tight" 
+									class="a-no-decoration"
+									title="Hold Me Tight by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/H42Ou13za30/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Hold Me Tight</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/honey-pie" 
+									class="a-no-decoration"
+									title="Honey Pie by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0Sr0efOe8yk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Honey Pie</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-am-the-walrus" 
+									class="a-no-decoration"
+									title="I Am the Walrus by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/t1Jm5epJr10/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Am the Walrus</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-dont-want-to-spoil-the-party" 
+									class="a-no-decoration"
+									title="I Don't Want To Spoil The Party by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/zqVDvLDLsjI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Don't Want To Spoil The Party</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-feel-fine" 
+									class="a-no-decoration"
+									title="I Feel Fine by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/WrAV5EVI4tU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Feel Fine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-me-mine" 
+									class="a-no-decoration"
+									title="I Me Mine by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/seqaTuXkqFI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Me Mine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-saw-her-standing-there" 
+									class="a-no-decoration"
+									title="I Saw Her Standing There by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/oxwAB3SECtc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Saw Her Standing There</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-should-have-known-better" 
+									class="a-no-decoration"
+									title="I SHOULD HAVE KNOWN BETTER by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/5en2JMLA8Z0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I SHOULD HAVE KNOWN BETTER</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-want-to-hold-your-hand" 
+									class="a-no-decoration"
+									title="I Want to Hold Your Hand by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/v1HDt1tknTc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Want to Hold Your Hand</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-want-to-tell-you" 
+									class="a-no-decoration"
+									title="I Want To Tell You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7kXusIyqQ2o/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Want To Tell You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-want-you-%28shes-so-heavy%29" 
+									class="a-no-decoration"
+									title="I Want You (She's So Heavy) by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/tAe2Q_LhY8g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Want You (She's So Heavy)</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/i-will" 
+									class="a-no-decoration"
+									title="I Will by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/p-abNGP1BK4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I Will</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ill-follow-the-sun" 
+									class="a-no-decoration"
+									title="I'll Follow the Sun by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/28d_A_NuJ7A/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'll Follow the Sun</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/im-a-loser" 
+									class="a-no-decoration"
+									title="I'm A Loser by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/f70Z3cvrQd0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'm A Loser</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/im-happy-just-to-dance-with-you" 
+									class="a-no-decoration"
+									title="I'm Happy Just To Dance With You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/B7X1oUfa8uE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'm Happy Just To Dance With You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/im-looking-through-you" 
+									class="a-no-decoration"
+									title="I'm Looking Through You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/gH6i9JAdJrQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'm Looking Through You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/im-only-sleeping" 
+									class="a-no-decoration"
+									title="I'm Only Sleeping by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/BT5j9OQ7Sh0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'm Only Sleeping</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/im-so-tired" 
+									class="a-no-decoration"
+									title="I'm So Tired by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7cqHtGb9WYM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I'm So Tired</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ive-got-a-feeling" 
+									class="a-no-decoration"
+									title="I've Got a Feeling by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/DbKPZd5oihc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I've Got a Feeling</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ive-just-seen-a-face" 
+									class="a-no-decoration"
+									title="I've Just Seen A Face by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/m8LbJfC0SYM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">I've Just Seen A Face</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/if-i-fell" 
+									class="a-no-decoration"
+									title="If I Fell by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/F_80s6S_7Vw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">If I Fell</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/if-i-needed-someone" 
+									class="a-no-decoration"
+									title="If I Needed Someone by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Kt5OoWr4v1k/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">If I Needed Someone</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/in-my-life" 
+									class="a-no-decoration"
+									title="In My Life by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/YBcdt6DsLQA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">In My Life</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/it-wont-be-long" 
+									class="a-no-decoration"
+									title="It Won't Be Long by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UVKU6SevefY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">It Won't Be Long</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/its-all-too-much" 
+									class="a-no-decoration"
+									title="It's All Too Much by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/keNHTo2hhQg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">It's All Too Much</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/julia" 
+									class="a-no-decoration"
+									title="Julia by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TZip_br_v3w/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Julia</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/lady-madonna" 
+									class="a-no-decoration"
+									title="Lady Madonna by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/czhd27cN2dg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lady Madonna</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/let-it-be" 
+									class="a-no-decoration"
+									title="Let It Be by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/QDYfEBY9NM4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Let It Be</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/long-long-long" 
+									class="a-no-decoration"
+									title="Long Long Long by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/e9vUCdfwlgw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Long Long Long</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/love-me-do" 
+									class="a-no-decoration"
+									title="Love Me Do by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0pGOFX1D_jg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Love Me Do</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/love-you-to" 
+									class="a-no-decoration"
+									title="Love You To by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/s1X-q7MweIc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Love You To</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/lovely-rita" 
+									class="a-no-decoration"
+									title="Lovely Rita by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ysDwR5SIR1Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lovely Rita</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/lucy-in-the-sky-with-diamonds" 
+									class="a-no-decoration"
+									title="Lucy In The Sky With Diamonds by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/l7x-0c9jl4Y/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Lucy In The Sky With Diamonds</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/magical-mystery-tour" 
+									class="a-no-decoration"
+									title="Magical Mystery Tour by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/l8WMGBuNaus/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Magical Mystery Tour</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/martha-my-dear" 
+									class="a-no-decoration"
+									title="Martha My Dear by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/RXawa90YU2s/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Martha My Dear</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/maxwells-silver-hammer" 
+									class="a-no-decoration"
+									title="Maxwell's Silver Hammer by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/mJag19WoAe0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Maxwell's Silver Hammer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/mean-mr-mustard" 
+									class="a-no-decoration"
+									title="Mean Mr Mustard by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/oMarHac3VpQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mean Mr Mustard</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/michelle" 
+									class="a-no-decoration"
+									title="Michelle by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/WoBLi5eE-wY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Michelle</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/misery" 
+									class="a-no-decoration"
+									title="Misery by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qhbcN3ew9z0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Misery</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/mother-natures-son" 
+									class="a-no-decoration"
+									title="Mother Nature's Son by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/TMMiXjwhODU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mother Nature's Son</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/mr-moonlight" 
+									class="a-no-decoration"
+									title="Mr Moonlight by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/FZQ8nWZJrhA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Mr Moonlight</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/no-reply" 
+									class="a-no-decoration"
+									title="No Reply by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/YgFo9STa70E/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">No Reply</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/norwegian-wood" 
+									class="a-no-decoration"
+									title="Norwegian Wood by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Y_V6y1ZCg_8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Norwegian Wood</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/now-and-then" 
+									class="a-no-decoration"
+									title="Now And Then by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/AW55J2zE3N4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Now And Then</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/nowhere-man" 
+									class="a-no-decoration"
+									title="Nowhere Man by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/8scSwaKbE64/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Nowhere Man</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ob-la-di-ob-la-da" 
+									class="a-no-decoration"
+									title="Ob-La-Di Ob-La-Da by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/_J9NpHKrKMw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ob-La-Di Ob-La-Da</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/octopus-garden" 
+									class="a-no-decoration"
+									title="Octopus' Garden by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/x9VzJpl05N0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Octopus' Garden</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/oh-darling" 
+									class="a-no-decoration"
+									title="Oh Darling by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/9BznFjbcBVs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Oh Darling</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/old-brown-shoe" 
+									class="a-no-decoration"
+									title="Old Brown Shoe by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/OQ4kZOg1poE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Old Brown Shoe</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/only-a-northern-song" 
+									class="a-no-decoration"
+									title="Only a Northern Song by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vcvd-L73Cqs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Only a Northern Song</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/paperback-writer" 
+									class="a-no-decoration"
+									title="Paperback Writer by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/yYvkICbTZIQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Paperback Writer</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/penny-lane" 
+									class="a-no-decoration"
+									title="Penny Lane by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/S-rB0pHI9fU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Penny Lane</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/piggies" 
+									class="a-no-decoration"
+									title="Piggies by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/RhY1x8CpWeI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Piggies</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/please-please-me" 
+									class="a-no-decoration"
+									title="Please Please Me by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/czw8eqepir8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Please Please Me</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/polythene-pam" 
+									class="a-no-decoration"
+									title="Polythene Pam by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Cb0dTdTeHMU/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Polythene Pam</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ps-i-love-you" 
+									class="a-no-decoration"
+									title="PS I Love You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/MA5DkiVKSlM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">PS I Love You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/rain" 
+									class="a-no-decoration"
+									title="Rain by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cK5G8fPmWeA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Rain</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/real-love" 
+									class="a-no-decoration"
+									title="Real Love by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/ax7krBKzmVI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Real Love</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/revolution" 
+									class="a-no-decoration"
+									title="Revolution by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6MbqzDm1uCo/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Revolution</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/rocky-raccoon" 
+									class="a-no-decoration"
+									title="Rocky Raccoon by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sDcDCZGcZj8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Rocky Raccoon</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/run-for-your-life" 
+									class="a-no-decoration"
+									title="Run For Your Life by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/yzHXtxcIkg4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Run For Your Life</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/savoy-truffle" 
+									class="a-no-decoration"
+									title="Savoy Truffle by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/z9EaBjFvQpc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Savoy Truffle</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/sexy-sadie" 
+									class="a-no-decoration"
+									title="Sexy Sadie by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/tSk5U4oHhu0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sexy Sadie</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/sgt-peppers-lonely-hearts-club-band" 
+									class="a-no-decoration"
+									title="Sgt Pepper's Lonely Hearts Club Band by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VtXl8xAPAtA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sgt Pepper's Lonely Hearts Club Band</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/she-came-in-through-the-bathroom-window" 
+									class="a-no-decoration"
+									title="She Came in through the Bathroom Window by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NVv7IzEVf3M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">She Came in through the Bathroom Window</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/she-loves-you" 
+									class="a-no-decoration"
+									title="She Loves You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/nGbWU8S3vzs/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">She Loves You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/she-said-she-said" 
+									class="a-no-decoration"
+									title="She Said She Said by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/rLzfo59AdEc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">She Said She Said</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/shes-leaving-home" 
+									class="a-no-decoration"
+									title="She's Leaving Home by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VaBPY78D88g/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">She's Leaving Home</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/something" 
+									class="a-no-decoration"
+									title="Something by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/UelDrZ1aFeY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Something</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/strawberry-fields-forever" 
+									class="a-no-decoration"
+									title="Strawberry Fields Forever by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HtUH9z_Oey8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Strawberry Fields Forever</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/sun-king" 
+									class="a-no-decoration"
+									title="Sun King by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6bNMxWGHlTI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Sun King</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/taxman" 
+									class="a-no-decoration"
+									title="Taxman by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/l0zaebtU-CA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Taxman</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/tell-me-why" 
+									class="a-no-decoration"
+									title="Tell Me Why by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/GVub1QCUCGc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tell Me Why</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-ballad-of-john-and-yoko" 
+									class="a-no-decoration"
+									title="The Ballad of John and Yoko by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/v-1OgNqBkVE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Ballad of John and Yoko</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-continuing-story-of-bungalow-bill" 
+									class="a-no-decoration"
+									title="The Continuing Story of Bungalow Bill by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/J39DC9t0I5o/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Continuing Story of Bungalow Bill</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-end" 
+									class="a-no-decoration"
+									title="The End by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/12R4FzIhdoQ/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The End</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-fool-on-the-hill" 
+									class="a-no-decoration"
+									title="The Fool on the Hill by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/wsRatIMUSu8/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Fool on the Hill</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-inner-light" 
+									class="a-no-decoration"
+									title="The Inner Light by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/sa3948JzWCc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Inner Light</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-long-and-winding-road" 
+									class="a-no-decoration"
+									title="The Long And Winding Road by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/fR4HjTH_fTM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Long And Winding Road</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-night-before" 
+									class="a-no-decoration"
+									title="The Night Before by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7tD40D7jk-Q/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Night Before</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/the-word" 
+									class="a-no-decoration"
+									title="The Word by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/RfBEqiEhCgM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">The Word</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/things-we-said-today" 
+									class="a-no-decoration"
+									title="Things We Said Today by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NItAlTsPuQg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Things We Said Today</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/think-for-yourself" 
+									class="a-no-decoration"
+									title="Think For Yourself by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/vtx5NTxebJk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Think For Yourself</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/this-boy" 
+									class="a-no-decoration"
+									title="This Boy by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/VhuU8KDLdO4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">This Boy</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/ticket-to-ride" 
+									class="a-no-decoration"
+									title="Ticket to Ride by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/SyNt5zm3U_M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Ticket to Ride</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/tomorrow-never-knows" 
+									class="a-no-decoration"
+									title="Tomorrow Never Knows by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/pHNbHn3i9S4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Tomorrow Never Knows</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/twist-and-shout" 
+									class="a-no-decoration"
+									title="Twist And Shout by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/2RicaUqd9Hg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Twist And Shout</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/two-of-us" 
+									class="a-no-decoration"
+									title="Two Of Us by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/cLQox8e9688/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Two Of Us</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/wait" 
+									class="a-no-decoration"
+									title="Wait by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/qJngWval8Bc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Wait</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/we-can-work-it-out" 
+									class="a-no-decoration"
+									title="We Can Work It Out by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/Qyclqo_AV2M/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">We Can Work It Out</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/what-goes-on" 
+									class="a-no-decoration"
+									title="What Goes On by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/PtC_l4kz7yw/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">What Goes On</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/what-youre-doing" 
+									class="a-no-decoration"
+									title="What You're Doing by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/7Sba2LbhkVY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">What You're Doing</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/when-im-sixty-four" 
+									class="a-no-decoration"
+									title="When I'm Sixty-Four by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HCTunqv1Xt4/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">When I'm Sixty-Four</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/while-my-guitar-gently-weeps" 
+									class="a-no-decoration"
+									title="While My Guitar Gently Weeps by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/bI8P6ZSHSvE/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">While My Guitar Gently Weeps</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/why-dont-we-do-it-in-the-road" 
+									class="a-no-decoration"
+									title="Why Don't We Do It In The Road by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/p4E6KtQg_z0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Why Don't We Do It In The Road</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/wild-honey-pie" 
+									class="a-no-decoration"
+									title="Wild Honey Pie by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/l-ekNlk5VDM/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Wild Honey Pie</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/with-a-little-help-from-my-friends" 
+									class="a-no-decoration"
+									title="With A Little Help From My Friends by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/0C58ttB2-Qg/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">With A Little Help From My Friends</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/within-you-without-you" 
+									class="a-no-decoration"
+									title="Within You Without You by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HsffxGyY4ck/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Within You Without You</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/yellow-submarine" 
+									class="a-no-decoration"
+									title="Yellow Submarine by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/m2uTFF_3MaA/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Yellow Submarine</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/yer-blues" 
+									class="a-no-decoration"
+									title="Yer Blues by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/HEQQ-1rd4A0/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Yer Blues</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/yes-it-is" 
+									class="a-no-decoration"
+									title="Yes It Is by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/acWj7M0-9rY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Yes It Is</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/yesterday" 
+									class="a-no-decoration"
+									title="Yesterday by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/NrgmdOz227I/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Yesterday</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/you-cant-do-that" 
+									class="a-no-decoration"
+									title="You Can't Do That by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/6PK21u7YzmI/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You Can't Do That</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/you-know-my-name-%28look-up-the-number%29" 
+									class="a-no-decoration"
+									title="You Know My Name (Look Up The Number) by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/iZndVv-jl-U/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You Know My Name (Look Up The Number)</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/you-never-give-me-your-money" 
+									class="a-no-decoration"
+									title="You Never Give Me Your Money by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/BpndGZ71yww/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You Never Give Me Your Money</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/you-wont-see-me" 
+									class="a-no-decoration"
+									title="You Won't See Me by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/OsjTO0yZQjk/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You Won't See Me</p></div></td></tr></table></a></td><td></li><li class=" overlay-trigger"><a 	href="/theorytab/view/the-beatles/youve-got-to-hide-your-love-away" 
+									class="a-no-decoration"
+									title="You've Got To Hide Your Love Away by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=""><img data-src="https://img.youtube.com/vi/V8nLraecPRY/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">You've Got To Hide Your Love Away</p></div></td></tr></table></a></td><td></li><li class=" round-b overlay-trigger"><a 	href="/theorytab/view/the-beatles/your-mother-should-know" 
+									class="a-no-decoration"
+									title="Your Mother Should Know by The Beatles"><table class="ellipsis"><tr><td class="youtube"><div class="scalable-mask round div-content-overlay-centered-img" style=""><div class=" round-bl"><img data-src="https://img.youtube.com/vi/tCXsFjzMKdc/mqdefault.jpg" class = "lazyload" src="/images/svg/theorytab-placeholders-tab-card-160px-by-90px.svg"></div><div class="div-overlay"><img src="/images/svg/product-icon-play-orange.svg"></div></div></td><td class="song-info"><div class="padding"><p class="song">Your Mother Should Know</p></div></td></tr></table></a></td><td></li></ul></div><div class="col-xs-12"><div style="margin-top: 10px;"><a 	href="/theorytab/artists/a" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “A”">A</a><a 	href="/theorytab/artists/b" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “B”">B</a><a 	href="/theorytab/artists/c" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “C”">C</a><a 	href="/theorytab/artists/d" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “D”">D</a><a 	href="/theorytab/artists/e" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “E”">E</a><a 	href="/theorytab/artists/f" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “F”">F</a><a 	href="/theorytab/artists/g" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “G”">G</a><a 	href="/theorytab/artists/h" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “H”">H</a><a 	href="/theorytab/artists/i" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “I”">I</a><a 	href="/theorytab/artists/j" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “J”">J</a><a 	href="/theorytab/artists/k" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “K”">K</a><a 	href="/theorytab/artists/l" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “L”">L</a><a 	href="/theorytab/artists/m" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “M”">M</a><a 	href="/theorytab/artists/n" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “N”">N</a><a 	href="/theorytab/artists/o" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “O”">O</a><a 	href="/theorytab/artists/p" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “P”">P</a><a 	href="/theorytab/artists/q" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Q”">Q</a><a 	href="/theorytab/artists/r" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “R”">R</a><a 	href="/theorytab/artists/s" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “S”">S</a><a 	href="/theorytab/artists/t" 
+						class="active btn btn-xs  btn-default"
+						title="Browse artists that begin with “T”">T</a><a 	href="/theorytab/artists/u" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “U”">U</a><a 	href="/theorytab/artists/v" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “V”">V</a><a 	href="/theorytab/artists/w" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “W”">W</a><a 	href="/theorytab/artists/x" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “X”">X</a><a 	href="/theorytab/artists/y" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Y”">Y</a><a 	href="/theorytab/artists/z" 
+						class=" btn btn-xs  btn-default"
+						title="Browse artists that begin with “Z”">Z</a></div></div></div></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hooktheory"></script> -->
+  
+    <div class="">
+      <!-- wrap wrap-footer -->
+      <footer>
+
+
+        <div class="container container-v-pad text-align-center">
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/about" title="Hooktheory’s story, philosophy, and who we are." class="">About</a>
+                </div>
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/newsletter" title="How To’s For Hobby Musicians Newsletter" class=""> Newsletter</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/education" title="Teach music and songwriting in ways that keep students engaged, excited, and inspired." class="">Education Licensing</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="https://hooktheory.idevaffiliate.com/" title="Affiliate Program" class="">Affiliate Program</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">
+                  <a class="a-footer" href="/press/kit" title="Press Kit" class="">Press Kit</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/support" title="Support" class="">Support</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/contact" title="Contact" class="">Contact</a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+                
+
+
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              <div class="flex-sm-up flex-wrap flex-justify-center">
+
+                <div class="padding-left-10 padding-right-10 white-space-nowrap">Hooktheory &copy;
+                  2024                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/terms" title="Terms of Service" class="">Terms
+                  </a>
+                </div>
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/privacy" title="Privacy policy" class="">Privacy
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/coppa" title="Children's Online Privacy Protection Act (COPPA) Policy" class="">COPPA
+                  </a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a class="a-footer" href="/dmca" title="Digital Millennium Copyright Act (DMCA) Policy" class="">DMCA</a>
+                </div>
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/courses/signup" class="a-footer">Student Join Course</a>
+                </div>
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/redeem" class="a-footer">Redeem</a>
+                </div>
+
+
+
+                <div class="padding-left-10 padding-right-10 ">
+                  <a href="/refund-policy" class="a-footer">Refunds</a>
+                </div>
+
+
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+
+              
+    <div class="flex flex-justify-center">
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.tiktok.com/@hooktheory?lang=en" title="Visit the Hooktheory Tik Tok page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-tiktok"></ion-icon>
+        </a>
+      </div>
+
+
+
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.instagram.com/hooktheory" title="Visit the Hooktheory Instagram page">
+          <!-- <i class="icon-instagram-filled"></i> -->
+          <ion-icon size="" name="logo-instagram"></ion-icon>
+
+        </a>
+      </div>
+      <div class="font-size-lg padding-10 ">
+        <a class="a-footer" href="https://www.youtube.com/hooktheory" title="Visit the Hooktheory YouTube page">
+          <!-- <i class="icon-youtube"></i> -->
+          <ion-icon size="" name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+
+      <!-- <div class="font-size-lg  padding-10 ">
+    <a class = "a-footer" href="https://www.vimeo.com/hooktheory" title="Visit the Hooktheory Vimeo page"><i class="icon-vimeo-squared"></i></a>
+  </div> -->
+
+
+
+      <div class="font-size-lg  padding-10 ">
+
+        <a class="a-footer" href="https://www.twitter.com/hooktheory" title="Visit the Hooktheory Twitter page">
+
+          <!-- <i class="icon-twitter"></i> -->
+
+          <ion-icon size="" name="logo-twitter"></ion-icon>
+
+
+        </a>
+      </div>
+
+      <div class="font-size-lg  padding-10 ">
+        <a class="a-footer" href="https://www.facebook.com/hooktheory" title="Visit the Hooktheory Facebook page">
+          <!-- <i class="icon-facebook-official"></i> -->
+          <ion-icon size="" name="logo-facebook"></ion-icon>
+
+        </a>
+      </div>
+
+    </div>
+
+  
+            </div>
+          </div>
+
+          <div class="row margin-top-10">
+            <div class="col-xs-12">
+              
+    <div class="flex flex-justify-center flex-direction-column flex-align-items-center">
+
+      <div class="">
+        Designed and built by Hooktheory in California
+      </div>
+
+      <div class="margin-top-20">
+        <a href="/"><img src="/images/logos/hooktheory-logo-2021.svg" class="width-50 noscale" /></a>
+      </div>
+    </div>
+
+              </div>
+          </div>
+        </div>
+
+
+      </footer>
+    </div>
+
+
+
+  <!-- </div> -->
+
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+
+
+
+  <!-- Javascript -->
+
+  <script>
+    var csrfToken = "d0VLN35JSHBnQ3h5VTRqUjh-cX45Mnl3amdTfjlmekHuekFCw3df6ZUXx9EiIfvnWTVwOcei9bI3wUjxcow2ng==";
+    var csrfTokenName = "YII_CSRF_TOKEN";
+
+    // Enable :active CSS styles
+    document.addEventListener("touchstart", function() {}, false);
+  </script>
+
+
+
+
+
+  
+
+  
+  <!-- lazyload all <img> :not(.not-lazy) -->
+  
+
+
+  <script>
+    // if ('loading' in HTMLImageElement.prototype) {
+    //   const images = document.querySelectorAll('img[loading="lazy" class="lazyload" ]');
+    //   images.forEach(img => {
+    //     img.src = img.dataset.src;
+    //   });
+
+    //   const iframes = document.querySelectorAll('iframe[loading="lazy" class="lazyload" ]');
+    //   iframes.forEach(v => {
+    //     v.src = v.dataset.src;
+    //   });
+
+
+    // } else {
+
+    /* 
+     - Replace <img src> with <img data-src> to avoid an eager load in unsupported browsers. If the loading attribute is supported, swap data-src for src.
+    - If loading is not supported, load a fallback (lazysizes) and initiate it. As per lazysizes docs, you use the lazyload class as a way to indicate to lazysizes which images to lazy-load.
+
+    */
+    // Dynamically import the LazySizes library
+    const script = document.createElement('script');
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js';
+    document.body.appendChild(script);
+    //}
+  </script>
+
+  <!-- Ion Icons Support 2022  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/TypeWatch/2.2.1/jquery.typewatch.min.js"></script>
+<script type="text/javascript" src="/build/js/www.min.js?ts=20230808223421"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch@0.6.0/dist/instant-meilisearch.umd.min.js"></script>
+<script type="text/javascript" src="/js/meilisearch/meilisearchApp.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+	  // Store browser version as JS variable on DOM
+		var browser = {};
+		// Mobile
+		browser.ios 		= ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+		browser.android 	= ( navigator.userAgent.match(/(Android)/g) ? true : false );
+		browser.fireos 		= navigator.userAgent.indexOf("amazon-fireos") > -1;
+		
+		browser.mobile = browser.ios || browser.android || browser.fireos;
+		
+	});
+$(function () {
+	var options = {
+		delay: { "show": 100, "hide": 100 }
+	}
+  	$('[data-toggle="tooltip"]').tooltip(options);
+})
+/*]]>*/
+</script>
+</body>
+
+
+
+
+
+</html>
