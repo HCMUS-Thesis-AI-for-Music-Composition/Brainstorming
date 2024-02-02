@@ -1,14 +1,14 @@
-2024/02/02-16:09:16.107 6504 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/02/02-16:09:16.107 6504 Recovering log #46
-2024/02/02-16:09:16.107 6504 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000046.log 
-2024/02/02-16:09:16.107 6504 Delete type=2 #44
-2024/02/02-16:09:16.228 231c Level-0 table #51: started
-2024/02/02-16:09:16.340 231c Level-0 table #51: 11089 bytes OK
-2024/02/02-16:09:16.373 231c Delete type=0 #46
-2024/02/02-16:09:16.374 6524 Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x80\xe9C\x91\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 2362 : 1
-2024/02/02-16:09:16.374 6524 Compacting 1@0 + 1@1 files
-2024/02/02-16:09:16.423 6524 Generated table #52@0: 176 keys, 2426 bytes
-2024/02/02-16:09:16.423 6524 Compacted 1@0 + 1@1 files => 2426 bytes
-2024/02/02-16:09:16.471 6524 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/02/02-16:09:16.472 6524 Delete type=2 #51
-2024/02/02-16:09:16.472 6524 Manual compaction at level-0 from '\x00\x0f\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x80\xe9C\x91\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 2362 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-19:07:26.996 6c5c Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/02-19:07:26.996 6c5c Recovering log #126
+2024/02/02-19:07:26.997 6c5c Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000126.log 
+2024/02/02-19:07:26.998 6c5c Delete type=2 #124
+2024/02/02-19:07:27.071 62fc Level-0 table #131: started
+2024/02/02-19:07:27.146 62fc Level-0 table #131: 14011 bytes OK
+2024/02/02-19:07:27.205 62fc Delete type=0 #126
+2024/02/02-19:07:27.206 64e8 Manual compaction at level-0 from '\x00%\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00&\x00\x00\x00' @ 0 : 0; will stop at '\x00%\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00@wv\x9b\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 6300 : 1
+2024/02/02-19:07:27.208 64e8 Compacting 1@0 + 1@1 files
+2024/02/02-19:07:27.271 64e8 Generated table #132@0: 260 keys, 4089 bytes
+2024/02/02-19:07:27.272 64e8 Compacted 1@0 + 1@1 files => 4089 bytes
+2024/02/02-19:07:27.409 64e8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/02-19:07:27.410 64e8 Delete type=2 #131
+2024/02/02-19:07:27.411 64e8 Manual compaction at level-0 from '\x00%\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00@wv\x9b\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 6300 : 1 .. '\x00&\x00\x00\x00' @ 0 : 0; will stop at (end)

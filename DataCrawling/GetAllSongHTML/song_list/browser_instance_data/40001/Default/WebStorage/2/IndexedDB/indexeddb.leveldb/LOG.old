@@ -1,5 +1,13 @@
-2024/02/02-16:09:16.512 58e8 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40001\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/02/02-16:09:16.512 58e8 Recovering log #46
-2024/02/02-16:09:16.513 58e8 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40001\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000046.log 
-2024/02/02-16:09:16.513 58e8 Delete type=2 #44
-2024/02/02-16:09:16.595 594c Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-19:07:27.942 5d48 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40001\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/02-19:07:27.943 5d48 Recovering log #114
+2024/02/02-19:07:27.945 5d48 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40001\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000114.log 
+2024/02/02-19:07:28.162 6d20 Level-0 table #119: started
+2024/02/02-19:07:28.245 6d20 Level-0 table #119: 24471 bytes OK
+2024/02/02-19:07:28.358 6d20 Delete type=0 #114
+2024/02/02-19:07:28.374 6d20 Manual compaction at level-0 from '\x00&\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at '\x00&\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`wv\x9b\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 6261 : 1
+2024/02/02-19:07:28.400 6d20 Compacting 1@0 + 1@1 files
+2024/02/02-19:07:28.449 6d20 Generated table #120@0: 272 keys, 4357 bytes
+2024/02/02-19:07:28.449 6d20 Compacted 1@0 + 1@1 files => 4357 bytes
+2024/02/02-19:07:28.497 6d20 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/02-19:07:28.498 6d20 Delete type=2 #119
+2024/02/02-19:07:28.506 6d20 Manual compaction at level-0 from '\x00&\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`wv\x9b\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 6261 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at (end)

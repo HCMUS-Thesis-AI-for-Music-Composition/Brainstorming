@@ -1,14 +1,5 @@
-2024/02/02-16:09:17.761 2104 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/02/02-16:09:17.762 2104 Recovering log #42
-2024/02/02-16:09:17.762 2104 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/000042.log 
-2024/02/02-16:09:17.763 2104 Delete type=2 #40
-2024/02/02-16:09:18.227 1d3c Level-0 table #47: started
-2024/02/02-16:09:18.312 1d3c Level-0 table #47: 12393 bytes OK
-2024/02/02-16:09:18.361 1d3c Delete type=0 #42
-2024/02/02-16:09:18.362 2104 Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x10\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 2361 : 1
-2024/02/02-16:09:18.362 2104 Compacting 1@0 + 1@1 files
-2024/02/02-16:09:18.435 2104 Generated table #48@0: 204 keys, 2885 bytes
-2024/02/02-16:09:18.435 2104 Compacted 1@0 + 1@1 files => 2885 bytes
-2024/02/02-16:09:18.495 2104 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/02/02-16:09:18.495 2104 Delete type=2 #47
-2024/02/02-16:09:18.496 2104 Manual compaction at level-0 from '\x00\x10\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 2361 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-19:07:28.724 5230 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/02-19:07:28.725 5230 Recovering log #130
+2024/02/02-19:07:28.726 5230 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/000130.log 
+2024/02/02-19:07:28.727 5230 Delete type=2 #128
+2024/02/02-19:07:28.922 53ec Manual compaction at level-0 from '\x00&\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at (end)
