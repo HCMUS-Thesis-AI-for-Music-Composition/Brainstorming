@@ -1,0 +1,14 @@
+2024/02/02-16:10:34.233 2104 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/02-16:10:34.233 2104 Recovering log #46
+2024/02/02-16:10:34.233 2104 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/000046.log 
+2024/02/02-16:10:34.234 2104 Delete type=2 #44
+2024/02/02-16:10:34.328 1d3c Level-0 table #51: started
+2024/02/02-16:10:34.406 1d3c Level-0 table #51: 11012 bytes OK
+2024/02/02-16:10:34.478 1d3c Delete type=0 #46
+2024/02/02-16:10:34.479 2104 Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at '\x00\x10\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x00\xc8V\x91\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 2481 : 1
+2024/02/02-16:10:34.479 2104 Compacting 1@0 + 1@1 files
+2024/02/02-16:10:34.503 2104 Generated table #52@0: 188 keys, 2617 bytes
+2024/02/02-16:10:34.503 2104 Compacted 1@0 + 1@1 files => 2617 bytes
+2024/02/02-16:10:34.553 2104 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/02-16:10:34.553 2104 Delete type=2 #51
+2024/02/02-16:10:34.554 2104 Manual compaction at level-0 from '\x00\x10\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x00\xc8V\x91\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 2481 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)
