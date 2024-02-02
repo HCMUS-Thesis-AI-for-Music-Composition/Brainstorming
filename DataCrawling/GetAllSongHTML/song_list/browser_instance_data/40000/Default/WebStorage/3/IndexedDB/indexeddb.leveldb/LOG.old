@@ -1,5 +1,9 @@
-2024/02/02-19:07:28.724 5230 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/02/02-19:07:28.725 5230 Recovering log #130
-2024/02/02-19:07:28.726 5230 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/000130.log 
-2024/02/02-19:07:28.727 5230 Delete type=2 #128
-2024/02/02-19:07:28.922 53ec Manual compaction at level-0 from '\x00&\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-21:19:18.809 4b58 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/02-21:19:18.809 4b58 Recovering log #208
+2024/02/02-21:19:18.810 4b58 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40000\Default\WebStorage\3\IndexedDB\indexeddb.leveldb/000208.log 
+2024/02/02-21:19:18.947 586c Manual compaction at level-0 from '\x00;\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-21:19:18.947 586c Manual compaction at level-1 from '\x00;\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/02-21:25:18.822 586c Level-0 table #214: started
+2024/02/02-21:25:18.918 586c Level-0 table #214: 13454 bytes OK
+2024/02/02-21:25:18.944 586c Delete type=0 #208
+2024/02/02-21:25:18.945 586c Manual compaction at level-0 from '\x00<\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00=\x00\x00\x00' @ 0 : 0; will stop at (end)
