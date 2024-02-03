@@ -48,14 +48,23 @@ logging_event_hook = EventHook()
 
 port_manager_event_hook = EventHook()
 
-get_used_ports_event_hook = EventHook()
+request_used_ports_event_hook = EventHook()
+
+send_used_ports_event_hook = EventHook()
 
 class SequentialSeleniumTasks(SequentialTaskSet):
     browser_instance_data_dir = None
+    used_ports = None
     free_port = None
 
     browser = None
     url = None
+
+    def receive_used_ports_handler(self, used_ports):
+        self.used_ports = used_ports
+
+    def on_start(self):
+        send_used_ports_event_hook.add_listener(self.receive_used_ports_handler)
 
     @task
     def init(self):
@@ -85,9 +94,9 @@ class SequentialSeleniumTasks(SequentialTaskSet):
         
         port_to_run_browser = 40000
 
-        used_ports = get_used_ports_event_hook.fire()
+        request_used_ports_event_hook.fire()
 
-        while port_to_run_browser in used_ports:
+        while port_to_run_browser in self.used_ports:
             port_to_run_browser += 1
 
         port_manager_event_hook.fire(
@@ -219,10 +228,10 @@ class MyUser(User):
         else:
             self.used_ports.append(port)
 
-    def get_used_ports_handler(self):
-        return self.used_ports
+    def request_used_ports_handler(self):
+        send_used_ports_event_hook.fire(used_ports=self.used_ports)
 
     def on_start(self):
         logging_event_hook.add_listener(self.logging_event_handler)
         port_manager_event_hook.add_listener(self.port_manager_handler)
-        get_used_ports_event_hook.add_listener(self.get_used_ports_handler)
+        request_used_ports_event_hook.add_listener(self.request_used_ports_handler)
