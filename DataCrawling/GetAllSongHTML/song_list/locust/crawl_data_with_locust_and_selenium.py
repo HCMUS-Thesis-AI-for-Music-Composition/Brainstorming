@@ -10,21 +10,36 @@ MÔI TRƯỜNG THỰC THI:
 
 '''
 
-import json
-import shutil
-from locust import User, SequentialTaskSet, task, between
+from locust import User, SequentialTaskSet, task
 from locust.event import EventHook
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
-import datetime
 import time
 import os
 
 import selenium_utils
 import utils
+
+#######
+
+import platform as python_platform
+import sys
+
+class Platform:
+    WINDOWS = "Windows"
+    MACOS = "Darwin"
+
+platform = python_platform.system()
+
+windows_root_directory = "D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling"
+mac_root_directory = "D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling"
+
+root_directory = windows_root_directory if platform == Platform.WINDOWS else mac_root_directory
+
+sys.path.append(root_directory)
+
+#######
 
 song_group_letter = "a"
 

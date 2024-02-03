@@ -1,10 +1,8 @@
-import datetime
 import re
-import socket
-import shutil
 import os
 import subprocess
 import file_utils as fu
+import sys
 
 import platform as python_platform
 
@@ -18,6 +16,8 @@ windows_root_directory = "D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/Da
 mac_root_directory = "D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling"
 
 root_directory = windows_root_directory if platform == Platform.WINDOWS else mac_root_directory
+
+sys.path.append(root_directory)
 
 def open_edge_in_remote_debugging_mode(port, platform, browser_instance_data_dir):
     print(f"Opening Edge in remote debugging mode on port {port}...")
