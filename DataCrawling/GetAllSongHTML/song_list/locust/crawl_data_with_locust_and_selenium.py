@@ -99,7 +99,7 @@ class SequentialSeleniumTasks(SequentialTaskSet):
         '''
         
         self.browser_instance_data_dir = \
-            f"{utils.root_directory}/GetAllSongHTML/{self.free_port}"
+            f"{utils.root_directory}/GetAllSongHTML/song_list/browser_instance_data/{self.free_port}"
 
         print(f"Opening remote debugging edge at port {self.free_port}")
 
