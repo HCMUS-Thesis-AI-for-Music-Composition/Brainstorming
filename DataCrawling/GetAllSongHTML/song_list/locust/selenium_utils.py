@@ -7,7 +7,7 @@ def scroll_to_bottom(browser, scroll_pause_time = 0.5):
     screen_height = browser.execute_script("return window.screen.height;") 
     i = 1
 
-    max_scroll_times = 25
+    max_scroll_times = 100
 
     while True:
         print(f"Scrolled: {i} time(s)")

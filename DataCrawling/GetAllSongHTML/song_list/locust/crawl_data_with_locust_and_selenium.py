@@ -15,6 +15,7 @@ from locust.event import EventHook
 
 from selenium import webdriver
 
+import platform as python_platform
 import time
 import os
 
@@ -23,7 +24,6 @@ import utils
 
 #######
 
-# import platform as python_platform
 # import sys
 
 # class Platform:
