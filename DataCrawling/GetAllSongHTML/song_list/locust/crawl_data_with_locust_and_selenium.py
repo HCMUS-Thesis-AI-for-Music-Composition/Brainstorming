@@ -45,8 +45,6 @@ song_group_letter = "a"
 
 logging_event_hook = EventHook()
 
-test_datetime = utils.current_datetime()
-
 used_ports = []
 
 song_links_by_alphabet = utils.get_file_path_list_in_dir(utils.json_dir_path)
