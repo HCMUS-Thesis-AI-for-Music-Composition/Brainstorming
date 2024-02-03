@@ -46,7 +46,9 @@ song_group_letter = "a"
 
 logging_event_hook = EventHook()
 
-used_ports = []
+port_manager_event_hook = EventHook()
+
+get_used_ports_event_hook = EventHook()
 
 class SequentialSeleniumTasks(SequentialTaskSet):
     browser_instance_data_dir = None
@@ -57,8 +59,6 @@ class SequentialSeleniumTasks(SequentialTaskSet):
 
     @task
     def init(self):
-        global used_ports
-
         song_links_by_alphabet = utils.get_file_path_list_in_dir(utils.json_dir_path)
 
         song_links_by_alphabet = {
@@ -85,10 +85,15 @@ class SequentialSeleniumTasks(SequentialTaskSet):
         
         port_to_run_browser = 40000
 
+        used_ports = get_used_ports_event_hook.fire()
+
         while port_to_run_browser in used_ports:
             port_to_run_browser += 1
 
-        used_ports.append(port_to_run_browser)
+        port_manager_event_hook.fire(
+            port = port_to_run_browser,
+            should_release = False
+        ) 
 
         self.free_port = port_to_run_browser
 
@@ -162,8 +167,6 @@ class SequentialSeleniumTasks(SequentialTaskSet):
     @task
     def after_running(self):
         try:
-            global used_ports
-            
             utils.kill_process_running_on_port(self.free_port, utils.platform)
 
             # Get handles of all open tabs
@@ -178,7 +181,10 @@ class SequentialSeleniumTasks(SequentialTaskSet):
             self.browser.quit()
 
             # Release the port
-            used_ports.remove(self.free_port)
+            port_manager_event_hook.fire(
+                port = self.free_port,
+                should_release = True
+            ) 
         except Exception as e:
             print(f"Error when closing browser: {e}")
         
@@ -194,6 +200,7 @@ class SequentialSeleniumTasks(SequentialTaskSet):
 
 class MyUser(User):
     tasks = [SequentialSeleniumTasks]
+    used_ports = []
 
     def logging_event_handler(self, method, name, content_length, response_time):
 
@@ -206,5 +213,16 @@ class MyUser(User):
             response_time=response_time
         )
 
+    def port_manager_handler(self, port, should_release):
+        if should_release:
+            self.used_ports.remove(port)
+        else:
+            self.used_ports.append(port)
+
+    def get_used_ports_handler(self):
+        return self.used_ports
+
     def on_start(self):
         logging_event_hook.add_listener(self.logging_event_handler)
+        port_manager_event_hook.add_listener(self.port_manager_handler)
+        get_used_ports_event_hook.add_listener(self.get_used_ports_handler)
