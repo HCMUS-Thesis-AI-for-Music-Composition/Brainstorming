@@ -1,14 +1,14 @@
-2024/02/02-21:13:02.213 1724 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/02/02-21:13:02.214 1724 Recovering log #194
-2024/02/02-21:13:02.215 1724 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000194.log 
-2024/02/02-21:13:02.216 1724 Delete type=2 #192
-2024/02/02-21:13:02.303 298c Level-0 table #199: started
-2024/02/02-21:13:02.338 298c Level-0 table #199: 11614 bytes OK
-2024/02/02-21:13:02.387 298c Delete type=0 #194
-2024/02/02-21:13:02.388 298c Manual compaction at level-0 from '\x009\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at '\x009\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x90\xe2\xa5\xa2\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 9858 : 1
-2024/02/02-21:13:02.411 298c Compacting 1@0 + 1@1 files
-2024/02/02-21:13:02.463 298c Generated table #200@0: 322 keys, 5221 bytes
-2024/02/02-21:13:02.463 298c Compacted 1@0 + 1@1 files => 5221 bytes
-2024/02/02-21:13:02.509 298c compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/02/02-21:13:02.511 298c Delete type=2 #199
-2024/02/02-21:13:02.513 1724 Manual compaction at level-0 from '\x009\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\x90\xe2\xa5\xa2\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 9858 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/02/03-03:02:16.573 6758 Reusing MANIFEST D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/03-03:02:16.573 6758 Recovering log #342
+2024/02/03-03:02:16.573 6758 Reusing old log D:\Vector A\0. KHTN\Nam 4\HKII\Thesis\Brainstorming\DataCrawling\GetAllSongHTML\song_list\browser_instance_data\40002\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/000342.log 
+2024/02/03-03:02:16.574 6758 Delete type=2 #340
+2024/02/03-03:02:16.664 3a9c Level-0 table #347: started
+2024/02/03-03:02:16.689 3a9c Level-0 table #347: 10965 bytes OK
+2024/02/03-03:02:16.742 3a9c Delete type=0 #342
+2024/02/03-03:02:16.744 27d8 Manual compaction at level-0 from '\x00_\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00`\x00\x00\x00' @ 0 : 0; will stop at '\x00_\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`\x9f\xa1\xb6\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 16260 : 1
+2024/02/03-03:02:16.744 27d8 Compacting 1@0 + 1@1 files
+2024/02/03-03:02:16.808 27d8 Generated table #348@0: 457 keys, 7970 bytes
+2024/02/03-03:02:16.808 27d8 Compacted 1@0 + 1@1 files => 7970 bytes
+2024/02/03-03:02:16.857 27d8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/02/03-03:02:16.858 27d8 Delete type=2 #347
+2024/02/03-03:02:16.858 6758 Manual compaction at level-0 from '\x00_\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00`\x9f\xa1\xb6\xd6xB\x00\x03\x00\x00\x00\x00\x00\x00\x08@' @ 16260 : 1 .. '\x00`\x00\x00\x00' @ 0 : 0; will stop at (end)
