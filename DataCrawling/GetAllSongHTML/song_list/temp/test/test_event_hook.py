@@ -19,7 +19,7 @@ class SequentialSeleniumTasks(SequentialTaskSet):
     def init(self):
         port_to_run_browser = 40000
 
-        used_ports = request_used_ports_event_hook.fire()
+        request_used_ports_event_hook.fire()
 
         print(type(self.used_ports))
         print(self.used_ports)
