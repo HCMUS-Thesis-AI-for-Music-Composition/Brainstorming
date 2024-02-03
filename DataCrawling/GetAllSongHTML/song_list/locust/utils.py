@@ -62,6 +62,8 @@ def write_data_to_html_file(data, file_name):
     with open(file_name, 'w', encoding='utf-8') as html_file:
         html_file.write(data)
 
+    print(f"-----> Data has been written to {file_name}")
+
 # Đọc data từ file json
 def read_data_from_json_file(file_name):
     with open(file_name, encoding='utf-8') as json_file:

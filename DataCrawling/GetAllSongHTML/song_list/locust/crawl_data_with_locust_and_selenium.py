@@ -148,7 +148,8 @@ class SequentialSeleniumTasks(SequentialTaskSet):
         )
 
         # Tính response time và kích thước của file html
-        response_time, content_length = response_time, os.path.getsize(html_path) if is_success else 0, 0
+        response_time = response_time if is_success else 0
+        content_length = os.path.getsize(html_path) if is_success else 0
 
         logging_event_hook.fire(
             method = "Selenium",
@@ -167,6 +168,9 @@ class SequentialSeleniumTasks(SequentialTaskSet):
     def on_stop(self):
         try:
             utils.kill_process_running_on_port(self.free_port, utils.platform)
+            if python_platform.system() == "Windows":
+                os.system("taskkill /F /IM msedge.exe")
+                os.system("taskkill /F /IM msedgedriver.exe")
         except:
             pass
 
