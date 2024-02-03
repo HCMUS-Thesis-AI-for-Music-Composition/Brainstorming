@@ -1,3 +1,4 @@
+import json
 import re
 import os
 import subprocess
@@ -60,6 +61,12 @@ def song_link_to_relative_html_file_path(link):
 def write_data_to_html_file(data, file_name):
     with open(file_name, 'w', encoding='utf-8') as html_file:
         html_file.write(data)
+
+# Đọc data từ file json
+def read_data_from_json_file(file_name):
+    with open(file_name, encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return data
 
 def windows_get_PID_of_process_running_on_port(port):
     command = f"netstat -a -n -o | findstr :{port}"
