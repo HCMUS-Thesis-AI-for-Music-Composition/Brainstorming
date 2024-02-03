@@ -10,6 +10,7 @@ MÔI TRƯỜNG THỰC THI:
 
 '''
 
+import random
 from locust import User, SequentialTaskSet, task
 from locust.event import EventHook
 
@@ -47,31 +48,6 @@ logging_event_hook = EventHook()
 
 used_ports = []
 
-song_links_by_alphabet = utils.get_file_path_list_in_dir(utils.json_dir_path)
-
-song_links_by_alphabet = {
-    path.split("/")[-1].split(".")[0].lower() : path
-    for path in song_links_by_alphabet
-}
-
-def alloc_song_url(song_group_letter):
-    song_links = utils.read_data_from_json_file(song_links_by_alphabet[song_group_letter])
-
-    # Xóa các song đã được crawl
-    song_links = [song for song in song_links
-        if not os.path.exists(
-            utils.relative_to_absolute_path(
-                utils.song_link_to_relative_html_file_path(song["link"]),
-                root_path=utils.relative_to_absolute_path(
-                    "GetAllSongHTML/song_list/raw_html",
-                    root_path=utils.root_directory
-                )
-            )
-        )
-    ]
-
-    return song_links[0]["link"]
-
 class SequentialSeleniumTasks(SequentialTaskSet):
     browser_instance_data_dir = None
     free_port = None
@@ -79,9 +55,34 @@ class SequentialSeleniumTasks(SequentialTaskSet):
     browser = None
     url = None
 
-    def on_start(self):
-        self.url = alloc_song_url(song_group_letter)
+    @task
+    def init(self):
+        global used_ports
 
+        song_links_by_alphabet = utils.get_file_path_list_in_dir(utils.json_dir_path)
+
+        song_links_by_alphabet = {
+            path.split("/")[-1].split(".")[0].lower() : path
+            for path in song_links_by_alphabet
+        }
+        song_links = utils.read_data_from_json_file(song_links_by_alphabet[song_group_letter])
+
+        # Xóa các song đã được crawl
+        song_links = [song for song in song_links
+            if not os.path.exists(
+                utils.relative_to_absolute_path(
+                    utils.song_link_to_relative_html_file_path(song["link"]),
+                    root_path=utils.relative_to_absolute_path(
+                        "GetAllSongHTML/song_list/raw_html",
+                        root_path=utils.root_directory
+                    )
+                )
+            )
+        ]
+
+        # Lấy link của bài hát ngẫu nhiên
+        self.url = song_links[random.randint(0, len(song_links) - 1)]["link"]
+        
         port_to_run_browser = 40000
 
         while port_to_run_browser in used_ports:
@@ -161,7 +162,10 @@ class SequentialSeleniumTasks(SequentialTaskSet):
     @task
     def after_running(self):
         try:
+            global used_ports
+            
             utils.kill_process_running_on_port(self.free_port, utils.platform)
+
             # Get handles of all open tabs
             handles = self.browser.window_handles
 
@@ -175,8 +179,9 @@ class SequentialSeleniumTasks(SequentialTaskSet):
 
             # Release the port
             used_ports.remove(self.free_port)
-        except:
-            pass
+        except Exception as e:
+            print(f"Error when closing browser: {e}")
+        
 
     def on_stop(self):
         try:
@@ -184,8 +189,8 @@ class SequentialSeleniumTasks(SequentialTaskSet):
             if python_platform.system() == "Windows":
                 os.system("taskkill /F /IM msedge.exe")
                 os.system("taskkill /F /IM msedgedriver.exe")
-        except:
-            pass
+        except Exception as e:
+            print(f"Error when closing browser (on stop): {e}")
 
 class MyUser(User):
     tasks = [SequentialSeleniumTasks]
