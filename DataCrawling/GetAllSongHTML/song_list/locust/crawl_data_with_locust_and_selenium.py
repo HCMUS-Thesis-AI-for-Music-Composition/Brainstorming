@@ -159,9 +159,22 @@ class SequentialSeleniumTasks(SequentialTaskSet):
         )
 
     @task
-    def clean_after_running(self):
+    def after_running(self):
         try:
             utils.kill_process_running_on_port(self.free_port, utils.platform)
+            # Get handles of all open tabs
+            handles = self.browser.window_handles
+
+            # Iterate through handles and close tabs
+            for handle in handles:
+                self.browser.switch_to.window(handle)
+                self.browser.close()
+
+            # Quit the browser
+            self.browser.quit()
+
+            # Release the port
+            used_ports.remove(self.free_port)
         except:
             pass
 
