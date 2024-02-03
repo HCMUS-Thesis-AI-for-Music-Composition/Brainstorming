@@ -1,57 +1,64 @@
+import queue
+import time
 from locust import User, SequentialTaskSet, task
 from locust.event import EventHook
 
-port_manager_event_hook = EventHook()
+release_port_event_hook = EventHook()
 
-request_used_ports_event_hook = EventHook()
-send_used_ports_event_hook = EventHook()
+request_free_port_event_hook = EventHook()
+send_free_port_event_hook = EventHook()
 
 class SequentialSeleniumTasks(SequentialTaskSet):
-    used_ports = []
+    free_port = None
 
-    def receive_used_ports_handler(self, _used_ports):
-        self.used_ports = _used_ports
+    def receive_free_port_handler(self, free_port):
+        self.free_port = free_port
 
     def on_start(self):
-        send_used_ports_event_hook.add_listener(self.receive_used_ports_handler)
+        send_free_port_event_hook.add_listener(self.receive_free_port_handler)
 
     @task
     def init(self):
-        port_to_run_browser = 40000
+        print(f"Requesting free port")
+        request_free_port_event_hook.fire()
+        print(f"Requested free port")
 
-        request_used_ports_event_hook.fire()
+    @task
+    def process(self):
+        for i in range(2):
+            time.sleep(1)
+            print(f"{self.free_port}: processing {i} of {2} seconds")
 
-        print(type(self.used_ports))
-        print(self.used_ports)
-        exit()
-        
-        while port_to_run_browser in used_ports:
-            port_to_run_browser += 1
+    @task
+    def on_done(self):
+        release_port_event_hook.fire(
+            port = self.free_port
+        )
 
-        request_used_ports_event_hook.fire(
-            port = port_to_run_browser,
-            should_release = False
-        ) 
-
-        self.free_port = port_to_run_browser
-        print(f"Got free port: {self.free_port}")
+available_ports = queue.Queue()
         
 class MyUser(User):
     tasks = [SequentialSeleniumTasks]
-    used_ports = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    global available_ports
+    def release_port_handler(self, port):
+        print(f"{port}: releasing. Used ports: {self.available_ports.queue}")
+        self.available_ports.put(port)
 
-    def port_manager_handler(self, port, should_release):
-        if should_release:
-            self.used_ports.remove(port)
-        else:
-            self.used_ports.append(port)
+    def request_free_port_handler(self):
+        port_to_run_browser = self.available_ports.get()
+        
+        print(f"{port_to_run_browser}: allocated. Available ports: {self.available_ports.queue}")
 
-
-    def request_used_ports_handler(self):
-        send_used_ports_event_hook.fire(
-            _used_ports = self.used_ports
+        send_free_port_event_hook.fire(
+            free_port = port_to_run_browser
         )
 
+        self.available_ports.task_done()
+
     def on_start(self):
-        port_manager_event_hook.add_listener(self.port_manager_handler)
-        request_used_ports_event_hook.add_listener(self.request_used_ports_handler)
+        n_ports = 5
+        for i in range(n_ports):
+            self.available_ports.put(40000 + i)
+
+        request_free_port_event_hook.add_listener(self.request_free_port_handler)
+        release_port_event_hook.add_listener(self.release_port_handler)
