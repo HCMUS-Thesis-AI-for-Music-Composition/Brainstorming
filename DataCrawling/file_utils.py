@@ -20,6 +20,12 @@ def read_data_from_json_file(file_name):
         data = json.load(json_file)
     return data
 
+# Đọc data từ file html
+def read_data_from_html_file(file_name):
+    with open(file_name, encoding='utf-8') as html_file:
+        data = html_file.read()
+    return data
+
 # Ghi data vào file json
 def write_data_to_json_file(data, file_name):
     with open(file_name, 'w', encoding='utf-8') as json_file:
@@ -38,3 +44,10 @@ def append_data_to_json_file(data, file_name):
         json_file.seek(0)
         json.dump(old_data, json_file, ensure_ascii=False, indent=4)
         json_file.truncate()
+
+def song_link_to_relative_html_file_path(link):
+    artist_letter = link.split("/")[-2][0]
+    artist = link.split("/")[-2]
+    song = link.split("/")[-1]
+
+    return f"{artist_letter}/{artist}/{song}.html"
