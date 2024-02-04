@@ -6,6 +6,10 @@ browser_instance_data/*/
 
 account.json
 
+# Ignore all DS Store files
+**/.DS_Store
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
