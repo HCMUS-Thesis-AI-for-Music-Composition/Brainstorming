@@ -33,7 +33,7 @@ def read_data_from_html_file(file_name):
 # Ghi data vào file json
 def write_data_to_json_file(data, file_name):
     if not os.path.exists(file_name):
-        print(f"FAIL: read_data_from_html_file: File path is not exist {file_name}")
+        print(f"FAIL: write_data_from_html_file: File path is not exist {file_name}")
     else:
         with open(file_name, 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
