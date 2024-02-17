@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 
 def relative_to_absolute_path(relative_path, root_path):
@@ -58,3 +59,14 @@ def song_link_to_relative_html_file_path(link):
     song = link.split("/")[-1]
 
     return f"{artist_letter}/{artist}/{song}.html"
+
+def copy_folder_structure(source, destination):
+    '''Copy the structure of the source directory to the destination directory'''
+    for root, dirs, files in os.walk(source):
+        for dir in dirs:
+            new_dir = f"{destination}/{root.replace(source, '')}/{dir}"
+            
+            regex_pattern = r"\/{2,}"            
+            new_dir = re.sub(regex_pattern, "/", new_dir)
+
+            os.makedirs(new_dir, exist_ok=True)
