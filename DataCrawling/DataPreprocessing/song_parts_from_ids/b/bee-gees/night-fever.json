@@ -1,0 +1,2388 @@
+{
+    "artist_name": "Bee Gees",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/b/bee-gees",
+    "song_name": "Night Fever",
+    "link": "https://www.hooktheory.com/theorytab/view/bee-gees/night-fever",
+    "metrics": {
+        "Chord Complexity": "64",
+        "Melodic Complexity": "6",
+        "Chord-Melody Tension": "12",
+        "Chord Progression Novelty": "63",
+        "Chord Bass Melody": "37"
+    },
+    "metrics_conclusion": " In terms of chords and melody, Night Fever has complexity on par with the typical song, having near-average scores in Chord Complexity, Chord Progression Novelty and Chord-Bass Melody and below-average scores in Melodic Complexity and Chord-Melody Tension. ",
+    "key_conclusion": " Night Fever has sections analyzed in the following keys: C♯ Minor, B Mixolydian,  and B Major.  Click on the linked cheat sheets for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "veoYqrXkodn",
+            "metadata": {
+                "ID": 684350,
+                "user_id": 103696,
+                "dateModified": "2020-04-07 10:59:51+00:00",
+                "HTID": "x5snt-pkk6La",
+                "artist": "Bee Gees",
+                "song": "Night Fever",
+                "section": "Intro",
+                "revision": 3,
+                "chords": null,
+                "youTubeID": "-ihs-vT9T3Q",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",67-4,27-4,17-4,27-4,67-4,27-4,17-4,27-4,",
+                "SInE": ",67-4,27-4,17-4,27-4,67-4,27-4,17-4,27-4,",
+                "SInD": ",67,27,17,27,67,27,17,27,",
+                "SInED": ",67,27,17,27,67,27,17,27,",
+                "SInA": ",6,2,1,2,6,2,1,2,",
+                "beatsInMeasure": "4",
+                "songKey": "C#",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "1",
+                "hasChords": "1",
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "night-fever",
+                "artistURL": "bee-gees",
+                "sectionURL": "intro",
+                "editComments": "C# minor",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 107,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 208470
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "theorytab": {
+                    "version": "1.3",
+                    "meta": {
+                        "artist": "Bee Gees",
+                        "title": "Night Fever",
+                        "beats_in_measure": "4",
+                        "BPM": "107",
+                        "key": "C#",
+                        "YouTubeID": "-ihs-vT9T3Q",
+                        "mode": "6",
+                        "band": {
+                            "lead": {
+                                "member": {
+                                    "name": "Piano",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "lead2": null,
+                            "lead3": null,
+                            "lead4": null,
+                            "harmony": {
+                                "member": {
+                                    "name": "Piano 1/4s",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "bass": {
+                                "member": {
+                                    "name": "Piano Bass Dotted",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "drums": null
+                        },
+                        "global_start": "0",
+                        "duration": "20.98",
+                        "active_start": "0.89",
+                        "active_stop": "18.75",
+                        "fingerprint": "873814"
+                    },
+                    "data": {
+                        "segment": {
+                            "melody": {
+                                "voice": [
+                                    {
+                                        "lyrics": null,
+                                        "notes": {
+                                            "note": [
+                                                {
+                                                    "start_beat_abs": "0",
+                                                    "start_measure": "1",
+                                                    "start_beat": "1",
+                                                    "note_length": "3",
+                                                    "scale_degree": "7",
+                                                    "octave": "0",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "3",
+                                                    "start_measure": "1",
+                                                    "start_beat": "4",
+                                                    "note_length": "1",
+                                                    "scale_degree": "1",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "4",
+                                                    "start_measure": "2",
+                                                    "start_beat": "1",
+                                                    "note_length": "3",
+                                                    "scale_degree": "3",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "7",
+                                                    "start_measure": "2",
+                                                    "start_beat": "4",
+                                                    "note_length": "1",
+                                                    "scale_degree": "4",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "8",
+                                                    "start_measure": "3",
+                                                    "start_beat": "1",
+                                                    "note_length": "5",
+                                                    "scale_degree": "7",
+                                                    "octave": "0",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "13",
+                                                    "start_measure": "4",
+                                                    "start_beat": "2",
+                                                    "note_length": "0.5",
+                                                    "scale_degree": "1",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "13.5",
+                                                    "start_measure": "4",
+                                                    "start_beat": "2.5",
+                                                    "note_length": "1",
+                                                    "scale_degree": "3",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "14.5",
+                                                    "start_measure": "4",
+                                                    "start_beat": "3.5",
+                                                    "note_length": "0.5",
+                                                    "scale_degree": "1",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "15",
+                                                    "start_measure": "4",
+                                                    "start_beat": "4",
+                                                    "note_length": "1",
+                                                    "scale_degree": "4",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "16",
+                                                    "start_measure": "5",
+                                                    "start_beat": "1",
+                                                    "note_length": "3",
+                                                    "scale_degree": "7",
+                                                    "octave": "0",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "19",
+                                                    "start_measure": "5",
+                                                    "start_beat": "4",
+                                                    "note_length": "1",
+                                                    "scale_degree": "1",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "20",
+                                                    "start_measure": "6",
+                                                    "start_beat": "1",
+                                                    "note_length": "3",
+                                                    "scale_degree": "3",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "23",
+                                                    "start_measure": "6",
+                                                    "start_beat": "4",
+                                                    "note_length": "1",
+                                                    "scale_degree": "4",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "24",
+                                                    "start_measure": "7",
+                                                    "start_beat": "1",
+                                                    "note_length": "5",
+                                                    "scale_degree": "7",
+                                                    "octave": "0",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "29",
+                                                    "start_measure": "8",
+                                                    "start_beat": "2",
+                                                    "note_length": "0.5",
+                                                    "scale_degree": "5",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "29.5",
+                                                    "start_measure": "8",
+                                                    "start_beat": "2.5",
+                                                    "note_length": "1",
+                                                    "scale_degree": "4",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                },
+                                                {
+                                                    "start_beat_abs": "30.5",
+                                                    "start_measure": "8",
+                                                    "start_beat": "3.5",
+                                                    "note_length": "1.5",
+                                                    "scale_degree": "3",
+                                                    "octave": "1",
+                                                    "isRest": "0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    }
+                                ]
+                            },
+                            "harmony": {
+                                "chord": [
+                                    {
+                                        "sd": "1",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "1",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "0",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "4",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "2",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "4",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "3",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "3",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "8",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "4",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "4",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "12",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "1",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "5",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "16",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "4",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "6",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "20",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "3",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "7",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "24",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "4",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "8",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "28",
+                                        "isRest": "0"
+                                    }
+                                ]
+                            },
+                            "numMeasures": "8"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "song_part_id": "lamkAVYMxDM",
+            "metadata": {
+                "ID": 804881,
+                "user_id": 103696,
+                "dateModified": "2021-02-11 06:03:17+00:00",
+                "HTID": null,
+                "artist": "Bee Gees",
+                "song": "Night Fever",
+                "section": "Verse and Pre-Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "-ihs-vT9T3Q",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "night-fever",
+                "artistURL": "bee-gees",
+                "sectionURL": "verse-and-pre-chorus",
+                "editComments": "I only felt like fixing the chords/key right now.",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 199765
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": 1,
+                "chords": [
+                    {
+                        "root": 1,
+                        "beat": 1,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 7,
+                        "beat": 5,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 9,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 13,
+                        "duration": 8,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 21,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 25,
+                        "duration": 2,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 7,
+                        "beat": 27,
+                        "duration": 2,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 29,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 6,
+                        "beat": 33,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 7,
+                        "beat": 37,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 6,
+                        "beat": 41,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 45,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "major",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 6,
+                        "beat": 49,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 53,
+                        "duration": 2,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 55,
+                        "duration": 2,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 5,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "mixolydian",
+                        "tonic": "B"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 113,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0,
+                                "specification": "Pop Simple 1",
+                                "midiChannel": 10,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 57,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "colorTheme": "color-theme-light",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false,
+                    "leadTrackNames": [
+                        "Lead 1",
+                        "Lead 2",
+                        "Lead 3",
+                        "Lead 4"
+                    ]
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16,
+                    "loopIndex": -1
+                },
+                "youtube": {
+                    "id": "-ihs-vT9T3Q",
+                    "syncStart": 0.09005513481924306,
+                    "syncEnd": 0.23189197215955087,
+                    "syncMode": "youtube-sync-mode-test"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 57
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 57,
+                "inactiveNotes": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "FXBypass": {},
+                "customFXParams": {},
+                "customSynthParams": {},
+                "pickup": false,
+                "fp": "1de805d2826a1e4c90d169c931eccb5c3ff165f9"
+            }
+        },
+        {
+            "song_part_id": "KexE_eXem_B",
+            "metadata": {
+                "ID": 1219577,
+                "user_id": 103696,
+                "dateModified": "2023-08-25 01:43:39+00:00",
+                "HTID": null,
+                "artist": "Bee Gees",
+                "song": "Night Fever",
+                "section": "Pre-Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "-ihs-vT9T3Q",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "night-fever",
+                "artistURL": "bee-gees",
+                "sectionURL": "pre-chorus",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 351633
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": "2.24.3",
+                "chords": [
+                    {
+                        "root": 5,
+                        "beat": 1,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 6,
+                        "beat": 5,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 9,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 13,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "mixolydian",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 17,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 21,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 23,
+                        "duration": 2,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "major",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "minor",
+                        "tonic": "C#"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 110,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Basic Pop 22",
+                                "midiChannel": 10,
+                                "useHookpadOutput": false,
+                                "useMIDIOutput": false
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 21,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "youtubeVolume": 70,
+                    "globalDetune": 0,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false,
+                    "leadTrackNames": [
+                        "Lead 1",
+                        "Lead 2",
+                        "Lead 3",
+                        "Lead 4"
+                    ],
+                    "playbackTransposition": 0
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16
+                },
+                "youtube": {
+                    "id": "https://www.youtube.com/watch?v=-ihs-vT9T3Q",
+                    "syncStart": 0.17380245831357383,
+                    "syncEnd": 0.238103716690378,
+                    "syncMode": "youtube-sync-mode-test"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 25
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 25,
+                "inactiveNotes": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "FXBypass": {},
+                "customFXParams": {},
+                "customSynthParams": {},
+                "pickup": false,
+                "fp": "10732321a53df63dd6a04b9382febdab9ddac19f"
+            }
+        },
+        {
+            "song_part_id": "eWxLMzA_oaK",
+            "metadata": {
+                "ID": 874934,
+                "user_id": 103696,
+                "dateModified": "2021-07-23 22:01:43+00:00",
+                "HTID": null,
+                "artist": "Bee Gees",
+                "song": "Night Fever",
+                "section": "Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "SkypZuY6ZvA",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "night-fever",
+                "artistURL": "bee-gees",
+                "sectionURL": "chorus",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 271700
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": 1,
+                "chords": [
+                    {
+                        "root": 1,
+                        "beat": 1,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 5,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 9,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 13,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 17,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 21,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 25,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 29,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [
+                    {
+                        "sd": "1",
+                        "octave": 1,
+                        "beat": 1,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 2,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 2.5,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 3,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 4,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "4",
+                        "octave": 0,
+                        "beat": 4.5,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "3",
+                        "octave": 0,
+                        "beat": 5.5,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": 0,
+                        "beat": 5.75,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 7,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 7.25,
+                        "duration": 0.75,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 8,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 8.5,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 8.75,
+                        "duration": 0.75,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": 1,
+                        "beat": 9.5,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 16,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 16.5,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": 1,
+                        "beat": 17,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 18,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 18.5,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 19,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 20,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "4",
+                        "octave": 0,
+                        "beat": 20.5,
+                        "duration": 1,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "3",
+                        "octave": 0,
+                        "beat": 21.5,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": 0,
+                        "beat": 21.75,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 23,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 23.25,
+                        "duration": 0.75,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 24,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "5",
+                        "octave": 0,
+                        "beat": 24.5,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "7",
+                        "octave": 0,
+                        "beat": 24.75,
+                        "duration": 0.75,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": 1,
+                        "beat": 25.5,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "minor",
+                        "tonic": "C#"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 120,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.5,
+                                "specification": "Basic Pop",
+                                "midiChannel": 10,
+                                "useHookpadOutput": false,
+                                "useMIDIOutput": false
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 1,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "colorTheme": "color-theme-light",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false,
+                    "leadTrackNames": [
+                        "Lead 1",
+                        "Lead 2",
+                        "Lead 3",
+                        "Lead 4"
+                    ],
+                    "playbackTransposition": 0
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16,
+                    "loopIndex": -1
+                },
+                "youtube": {
+                    "id": "https://www.youtube.com/watch?v=SkypZuY6ZvA",
+                    "syncStart": 0.23654799470111135,
+                    "syncEnd": 0.3210443138599741,
+                    "syncMode": "youtube-sync-mode-test"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 33
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 65,
+                "inactiveNotes": [
+                    [
+                        {
+                            "sd": "1",
+                            "octave": 1,
+                            "beat": 1,
+                            "duration": 1,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "7",
+                            "octave": 0,
+                            "beat": 2,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "5",
+                            "octave": 0,
+                            "beat": 2.5,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "7",
+                            "octave": 0,
+                            "beat": 3,
+                            "duration": 1,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "5",
+                            "octave": 0,
+                            "beat": 4,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "4",
+                            "octave": 0,
+                            "beat": 4.5,
+                            "duration": 1,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "3",
+                            "octave": 0,
+                            "beat": 5.5,
+                            "duration": 0.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "1",
+                            "octave": 0,
+                            "beat": 5.75,
+                            "duration": 0.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "5",
+                            "octave": 0,
+                            "beat": 7,
+                            "duration": 0.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "7",
+                            "octave": 0,
+                            "beat": 7.25,
+                            "duration": 0.75,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "7",
+                            "octave": 0,
+                            "beat": 8,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "5",
+                            "octave": 0,
+                            "beat": 8.5,
+                            "duration": 0.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "7",
+                            "octave": 0,
+                            "beat": 8.75,
+                            "duration": 0.75,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "1",
+                            "octave": 1,
+                            "beat": 9.5,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        }
+                    ],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "FXBypass": {},
+                "customFXParams": {},
+                "customSynthParams": {},
+                "pickup": false,
+                "fp": "4cac47f93eab9881eaeb6d0001b60dd2ae19178d"
+            }
+        },
+        {
+            "song_part_id": "DpgvNDDegad",
+            "metadata": {
+                "ID": 289291,
+                "user_id": 103696,
+                "dateModified": "2016-08-12 13:44:33+00:00",
+                "HTID": "ElNjcHNw-wWf",
+                "artist": "Bee Gees",
+                "song": "Night Fever",
+                "section": "Bridge",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",5-4,27-4,5-4,27-4,5-2,27-2,5-2,27-2,5-4,4-4/6,",
+                "SInE": ",5-4,27-4,5-4,27-4,5-2,27-2,5-2,27-2,5-4,4-4/6,",
+                "SInD": ",5,27,5,27,5,27,5,27,5,4/6,",
+                "SInED": ",5,27,5,27,5,27,5,27,5,4/6,",
+                "SInA": ",5,2,5,2,5,2,5,2,5,4/6,",
+                "beatsInMeasure": "4",
+                "songKey": "B",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "night-fever",
+                "artistURL": "bee-gees",
+                "sectionURL": "bridge",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 115,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 90040
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "theorytab": {
+                    "version": "1.3",
+                    "meta": {
+                        "artist": null,
+                        "title": "Night Fever Bridge",
+                        "beats_in_measure": "4",
+                        "BPM": "115",
+                        "key": "B",
+                        "YouTubeID": null,
+                        "mode": "1",
+                        "band": {
+                            "lead": {
+                                "member": {
+                                    "name": "Piano",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "lead2": null,
+                            "lead3": null,
+                            "lead4": null,
+                            "harmony": {
+                                "member": {
+                                    "name": "Piano 1/4s",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "bass": {
+                                "member": {
+                                    "name": "Piano Bass Dotted",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "drums": null
+                        },
+                        "global_start": "0",
+                        "duration": "16.695652173913043",
+                        "active_start": "0",
+                        "active_stop": "0.27",
+                        "fingerprint": "111552"
+                    },
+                    "data": {
+                        "segment": {
+                            "melody": {
+                                "voice": [
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    }
+                                ]
+                            },
+                            "harmony": {
+                                "chord": [
+                                    {
+                                        "sd": "5",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "1",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "0",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "2",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "2",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "4",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "3",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "8",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "2",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "4",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "12",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "2",
+                                        "start_measure": "5",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "16",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "2",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "2",
+                                        "start_measure": "5",
+                                        "start_beat": "3",
+                                        "start_beat_abs": "18",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "2",
+                                        "start_measure": "6",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "20",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "2",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "2",
+                                        "start_measure": "6",
+                                        "start_beat": "3",
+                                        "start_beat_abs": "22",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "7",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "24",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "4",
+                                        "fb": null,
+                                        "sec": "6",
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "4",
+                                        "start_measure": "8",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "28",
+                                        "isRest": "0"
+                                    }
+                                ]
+                            },
+                            "numMeasures": "8"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

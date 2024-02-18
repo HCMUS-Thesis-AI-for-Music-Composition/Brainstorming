@@ -56,8 +56,8 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
     except Exception as e:
         print(f"-----------> FAIL: make_request - exception: {e} - {url}")
 
-    if len(main_data) == 0:
-        print(f"-----------> FAIL: make_request - empty main_data: {url}")
+    if main_data is None or len(main_data) == 0:
+        print(f"-----------> WARNING: make_request - empty main_data: {url}")
 
     return {
         'status_code' : status_code,

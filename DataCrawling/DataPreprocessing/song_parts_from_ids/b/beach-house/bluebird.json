@@ -1,0 +1,942 @@
+{
+    "artist_name": "Beach House",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/b/beach-house",
+    "song_name": "Bluebird",
+    "link": "https://www.hooktheory.com/theorytab/view/beach-house/bluebird",
+    "metrics": {
+        "Chord Complexity": "54",
+        "Melodic Complexity": "0",
+        "Chord-Melody Tension": "0",
+        "Chord Progression Novelty": "49",
+        "Chord Bass Melody": "78"
+    },
+    "metrics_conclusion": " Bluebird has higher complexity than the average song  in terms Chord-Bass Melody. ",
+    "key_conclusion": " Bluebird has sections analyzed in the following keys: F Lydian,  and C Major.  Click on the linked cheat sheets for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "bWgMQDWJglX",
+            "metadata": {
+                "ID": 729696,
+                "user_id": 103696,
+                "dateModified": "2020-07-28 17:57:05+00:00",
+                "HTID": null,
+                "artist": "Beach House",
+                "song": "Bluebird",
+                "section": "Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "B33J6ziCjGY",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "bluebird",
+                "artistURL": "beach-house",
+                "sectionURL": "verse",
+                "editComments": "null",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 70690
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": 1,
+                "chords": [
+                    {
+                        "root": 1,
+                        "beat": 1,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 7,
+                        "beat": 5,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 9,
+                        "duration": 8,
+                        "type": 5,
+                        "inversion": 1,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 17,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 7,
+                        "beat": 21,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 25,
+                        "duration": 8,
+                        "type": 5,
+                        "inversion": 1,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": null,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "lydian",
+                        "tonic": "F"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 84,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.8,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0,
+                                "specification": "Pop Simple 1",
+                                "midiChannel": 10,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 33,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "colorTheme": "color-theme-light",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16
+                },
+                "youtube": {
+                    "id": "B33J6ziCjGY",
+                    "syncStart": 0.2203394879170727,
+                    "syncEnd": 0.3188294270288132,
+                    "syncMode": "youtube-sync-mode-set-start-and-end"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 33
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 33,
+                "inactiveNotes": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "pickup": false,
+                "fp": "639453194924c9d7f031ff541a8c2fe54dac0c5a"
+            }
+        },
+        {
+            "song_part_id": "bWgMQDGEglX",
+            "metadata": {
+                "ID": 729760,
+                "user_id": 103696,
+                "dateModified": "2020-07-28 21:51:23+00:00",
+                "HTID": null,
+                "artist": "Beach House",
+                "song": "Bluebird",
+                "section": "Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "B33J6ziCjGY",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "bluebird",
+                "artistURL": "beach-house",
+                "sectionURL": "chorus",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 70690
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": 1,
+                "chords": [
+                    {
+                        "root": 4,
+                        "beat": 1,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 3,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 5,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 9,
+                        "duration": 3,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 1,
+                        "beat": 12,
+                        "duration": 1,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 13,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 17,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 19,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 21,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 25,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 29,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 4,
+                        "beat": 33,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 3,
+                        "beat": 35,
+                        "duration": 2,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 2,
+                        "beat": 37,
+                        "duration": 4,
+                        "type": 7,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 41,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "root": 5,
+                        "beat": 45,
+                        "duration": 4,
+                        "type": 5,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "major",
+                        "tonic": "C"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 84,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Basic Pop",
+                                "midiChannel": 10,
+                                "useHookpadOutput": false,
+                                "useMIDIOutput": false
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 1,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "colorTheme": "color-theme-light",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16,
+                    "loopIndex": -1
+                },
+                "youtube": {
+                    "id": "https://www.youtube.com/watch?v=B33J6ziCjGY",
+                    "syncStart": 0.36726310494684444,
+                    "syncEnd": 0.5130227828980076,
+                    "syncMode": "youtube-sync-mode-test"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 49
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 49,
+                "inactiveNotes": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "pickup": false,
+                "fp": "cd8d5a1c5cc848487c992a6355a515ead92c873b"
+            }
+        }
+    ]
+}

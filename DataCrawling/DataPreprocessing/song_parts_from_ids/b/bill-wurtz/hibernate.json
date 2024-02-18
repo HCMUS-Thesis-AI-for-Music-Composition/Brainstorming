@@ -1,0 +1,360 @@
+{
+    "artist_name": "Bill Wurtz",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/b/bill-wurtz",
+    "song_name": "hibernate",
+    "link": "https://www.hooktheory.com/theorytab/view/bill-wurtz/hibernate",
+    "metrics": {
+        "Chord Complexity": "94",
+        "Melodic Complexity": "6",
+        "Chord-Melody Tension": "0",
+        "Chord Progression Novelty": "49",
+        "Chord Bass Melody": "0"
+    },
+    "metrics_conclusion": " hibernate has higher complexity than the average song  in terms Chord Complexity. ",
+    "key_conclusion": " hibernate is written in the key of E Major.  \n\nAccording to the Theorytab database, it is the 5th most popular key among Major keys and     the 5th most popular  among all keys. Major keys, along with minor keys, are a common choice for popular songs.  The three most important chords, built off the 1st, 4th and 5th scale degrees are all major chords (E Major, A Major, and B Major).\n\nSee the E Major Cheat Sheet for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "Rzoj__dwmDe",
+            "metadata": {
+                "ID": 767453,
+                "user_id": 103696,
+                "dateModified": "2020-11-07 15:04:19+00:00",
+                "HTID": null,
+                "artist": "Bill Wurtz",
+                "song": "hibernate",
+                "section": "Instrumental",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "MoFbFOldB5A",
+                "dotDNAbin": null,
+                "xmlType": null,
+                "SIF": null,
+                "SInE": null,
+                "SInD": null,
+                "SInED": null,
+                "SInA": null,
+                "beatsInMeasure": null,
+                "songKey": null,
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "hibernate",
+                "artistURL": "bill-wurtz",
+                "sectionURL": "instrumental",
+                "editComments": "sync, tempo, rhythms, E(add9) to Emaj9 [sdf bnkjfsdb hjsdfn sfd dfs ]",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": null,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 208470
+            },
+            "main_data_type": "json",
+            "main_data": {
+                "version": 1,
+                "chords": [
+                    {
+                        "root": 1,
+                        "beat": 1,
+                        "duration": 3,
+                        "type": 9,
+                        "inversion": 0,
+                        "applied": 0,
+                        "adds": [],
+                        "omits": [],
+                        "alterations": [],
+                        "suspensions": [],
+                        "pedal": null,
+                        "alternate": "",
+                        "borrowed": "",
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "notes": [
+                    {
+                        "sd": "2",
+                        "octave": -1,
+                        "beat": 1,
+                        "duration": 0.5,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": -1,
+                        "beat": 1.5,
+                        "duration": 0.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    },
+                    {
+                        "sd": "1",
+                        "octave": -1,
+                        "beat": 1.75,
+                        "duration": 2.25,
+                        "isRest": false,
+                        "recordingEndBeat": null
+                    }
+                ],
+                "keys": [
+                    {
+                        "beat": 1,
+                        "scale": "major",
+                        "tonic": "E"
+                    }
+                ],
+                "tempos": [
+                    {
+                        "beat": 1,
+                        "bpm": 130,
+                        "swingFactor": 0,
+                        "swingBeat": 0.5
+                    }
+                ],
+                "meters": [
+                    {
+                        "beat": 1,
+                        "numBeats": 4,
+                        "beatUnit": 1
+                    }
+                ],
+                "breaks": [],
+                "bands": [
+                    {
+                        "beat": 1,
+                        "lead1": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 1,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead2": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 2,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead3": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 3,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "lead4": [
+                            {
+                                "mute": false,
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Lead",
+                                "midiChannel": 4,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "harmony": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano 1/4s",
+                                "midiChannel": 5,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": true
+                            }
+                        ],
+                        "bass": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Piano Bass-Dotted",
+                                "midiChannel": 9,
+                                "useHookpadOutput": true,
+                                "useMIDIOutput": false
+                            }
+                        ],
+                        "drums": [
+                            {
+                                "octaveOffset": 0,
+                                "velocity": 0.7,
+                                "specification": "Basic Pop",
+                                "midiChannel": 10,
+                                "useHookpadOutput": false,
+                                "useMIDIOutput": false
+                            }
+                        ]
+                    }
+                ],
+                "lyrics": {
+                    "isOpen": false,
+                    "isFocused": false,
+                    "values": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                "sections": [],
+                "cursor": {
+                    "beat": 1,
+                    "location": "cursor-note-staff"
+                },
+                "settings": {
+                    "widthBeat": 36,
+                    "zoom": 1,
+                    "metronome": false,
+                    "relativeNotation": true,
+                    "staffMode": "note-staff-mode-collapsed",
+                    "wrapMode": "wrap-mode-fixed-mreasures-per-line",
+                    "wrapModeMeasuresPerLine": 8,
+                    "colorMode": "diatonic-centric",
+                    "colorTheme": "color-theme-light",
+                    "showMeasureStaff": true,
+                    "showLoopStaff": true,
+                    "showNoteStaff": true,
+                    "showChordStaff": true,
+                    "inactiveMelodyDisplay": "inactive-melody-colored-by-index",
+                    "showOnlyStableInStaff": false,
+                    "midiOutputLatency": 0,
+                    "compressorValue": 0.5,
+                    "compressorIsActive": false,
+                    "enableExternalMP3": true,
+                    "externalMP3URL": "",
+                    "externalMP3StartBeat": 1,
+                    "externalMP3Duration": 0,
+                    "isExternalMP3Loaded": false
+                },
+                "loopGui": {
+                    "looping": false,
+                    "beat": 1,
+                    "duration": 16,
+                    "loopIndex": -1
+                },
+                "youtube": {
+                    "id": "https://www.youtube.com/watch?v=MoFbFOldB5A",
+                    "syncStart": 0.4602052395321482,
+                    "syncEnd": 0.7668277691567267,
+                    "syncMode": "youtube-sync-mode-test"
+                },
+                "keyFrames": [
+                    {
+                        "beat": 1
+                    },
+                    {
+                        "beat": 5
+                    }
+                ],
+                "activeMelodyIndex": 0,
+                "endBeat": 5,
+                "inactiveNotes": [
+                    [
+                        {
+                            "sd": "2",
+                            "octave": -1,
+                            "beat": 1,
+                            "duration": 0.5,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "1",
+                            "octave": -1,
+                            "beat": 1.5,
+                            "duration": 0.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        },
+                        {
+                            "sd": "1",
+                            "octave": -1,
+                            "beat": 1.75,
+                            "duration": 2.25,
+                            "isRest": false,
+                            "recordingEndBeat": null
+                        }
+                    ],
+                    [],
+                    [],
+                    []
+                ],
+                "visibleMelodies": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "soloAndMutedMelodies": {
+                    "harmonyVolume": 0.7,
+                    "externalFileVolume": 0.6,
+                    "drumsVolume": 0.7,
+                    "metronomeVolume": 0.3,
+                    "lead1Volume": 0.7,
+                    "lead2Volume": 0.7,
+                    "lead3Volume": 0.7,
+                    "lead4Volume": 0.7,
+                    "mute": {
+                        "master": false,
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": true,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "bassVolume": 0.7,
+                    "volume": 1,
+                    "solo": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    },
+                    "wasMutedBeforeSoloed": {
+                        "harmony": false,
+                        "external": false,
+                        "drums": false,
+                        "metronome": false,
+                        "lead1": false,
+                        "lead2": false,
+                        "lead3": false,
+                        "lead4": false,
+                        "bass": false
+                    }
+                },
+                "pickup": false,
+                "fp": "c868a41b419a03cb87734ae8da1afb10d5d0aefa"
+            }
+        }
+    ]
+}
