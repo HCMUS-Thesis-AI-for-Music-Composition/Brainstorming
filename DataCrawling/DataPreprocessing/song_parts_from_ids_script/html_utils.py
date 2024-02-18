@@ -1,6 +1,8 @@
 import xmltodict
 import json
 
+import utils as ut
+
 class ResponseType:
     JSON = "json"
     XML = "xml"
@@ -46,7 +48,7 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
         status_code = response.status_code
 
         if status_code != 200:
-            print(f"-----------> FAIL: make_request - status_code: {status_code}")
+            print(f"-----------> FAIL: make_request - status_code: {status_code}: {ut.http_status_code[status_code]} - {url}")
         else:        
             if response.headers['Content-Type'] == 'application/json; charset=UTF-8':
                 metadata, main_data_type, main_data = response_data_parser(response.json())

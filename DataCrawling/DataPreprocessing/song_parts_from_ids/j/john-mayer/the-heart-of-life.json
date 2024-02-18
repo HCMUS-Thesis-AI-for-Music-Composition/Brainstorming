@@ -1,0 +1,595 @@
+{
+    "artist_name": "John Mayer",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/j/john-mayer",
+    "song_name": "The Heart of Life",
+    "link": "https://www.hooktheory.com/theorytab/view/john-mayer/the-heart-of-life",
+    "metrics": {
+        "Chord Complexity": "18",
+        "Melodic Complexity": "0",
+        "Chord-Melody Tension": "0",
+        "Chord Progression Novelty": "27",
+        "Chord Bass Melody": "51"
+    },
+    "metrics_conclusion": " In terms of chords and melody, The Heart of Life has complexity on par with the typical song, having near-average scores in Chord-Bass Melody and below-average scores in Chord Complexity, Melodic Complexity, Chord-Melody Tension and Chord Progression Novelty. ",
+    "key_conclusion": " The Heart of Life is written in the key of Df Major.  \n\nAccording to the Theorytab database,  Major keys, along with minor keys, are a common choice for popular songs.  The three most important chords, built off the 1st, 4th and 5th scale degrees are all major chords (Df Major, G♭ Major, and A♭ Major).\n\nSee the Df Major Cheat Sheet for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "RZwxKWJwxed",
+            "metadata": {
+                "ID": 3987,
+                "user_id": 103696,
+                "dateModified": "2010-07-11 17:04:49+00:00",
+                "HTID": "0ow8pEthUCZy",
+                "artist": "John Mayer",
+                "song": "The Heart of Life",
+                "section": "Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "e2mJpQSkae8",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",1-4,6-4,3-2,4-2,16-2,5-2,",
+                "SInE": ",1-4,6-4,3-2,4-2,16-2,5-2,",
+                "SInD": ",1,6,3,4,16,5,",
+                "SInED": ",1,6,3,4,16,5,",
+                "SInA": ",1,6,3,4,1,5,",
+                "beatsInMeasure": "4",
+                "songKey": "Df",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "the-heart-of-life",
+                "artistURL": "john-mayer",
+                "sectionURL": "verse",
+                "editComments": "This is the original analysis.",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 1,
+                "YouTubeVideoID": null,
+                "bpm": 0,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "1",
+                "user_id_editor": 15
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "John Mayer",
+                        "title": "The Heart of Life",
+                        "beats_in_measure": "4",
+                        "key": "Db",
+                        "YouTubeID": "e2mJpQSkae8",
+                        "sections": {
+                            "Verse": {
+                                "normalization": "1.15",
+                                "global_start": "23.50",
+                                "section_duration": "13.51",
+                                "active_start": "1.30",
+                                "active_stop": "12.20"
+                            },
+                            "prechorus": {
+                                "normalization": "1.03",
+                                "global_start": "56.89",
+                                "section_duration": "12.86",
+                                "active_start": "0.63",
+                                "active_stop": "11.50"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "Verse": {
+                            "segment": {
+                                "numBeats": "16",
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4"
+                                        },
+                                        {
+                                            "sd": "3",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "10"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "12"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "prechorus": {
+                            "segment": {
+                                "numBeats": "16",
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "2"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "6"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "10"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "12"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "song_part_id": "qveoYZykmdn",
+            "metadata": {
+                "ID": 3986,
+                "user_id": 103696,
+                "dateModified": "2010-07-11 17:04:49+00:00",
+                "HTID": "zsT6VhA21GF2",
+                "artist": "John Mayer",
+                "song": "The Heart of Life",
+                "section": "Pre-Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "e2mJpQSkae8",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",1-4,6-4,3-2,4-2,16-2,5-2,",
+                "SInE": ",1-4,6-4,3-2,4-2,16-2,5-2,",
+                "SInD": ",1,6,3,4,16,5,",
+                "SInED": ",1,6,3,4,16,5,",
+                "SInA": ",1,6,3,4,1,5,",
+                "beatsInMeasure": "4",
+                "songKey": "Df",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": null,
+                "hasChords": null,
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "the-heart-of-life",
+                "artistURL": "john-mayer",
+                "sectionURL": "pre-chorus",
+                "editComments": "This is the original analysis.",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 1,
+                "YouTubeVideoID": null,
+                "bpm": 0,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "1",
+                "user_id_editor": 15
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "John Mayer",
+                        "title": "The Heart of Life",
+                        "beats_in_measure": "4",
+                        "key": "Db",
+                        "YouTubeID": "e2mJpQSkae8",
+                        "sections": {
+                            "verse": {
+                                "normalization": "1.15",
+                                "global_start": "23.50",
+                                "section_duration": "13.51",
+                                "active_start": "1.30",
+                                "active_stop": "12.20"
+                            },
+                            "Pre-Chorus": {
+                                "normalization": "1.03",
+                                "global_start": "56.89",
+                                "section_duration": "12.86",
+                                "active_start": "0.63",
+                                "active_stop": "11.50"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "verse": {
+                            "segment": {
+                                "numBeats": "16",
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4"
+                                        },
+                                        {
+                                            "sd": "3",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "10"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "12"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "Pre-Chorus": {
+                            "segment": {
+                                "numBeats": "16",
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "2"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "6"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "10"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "12"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "flat": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

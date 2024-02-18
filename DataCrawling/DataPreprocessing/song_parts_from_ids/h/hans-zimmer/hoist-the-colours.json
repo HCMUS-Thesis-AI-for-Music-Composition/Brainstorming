@@ -1,0 +1,1167 @@
+{
+    "artist_name": "Hans Zimmer",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/h/hans-zimmer",
+    "song_name": "Hoist the Colours",
+    "link": "https://www.hooktheory.com/theorytab/view/hans-zimmer/hoist-the-colours",
+    "metrics": {
+        "Chord Complexity": "33",
+        "Melodic Complexity": "72",
+        "Chord-Melody Tension": "11",
+        "Chord Progression Novelty": "74",
+        "Chord Bass Melody": "11"
+    },
+    "metrics_conclusion": " Hoist the Colours has higher complexity than the average song  in terms Melodic Complexity and Chord Progression Novelty. ",
+    "key_conclusion": " Hoist the Colours is written in the key of F Minor.  \n\nAccording to the Theorytab database, it is the 8th most popular key among Minor keys and     the 19th most popular  among all keys. Minor keys, along with major keys, are a common choice for popular music.  The three most important chords, built off the 1st, 4th and 5th scale degrees are all minor chords (F minor, B♭ minor, and C minor).\n\nSee the F Minor Cheat Sheet for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "nvgyyABXgkA",
+            "metadata": {
+                "ID": 159336,
+                "user_id": 103696,
+                "dateModified": "2015-01-23 04:41:56+00:00",
+                "HTID": "YLnuYt6yUFU4",
+                "artist": "Hans Zimmer",
+                "song": "Hoist the Colours",
+                "section": "Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "wuKx7AgHLes",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",6-6,46-3,6-7,6-3,6add9-3,5-2/6,5-5/6,3-3,17-3,5-3/6,6-7,17-3,57-3/6,6-6,",
+                "SInE": ",6-6,46-3,6-7,6-3,6-3,5-2/6,5-5/6,3-3,17-3,5-3/6,6-7,17-3,57-3/6,6-6,",
+                "SInD": ",6,46,6,6,6add9,5/6,5/6,3,17,5/6,6,17,57/6,6,",
+                "SInED": ",6,46,6,6,6,5/6,5/6,3,17,5/6,6,17,57/6,6,",
+                "SInA": ",6,4,6,6,6,5/6,5/6,3,1,5/6,6,1,5/6,6,",
+                "beatsInMeasure": "3",
+                "songKey": "F",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "1",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "hoist-the-colours",
+                "artistURL": "hans-zimmer",
+                "sectionURL": "verse",
+                "editComments": "A bit weird tempo, thay add a note between each phrase which makes the 3/4 go out of sync.\n\nThe harmony was extrapolated from the melody since it's sung a cappella in the track, but it should sound good. Feel free to improve it.",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 120,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 11173
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "Hoist the colours",
+                        "beats_in_measure": "3",
+                        "BPM": "120",
+                        "key": "F",
+                        "YouTubeID": "wuKx7AgHLes",
+                        "mode": "6",
+                        "sections": {
+                            "_Verse": {
+                                "global_start": "35.43",
+                                "section_duration": "37.65",
+                                "active_start": "2.31",
+                                "active_stop": "35.34"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Verse": {
+                            "segment": [
+                                {
+                                    "instrument": null,
+                                    "rhythm": null,
+                                    "lyrics": "King and his  men stole the queen from her bed. And bound her i-in her bo",
+                                    "notes": {
+                                        "note": [
+                                            {
+                                                "start_beat_abs": "0",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "note_length": "1.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "1.5",
+                                                "start_measure": "1",
+                                                "start_beat": "2.5",
+                                                "note_length": "0.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "2",
+                                                "start_measure": "1",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "1",
+                                                "note_length": "2",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "5",
+                                                "start_measure": "2",
+                                                "start_beat": "3",
+                                                "note_length": "0.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "5.5",
+                                                "start_measure": "2",
+                                                "start_beat": "3.5",
+                                                "note_length": "0.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "6",
+                                                "start_measure": "3",
+                                                "start_beat": "1",
+                                                "note_length": "1.5",
+                                                "scale_degree": "6",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "7.5",
+                                                "start_measure": "3",
+                                                "start_beat": "2.5",
+                                                "note_length": "0.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "8",
+                                                "start_measure": "3",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "9",
+                                                "start_measure": "4",
+                                                "start_beat": "1",
+                                                "note_length": "6",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "14.999999999999998",
+                                                "start_measure": "5",
+                                                "start_beat": "3.9999999999999982",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "16",
+                                                "start_measure": "6",
+                                                "start_beat": "1.9999999999999982",
+                                                "note_length": "2",
+                                                "scale_degree": "1",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "18",
+                                                "start_measure": "7",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "19",
+                                                "start_measure": "7",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "20",
+                                                "start_measure": "7",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "21",
+                                                "start_measure": "8",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "22",
+                                                "start_measure": "8",
+                                                "start_beat": "2",
+                                                "note_length": "2",
+                                                "scale_degree": "7s",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "chords": {
+                                        "chord": [
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "6",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "6",
+                                                "fb": "6",
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "3",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "6",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "7",
+                                                "start_measure": "4",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "9",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "6",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "16",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "emb": "add9",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "7",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "19",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "2",
+                                                "start_measure": "8",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "22",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "numMeasures": "8"
+                                },
+                                {
+                                    "instrument": null,
+                                    "rhythm": null,
+                                    "lyrics": "nes The sea, be ours, and by the powers, whe-en we",
+                                    "notes": {
+                                        "note": [
+                                            {
+                                                "start_beat_abs": "0",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "note_length": "4",
+                                                "scale_degree": "7s",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "4",
+                                                "start_measure": "2",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "5",
+                                                "start_measure": "2",
+                                                "start_beat": "3",
+                                                "note_length": "2",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "7",
+                                                "start_measure": "3",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "1s",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "8",
+                                                "start_measure": "3",
+                                                "start_beat": "3",
+                                                "note_length": "2",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "10",
+                                                "start_measure": "4",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "3",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "11",
+                                                "start_measure": "4",
+                                                "start_beat": "3",
+                                                "note_length": "2",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "13",
+                                                "start_measure": "5",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "1f",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "14",
+                                                "start_measure": "5",
+                                                "start_beat": "3",
+                                                "note_length": "1.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "15.5",
+                                                "start_measure": "6",
+                                                "start_beat": "1.4999999999999982",
+                                                "note_length": "5.5",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "21",
+                                                "start_measure": "8",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "22",
+                                                "start_measure": "8",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "3",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "23",
+                                                "start_measure": "8",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "2",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "chords": {
+                                        "chord": [
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "5",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "5",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "3",
+                                                "fb": "7",
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "3",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "8",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "4",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "11",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "7",
+                                                "start_measure": "5",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "14",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "3",
+                                                "fb": "7",
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "8",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "21",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "numMeasures": "8"
+                                },
+                                {
+                                    "instrument": null,
+                                    "rhythm": null,
+                                    "lyrics": "will, we'll row!",
+                                    "notes": {
+                                        "note": [
+                                            {
+                                                "start_beat_abs": "0",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "note_length": "2",
+                                                "scale_degree": "5",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "2",
+                                                "start_measure": "1",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "7s",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "1",
+                                                "note_length": "6",
+                                                "scale_degree": "1",
+                                                "octave": "1",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "chords": {
+                                        "chord": [
+                                            {
+                                                "sd": "5",
+                                                "fb": "7",
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "6",
+                                                "start_measure": "2",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "3",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "numMeasures": "3"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "song_part_id": "LAgQjBQrxyO",
+            "metadata": {
+                "ID": 160384,
+                "user_id": 103696,
+                "dateModified": "2015-01-26 12:39:09+00:00",
+                "HTID": "nYxnU1hI3R3R",
+                "artist": "Hans Zimmer",
+                "song": "Hoist the Colours",
+                "section": "Pre-Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "wuKx7AgHLes",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",6-3,5-3/6,6-3,5-3/6,rest-1,6-3,6-3,5-5/6,rest-2,3-3,6-3,3-3,6-4,7-3,37-3,6-3,",
+                "SInE": ",6-3,5-3/6,6-3,5-3/6,rest-1,6-3,6-3,5-5/6,rest-2,3-3,6-3,3-3,6-4,7-3,37-3,6-3,",
+                "SInD": ",6,5/6,6,5/6,rest,6,6,5/6,rest,3,6,3,6,7,37,6,",
+                "SInED": ",6,5/6,6,5/6,rest,6,6,5/6,rest,3,6,3,6,7,37,6,",
+                "SInA": ",6,5/6,6,5/6,rest,6,6,5/6,rest,3,6,3,6,7,3,6,",
+                "beatsInMeasure": "3",
+                "songKey": "F",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "1",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "hoist-the-colours",
+                "artistURL": "hans-zimmer",
+                "sectionURL": "pre-chorus",
+                "editComments": "Need some checking of the chords. ",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 102,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 11173
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "Untitled",
+                        "beats_in_measure": "3",
+                        "BPM": "102",
+                        "key": "F",
+                        "YouTubeID": "wuKx7AgHLes",
+                        "mode": "6",
+                        "sections": {
+                            "_Pre-Chorus": {
+                                "global_start": "74.96",
+                                "section_duration": "32.61",
+                                "active_start": "2.33",
+                                "active_stop": "30.28"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Pre-Chorus": {
+                            "segment": [
+                                {
+                                    "instrument": null,
+                                    "rhythm": null,
+                                    "lyrics": "Oh, oh, all, hands, hoist the co-o-lours high,",
+                                    "notes": {
+                                        "note": [
+                                            {
+                                                "start_beat_abs": "0",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "6",
+                                                "start_measure": "3",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "9",
+                                                "start_measure": "4",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "12",
+                                                "start_measure": "5",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "rest",
+                                                "octave": "0",
+                                                "isRest": "1"
+                                            },
+                                            {
+                                                "start_beat_abs": "13",
+                                                "start_measure": "5",
+                                                "start_beat": "2",
+                                                "note_length": "2",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "15",
+                                                "start_measure": "6",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "16",
+                                                "start_measure": "6",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "3",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "17",
+                                                "start_measure": "6",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "18",
+                                                "start_measure": "7",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "19",
+                                                "start_measure": "7",
+                                                "start_beat": "2",
+                                                "note_length": "5",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "chords": {
+                                        "chord": [
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "3",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "3",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "6",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "4",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "9",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "rest",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "1",
+                                                "start_measure": "5",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "12",
+                                                "isRest": "1"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "5",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "13",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "6",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "16",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": "1",
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "5",
+                                                "start_measure": "7",
+                                                "start_beat": "2",
+                                                "start_beat_abs": "19",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "numMeasures": "8"
+                                },
+                                {
+                                    "instrument": null,
+                                    "rhythm": null,
+                                    "lyrics": "He calls, thieves and be-ggars, ne-ver shall we die.s",
+                                    "notes": {
+                                        "note": [
+                                            {
+                                                "start_beat_abs": "0",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "note_length": "1",
+                                                "scale_degree": "rest",
+                                                "octave": "0",
+                                                "isRest": "1"
+                                            },
+                                            {
+                                                "start_beat_abs": "1",
+                                                "start_measure": "1",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "rest",
+                                                "octave": "0",
+                                                "isRest": "1"
+                                            },
+                                            {
+                                                "start_beat_abs": "2",
+                                                "start_measure": "1",
+                                                "start_beat": "3",
+                                                "note_length": "3",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "5",
+                                                "start_measure": "2",
+                                                "start_beat": "3",
+                                                "note_length": "3",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "8",
+                                                "start_measure": "3",
+                                                "start_beat": "3",
+                                                "note_length": "2",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "10",
+                                                "start_measure": "4",
+                                                "start_beat": "2",
+                                                "note_length": "1",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "11",
+                                                "start_measure": "4",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "12",
+                                                "start_measure": "5",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "15",
+                                                "start_measure": "6",
+                                                "start_beat": "1",
+                                                "note_length": "2",
+                                                "scale_degree": "2",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "17",
+                                                "start_measure": "6",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "3",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "18",
+                                                "start_measure": "7",
+                                                "start_beat": "1",
+                                                "note_length": "2",
+                                                "scale_degree": "5",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "20",
+                                                "start_measure": "7",
+                                                "start_beat": "3",
+                                                "note_length": "1",
+                                                "scale_degree": "7",
+                                                "octave": "-1",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "start_beat_abs": "21",
+                                                "start_measure": "8",
+                                                "start_beat": "1",
+                                                "note_length": "3",
+                                                "scale_degree": "1",
+                                                "octave": "0",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "chords": {
+                                        "chord": [
+                                            {
+                                                "sd": "rest",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "2",
+                                                "start_measure": "1",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "0",
+                                                "isRest": "1"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "1",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "2",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "2",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "5",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "3",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "8",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "4",
+                                                "start_measure": "4",
+                                                "start_beat": "3",
+                                                "start_beat_abs": "11",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "2",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "6",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "15",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "5",
+                                                "fb": "7",
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "7",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "18",
+                                                "isRest": "0"
+                                            },
+                                            {
+                                                "sd": "1",
+                                                "fb": null,
+                                                "sec": null,
+                                                "sus": null,
+                                                "pedal": null,
+                                                "alternate": null,
+                                                "borrowed": null,
+                                                "chord_duration": "3",
+                                                "start_measure": "8",
+                                                "start_beat": "1",
+                                                "start_beat_abs": "21",
+                                                "isRest": "0"
+                                            }
+                                        ]
+                                    },
+                                    "numMeasures": "8"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

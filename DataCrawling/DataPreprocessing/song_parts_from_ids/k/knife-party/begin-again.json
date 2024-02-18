@@ -1,0 +1,240 @@
+{
+    "artist_name": "Knife Party",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/k/knife-party",
+    "song_name": "Begin Again",
+    "link": "https://www.hooktheory.com/theorytab/view/knife-party/begin-again",
+    "metrics": {
+        "Chord Complexity": "71",
+        "Melodic Complexity": "0",
+        "Chord-Melody Tension": "0",
+        "Chord Progression Novelty": "27",
+        "Chord Bass Melody": "88"
+    },
+    "metrics_conclusion": " Begin Again has higher complexity than the average song  in terms Chord Complexity and Chord-Bass Melody. ",
+    "key_conclusion": " Begin Again is written in the key of C Minor.  \n\nAccording to the Theorytab database, it is the 3rd most popular key among Minor keys and     the 9th most popular  among all keys. Minor keys, along with major keys, are a common choice for popular music.  The three most important chords, built off the 1st, 4th and 5th scale degrees are all minor chords (C minor, F minor, and G minor).\n\nSee the C Minor Cheat Sheet for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "QLgnvzOPg-V",
+            "metadata": {
+                "ID": 179759,
+                "user_id": 103696,
+                "dateModified": "2015-03-31 07:46:39+00:00",
+                "HTID": "Mur4QwkhNCoZ",
+                "artist": "Knife Party",
+                "song": "Begin Again",
+                "section": "Chorus",
+                "revision": 5,
+                "chords": null,
+                "youTubeID": "MQPK4q488c0",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",37-1.5,47-6.5,37-1.5,47-6.5,5-1.5,67-6.5,5-1.5,67-6.5,",
+                "SInE": ",37-1.5,47-6.5,37-1.5,47-6.5,5-1.5,67-6.5,5-1.5,67-6.5,",
+                "SInD": ",37,47,37,47,5,67,5,67,",
+                "SInED": ",37,47,37,47,5,67,5,67,",
+                "SInA": ",3,4,3,4,5,6,5,6,",
+                "beatsInMeasure": "4",
+                "songKey": "C",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "begin-again",
+                "artistURL": "knife-party",
+                "sectionURL": "chorus",
+                "editComments": "Reverted to previous revision.",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 128,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 158
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "super": {
+                    "version": "1.1",
+                    "meta": {
+                        "artist": "Knife Party",
+                        "title": "Begin Again",
+                        "beats_in_measure": "4",
+                        "BPM": "128",
+                        "key": "C",
+                        "YouTubeID": "MQPK4q488c0",
+                        "mode": "6",
+                        "band": {
+                            "lead": {
+                                "member": {
+                                    "name": "Piano",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "harmony": {
+                                "member": {
+                                    "name": "Piano 1/4s",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "bass": {
+                                "member": {
+                                    "name": "Piano Bass Dotted",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "drums": null
+                        },
+                        "sections": {
+                            "_Chorus": {
+                                "global_start": "147.68",
+                                "section_duration": "18.71",
+                                "active_start": "1.87",
+                                "active_stop": "16.84"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Chorus": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "5",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "1.5",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6.5",
+                                            "start_measure": "1",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "1.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "1.5",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6.5",
+                                            "start_measure": "3",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "9.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "7",
+                                            "fb": null,
+                                            "sec": null,
+                                            "emb": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "1.5",
+                                            "start_measure": "5",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "16",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6.5",
+                                            "start_measure": "5",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "17.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "7",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "1.5",
+                                            "start_measure": "7",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "24",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6.5",
+                                            "start_measure": "7",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "25.5",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "numMeasures": "8"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "artist_name": "Ne-Yo",
+    "artist_link": "https://www.hooktheory.com/theorytab/artists/n/ne-yo",
+    "song_name": "She Knows",
+    "link": "https://www.hooktheory.com/theorytab/view/ne-yo/she-knows",
+    "metrics": {
+        "Chord Complexity": "91",
+        "Melodic Complexity": "0",
+        "Chord-Melody Tension": "0",
+        "Chord Progression Novelty": "88",
+        "Chord Bass Melody": "72"
+    },
+    "metrics_conclusion": " She Knows has higher complexity than the average song  in terms Chord Complexity, Chord Progression Novelty and Chord-Bass Melody. ",
+    "key_conclusion": " She Knows is written in the key of G♯ Minor.  \n\nAccording to the Theorytab database, it is the least popular key among Minor keys and     the 24th most popular  among all keys. Minor keys, along with major keys, are a common choice for popular music.  The three most important chords, built off the 1st, 4th and 5th scale degrees are all minor chords (G♯ minor, C♯ minor, and D♯ minor).\n\nSee the G♯ Minor Cheat Sheet for popular chords, chord progressions, downloadable midi files and more!",
+    "song_parts": [
+        {
+            "song_part_id": "veoYpdAaxdn",
+            "metadata": {
+                "ID": 214686,
+                "user_id": 103696,
+                "dateModified": "2015-09-25 15:45:21+00:00",
+                "HTID": "2NoriCQDuS7n",
+                "artist": "Ne-Yo",
+                "song": "She Knows",
+                "section": "Chorus",
+                "revision": 4,
+                "chords": null,
+                "youTubeID": "Fk1ZO_980DI",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",47-3,57-5,67-3,57-5/4,47-3,57-5,67-3,57-5/4,",
+                "SInE": ",47-3,57-5,67-3,57-5/4,47-3,57-5,67-3,57-5/4,",
+                "SInD": ",47,57,67,57/4,47,57,67,57/4,",
+                "SInED": ",47,57,67,57/4,47,57,67,57/4,",
+                "SInA": ",4,5,6,5/4,4,5,6,5/4,",
+                "beatsInMeasure": "4",
+                "songKey": "G#",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "she-knows",
+                "artistURL": "ne-yo",
+                "sectionURL": "chorus",
+                "editComments": "Changed VIadd9 to VII7sus4",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 142,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 26154
+            },
+            "main_data_type": "xml",
+            "main_data": {
+                "theorytab": {
+                    "version": "1.2",
+                    "meta": {
+                        "artist": "Ne-Yo",
+                        "title": "She Knows",
+                        "beats_in_measure": "4",
+                        "BPM": "142",
+                        "key": "G#",
+                        "YouTubeID": "Fk1ZO_980DI",
+                        "mode": "6",
+                        "band": {
+                            "lead": {
+                                "member": {
+                                    "name": "Piano",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "lead2": null,
+                            "lead3": null,
+                            "lead4": null,
+                            "harmony": {
+                                "member": {
+                                    "name": "Piano 1/4s",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "bass": {
+                                "member": {
+                                    "name": "Piano Bass Dotted",
+                                    "velocity": "0.8",
+                                    "octaveOffset": "0",
+                                    "mute": "false"
+                                }
+                            },
+                            "drums": null
+                        },
+                        "global_start": "32.64",
+                        "duration": "16.95",
+                        "active_start": "1.69",
+                        "active_stop": "15.25"
+                    },
+                    "data": {
+                        "segment": {
+                            "melody": {
+                                "voice": [
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    },
+                                    {
+                                        "lyrics": null,
+                                        "notes": null
+                                    }
+                                ]
+                            },
+                            "harmony": {
+                                "chord": [
+                                    {
+                                        "sd": "6",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "3",
+                                        "start_measure": "1",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "0",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "7",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "emb": null,
+                                        "sus": "sus4",
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "5",
+                                        "start_measure": "1",
+                                        "start_beat": "4",
+                                        "start_beat_abs": "3",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "1",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "3",
+                                        "start_measure": "3",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "8",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": "7",
+                                        "sec": "6",
+                                        "emb": null,
+                                        "sus": "sus4",
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "5",
+                                        "start_measure": "3",
+                                        "start_beat": "4",
+                                        "start_beat_abs": "11",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "6",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "3",
+                                        "start_measure": "5",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "16",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "7",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "emb": null,
+                                        "sus": "sus4",
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "5",
+                                        "start_measure": "5",
+                                        "start_beat": "4",
+                                        "start_beat_abs": "19",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "1",
+                                        "fb": "7",
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "3",
+                                        "start_measure": "7",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "24",
+                                        "isRest": "0"
+                                    },
+                                    {
+                                        "sd": "5",
+                                        "fb": "7",
+                                        "sec": "6",
+                                        "emb": null,
+                                        "sus": "sus4",
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "5",
+                                        "start_measure": "7",
+                                        "start_beat": "4",
+                                        "start_beat_abs": "27",
+                                        "isRest": "0"
+                                    }
+                                ]
+                            },
+                            "numMeasures": "8"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
