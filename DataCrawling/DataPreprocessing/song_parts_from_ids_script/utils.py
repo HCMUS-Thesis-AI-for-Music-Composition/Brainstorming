@@ -41,6 +41,22 @@ http_status_code = fu.read_data_from_json_file(
 # Chuyển status code từ string sang int
 http_status_code = {int(k): v for k, v in http_status_code.items()}
 
+def is_empty_main_data_existed(json_result_file_path):
+    '''
+        Kiểm tra xem file json kết quả có chứa empty main_data không
+    '''
+    result = False
+
+    json_data = fu.read_data_from_json_file(json_result_file_path)
+
+    if "song_parts" in json_data:
+        for song_part in json_data["song_parts"]:
+            if song_part["main_data"] is None or len(song_part["main_data"]) == 0:
+                result = True
+                break
+
+    return result
+
 def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000):
     '''
         Đọc danh sách các file json chứa thông tin về các bài hát từ thư mục song_id_of_song_parts theo chữ cái được truyền vào bằng tham số letter. Nếu file đã tồn tại và file kết quả có size > min_json_result_file_size thì skip.
@@ -71,7 +87,7 @@ def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000):
                     root_path = song_parts_from_ids_dir
                 )
                 
-                if os.path.exists(json_result_file_path) and os.path.getsize(json_result_file_path) > min_json_result_file_size:
+                if os.path.exists(json_result_file_path) and os.path.getsize(json_result_file_path) > min_json_result_file_size and not is_empty_main_data_existed(json_result_file_path):
                     # print(f"SKIP: {json_result_file_path}")
 
                     skipped += 1
