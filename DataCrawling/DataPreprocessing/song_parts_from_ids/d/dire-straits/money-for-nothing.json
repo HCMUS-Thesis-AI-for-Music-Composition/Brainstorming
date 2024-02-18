@@ -3660,9 +3660,116 @@
         },
         {
             "song_part_id": "KyvmrnpamOW",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 6038,
+                "user_id": 103696,
+                "dateModified": "2012-10-29 12:26:17+00:00",
+                "HTID": "aToMwDKfpUpZ",
+                "artist": "Dire Straits",
+                "song": "Money For Nothing",
+                "section": "Chorus Lead-Out",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "iwDDswGsJ60",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",4-8,",
+                "SInE": ",4-8,",
+                "SInD": ",4,",
+                "SInED": ",4,",
+                "SInA": ",4,",
+                "beatsInMeasure": "4",
+                "songKey": "B",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "1",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "money-for-nothing",
+                "artistURL": "dire-straits",
+                "sectionURL": "chorus-lead-out",
+                "editComments": null,
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 128,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "1",
+                "user_id_editor": 772
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "GarrettHardie",
+                        "title": "Dire Straits - Money For Nothing Chorus keychange",
+                        "beats_in_measure": "4",
+                        "BPM": "128",
+                        "key": "B",
+                        "YouTubeID": "iwDDswGsJ60",
+                        "sections": {
+                            "_Chorus__SPACE__Lead-Out": {
+                                "global_start": "166.27",
+                                "section_duration": "6.96",
+                                "active_start": "1.74",
+                                "active_stop": "5.22"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Chorus__SPACE__Lead-Out": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "notes": {
+                                    "note": [
+                                        {
+                                            "start_beat_abs": "0",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "note_length": "7",
+                                            "scale_degree": "4",
+                                            "octave": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "start_beat_abs": "7",
+                                            "start_measure": "2",
+                                            "start_beat": "4",
+                                            "note_length": "1",
+                                            "scale_degree": "4",
+                                            "octave": "0",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "chords": {
+                                    "chord": {
+                                        "sd": "4",
+                                        "fb": null,
+                                        "sec": null,
+                                        "sus": null,
+                                        "pedal": null,
+                                        "alternate": null,
+                                        "borrowed": null,
+                                        "chord_duration": "8",
+                                        "start_measure": "1",
+                                        "start_beat": "1",
+                                        "start_beat_abs": "0",
+                                        "isRest": "0"
+                                    }
+                                },
+                                "numMeasures": "2"
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

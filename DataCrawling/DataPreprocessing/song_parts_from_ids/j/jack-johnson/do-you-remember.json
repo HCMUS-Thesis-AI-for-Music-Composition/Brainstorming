@@ -15,9 +15,80 @@
     "song_parts": [
         {
             "song_part_id": "LAgQnN-JxyO",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 500184,
+                "user_id": 103696,
+                "dateModified": "2018-09-25 00:16:54+00:00",
+                "HTID": "inC3HcgGkXHw",
+                "artist": "Jack Johnson",
+                "song": "Do You Remember",
+                "section": "Intro and Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": "",
+                "SInE": "",
+                "SInD": "",
+                "SInED": "",
+                "SInA": "",
+                "beatsInMeasure": "4",
+                "songKey": "C",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "0",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "do-you-remember",
+                "artistURL": "jack-johnson",
+                "sectionURL": "intro-and-verse",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 128,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 6671
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "Me",
+                        "title": "My New Song",
+                        "beats_in_measure": "4",
+                        "BPM": "128",
+                        "key": "C",
+                        "YouTubeID": null,
+                        "sections": {
+                            "_Intro__SPACE__and__SPACE__Verse": {
+                                "global_start": "0",
+                                "section_duration": "243",
+                                "active_start": "0",
+                                "active_stop": "0.27"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Intro__SPACE__and__SPACE__Verse": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "notes": null,
+                                "chords": null,
+                                "numMeasures": "8"
+                            }
+                        }
+                    }
+                }
+            }
         },
         {
             "song_part_id": "ZwxK-QYWmed",

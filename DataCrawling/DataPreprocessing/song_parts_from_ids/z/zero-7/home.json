@@ -718,9 +718,156 @@
         },
         {
             "song_part_id": "kygzeqRLmKB",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 129779,
+                "user_id": 103696,
+                "dateModified": "2014-09-24 11:46:49+00:00",
+                "HTID": "CCyR8uJSx9FA",
+                "artist": "Zero 7",
+                "song": "Home",
+                "section": "Chorus Lead-Out",
+                "revision": 1,
+                "chords": null,
+                "youTubeID": "5RksdQrqLNs",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",L2-5.5,b6-2,164add9-6.5,4-1.5,L2-8.5,",
+                "SInE": ",L2-5.5,b6-2,164-6.5,4-1.5,L2-8.5,",
+                "SInD": ",L2,b6,164add9,4,L2,",
+                "SInED": ",L2,b6,164,4,L2,",
+                "SInA": ",L2,b6,1,4,L2,",
+                "beatsInMeasure": "4",
+                "songKey": "D",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "home",
+                "artistURL": "zero-7",
+                "sectionURL": "chorus-lead-out",
+                "editComments": "fixed sync",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 117,
+                "mode": 2,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 9751
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "Zero 7",
+                        "title": "Home",
+                        "beats_in_measure": "4",
+                        "BPM": "117",
+                        "key": "D",
+                        "YouTubeID": "5RksdQrqLNs",
+                        "mode": "2",
+                        "sections": {
+                            "_Chorus__SPACE__Lead-Out": {
+                                "global_start": "53.92",
+                                "section_duration": "16.43",
+                                "active_start": "2.05",
+                                "active_stop": "14.38"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Chorus__SPACE__Lead-Out": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-1",
+                                            "chord_duration": "5.5",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-5",
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "5.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "7",
+                                            "fb": "64",
+                                            "sec": null,
+                                            "emb": "add9",
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6.5",
+                                            "start_measure": "2",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "7.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "3",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "1.5",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-1",
+                                            "chord_duration": "8.5",
+                                            "start_measure": "4",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "15.5",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "numMeasures": "6"
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

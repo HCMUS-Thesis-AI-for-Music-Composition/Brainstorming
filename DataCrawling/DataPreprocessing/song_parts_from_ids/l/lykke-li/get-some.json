@@ -15,15 +15,161 @@
     "song_parts": [
         {
             "song_part_id": "pyvgPjRAoYq",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 33101,
+                "user_id": 103696,
+                "dateModified": "2014-03-28 15:14:35+00:00",
+                "HTID": "ssA6pGYOKCzi",
+                "artist": "LYKKE LI",
+                "song": "GET SOME",
+                "section": "Intro and Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "-TTPGAy5H_E",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",,",
+                "SInE": ",,",
+                "SInD": ",,",
+                "SInED": ",,",
+                "SInA": ",,",
+                "beatsInMeasure": "4",
+                "songKey": "C",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "0",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "get-some",
+                "artistURL": "lykke-li",
+                "sectionURL": "intro-and-verse",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 128,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 10344
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "New Project",
+                        "beats_in_measure": "4",
+                        "BPM": "128",
+                        "key": "C",
+                        "YouTubeID": "-TTPGAy5H_E",
+                        "mode": "1",
+                        "sections": {
+                            "_Intro__SPACE__and__SPACE__Verse": {
+                                "global_start": "3.02",
+                                "section_duration": "91.59",
+                                "active_start": "9.16",
+                                "active_stop": "82.43"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Intro__SPACE__and__SPACE__Verse": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": null,
+                                "numMeasures": "8"
+                            }
+                        }
+                    }
+                }
+            }
         },
         {
             "song_part_id": "EzngRvEEgJj",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 33103,
+                "user_id": 103696,
+                "dateModified": "2014-03-28 15:28:08+00:00",
+                "HTID": "1M8mJpq9yIsW",
+                "artist": "LYKKE LI",
+                "song": "GET SOME",
+                "section": "Pre-Chorus and Chorus",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "-TTPGAy5H_E",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",,",
+                "SInE": ",,",
+                "SInD": ",,",
+                "SInED": ",,",
+                "SInA": ",,",
+                "beatsInMeasure": "4",
+                "songKey": "C",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "0",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "get-some",
+                "artistURL": "lykke-li",
+                "sectionURL": "pre-chorus-and-chorus",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 128,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 10344
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "New Project",
+                        "beats_in_measure": "4",
+                        "BPM": "128",
+                        "key": "C",
+                        "YouTubeID": "-TTPGAy5H_E",
+                        "mode": "1",
+                        "sections": {
+                            "_Pre-Chorus__SPACE__and__SPACE__Chorus": {
+                                "global_start": "0",
+                                "section_duration": "176.74",
+                                "active_start": "7.32",
+                                "active_stop": "157.92"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Pre-Chorus__SPACE__and__SPACE__Chorus": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": null,
+                                "numMeasures": "8"
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

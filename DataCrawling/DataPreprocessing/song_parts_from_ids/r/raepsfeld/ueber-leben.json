@@ -15,9 +15,196 @@
     "song_parts": [
         {
             "song_part_id": "WAbm_dAJgak",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 20065,
+                "user_id": 103696,
+                "dateModified": "2013-09-08 17:47:29+00:00",
+                "HTID": "KxNLRwCS5nwb",
+                "artist": "Raepsfeld",
+                "song": "Ueber Leben",
+                "section": "Intro and Verse",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "wrQm_IdyjCk",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",6-3.5,56-4,47-6,36-2.5,6-3.5,56-4,47-6,36-2.5,",
+                "SInE": ",6-3.5,56-4,47-6,36-2.5,6-3.5,56-4,47-6,36-2.5,",
+                "SInD": ",6,56,47,36,6,56,47,36,",
+                "SInED": ",6,56,47,36,6,56,47,36,",
+                "SInA": ",6,5,4,3,6,5,4,3,",
+                "beatsInMeasure": "4",
+                "songKey": "C",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "ueber-leben",
+                "artistURL": "raepsfeld",
+                "sectionURL": "intro-and-verse",
+                "editComments": null,
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 146,
+                "mode": 5,
+                "borrowedFixed": "0",
+                "SInEDFixed": "1",
+                "user_id_editor": 6186
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "Ueber Leben chord analysis",
+                        "beats_in_measure": "4",
+                        "BPM": "146",
+                        "key": "C",
+                        "YouTubeID": "wrQm_IdyjCk",
+                        "mode": "5",
+                        "sections": {
+                            "_Intro__SPACE__and__SPACE__Verse": {
+                                "global_start": "10.72",
+                                "section_duration": "14.11",
+                                "active_start": "1.41",
+                                "active_stop": "12.7"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Intro__SPACE__and__SPACE__Verse": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "notes": null,
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "2",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "3.5",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "1",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "3.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "7",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6",
+                                            "start_measure": "2",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "7.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2.5",
+                                            "start_measure": "4",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "13.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "2",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "3.5",
+                                            "start_measure": "5",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "16",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "4",
+                                            "start_measure": "5",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "19.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "7",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "6",
+                                            "start_measure": "6",
+                                            "start_beat": "4.5",
+                                            "start_beat_abs": "23.5",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "6",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2.5",
+                                            "start_measure": "8",
+                                            "start_beat": "2.5",
+                                            "start_beat_abs": "29.5",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "numMeasures": "8"
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

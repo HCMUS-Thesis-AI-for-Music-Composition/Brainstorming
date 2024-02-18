@@ -5066,15 +5066,349 @@
         },
         {
             "song_part_id": "nvgyyzn_gkA",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 156236,
+                "user_id": 103696,
+                "dateModified": "2015-01-11 08:19:45+00:00",
+                "HTID": "CTsfVgL7Lx9i",
+                "artist": "Bent Van Looy",
+                "song": "Flowers and Balloons",
+                "section": "Outro 1",
+                "revision": 1,
+                "chords": null,
+                "youTubeID": "tpHjBKkEn3g",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",67-2,L465-2,465-2,S(3)67-1,S(3)37-1,",
+                "SInE": ",67-2,L465-2,465-2,S(3)67-1,S(3)37-1,",
+                "SInD": ",67,L465,465,S(3)67,S(3)37,",
+                "SInED": ",67,L465,465,S(3)67,S(3)37,",
+                "SInA": ",6,L4,4,S(3)6,S(3)3,",
+                "beatsInMeasure": "4",
+                "songKey": "G",
+                "isPrivate": "1",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 1,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "flowers-and-balloons",
+                "artistURL": "bent-van-looy",
+                "sectionURL": "outro-1",
+                "editComments": "correct bass",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 99,
+                "mode": 6,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 9751
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": "Bent Van Looy",
+                        "title": "Flowers and Balloons",
+                        "beats_in_measure": "4",
+                        "BPM": "99",
+                        "key": "G",
+                        "YouTubeID": "tpHjBKkEn3g",
+                        "mode": "6",
+                        "sections": {
+                            "_Outro__SPACE__1": {
+                                "global_start": "147.76",
+                                "section_duration": "9.67",
+                                "active_start": "2.42",
+                                "active_stop": "7.25"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Outro__SPACE__1": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "1",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "65",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-2",
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "2",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": "65",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": "sus4",
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "0",
+                                            "chord_duration": "1",
+                                            "start_measure": "2",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "6",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "5",
+                                            "fb": "7",
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "0",
+                                            "chord_duration": "1",
+                                            "start_measure": "2",
+                                            "start_beat": "4",
+                                            "start_beat_abs": "7",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "numMeasures": "2"
+                            }
+                        }
+                    }
+                }
+            }
         },
         {
             "song_part_id": "nJmBzKabmAV",
-            "metadata": null,
-            "main_data_type": null,
-            "main_data": null
+            "metadata": {
+                "ID": 154926,
+                "user_id": 103696,
+                "dateModified": "2015-01-06 16:29:40+00:00",
+                "HTID": "MIJehXPIeZje",
+                "artist": "Bent Van Looy",
+                "song": "Flowers and Balloons",
+                "section": "Outro 2",
+                "revision": 0,
+                "chords": null,
+                "youTubeID": "tpHjBKkEn3g",
+                "dotDNAbin": null,
+                "xmlType": "file",
+                "SIF": ",1-2,6-2,b6-2,4-2,1-2,6-2,b6-2,b6-2,",
+                "SInE": ",1-2,6-2,b6-2,4-2,1-2,6-2,b6-2,b6-2,",
+                "SInD": ",1,6,b6,4,1,6,b6,b6,",
+                "SInED": ",1,6,b6,4,1,6,b6,b6,",
+                "SInA": ",1,6,b6,4,1,6,b6,b6,",
+                "beatsInMeasure": "4",
+                "songKey": "G",
+                "isPrivate": "0",
+                "views": 0,
+                "hasMelody": "0",
+                "hasChords": "1",
+                "isAnalysis": 0,
+                "voteup": 0,
+                "votedown": 0,
+                "score": 0,
+                "songURL": "flowers-and-balloons",
+                "artistURL": "bent-van-looy",
+                "sectionURL": "outro-2",
+                "editComments": "",
+                "visible": 1,
+                "wikiorder": 1,
+                "bIsPaired": 0,
+                "YouTubeVideoID": null,
+                "bpm": 105,
+                "mode": 1,
+                "borrowedFixed": "0",
+                "SInEDFixed": "0",
+                "user_id_editor": 14460
+            },
+            "main_data_type": "from_pure_xml",
+            "main_data": {
+                "super": {
+                    "meta": {
+                        "artist": null,
+                        "title": "Flowers and Balloons bridge 4",
+                        "beats_in_measure": "4",
+                        "BPM": "105",
+                        "key": "G",
+                        "YouTubeID": "tpHjBKkEn3g",
+                        "mode": "1",
+                        "sections": {
+                            "_Outro__SPACE__2": {
+                                "global_start": "152.73",
+                                "section_duration": "13.54",
+                                "active_start": "2.25",
+                                "active_stop": "11.28"
+                            }
+                        }
+                    },
+                    "sections": {
+                        "_Outro__SPACE__2": {
+                            "segment": {
+                                "instrument": null,
+                                "rhythm": null,
+                                "lyrics": null,
+                                "notes": null,
+                                "chords": {
+                                    "chord": [
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "0",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "1",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "2",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-3",
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "4",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "4",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "2",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "6",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "1",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "8",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": null,
+                                            "chord_duration": "2",
+                                            "start_measure": "3",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "10",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": null,
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-3",
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "1",
+                                            "start_beat_abs": "12",
+                                            "isRest": "0"
+                                        },
+                                        {
+                                            "sd": "6",
+                                            "fb": null,
+                                            "sec": null,
+                                            "sus": "sus2",
+                                            "pedal": null,
+                                            "alternate": null,
+                                            "borrowed": "-3",
+                                            "chord_duration": "2",
+                                            "start_measure": "4",
+                                            "start_beat": "3",
+                                            "start_beat_abs": "14",
+                                            "isRest": "0"
+                                        }
+                                    ]
+                                },
+                                "numMeasures": "4"
+                            }
+                        }
+                    }
+                }
+            }
         }
     ]
 }

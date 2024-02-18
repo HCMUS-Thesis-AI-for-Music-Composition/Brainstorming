@@ -6,6 +6,7 @@ import utils as ut
 class ResponseType:
     JSON = "json"
     XML = "xml"
+    FROM_PURE_XML = "from_pure_xml"
     UNKNOWN = "unknown"
 
 def response_data_parser(response_json):
@@ -35,6 +36,30 @@ def response_data_parser(response_json):
 
     return metadata, main_data_type, main_data
 
+def response_xml_data_parser(response_from_xml):
+    metadata = None
+    main_data_type = None
+    main_data = None
+
+    if "xmlData" in response_from_xml and response_from_xml["xmlData"] is not None:
+        main_data_type = ResponseType.FROM_PURE_XML
+        main_data = xmltodict.parse(response_from_xml["xmlData"].replace("%20", "__SPACE__"))
+    else:
+        main_data_type = ResponseType.UNKNOWN
+        main_data = response_from_xml
+
+        print(f"WARNING: response_data_parser: Unknown response type: {response_from_xml}")
+
+    try:
+        del response_from_xml["jsonData"]
+        del response_from_xml["xmlData"]
+    except:
+        print(f"WARNING: response_data_parser: Unable to delete jsonData or xmlData from response_json: {response_from_xml}")
+
+    metadata = response_from_xml
+
+    return metadata, main_data_type, main_data
+
 def make_request(session, url, parameters: dict = None, headers: dict = None):
     print(f"--------> REQUESTING: {url}")
 
@@ -56,7 +81,13 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
                 print(f"-----------> FAIL: make_request - unknown format: {url}")
         
     except Exception as e:
-        print(f"-----------> FAIL: make_request - exception: {e} - {url}")
+        print(f"-----------> FAIL (trying other parser): make_request - exception: {e} - {url}")
+
+        try:
+            print(f"-----------> TRYING OTHER PARSER: {url}")
+            metadata, main_data_type, main_data = response_xml_data_parser(response.json())
+        except Exception as e:
+            print(f"-----------> FAIL: make_request - exception: {e} - {url}")
 
     if main_data is None or len(main_data) == 0:
         print(f"-----------> WARNING: make_request - empty main_data: {url}")
