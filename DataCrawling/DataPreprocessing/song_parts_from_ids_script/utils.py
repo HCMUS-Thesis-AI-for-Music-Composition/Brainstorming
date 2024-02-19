@@ -57,7 +57,7 @@ def is_empty_main_data_existed(json_result_file_path):
 
     return result
 
-def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000):
+def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000, should_print_log = True):
     '''
         Đọc danh sách các file json chứa thông tin về các bài hát từ thư mục song_id_of_song_parts theo chữ cái được truyền vào bằng tham số letter. Nếu file đã tồn tại và file kết quả có size > min_json_result_file_size thì skip.
     '''
@@ -69,7 +69,10 @@ def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000):
 
     for artist in os.listdir(letter_dir):
         if (artist == ".DS_Store"):
-            print(f"WARNING: skipped {artist} in {letter_dir}")
+            if should_print_log:
+                print(f"WARNING: skipped {artist} in {letter_dir}")
+            else:
+                pass
         else:
             artist_dir = fu.relative_to_absolute_path(artist, letter_dir)
 
@@ -87,18 +90,25 @@ def read_song_id_of_song_parts_list(letter, min_json_result_file_size = 10000):
                     root_path = song_parts_from_ids_dir
                 )
                 
-                if os.path.exists(json_result_file_path) and os.path.getsize(json_result_file_path) > min_json_result_file_size and not is_empty_main_data_existed(json_result_file_path):
+                if (
+                    (os.path.exists(json_result_file_path)) 
+                    and (os.path.getsize(json_result_file_path) > min_json_result_file_size) 
+                    and not (is_empty_main_data_existed(json_result_file_path))
+                ):
                     # print(f"SKIP: {json_result_file_path}")
 
                     skipped += 1
                     # print(f"--------> TOTAL SKIPPED: {skipped}")
                     # print()
                 else:
-                    if os.path.exists(json_result_file_path):
-                        print(f"EXIST: {json_result_file_path}")
-                        print(fu.read_data_from_json_file(json_result_file_path))
+                    if should_print_log:
+                        if os.path.exists(json_result_file_path):
+                            print(f"EXIST: {json_result_file_path}")
+                            print(fu.read_data_from_json_file(json_result_file_path))
+                        else:
+                            print(f"NOT EXIST: {json_result_file_path}")
                     else:
-                        print(f"NOT EXIST: {json_result_file_path}")
+                        pass
 
                     song_id_of_song_parts_list.append(json_data)
 

@@ -36,27 +36,43 @@ def response_data_parser(response_json):
 
     return metadata, main_data_type, main_data
 
-def response_xml_data_parser(response_from_xml):
+def response_xml_data_parser(xml_response):
     metadata = None
     main_data_type = None
     main_data = None
 
-    if "xmlData" in response_from_xml and response_from_xml["xmlData"] is not None:
-        main_data_type = ResponseType.FROM_PURE_XML
-        main_data = xmltodict.parse(response_from_xml["xmlData"].replace("%20", "__SPACE__"))
-    else:
-        main_data_type = ResponseType.UNKNOWN
-        main_data = response_from_xml
+    try:
+        xml_response = xml_response.json()
 
-        print(f"WARNING: response_data_parser: Unknown response type: {response_from_xml}")
+        if "xmlData" in xml_response and xml_response["xmlData"] is not None:
+            main_data_type = ResponseType.FROM_PURE_XML
+            main_data = xmltodict.parse(xml_response["xmlData"].replace("%20", "__SPACE__"))
+        else:
+            main_data_type = ResponseType.UNKNOWN
+            main_data = xml_response
+
+            print(f"WARNING: response_xml_data_parser: Unknown response type: {xml_response}")
+    except:
+        print(f"WARNING: response_xml_data_parser: Unable to convert response to json: {xml_response}")
+        xml_response = xmltodict.parse(xml_response.text)["response"]
+        
+        if "xmlData" in xml_response and xml_response["xmlData"] is not None:
+            main_data_type = ResponseType.FROM_PURE_XML
+            main_data = xml_response["xmlData"]
+        elif "jsonData" in xml_response and xml_response["jsonData"] is not None:
+            main_data_type = ResponseType.FROM_PURE_XML
+            main_data = json.loads(xml_response["jsonData"])
+        else:
+            main_data_type = ResponseType.UNKNOWN
+            main_data = xml_response
 
     try:
-        del response_from_xml["jsonData"]
-        del response_from_xml["xmlData"]
+        del xml_response["jsonData"]
+        del xml_response["xmlData"]
     except:
-        print(f"WARNING: response_data_parser: Unable to delete jsonData or xmlData from response_json: {response_from_xml}")
+        print(f"WARNING: response_xml_data_parser: Unable to delete jsonData or xmlData from response_json: {xml_response}")
 
-    metadata = response_from_xml
+    metadata = xml_response
 
     return metadata, main_data_type, main_data
 
@@ -69,12 +85,8 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
     main_data = None
     
     try:
-        response = session.get(url, params=parameters)
+        response = session.get(url, params=parameters, headers=headers)
         status_code = response.status_code
-
-        print("DEBUG")
-        print(f"{url}: {response.text}")
-        print("DEBUG")
 
         if status_code != 200:
             print(f"-----------> FAIL: make_request - status_code: {status_code}: {ut.http_status_code[status_code]} - {url}")
@@ -89,7 +101,7 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
 
         try:
             print(f"-----------> TRYING OTHER PARSER: {url}")
-            metadata, main_data_type, main_data = response_xml_data_parser(response.json())
+            metadata, main_data_type, main_data = response_xml_data_parser(response)
         except Exception as e:
             print(f"-----------> FAIL: make_request - exception: {e} - {url}")
 
