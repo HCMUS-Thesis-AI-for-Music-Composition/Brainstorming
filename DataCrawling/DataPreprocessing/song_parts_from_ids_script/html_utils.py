@@ -72,6 +72,10 @@ def make_request(session, url, parameters: dict = None, headers: dict = None):
         response = session.get(url, params=parameters)
         status_code = response.status_code
 
+        print("DEBUG")
+        print(f"{url}: {response.text}")
+        print("DEBUG")
+
         if status_code != 200:
             print(f"-----------> FAIL: make_request - status_code: {status_code}: {ut.http_status_code[status_code]} - {url}")
         else:        

@@ -1,0 +1,124 @@
+EXIST: D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling/DataPreprocessing/song_parts_from_ids/a/arthur/beginning-of-time.json
+{'artist_name': 'Arthur', 'artist_link': 'https://www.hooktheory.com/theorytab/artists/a/arthur', 'song_name': 'Beginning of time', 'link': 'https://www.hooktheory.com/theorytab/view/arthur/beginning-of-time', 'metrics': {}, 'metrics_conclusion': '', 'key_conclusion': '', 'song_parts': [{'song_part_id': 'nLgaejbdgYp', 'metadata': None, 'main_data_type': None, 'main_data': None}]}
+GETTING: https://www.hooktheory.com/theorytab/view/arthur/beginning-of-time
+--------> PART 0 OF https://www.hooktheory.com/theorytab/view/arthur/beginning-of-time
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp
+-----------> FAIL (trying other parser): make_request - exception: no element found: line 1, column 0 - https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp
+-----------> TRYING OTHER PARSER: https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp
+-----------> FAIL: make_request - exception: no element found: line 1, column 0 - https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp
+-----------> WARNING: make_request - empty main_data: https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp
+FAIL: download - empty main_data: https://api.hooktheory.com/v1/songs/public/nLgaejbdgYp -> {'status_code': 200, 'metadata': None, 'main_data_type': None, 'main_data': None}
+
+ACK: 0/1 part(s) downloaded - https://www.hooktheory.com/theorytab/view/arthur/beginning-of-time
+--------> APPENDED to error_song_parts_list: https://www.hooktheory.com/theorytab/view/arthur/beginning-of-time
+
+
+--------> LETTER a DONE
+
+
+--------> LETTER b DONE
+
+
+--------> LETTER c DONE
+
+
+--------> LETTER d DONE
+
+
+--------> LETTER e DONE
+
+
+--------> LETTER f DONE
+
+
+--------> LETTER g DONE
+
+
+--------> LETTER h DONE
+
+
+--------> LETTER i DONE
+
+
+--------> LETTER j DONE
+
+NOT EXIST: D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling/DataPreprocessing/song_parts_from_ids/k/katy-perry/et.json
+NOT EXIST: D:/Vector A/0. KHTN/Nam 4/HKII/Thesis/Brainstorming/DataCrawling/DataPreprocessing/song_parts_from_ids/k/katy-perry/teenage-dream.json
+GETTING: https://www.hooktheory.com/theorytab/view/katy-perry/et
+--------> PART 0 OF https://www.hooktheory.com/theorytab/view/katy-perry/et
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/RzojNvRwoDe
+--------> PART 1 OF https://www.hooktheory.com/theorytab/view/katy-perry/et
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/RzojXrQngDe
+--------> PART 2 OF https://www.hooktheory.com/theorytab/view/katy-perry/et
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/NlamkzzZoDM
+-----------> FAIL: make_request - status_code: 500: Internal Server Error
+The server has encountered a situation it does not know how to handle. - https://api.hooktheory.com/v1/songs/public/NlamkzzZoDM
+-----------> WARNING: make_request - empty main_data: https://api.hooktheory.com/v1/songs/public/NlamkzzZoDM
+FAIL: download - status_code: 500: Internal Server Error
+The server has encountered a situation it does not know how to handle., url: https://api.hooktheory.com/v1/songs/public/NlamkzzZoDM
+
+ACK: 2/5 part(s) downloaded - https://www.hooktheory.com/theorytab/view/katy-perry/et
+--------> APPENDED to error_song_parts_list: https://www.hooktheory.com/theorytab/view/katy-perry/et
+
+GETTING: https://www.hooktheory.com/theorytab/view/katy-perry/teenage-dream
+--------> PART 0 OF https://www.hooktheory.com/theorytab/view/katy-perry/teenage-dream
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/dPoDEWjZmnM
+--------> PART 1 OF https://www.hooktheory.com/theorytab/view/katy-perry/teenage-dream
+--------> REQUESTING: https://api.hooktheory.com/v1/songs/public/Ld_gwBBbmGV
+-----------> FAIL: make_request - status_code: 500: Internal Server Error
+The server has encountered a situation it does not know how to handle. - https://api.hooktheory.com/v1/songs/public/Ld_gwBBbmGV
+-----------> WARNING: make_request - empty main_data: https://api.hooktheory.com/v1/songs/public/Ld_gwBBbmGV
+FAIL: download - status_code: 500: Internal Server Error
+The server has encountered a situation it does not know how to handle., url: https://api.hooktheory.com/v1/songs/public/Ld_gwBBbmGV
+
+ACK: 1/3 part(s) downloaded - https://www.hooktheory.com/theorytab/view/katy-perry/teenage-dream
+--------> APPENDED to error_song_parts_list: https://www.hooktheory.com/theorytab/view/katy-perry/teenage-dream
+
+
+--------> LETTER k DONE
+
+
+--------> LETTER l DONE
+
+
+--------> LETTER m DONE
+
+
+--------> LETTER n DONE
+
+
+--------> LETTER o DONE
+
+
+--------> LETTER p DONE
+
+
+--------> LETTER q DONE
+
+
+--------> LETTER r DONE
+
+
+--------> LETTER s DONE
+
+
+--------> LETTER t DONE
+
+
+--------> LETTER u DONE
+
+
+--------> LETTER v DONE
+
+
+--------> LETTER w DONE
+
+
+--------> LETTER x DONE
+
+
+--------> LETTER y DONE
+
+
+--------> LETTER z DONE
+
