@@ -1,16 +1,16 @@
 from miditoolkit import MidiFile, TempoChange, KeySignature, TimeSignature, Instrument, Note, Marker
 from dto.Midi import MidiDTO
 
-def midi_dto_to_midi_data_converter(midi_dto: MidiDTO) -> MidiFile:
-    midi_data = MidiFile()
+def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
+    midi_file_object = MidiFile()
     
-    midi_data.ticks_per_beat = midi_dto.ticks_per_beat
-    midi_data.max_tick = midi_dto.max_tick
-    midi_data.lyrics = midi_dto.lyrics
+    midi_file_object.ticks_per_beat = midi_dto.ticks_per_beat
+    midi_file_object.max_tick = midi_dto.max_tick
+    midi_file_object.lyrics = midi_dto.lyrics
 
 
     for tempo_change in midi_dto.tempo_changes:
-        midi_data.tempo_changes.append(
+        midi_file_object.tempo_changes.append(
             TempoChange(
                 time=tempo_change.time,
                 tempo=tempo_change.tempo
@@ -18,7 +18,7 @@ def midi_dto_to_midi_data_converter(midi_dto: MidiDTO) -> MidiFile:
         )
 
     for key_signature_change in midi_dto.key_signature_changes:
-        midi_data.key_signature_changes.append(
+        midi_file_object.key_signature_changes.append(
             KeySignature(
                 time=key_signature_change.time,
                 key_name=key_signature_change.key_name
@@ -26,11 +26,11 @@ def midi_dto_to_midi_data_converter(midi_dto: MidiDTO) -> MidiFile:
         )
 
     for time_signature_change in midi_dto.time_signature_changes:
-        midi_data.time_signature_changes.append(
+        midi_file_object.time_signature_changes.append(
             TimeSignature(
                 time=time_signature_change.time,
-                numerator=time_signature_change.numerator,
-                denominator=time_signature_change.denominator
+                numerator=time_signature_change.time_signature.numerator,
+                denominator=time_signature_change.time_signature.denominator
             )
         )
 
@@ -51,14 +51,14 @@ def midi_dto_to_midi_data_converter(midi_dto: MidiDTO) -> MidiFile:
 
             instrument.notes.append(note)
 
-        midi_data.instruments.append(instrument)
+        midi_file_object.instruments.append(instrument)
 
     for marker_info in midi_dto.markers:
-        midi_data.markers.append(
+        midi_file_object.markers.append(
             Marker(
                 time=marker_info.time,
                 text=marker_info.text
             )
         )
 
-    return midi_data
+    return midi_file_object

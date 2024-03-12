@@ -2,35 +2,16 @@ from dto.Midi import MidiDTO
 from dto.Instrument import InstrumentDTO
 from dto.Note import NoteDTO
 from dto.TimeSignatureChange import TimeSignatureChangeDTO
+from dto.TimeSignature import TimeSignatureDTO
 from midi_utils import beat_to_tick
+import const.musecoco_const as musecoco_const
 
-musecoco_abbreviations = {
-    "b": "bar",
-    "o": "position",
-    "s": "time_signature",
-    "t": "tempo",
-    "i": "instrument",
-    "p": "pitch",
-    "d": "duration",
-    "v": "velocity",
-    "n": "pitch_name",
-    "c": "pitch_octave",
-    "f": "family",
-    "e": "special"
-}
-
-def musecoco_line_to_midi_dto_converter(musecoco_line) -> MidiDTO:
+def musecoco_line_to_midi_dto_converter(musecoco_line: list) -> MidiDTO:
     midi_dto = MidiDTO()
 
     midi_dto.ticks_per_beat = 960
     midi_dto.max_tick = 30721
-    midi_dto.time_signature_changes = [
-        TimeSignatureChangeDTO(
-            time = 0,
-            numerator = 4,
-            denominator = 4
-        )
-    ]
+    midi_dto.time_signature_changes = []
 
     current_position = 0
     current_duration = 0
@@ -43,19 +24,29 @@ def musecoco_line_to_midi_dto_converter(musecoco_line) -> MidiDTO:
     for pair in musecoco_line:
         key = list(pair.keys())[0]
         value = pair[key]
+        
+        match key:
+            case musecoco_const.str_abbr_time_signature:
+                midi_dto.time_signature_changes.append(
+                    TimeSignatureChangeDTO(
+                        time = current_position,
+                        time_signature = musecoco_const.musecoco_time_signature_mapper[
+                            int(value)
+                        ]
+                    )
+                )
+            case musecoco_const.str_abbr_position:
+                current_position = int(value)
+            case musecoco_const.str_abbr_pitch:
+                current_pitch = int(value)
+            case musecoco_const.str_abbr_duration:
+                current_duration = int(value)
+            case musecoco_const.str_abbr_velocity:
+                current_velocity = int(value)
+            case musecoco_const.str_abbr_instrument:
+                current_instrument = int(value)
 
-        if musecoco_abbreviations[key] == "position":
-            current_position = int(value)
-        elif musecoco_abbreviations[key] == "pitch":
-            current_pitch = int(value)
-        elif musecoco_abbreviations[key] == "duration":
-            current_duration = int(value)
-        elif musecoco_abbreviations[key] == "velocity":
-            current_velocity = int(value)
-        elif musecoco_abbreviations[key] == "instrument":
-            current_instrument = int(value)
-
-        if musecoco_abbreviations[key] == "velocity":        
+        if key == musecoco_const.str_abbr_velocity:
             note = NoteDTO(
                 start = beat_to_tick(current_position, midi_dto.ticks_per_beat),
                 end = beat_to_tick(current_position + current_duration, midi_dto.ticks_per_beat),
