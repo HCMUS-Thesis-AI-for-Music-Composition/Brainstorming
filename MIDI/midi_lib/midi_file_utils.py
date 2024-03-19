@@ -1,4 +1,5 @@
 from miditoolkit import MidiFile
+import os
 
 def read_midi_file(file_path):
     try:
@@ -10,6 +11,10 @@ def read_midi_file(file_path):
 
 def write_midi_file(midi_data, output_file):
     try:
+        # Delete old file if exists
+        if os.path.exists(output_file):
+            os.remove(output_file)
+            
         midi_data.dump(output_file)
         print(f"MIDI file saved successfully: {output_file}")
     except Exception as e:

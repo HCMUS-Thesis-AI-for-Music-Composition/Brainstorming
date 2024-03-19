@@ -21,7 +21,7 @@ def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
         midi_file_object.key_signature_changes.append(
             KeySignature(
                 time=key_signature_change.time,
-                key_name=key_signature_change.key_name
+                key_name=key_signature_change.key
             )            
         )
 

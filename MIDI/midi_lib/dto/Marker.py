@@ -1,6 +1,4 @@
 class MarkerDTO:
-    time: int = int(0)
-    text: str = str("")
 
     def __init__(self, **kwargs):
         """
@@ -8,6 +6,8 @@ class MarkerDTO:
                 time: int
                 text: str
         """
+        self.time: int = int(0)
+        self.text: str = str("")
 
         for key, value in kwargs.items():
             type_of_keys = {

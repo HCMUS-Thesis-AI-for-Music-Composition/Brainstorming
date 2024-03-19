@@ -1,10 +1,6 @@
 from dto.Note import NoteDTO
 
 class InstrumentDTO:            
-    program: int = int(0)
-    name: str = str("")
-    notes: list[NoteDTO] = list[NoteDTO]([])
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
@@ -12,6 +8,9 @@ class InstrumentDTO:
                 name: str
                 notes: list[NoteDTO]
         """
+        self.program: int = int(0)
+        self.name: str = str("")
+        self.notes: list[NoteDTO] = list[NoteDTO]([])
 
         for key, value in kwargs.items():
             type_of_keys = {

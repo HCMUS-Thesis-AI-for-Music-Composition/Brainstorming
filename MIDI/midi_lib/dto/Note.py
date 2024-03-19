@@ -1,9 +1,4 @@
 class NoteDTO:
-    start: int = int(0)
-    end: int = int(0)
-    pitch: int = int(0)
-    velocity: int = int(0)
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
@@ -12,6 +7,10 @@ class NoteDTO:
                 pitch: int
                 velocity: int
         """
+        self.start: int = int(0)
+        self.end: int = int(0)
+        self.pitch: int = int(0)
+        self.velocity: int = int(0)
         
         for key, value in kwargs.items():
             type_of_keys = {

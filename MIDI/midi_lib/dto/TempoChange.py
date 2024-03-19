@@ -1,13 +1,12 @@
 class TempoChangeDTO:
-    time: int = int(0)
-    tempo: float = float(0)
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
                 time: int
                 tempo: float
         """
+        self.time: int = int(0)
+        self.tempo: float = float(0)
 
         for key, value in kwargs.items():
             type_of_keys = {

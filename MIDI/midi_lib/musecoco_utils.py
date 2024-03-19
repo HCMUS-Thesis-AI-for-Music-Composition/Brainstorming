@@ -16,4 +16,5 @@ def generate_time_signature_dict(
             )
             
             idx += 1
+            
     return ts_dict

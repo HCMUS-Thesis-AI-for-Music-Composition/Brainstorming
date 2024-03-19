@@ -1,8 +1,4 @@
 class KeySignatureChangeDTO:
-    time: int = int(0)
-    key: int = int(0)
-    scale: int = int(0)
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
@@ -10,6 +6,9 @@ class KeySignatureChangeDTO:
                 key: int
                 scale: int
         """
+        self.time: int = int(0)
+        self.key: int = int(0)
+        self.scale: int = int(0)
 
         for key, value in kwargs.items():
             type_of_keys = {

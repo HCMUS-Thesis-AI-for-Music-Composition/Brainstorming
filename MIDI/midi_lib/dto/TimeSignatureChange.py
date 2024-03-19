@@ -1,9 +1,6 @@
 from dto.TimeSignature import TimeSignatureDTO
 
 class TimeSignatureChangeDTO:
-    time: int = int(0)
-    time_signature = TimeSignatureDTO()
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
@@ -11,6 +8,8 @@ class TimeSignatureChangeDTO:
                 numerator: int
                 denominator: int
         """
+        self.time: int = int(0)
+        self.time_signature = TimeSignatureDTO()
 
         for key, value in kwargs.items():
             type_of_keys = {

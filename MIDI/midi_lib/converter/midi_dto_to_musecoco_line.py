@@ -1,83 +1,61 @@
 from dto.Midi import MidiDTO
-from dto.Instrument import InstrumentDTO
-from dto.Note import NoteDTO
-from dto.TimeSignatureChange import TimeSignatureChangeDTO
-from midi_utils import beat_to_tick, musecoco_abbreviations, musecoco_abbreviations_reversed
 
-def musecoco_line_to_midi_dto_converter(musecoco_line) -> MidiDTO:
-    midi_dto = MidiDTO()
-
-    midi_dto.ticks_per_beat = 960
-    midi_dto.max_tick = 30721
-    midi_dto.time_signature_changes = [
-        TimeSignatureChangeDTO(
-            time = 0,
-            numerator = 4,
-            denominator = 4
-        )
-    ]
-
-    current_position = 0
-    current_duration = 0
-    current_pitch = 0
-    current_velocity = 0
-    current_instrument = 0
-
-    midi_dto.instruments = []
-
-    for pair in musecoco_line:
-        key = list(pair.keys())[0]
-        value = pair[key]
-
-        if musecoco_abbreviations[key] == "position":
-            current_position = int(value)
-        elif musecoco_abbreviations[key] == "pitch":
-            current_pitch = int(value)
-        elif musecoco_abbreviations[key] == "duration":
-            current_duration = int(value)
-        elif musecoco_abbreviations[key] == "velocity":
-            current_velocity = int(value)
-        elif musecoco_abbreviations[key] == "instrument":
-            current_instrument = int(value)
-
-        if musecoco_abbreviations[key] == "velocity":        
-            note = NoteDTO(
-                start = beat_to_tick(current_position, midi_dto.ticks_per_beat),
-                end = beat_to_tick(current_position + current_duration, midi_dto.ticks_per_beat),
-                pitch = current_pitch,
-                velocity = current_velocity
-            )
-
-            if current_instrument not in [instrument.name for instrument in midi_dto.instruments]:
-                instrument = InstrumentDTO(
-                    name = str(current_instrument),
-                    program = 0,
-                    notes = [note]
-                )
-                
-                midi_dto.instruments.append(instrument)
-            else:
-                for i in range(len(midi_dto.instruments)):
-                    if midi_dto.instruments[i].name == current_instrument:
-                        midi_dto.instruments[i].notes.append(note)
-                        break
-
-    return midi_dto
+from midi_utils import current_tempo_from_midi_dto_tempo_changes
+from converter.note_position import tick_to_position_converter
+import const.musecoco_const as musecoco_const
 
 def midi_dto_to_musecoco_line_converter(midi_dto: MidiDTO):
     musecoco_line = []
+    
+    current_position = -1
+    current_instrument_program = 0
+    current_tempo = 0
+
+    should_note_be_put_in_the_same_place_with_previous_note = False
 
     for instrument in midi_dto.instruments:
         for note in instrument.notes:
+            should_note_be_put_in_the_same_place_with_previous_note = (
+                (
+                    current_position == tick_to_position_converter(
+                        tick=note.start, 
+                        tick_per_beat=midi_dto.ticks_per_beat
+                    )
+                ) 
+                and (current_instrument_program == instrument.program)
+                and (current_tempo == midi_dto.tempo)
+            )            
+
+            if not should_note_be_put_in_the_same_place_with_previous_note:
+                musecoco_line.append(
+                    {
+                        musecoco_const.str_abbr_position : tick_to_position_converter(
+                            tick=note.start,
+                            tick_per_beat=midi_dto.ticks_per_beat
+                        )
+                    }
+                )
+                musecoco_line.append(
+                    {
+                        musecoco_const.str_abbr_tempo : current_tempo_from_midi_dto_tempo_changes(
+                            midi_dto_tempo_changes=midi_dto.tempo_changes, 
+                            note_position=note.start
+                        )
+                    }
+                )
+                musecoco_line.append({musecoco_const.str_abbr_instrument : instrument.program})
+            else:
+                pass
+                
+            musecoco_line.append({musecoco_const.str_abbr_pitch : note.pitch})
             musecoco_line.append(
                 {
-                    musecoco_abbreviations_reversed["position"]: str(tick_to_beat(note.start, midi_dto.ticks_per_beat)),
-                    musecoco_abbreviations_reversed["pitch"]: str(note.pitch),
-                    musecoco_abbreviations_reversed["duration"]: str(tick_to_beat(note.end - note.start, midi_dto.ticks_per_beat)),
-                    musecoco_abbreviations_reversed["velocity"]: str(note.velocity),
-                    musecoco_abbreviations_reversed["instrument"]: str(instrument.name)
+                    musecoco_const.str_abbr_duration : tick_to_position_converter(
+                        tick=note.end - note.start,
+                        tick_per_beat=midi_dto.ticks_per_beat
+                    )
                 }
             )
+            musecoco_line.append({musecoco_const.str_abbr_velocity : note.velocity})
 
     return musecoco_line
-

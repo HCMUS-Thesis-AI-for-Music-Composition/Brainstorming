@@ -1,13 +1,12 @@
 class TimeSignatureDTO:
-    numerator = int(0)
-    denominator = int(0)
-
     def __init__(self, **kwargs):
         """
             kwargs accepts:
                 numerator: int
                 denominator: int
         """
+        self.numerator = int(0)
+        self.denominator = int(0)
 
         for key, value in kwargs.items():
             type_of_keys = {

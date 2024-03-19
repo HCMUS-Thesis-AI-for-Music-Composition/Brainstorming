@@ -4,16 +4,9 @@ from dto.TimeSignatureChange import TimeSignatureChangeDTO
 from dto.Instrument import InstrumentDTO
 from dto.Marker import MarkerDTO
 
-class MidiDTO:
-    ticks_per_beat: int = int(960)
-    max_tick: int = int(30721)
-    lyrics: str = str("") 
-    tempo_changes: list[TempoChangeDTO] = list[TempoChangeDTO]([])
-    key_signature_changes: list[KeySignatureChangeDTO] = list[KeySignatureChangeDTO]([])
-    time_signature_changes: list[TimeSignatureChangeDTO] = list[TimeSignatureChangeDTO]([])
-    instruments: list[InstrumentDTO] = list[InstrumentDTO]([])
-    markers: list[MarkerDTO] = list[MarkerDTO]([])
+from const.midi import default_ticks_per_beat, default_max_tick
 
+class MidiDTO:
     def __init__(self, **kwargs):
         """
             kwargs accepts:
@@ -27,6 +20,15 @@ class MidiDTO:
                 markers: list[MarkerDTO]
         """
 
+        self.ticks_per_beat: int = int(default_ticks_per_beat)
+        self.max_tick: int = int(default_max_tick)
+        self.lyrics: str = str("") 
+        self.tempo_changes: list[TempoChangeDTO] = list[TempoChangeDTO]([])
+        self.key_signature_changes: list[KeySignatureChangeDTO] = list[KeySignatureChangeDTO]([])
+        self.time_signature_changes: list[TimeSignatureChangeDTO] = list[TimeSignatureChangeDTO]([])
+        self.instruments: list[InstrumentDTO] = list[InstrumentDTO]([])
+        self.markers: list[MarkerDTO] = list[MarkerDTO]([])
+        
         for key, value in kwargs.items():
             type_of_keys = {
                 "ticks_per_beat": type(self.ticks_per_beat),
