@@ -6,12 +6,16 @@ from converter.midi_file_object_to_midi_dto import midi_file_object_to_midi_dto_
 
 def musecoco_line_to_midi_dto_converter(
     musecoco_line: list,
+    tick_per_beat,
     vocab_manager: VocabManager = VocabManager()
 ) -> MidiDTO:
-    midi_obj = enc_remigen2_utils.generate_midi_obj_from_remigen_token_list(musecoco_line, vocab_manager)
+    midi_obj = enc_remigen2_utils.generate_midi_obj_from_remigen_token_list(
+        token_list=musecoco_line,
+        vocab_manager=vocab_manager,
+        ticks_per_beat=tick_per_beat
+    )
 
     midi_dto = midi_file_object_to_midi_dto_converter(midi_obj)
-
     return midi_dto
 
 # def musecoco_line_to_midi_dto_converter(

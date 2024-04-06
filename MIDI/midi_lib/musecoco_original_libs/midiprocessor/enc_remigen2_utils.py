@@ -248,8 +248,16 @@ def generate_midi_obj_from_remigen_token_list(
                 raise ValueError(
                     "Invalid token for velocity (%s) while setting ignore_velocity=True" % ('%s-%s' % item)
                 )
-
-            assert last_item_type == const.DURATION_ABBR
+            try:
+                assert last_item_type == const.DURATION_ABBR
+            except Exception as e:
+                print(f"last_item_type: {last_item_type}")
+                print(f"item_type: {item_type}")
+                print(f"item_value: {item_value}")
+                print(f"item: {item}")
+                print(f"token_list: {token_list}")
+                raise e
+                
             cur_velocity = vocab_manager.convert_id_to_vel(item_value)
 
             start_pos = cur_global_pos

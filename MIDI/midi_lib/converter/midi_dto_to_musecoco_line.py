@@ -1,12 +1,26 @@
 from dto.Midi import MidiDTO
+from musecoco_original_libs.vocab_manager import VocabManager
 
 from midi_utils import current_tempo_from_midi_dto_tempo_changes
 from converter.note_position import tick_to_position_converter
 import const.musecoco_const as musecoco_const
 
-def midi_dto_to_musecoco_line_converter(midi_dto: MidiDTO):
+def midi_dto_to_musecoco_line_converter(
+    midi_dto: MidiDTO, 
+    vocab_manager: VocabManager = VocabManager()
+) -> list:
+    print(f"DEBUG: midi_dto: {midi_dto.ticks_per_beat}")
     musecoco_line = []
-    
+
+    musecoco_line.append(
+        (
+            musecoco_const.str_abbr_time_signature, 
+            vocab_manager.convert_ts_to_id(
+                (midi_dto.time_signature_changes[0].time_signature.numerator, midi_dto.time_signature_changes[0].time_signature.denominator)
+            )
+        )
+    )
+
     current_position = -1
     current_instrument_program = 0
     current_tempo = 0
@@ -28,34 +42,45 @@ def midi_dto_to_musecoco_line_converter(midi_dto: MidiDTO):
 
             if not should_note_be_put_in_the_same_place_with_previous_note:
                 musecoco_line.append(
-                    {
-                        musecoco_const.str_abbr_position : tick_to_position_converter(
+                    (
+                        musecoco_const.str_abbr_position, tick_to_position_converter(
                             tick=note.start,
                             tick_per_beat=midi_dto.ticks_per_beat
                         )
-                    }
+                    )
                 )
                 musecoco_line.append(
-                    {
-                        musecoco_const.str_abbr_tempo : current_tempo_from_midi_dto_tempo_changes(
-                            midi_dto_tempo_changes=midi_dto.tempo_changes, 
-                            note_position=note.start
+                    (
+                        musecoco_const.str_abbr_tempo, vocab_manager.convert_tempo_to_id(
+                            current_tempo_from_midi_dto_tempo_changes(
+                                midi_dto_tempo_changes=midi_dto.tempo_changes, 
+                                note_position=note.start
+                            )
                         )
-                    }
+                    )
                 )
-                musecoco_line.append({musecoco_const.str_abbr_instrument : instrument.program})
+                musecoco_line.append(
+                    (musecoco_const.str_abbr_instrument, instrument.program)
+                )
             else:
                 pass
                 
-            musecoco_line.append({musecoco_const.str_abbr_pitch : note.pitch})
+            musecoco_line.append((musecoco_const.str_abbr_pitch, note.pitch))
             musecoco_line.append(
-                {
-                    musecoco_const.str_abbr_duration : tick_to_position_converter(
-                        tick=note.end - note.start,
-                        tick_per_beat=midi_dto.ticks_per_beat
+                (
+                    musecoco_const.str_abbr_duration, vocab_manager.convert_dur_to_id(
+                        tick_to_position_converter(
+                            tick=note.end - note.start,
+                            tick_per_beat=midi_dto.ticks_per_beat
+                        )
                     )
-                }
+                )
             )
-            musecoco_line.append({musecoco_const.str_abbr_velocity : note.velocity})
+            musecoco_line.append(
+                (
+                    musecoco_const.str_abbr_velocity, 
+                    vocab_manager.convert_vel_to_id(note.velocity)
+                )
+            )
 
     return musecoco_line

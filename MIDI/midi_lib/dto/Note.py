@@ -2,8 +2,8 @@ class NoteDTO:
     def __init__(self, **kwargs):
         """
             kwargs accepts:
-                start: int
-                end: int
+                start: int - time in ticks
+                end: int - time in ticks
                 pitch: int
                 velocity: int
         """
@@ -21,7 +21,7 @@ class NoteDTO:
             }
 
             if key in type_of_keys:
-                if not type(value) == type_of_keys[key]:
+                if type(value) != type_of_keys[key]:
                     raise ValueError(f"Expected {type_of_keys[key]} for {key}, got {type(value)}")
                 else:
                     setattr(self, key, value)

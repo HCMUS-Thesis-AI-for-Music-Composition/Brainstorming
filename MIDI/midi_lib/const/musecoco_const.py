@@ -1,4 +1,4 @@
-from musecoco_utils import generate_time_signature_dict
+# from musecoco_utils import generate_time_signature_dict
 
 str_abbr_bar = "b"
 str_abbr_time_signature = "s"
@@ -20,7 +20,7 @@ pos_resolution = 12
 max_duration = 8
 musecoco_default_ticks_per_beat = 480
 
-musecoco_time_signature_mapper = generate_time_signature_dict(
-    max_ts_denominator_power=max_ts_denominator_power, 
-    max_notes_per_bar=max_notes_per_bar
-)
+# musecoco_time_signature_mapper = generate_time_signature_dict(
+#     max_ts_denominator_power=max_ts_denominator_power, 
+#     max_notes_per_bar=max_notes_per_bar
+# )
