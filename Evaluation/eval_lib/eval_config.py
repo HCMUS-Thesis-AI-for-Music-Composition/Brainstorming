@@ -1,0 +1,1 @@
+midi_lib_dir = "/Users/4rr311/Documents/VectorA/KHTN/Nam4/HKII/Thesis/Brainstorming/MIDI/midi_lib"
