@@ -175,11 +175,6 @@ def midi_key_signature_detector(midi_dto: MidiDTO):
 
     while not is_n_notes_greater_than_common_notes_per_scale:
         for instr_idx, note_idx in next_instr_note_indices.items():
-            if is_n_notes_greater_than_common_notes_per_scale:
-                break
-
-            print("1: ", instr_idx, note_idx)
-            
             if note_idx < len(midi_dto.instruments[instr_idx].notes):
                 note = midi_dto.instruments[instr_idx].notes[note_idx]
                 
@@ -193,8 +188,6 @@ def midi_key_signature_detector(midi_dto: MidiDTO):
                 pass
 
         for instr_idx, note_idx in next_instr_note_indices.items():
-            print("2: ", instr_idx, note_idx)
-
             if is_n_notes_greater_than_common_notes_per_scale:
                 break
 
