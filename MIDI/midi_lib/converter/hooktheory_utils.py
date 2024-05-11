@@ -5,6 +5,7 @@ from dto.Instrument import InstrumentDTO
 from dto.KeySignatureChange import KeySignatureChangeDTO
 
 import const.hooktheory_const as htc
+import const.midi as mc
 
 from converter.note_position import position_to_tick_converter
 
@@ -62,14 +63,14 @@ def scale_degree_to_midi_note_number(
         scale_degree = int(scale_degree_str[1:])
         accidental_semitones = 1
 
-    root_midi_note_number = htc.inversed_based_midi_note_numbers[key.root_note_str]
-    scale_formula = htc.scale_formulas[key.scale_name]
+    root_midi_note_number = mc.inversed_based_midi_note_numbers[key.root_note_str]
+    scale_formula = mc.scale_formulas[key.scale_name]
     
     base_midi_note = root_midi_note_number + sum(
         scale_formula[:(scale_degree - 1)]
     ) + accidental_semitones
     
-    return base_midi_note + 12 * octave + htc.C4_midi_note_number
+    return base_midi_note + 12 * octave + mc.C4_midi_note_number
 
 def key_signature_str_to_hooktheory_key_signature_dto(
     key_sig_str: str

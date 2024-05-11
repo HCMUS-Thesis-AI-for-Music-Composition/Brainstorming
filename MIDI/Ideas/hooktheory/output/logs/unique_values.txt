@@ -1,0 +1,14 @@
+root: {0, 1, 2, 3, 4, 5, 6, 7, '3', -2, -4, -3, -1}
+type: {5, 7, 9, 11, 13}
+inversion: {0, 1, 2, 3}
+applied: {0, 1, 2, 3, 4, 5, 6, 7}
+adds: {9, 4, 6}
+omits: {3, 5}
+alterations: {'#9', '#5', 'b13', '#11', 'b9', 'b5'}
+suspensions: {2, 4}
+pedal: {None}
+alternate: {'', 'D'}
+borrowed: {'', 0, 2, 1, 4, 5, 6, 3, 8, 9, 7, 11, 10, 'dorian', 12, 'super:2', 'mixolydian', 'minor', 'major', 'phrygianDominant', 'harmonicMinor', 'locrian', 'lydian', None, 'phrygian', -1}
+tonic: {'G', 'Gb', 'E', 'Eb', 'E#', 'A#', 'Bb', 'B', 'D', 'Ab', 'D#', 'G#', 'F#', 'C', 'F', 'C#', 'A', 'Db'}
+scale: {'lydian', 'dorian', 'phrygianDominant', 'phrygian', 'minor', 'locrian', 'major', 'mixolydian', 'harmonicMinor'}
+ignored_keys:  {'beat', 'isRest', 'recordingEndBeat', 'duration'}
