@@ -163,7 +163,7 @@ label_to_template_v3 = {
     "M2":"[]"
     }
 
-v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "template_vn.json")))
+v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "template.json")))
 for label in v3_templates:
     v3_templates[label] = v3_templates[label].split(";")
     for i, _ in enumerate(v3_templates[label]):
@@ -171,7 +171,7 @@ for label in v3_templates:
     
     # print(f"{label}: {v3_templates[label]}")
 
-_chatgpt_template = json.load(open(os.path.join(os.path.dirname(__file__), "refined_template_vn.json"), "r"))
+_chatgpt_template = json.load(open(os.path.join(os.path.dirname(__file__), "refined_template.json"), "r"))
 chatgpt_template = {}
 for temp in _chatgpt_template:
     attributes = fs(temp["attributes"])
@@ -288,7 +288,7 @@ class Verbalizer(object):
                 mid = str_list[i][1:]
             res += f", {str_list[i][0].lower()}{mid}"
         
-        res += f" and {str_list[-1][0].lower()}{str_list[-1][1:]}"
+        res += f" và {str_list[-1][0].lower()}{str_list[-1][1:]}"
         return res
 
     def emotion_to_str(self, emo):
