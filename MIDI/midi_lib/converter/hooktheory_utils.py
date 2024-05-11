@@ -1,8 +1,9 @@
 import re
 
-from dto.Note import NoteDTO
-from dto.Instrument import InstrumentDTO
 from dto.KeySignatureChange import KeySignatureChangeDTO
+from dto.TempoChange import TempoChangeDTO
+from dto.Instrument import InstrumentDTO
+from dto.Note import NoteDTO
 
 import const.hooktheory_const as htc
 import const.midi as mc
@@ -164,3 +165,53 @@ def hooktheory_json_notes_to_instr_dto(
             )
 
     return instrument
+
+def hooktheory_json_key_change_to_key_signature_changes_dto_converter(
+    hooktheory_key_changes: list[dict],
+    tick_per_beat: int = mc.default_ticks_per_beat
+) -> list[KeySignatureChangeDTO]:
+    key_signature_changes = []
+
+    for hooktheory_key_change in hooktheory_key_changes:
+        root_note = hooktheory_key_change["tonic"]
+        scale = hooktheory_key_change["scale"]
+
+        if scale == mc.ScaleName.HARMONIC_MINOR:
+            pass
+        elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
+            raise ValueError(f"This scale was not predefined: {scale}")
+        
+        key_change_time = hooktheory_start_beat_to_tick_position(
+            hooktheory_key_change["beat"],
+            tick_per_beat
+        )
+
+        key_signature_changes.append(
+            KeySignatureChangeDTO(
+                time=key_change_time,
+                key_name=f"{root_note} {scale}"
+            )
+        )
+
+    return key_signature_changes
+
+def hooktheory_json_tempo_change_to_tempo_change_dto_converter(
+    hooktheory_tempo_changes: list[dict],
+    tick_per_beat: int = mc.default_ticks_per_beat
+) -> list[TempoChangeDTO]:
+    tempo_changes = []
+
+    for hooktheory_tempo_change in hooktheory_tempo_changes:
+        tempo_change_time = hooktheory_start_beat_to_tick_position(
+            hooktheory_tempo_change["beat"],
+            tick_per_beat
+        )
+
+        tempo_changes.append(
+            TempoChangeDTO(
+                time=tempo_change_time,
+                tempo=float(hooktheory_tempo_change["bpm"])
+            )
+        )
+
+    return tempo_changes

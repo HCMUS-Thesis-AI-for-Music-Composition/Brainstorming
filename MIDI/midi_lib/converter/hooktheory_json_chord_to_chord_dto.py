@@ -5,16 +5,29 @@ from dto.KeySignatureChange import KeySignatureChangeDTO
 import const.hooktheory_const as htc
 import const.midi as mc
 
-import midi_lib.midi_utils as mu
-import hooktheory_utils as htu
+import midi_utils as mu
+import converter.hooktheory_utils as htu
 
 def hooktheory_json_chord_to_chord_dto_converter(
     hooktheory_json_chord: dict,
-    key_signature_changes: list[KeySignatureChangeDTO]
+    key_signature_changes: list[KeySignatureChangeDTO],
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat,
+    velocity: int = htc.hooktheory_default_velocity
 ) -> ChordDTO:
     """
         Convert a HookTheory JSON chord to a ChordDTO
     """
+    start_tick = htu.hooktheory_start_beat_to_tick_position(
+        hooktheory_json_chord["beat"],
+        ticks_per_beat
+    )
+    
+    end_tick = htu.calculate_note_end_tick_position(
+        hooktheory_json_chord["beat"],
+        hooktheory_json_chord["duration"],
+        ticks_per_beat
+    )
+
     key_sig = mu.current_key_signature_from_midi_dto_key_signature_changes(
         key_signature_changes,
         start_tick
@@ -27,22 +40,15 @@ def hooktheory_json_chord_to_chord_dto_converter(
     scale_name = key_sig[1]
 
     key_sig = KeySignatureDTO(
-        tonic_midi_note_number=mc.inversed_based_midi_note_numbers(
+        tonic_midi_note_number=mc.inversed_based_midi_note_numbers[
             root_note_str
-        ),
+        ],
         scale_name=scale_name
     )
 
-    start_tick = htu.hooktheory_start_beat_to_tick_position(
-        hooktheory_json_chord["start_beat"],
-        htc.hooktheory_ticks_per_beat
-    )
-
-    end_tick = htu.calculate_note_end_tick_position(
-        hooktheory_json_chord["start_beat"],
-        hooktheory_json_chord["duration"],
-        htc.hooktheory_ticks_per_beat
-    )
+    borrowed = [] if (
+        hooktheory_json_chord["borrowed"] is None
+    ) else hooktheory_json_chord["borrowed"]
 
     return ChordDTO(
         key_signature=key_sig,
@@ -56,7 +62,8 @@ def hooktheory_json_chord_to_chord_dto_converter(
         omits=hooktheory_json_chord["omits"],
         alterations=hooktheory_json_chord["alterations"],
         suspensions=hooktheory_json_chord["suspensions"],
-        pedal=None,
+        pedal=[],
         alternate=hooktheory_json_chord["alternate"],
-        borrowed=hooktheory_json_chord["borrowed"]
+        borrowed=borrowed,
+        velocity=velocity
     )
