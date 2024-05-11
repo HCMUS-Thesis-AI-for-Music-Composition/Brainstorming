@@ -7,8 +7,15 @@ default_velocity = 80
 class ScaleName:
     MAJOR = "major"
     MINOR = "minor"
-    HARMONIC_MINOR = "harmonic_minor"
+    HARMONIC_MINOR = "harmonicMinor"
     DORIAN = "dorian"
+
+class Accidental:
+    FLAT = -1
+    SHARP = 1
+    NATURAL = 0
+
+default_max_chord_voice_degree = 15
 
 scale_formulas = {
     ScaleName.MAJOR: [2, 2, 1, 2, 2, 2, 1],

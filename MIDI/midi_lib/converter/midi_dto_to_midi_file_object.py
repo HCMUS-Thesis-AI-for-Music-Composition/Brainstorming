@@ -1,5 +1,6 @@
 from miditoolkit import MidiFile, TempoChange, KeySignature, TimeSignature, Instrument, Note, Marker
 from dto.Midi import MidiDTO
+import const.midi as mc
 
 def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
     midi_file_object = MidiFile()
@@ -22,7 +23,12 @@ def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
         
         root_note, scale = key_name.split(" ")
         scale = scale.lower().strip()
-        scale = "m" if scale == "minor" else ""
+        
+        scale = "m" if (
+            scale == mc.ScaleName.MINOR
+        ) else "m" if (
+            scale == mc.ScaleName.HARMONIC_MINOR.lower()
+        ) else "" 
 
         key_name = f"{root_note}{scale}"
 

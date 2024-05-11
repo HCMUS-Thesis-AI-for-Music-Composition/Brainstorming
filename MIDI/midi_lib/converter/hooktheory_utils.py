@@ -92,8 +92,8 @@ def key_signature_str_to_hooktheory_key_signature_dto(
     
     key_str_parts = key_sig_str.split(" ")
 
-    root_note_str = key_str_parts[0].upper()
-    scale = key_str_parts[1].lower()
+    root_note_str = key_str_parts[0]
+    scale = key_str_parts[1]
 
     return htc.HookTheoryKeySignatureDTO(
         root_note_str=root_note_str,
@@ -125,7 +125,7 @@ def hooktheory_json_note_to_note_dto(
     key = key_signature_str_to_hooktheory_key_signature_dto(
         key_name_str
     )
-
+    
     return NoteDTO(
         start=note_start_tick,
         end=note_end_tick,

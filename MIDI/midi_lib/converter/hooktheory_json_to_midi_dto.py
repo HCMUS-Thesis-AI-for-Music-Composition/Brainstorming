@@ -1,4 +1,4 @@
-from const.midi import default_ticks_per_beat
+import const.midi as mc
 
 from dto.Midi import MidiDTO
 from dto.KeySignatureChange import KeySignatureChangeDTO
@@ -8,7 +8,7 @@ import converter.hooktheory_utils as htu
 
 def hooktheory_json_song_part_to_midi_dto_converter(
     hooktheory_json_song_part: dict,
-    tick_per_beat: int = default_ticks_per_beat,
+    tick_per_beat: int = mc.default_ticks_per_beat,
 ) -> MidiDTO:
     midi_dto = MidiDTO()
     
@@ -28,7 +28,9 @@ def hooktheory_json_song_part_to_midi_dto_converter(
         root_note = hooktheory_key_change["tonic"]
         scale = hooktheory_key_change["scale"]
 
-        if scale.lower().strip() not in ["major", "minor"]:
+        if scale == mc.ScaleName.HARMONIC_MINOR:
+            pass
+        elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
             raise ValueError(f"This scale was not predefined: {scale}")
         
         key_change_time = htu.hooktheory_start_beat_to_tick_position(

@@ -32,7 +32,7 @@ class ChordDTO:
         self.suspensions: list[int] = list[int]([])
         self.pedal = None
         self.alternate: str = str("")
-        self.borrowed: list[str] = list[str]([])
+        self.borrowed = None
 
         for key, value in kwargs.items():
             type_of_keys = {
