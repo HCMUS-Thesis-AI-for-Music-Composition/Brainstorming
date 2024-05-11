@@ -4,6 +4,7 @@ from dto.Midi import MidiDTO
 
 import converter.hooktheory_utils as htu
 from converter.hooktheory_json_chords_to_instrument_dto import hooktheory_json_chords_to_instrument_dto_converter
+from converter.hooktheory_json_notes_to_instr_dto import hooktheory_json_notes_to_instr_dto_converter
 
 def hooktheory_json_song_part_to_midi_dto_converter(
     hooktheory_json_song_part: dict,
@@ -35,7 +36,7 @@ def hooktheory_json_song_part_to_midi_dto_converter(
     )
 
     midi_dto.instruments.append(
-        htu.hooktheory_json_notes_to_instr_dto(
+        hooktheory_json_notes_to_instr_dto_converter(
             notes=hooktheory_json_song_part["main_data"]["notes"],
             key_signature_changes=midi_dto.key_signature_changes,
             instrument_name=htu.htc.hooktheory_default_instr_name,
