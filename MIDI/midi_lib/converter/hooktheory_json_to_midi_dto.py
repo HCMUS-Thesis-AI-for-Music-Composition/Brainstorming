@@ -1,20 +1,17 @@
-from const.midi import default_ticks_per_beat, midi_program_to_instrument_name_mapper, default_velocity, default_drums_instrument
-import const.mmm_format_const as mmm_const
+from const.midi import default_ticks_per_beat
 
-from dto.Instrument import InstrumentDTO
-from dto.Note import NoteDTO
 from dto.Midi import MidiDTO
+from dto.KeySignatureChange import KeySignatureChangeDTO
+from dto.TempoChange import TempoChangeDTO
 
-from converter.note_position import position_to_tick_converter
+import converter.hooktheory_utils as htu
 
-from copy import deepcopy
-
-def hooktheory_json_to_midi_dto_converter(
-    hooktheory_json: list[tuple],
+def hooktheory_json_song_part_to_midi_dto_converter(
+    hooktheory_json_song_part: dict,
     tick_per_beat: int = default_ticks_per_beat,
 ) -> MidiDTO:
     midi_dto = MidiDTO()
-
+    
     midi_dto.ticks_per_beat = tick_per_beat
     midi_dto.max_tick = 0
     midi_dto.lyrics = ""
@@ -23,99 +20,51 @@ def hooktheory_json_to_midi_dto_converter(
     midi_dto.time_signature_changes = []
     midi_dto.instruments = []
     midi_dto.markers = []
+    
+    hooktheory_key_changes = hooktheory_json_song_part["main_data"]["keys"]
+    hooktheory_tempo_changes = hooktheory_json_song_part["main_data"]["tempos"]
 
-    current_time_delta = 0
-    current_instrument = None
-    pending_note_on = dict() # note : on_time_delta
+    for hooktheory_key_change in hooktheory_key_changes:
+        root_note = hooktheory_key_change["tonic"]
+        scale = hooktheory_key_change["scale"]
 
-    max_time_delta = -1
-    first_peace_start = True
-    for key, value in mmm_format:
-        if key in [
-            mmm_const.abbr_mmm_piece_start,
-            mmm_const.abbr_mmm_genre,
-            mmm_const.abbr_mmm_track_start,
-            mmm_const.abbr_mmm_density,
-            mmm_const.abbr_mmm_bar_start,
-            mmm_const.abbr_mmm_bar_end
-        ]:
-            continue
-        elif key == mmm_const.abbr_mmm_track_end:
-            midi_dto.instruments.append(current_instrument)
-            current_instrument = None
-        elif key == mmm_const.abbr_mmm_time_delta:
-            current_time_delta += float(value)
-            max_time_delta = max(max_time_delta, current_time_delta)
-        elif key == mmm_const.abbr_mmm_instrument:
-            if type(value) == str:
-                if value == "DRUMS":
-                    current_instrument = InstrumentDTO(
-                        program=default_drums_instrument,
-                        name=midi_program_to_instrument_name_mapper[default_drums_instrument]
-                    )
-            elif current_instrument == None:
-                current_instrument = InstrumentDTO(
-                    program=int(value),
-                    name=midi_program_to_instrument_name_mapper[int(value)],
-                )
+        if scale.lower().strip() not in ["major", "minor"]:
+            raise ValueError(f"This scale was not predefined: {scale}")
+        
+        key_change_time = htu.hooktheory_start_beat_to_tick_position(
+            hooktheory_key_change["beat"],
+            tick_per_beat
+        )
 
-                current_time_delta = 0
-            else:
-                if int(value) == current_instrument.program:
-                    continue
-                else:
-                    midi_dto.instruments.append(deepcopy(current_instrument))
-                    current_instrument = InstrumentDTO(
-                        program=int(value),
-                        name=midi_program_to_instrument_name_mapper[int(value)],
-                    )
+        midi_dto.key_signature_changes.append(
+            KeySignatureChangeDTO(
+                time=key_change_time,
+                key_name=f"{root_note} {scale}"
+            )
+        )
 
-                    current_time_delta = 0
+    for hooktheory_tempo_change in hooktheory_tempo_changes:
+        tempo_change_time = htu.hooktheory_start_beat_to_tick_position(
+            hooktheory_tempo_change["beat"],
+            tick_per_beat
+        )
 
-                    # DEBUG
-                    if len(pending_note_on) > 0:
-                        print("Warning: There are pending note on")
-                        print(pending_note_on)
-                        print(current_instrument.program, current_time_delta)
-                    # DEBUG
+        midi_dto.tempo_changes.append(
+            TempoChangeDTO(
+                time=tempo_change_time,
+                tempo=float(hooktheory_tempo_change["bpm"])
+            )
+        )
 
-                    pending_note_on.clear()
-        elif key == mmm_const.abbr_mmm_note_on:
-            note_on = int(value)
-            pending_note_on[note_on] = current_time_delta
-        elif key == mmm_const.abbr_mmm_note_off:
-            note_off = int(value)
-            if note_off in pending_note_on:
-                note_start_time = pending_note_on.pop(note_off)
-                note_start_time = position_to_tick_converter(
-                    note_start_time, 
-                    midi_dto.ticks_per_beat,
-                    position_resolution=1
-                )
-
-                note_end_time = position_to_tick_converter(
-                    current_time_delta, 
-                    midi_dto.ticks_per_beat,
-                    position_resolution=1
-                )
-
-                current_instrument.notes.append(
-                    NoteDTO(
-                        start=note_start_time,
-                        end=note_end_time,
-                        pitch=note_off,
-                        velocity=default_velocity
-                    )
-                )
-            else:
-                print(f"Note off {note_off} has no corresponding note on")
-        else:
-            raise ValueError(f'Unknown event: {key} with value: "{value}"')
-
-    midi_dto.max_tick = position_to_tick_converter(
-        max_time_delta, 
-        midi_dto.ticks_per_beat,
-        position_resolution=1
+    midi_dto.instruments.append(
+        htu.hooktheory_json_notes_to_instr_dto(
+            notes=hooktheory_json_song_part["main_data"]["notes"],
+            key_signature_changes=midi_dto.key_signature_changes,
+            instrument_name=htu.htc.hooktheory_default_instr_name,
+            instrument_program=htu.htc.hooktheory_default_instr_program,
+            ticks_per_beat=tick_per_beat,
+            velocity=htu.htc.hooktheory_default_velocity
+        )
     )
-
+    
     return midi_dto

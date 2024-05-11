@@ -3,18 +3,16 @@ class KeySignatureChangeDTO:
         """
             kwargs accepts:
                 time: int
-                key: int
-                scale: int
+                key_name: str
+                    Example: Db Major, A minor, etc.
         """
         self.time: int = int(0)
-        self.key: int = int(0)
-        self.scale: int = int(0)
+        self.key_name: str = ""
 
         for key, value in kwargs.items():
             type_of_keys = {
                 "time": type(self.time),
-                "key": type(self.key),
-                "scale": type(self.scale)
+                "key_name": type(self.key_name)
             }
 
             if key in type_of_keys:

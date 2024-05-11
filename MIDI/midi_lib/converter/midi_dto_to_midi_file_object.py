@@ -18,10 +18,18 @@ def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
         )
 
     for key_signature_change in midi_dto.key_signature_changes:
+        key_name = key_signature_change.key_name
+        
+        root_note, scale = key_name.split(" ")
+        scale = scale.lower().strip()
+        scale = "m" if scale == "minor" else ""
+
+        key_name = f"{root_note}{scale}"
+
         midi_file_object.key_signature_changes.append(
             KeySignature(
                 time=key_signature_change.time,
-                key_name=key_signature_change.key
+                key_name=key_name
             )            
         )
 

@@ -5,9 +5,9 @@ default_position_resolution = 12
 default_velocity = 80
 
 midi_program_to_instrument_name_mapper = {
-    1 : "Acoustic Grand",
-    2 : "Bright Acoustic",
-    3 : "Electric Grand",
+    1 : "Acoustic Grand Piano",
+    2 : "Bright Acoustic Piano",
+    3 : "Electric Grand Piano",
     4 : "Honky-Tonk",
     5 : "Electric Piano 1",
     6 : "Electric Piano 2",

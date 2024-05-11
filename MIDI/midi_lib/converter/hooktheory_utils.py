@@ -1,63 +1,18 @@
 import re
 
 from dto.Note import NoteDTO
+from dto.Instrument import InstrumentDTO
+from dto.KeySignatureChange import KeySignatureChangeDTO
+
+import const.hooktheory_const as htc
+
 from converter.note_position import position_to_tick_converter
 
-# {
-#     "sd": "1",
-#     "octave": 0, = C4
-#     "beat": 1,
-#     "duration": 2,
-#     "isRest": true,
-#     "recordingEndBeat": null
-# }
+import midi_utils as mu
 
-based_midi_note_numbers = {
-    0: ["C"],
-    1: ["C#", "Db"],
-    2: ["D"],
-    3: ["D#", "Eb"],
-    4: ["E"],
-    5: ["F"],
-    6: ["F#", "Gb"],
-    7: ["G"],
-    8: ["G#", "Ab"],
-    9: ["A"],
-    10: ["A#", "Bb"],
-    11: ["B"]
-}
-
-inversed_based_midi_note_numbers = {
-    note: midi_note_number
-    for midi_note_number, notes in based_midi_note_numbers.items()
-    for note in notes
-}
-
-C4_midi_note_number = 60
-
-class ScaleName:
-    MAJOR = "major"
-    MINOR = "minor"
-    HARMONIC_MINOR = "harmonic_minor"
-    DORIAN = "dorian"
-
-scale_formulas = {
-    ScaleName.MAJOR: [2, 2, 1, 2, 2, 2, 1],
-    ScaleName.MINOR: [2, 1, 2, 2, 1, 2, 2],
-    ScaleName.HARMONIC_MINOR: [2, 1, 2, 2, 1, 3, 1],
-    ScaleName.DORIAN: [2, 1, 2, 2, 2, 1, 2]
-}
-
-hooktheory_ticks_per_beat = 960
-
-class SongKey:
-    def __init__(self, root_note_str: str, scale: str):
-        self.root_note_str = root_note_str
-        self.scale_name = scale
-
-def hooktheory_beat_to_tick_position(
+def hooktheory_start_beat_to_tick_position(
     beat: float,
-    ticks_per_beat: int = hooktheory_ticks_per_beat
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat
 ) -> int:
     return position_to_tick_converter(
         position=beat - 1,
@@ -67,7 +22,7 @@ def hooktheory_beat_to_tick_position(
 
 def hooktheory_duration_to_tick_duration(
     duration: float,
-    ticks_per_beat: int = hooktheory_ticks_per_beat
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat
 ) -> int:
     return position_to_tick_converter(
         position=duration,
@@ -78,10 +33,10 @@ def hooktheory_duration_to_tick_duration(
 def calculate_note_end_tick_position(
     hooktheory_start_beat: float,
     hooktheory_duration: float,
-    ticks_per_beat: int = hooktheory_ticks_per_beat
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat
 ) -> int:
     return (
-        hooktheory_beat_to_tick_position(
+        hooktheory_start_beat_to_tick_position(
             hooktheory_start_beat,
             ticks_per_beat
         ) + hooktheory_duration_to_tick_duration(
@@ -92,10 +47,10 @@ def calculate_note_end_tick_position(
 
 def scale_degree_to_midi_note_number(
     scale_degree_str: str,
-    key: SongKey,
+    key: htc.HookTheoryKeySignatureDTO,
     octave: int = 0
 ):
-    # Check if sd is n, bn or #n
+    # Check if scale degree is n, bn or #n
     accidental_semitones = 0
 
     if re.match(r"^\d+$", scale_degree_str):
@@ -107,23 +62,104 @@ def scale_degree_to_midi_note_number(
         scale_degree = int(scale_degree_str[1:])
         accidental_semitones = 1
 
-    root_midi_note_number = inversed_based_midi_note_numbers[key.root_note_str]
-    scale_formula = scale_formulas[key.scale_name]
+    root_midi_note_number = htc.inversed_based_midi_note_numbers[key.root_note_str]
+    scale_formula = htc.scale_formulas[key.scale_name]
     
-    base_midi_note = root_midi_note_number + sum(scale_formula[:(scale_degree - 1)]) + accidental_semitones
+    base_midi_note = root_midi_note_number + sum(
+        scale_formula[:(scale_degree - 1)]
+    ) + accidental_semitones
     
-    return base_midi_note + 12 * octave + C4_midi_note_number
+    return base_midi_note + 12 * octave + htc.C4_midi_note_number
 
+def key_signature_str_to_hooktheory_key_signature_dto(
+    key_sig_str: str
+) -> htc.HookTheoryKeySignatureDTO:
+    """
+        Converts a key signature string to a HookTheoryKeySignatureDTO object.
 
-def json_notes_converter(notes: list) -> list[NoteDTO]:
-    converted_notes = []
+        key_sig_str: str
+            The key signature string to convert.
+
+            Example: "C major", "F# minor", "Bb major", "Eb minor"
+    """
+    key_sig_str = key_sig_str.replace(" ", "")
+    
+    if "b" in key_sig_str or "#" in key_sig_str:
+        key_sig_str = f"{key_sig_str[0:2]} {key_sig_str[2:]}"
+    else:
+        key_sig_str = f"{key_sig_str[0:1]} {key_sig_str[1:]}"
+    
+    key_str_parts = key_sig_str.split(" ")
+
+    root_note_str = key_str_parts[0].upper()
+    scale = key_str_parts[1].lower()
+
+    return htc.HookTheoryKeySignatureDTO(
+        root_note_str=root_note_str,
+        scale=scale
+    )
+
+def hooktheory_json_note_to_note_dto(
+    note: dict,
+    key_signature_changes: list[KeySignatureChangeDTO],
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat,
+    velocity: int = htc.hooktheory_default_velocity
+) -> NoteDTO:
+    note_start_tick = hooktheory_start_beat_to_tick_position(
+        note["beat"],
+        ticks_per_beat
+    )
+
+    note_end_tick = calculate_note_end_tick_position(
+        note["beat"],
+        note["duration"],
+        ticks_per_beat
+    )
+
+    key_name_str: htc.HookTheoryKeySignatureDTO = mu.current_key_signature_from_midi_dto_key_signature_changes(
+        key_signature_changes,
+        note_start_tick
+    )
+
+    key = key_signature_str_to_hooktheory_key_signature_dto(
+        key_name_str
+    )
+
+    return NoteDTO(
+        start=note_start_tick,
+        end=note_end_tick,
+        pitch=scale_degree_to_midi_note_number(
+            note["sd"],
+            key,
+            octave=note["octave"]
+        ),
+        velocity=velocity
+    )
+
+def hooktheory_json_notes_to_instr_dto(
+    notes: list[dict],
+    key_signature_changes: list[KeySignatureChangeDTO],
+    instrument_name: str,
+    instrument_program: int,
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat,
+    velocity: int = htc.hooktheory_default_velocity
+) -> InstrumentDTO:
+    instrument = InstrumentDTO(
+        program=instrument_program,
+        name=instrument_name
+    )
+
     for note in notes:
-        converted_notes.append(
-            NoteDTO(
-                start=note["start"],
-                end=note["end"],
-                pitch=note["pitch"],
-                velocity=note["velocity"]
+        if note["isRest"]:
+            pass
+        else:
+            instrument.notes.append(
+                hooktheory_json_note_to_note_dto(
+                    note,
+                    key_signature_changes,
+                    ticks_per_beat,
+                    velocity
+                )
             )
-        )
-    return converted_notes
+
+    return instrument
