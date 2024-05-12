@@ -4,13 +4,15 @@ default_tempo = 120
 default_position_resolution = 12
 default_velocity = 80
 
+n_semitones_per_octave = 12
+
 class ScaleName:
     MAJOR = "major"
     MINOR = "minor"
     HARMONIC_MINOR = "harmonicMinor"
     DORIAN = "dorian"
 
-class Accidental:
+class AccidentalIntValue:
     FLAT = -1
     SHARP = 1
     NATURAL = 0
