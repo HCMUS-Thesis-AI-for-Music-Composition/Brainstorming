@@ -1,6 +1,24 @@
 from dto.KeySignature import KeySignatureDTO
 
 class ChordDTO:
+    """
+        Attributes:
+            key_signature: KeySignatureDTO
+            root: int - scale degree
+            start: int - time in ticks
+            end: int - time in ticks
+            type: int
+            inversion: int
+            applied: int
+            adds: list[int]
+            omits: list[int]
+            alterations: list[str]
+            suspensions: list[int]
+            pedal: Any
+            alternate: str
+            borrowed: Any
+            velocity: int
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

@@ -1,4 +1,11 @@
 class NoteDTO:
+    """
+        Attributes:
+            start: int
+            end: int
+            pitch: int
+            velocity: int
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

@@ -75,7 +75,7 @@ def hooktheory_json_note_to_note_dto(
         end=note_end_tick,
         pitch=mu.scale_degree_to_midi_note_number(
             note["sd"],
-            key,
+            key_signature=key,
             octave=note["octave"]
         ),
         velocity=velocity

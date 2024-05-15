@@ -1,6 +1,5 @@
 from dto.KeySignatureChange import KeySignatureChangeDTO
 from dto.Instrument import InstrumentDTO
-from dto.Note import NoteDTO
 
 import const.hooktheory_const as htc
 
@@ -27,7 +26,7 @@ def hooktheory_json_chords_to_instrument_dto_converter(
             ticks_per_beat,
             velocity
         )
-
+        print(chord)
         instrument.notes.extend(
             chord_dto_to_note_dtos_converter(chord_dto)
         )

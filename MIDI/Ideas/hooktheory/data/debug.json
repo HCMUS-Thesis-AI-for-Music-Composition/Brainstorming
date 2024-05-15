@@ -64,5 +64,61 @@
         ],
         "chord": "GmM7",
         "degree_form": "vi#7 (bor)"
-    }
+    },
+    {
+        "key": "G",
+        "root": 4,
+        "applied": 4,
+        "beat": 37,
+        "notes": [
+            "G",
+            "C",
+            "E",
+            "G"
+        ],
+        "chord": "C/G",
+        "degree_form": "IV^{6}_{4}"
+    },
+    {
+        "key": "C",
+        "root": 2,
+        "applied": 5,
+        "beat": 25,
+        "notes": [
+            "A",
+            "C#",
+            "E",
+            "A"
+        ],
+        "chord": "A",
+        "degree_form": "V/ii"
+    },
+    {
+        "key": "C",
+        "root": 2,
+        "applied": 6,
+        "beat": 26.5,
+        "notes": [
+            "B",
+            "C#",
+            "E",
+            "A"
+        ],
+        "chord": "bm11",
+        "degree_form": "vi^11/ii"
+    },
+    {
+        "key": "C",
+        "root": 2,
+        "applied": 5,
+        "beat": 28.5,
+        "notes": [
+            "C#",
+            "C#",
+            "E",
+            "A"
+        ],
+        "chord": "A/C#",
+        "degree_form": "V^6/ii"
+    },
 ]

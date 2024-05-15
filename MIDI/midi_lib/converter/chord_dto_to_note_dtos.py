@@ -1,8 +1,12 @@
 from dto.Note import NoteDTO
 from dto.Chord import ChordDTO
+from dto.KeyFormula import KeyFormulaDTO
+
+import const.hooktheory_const as htc
+import midi_utils as mu
 
 import const.midi as mc
-import const.hooktheory_const as htc
+
 
 def chord_dto_to_note_dtos_converter(
     chord_dto: ChordDTO
@@ -14,8 +18,12 @@ def chord_dto_to_note_dtos_converter(
         chord_voice : None
         for chord_voice in range(1, mc.default_max_chord_voice_degree + 1)
     }
+
+    # ROOT
+    chord_root_note_scale_degree = chord_dto.root # scale degree
     
     # KEY SIGNATURE
+    key_tonic_note_number = chord_dto.key_signature.tonic_midi_note_number % mc.n_semitones_per_octave
     scale_formula = mc.scale_formulas[chord_dto.key_signature.scale_name]
     
     # BORROWED
@@ -34,18 +42,26 @@ def chord_dto_to_note_dtos_converter(
                     f"Message: borrowed {borrowed} scale"
                 )
             
-            borrowed_scale_formula = borrowed
-        elif borrowed in mc.scale_formulas:
+            key_tonic_note_number = key_tonic_note_number + borrowed[0]
+
+            n_note_in_borrowed_scale = len(borrowed)
+
+            scale_formula = [
+                (
+                    borrowed[(i + 1) % n_note_in_borrowed_scale]
+                    + mc.n_semitones_per_octave
+                    - borrowed[i]
+                ) % mc.n_semitones_per_octave
+                for i in range(0, n_note_in_borrowed_scale)
+            ]
+        elif borrowed in mc.scale_formulas.keys():
             scale_formula = mc.scale_formulas[borrowed]
         else:
-            print(
+            raise RuntimeError(
                 f"Warning: not implemented scale {borrowed} (borrowed scale)"
             )
     else:
         pass
-
-    # ROOT
-    root = chord_dto.root
 
     # TYPE
     n_note_based_on_type = (chord_dto.type - 1) // 2 + 1
@@ -95,7 +111,7 @@ def chord_dto_to_note_dtos_converter(
 
     # ALTERNATE
     alternate = chord_dto.alternate
-    if alternate is not None:
+    if alternate is not None and alternate != "":
         print(f"Ignored alternate value: {alternate}")
     else:
         pass
@@ -114,19 +130,74 @@ def chord_dto_to_note_dtos_converter(
             available_voices[available_voice_idx]
         ] += mc.n_semitones_per_octave
         
-            
+    # APPLIED
+    # raise NotImplementedError
+    applied = chord_dto.applied
+    if applied is not None:
+        print(f"Ignored applied value: {applied}")
+    else:
+        pass
     
 
     # TODO: Implement the rest of the function
 
-    import json
-    import sys
-    
-    for k, v in chord_dto.__dict__.items():
-        print(f"{k}: {v}")
+    note_dtos = []
 
-    print(json.dumps(chord_voice_accidentals, indent=4))
+    lowest_voice_note_number = None
     
-    # raise NotImplementedError
+    for chord_voice, accidental in chord_voice_accidentals.items():
+        if accidental is not None:
+            chord_voice_scale_degree = (
+                chord_root_note_scale_degree 
+                + chord_voice 
+                - 1
+            )
+            
+            octave = htc.chord_default_octave
 
-    return []
+            voice_scale_degree_note_number = mu.scale_degree_to_midi_note_number(
+                scale_degree_str=str(chord_voice_scale_degree),
+                key_formula=KeyFormulaDTO(
+                    tonic_midi_note_number=key_tonic_note_number,
+                    scale_formula=scale_formula
+                ),
+                octave=octave
+            )
+
+            chord_voice_note_number = voice_scale_degree_note_number + accidental
+
+            if lowest_voice_note_number is not None:
+                lowest_voice_note_number = min(
+                    lowest_voice_note_number,
+                    chord_voice_note_number
+                )
+            else:
+                lowest_voice_note_number = chord_voice_note_number
+
+            note_dtos.append(
+                NoteDTO(
+                    pitch=chord_voice_note_number,
+                    start=chord_dto.start,
+                    end=chord_dto.end,
+                    velocity=chord_dto.velocity
+                )
+            )
+        else:
+            pass
+        
+    if lowest_voice_note_number is not None:
+        note_dtos.append(
+            NoteDTO(
+                pitch=(
+                    lowest_voice_note_number
+                    - htc.n_octave_lower_for_bass_notes * mc.n_semitones_per_octave
+                ),
+                start=chord_dto.start,
+                end=chord_dto.end,
+                velocity=chord_dto.velocity
+            )
+        )
+    else:
+        pass
+
+    return note_dtos

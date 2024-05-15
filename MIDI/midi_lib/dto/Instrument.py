@@ -1,6 +1,12 @@
 from dto.Note import NoteDTO
 
 class InstrumentDTO:            
+    """
+        Attributes:
+            program: int
+            name: str
+            notes: list[NoteDTO]
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

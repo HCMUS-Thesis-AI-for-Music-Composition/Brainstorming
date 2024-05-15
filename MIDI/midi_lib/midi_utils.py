@@ -3,22 +3,24 @@ import re
 from dto.TempoChange import TempoChangeDTO
 from dto.KeySignatureChange import KeySignatureChangeDTO
 from dto.KeySignature import KeySignatureDTO
+from dto.KeyFormula import KeyFormulaDTO
 
 from const import midi as mc
 
 def scale_degree_to_midi_note_number(
     scale_degree_str: str,
-    key: KeySignatureDTO,
-    octave: int = 0
+    octave: int = 0,
+    key_signature: KeySignatureDTO=None,
+    key_formula: KeyFormulaDTO = None
 ):
     """
         Convert a scale degree to a MIDI note number
 
         scale_degree_str: str - scale degree in string format. Examples: "1", "b2", "#3"
-        key: KeySignatureDTO - key signature. Example: KeySignatureDTO(tonic_midi_note_number, "major"). Check const.midi.ScaleName for valid scale names.
-        octave: int - octave number of the root note of the scale.
+        key_signature: KeySignatureDTO - key signature. Use this Example: KeySignatureDTO(tonic_midi_note_number, "major"). Check const.midi.ScaleName for valid scale names.
+        octave: int - octave number of the root note of the scale. octave = 0 (C4) by default.
+        scale_formula: list[int] - scale formula. Example: [2, 2, 1, 2, 2, 2, 1] for major scale.
     """
-
     # Check if scale degree is n, bn or #n
     accidental_semitones = 0
     scale_degree = 0
@@ -31,13 +33,25 @@ def scale_degree_to_midi_note_number(
         scale_degree = int(scale_degree_str[1:])
         accidental_semitones = 1
 
-    root_midi_note_number = key.tonic_midi_note_number % mc.n_semitones_per_octave
-    scale_formula = mc.scale_formulas[key.scale_name]
-    
-    base_midi_note = root_midi_note_number + sum(
+    tonic_midi_note_number = None
+
+    if key_formula is None:
+        if key_signature.scale_name in mc.scale_formulas.keys():
+            tonic_midi_note_number = key_signature.tonic_midi_note_number % mc.n_semitones_per_octave
+            scale_formula = mc.scale_formulas[key_signature.scale_name]
+        else:
+            raise ValueError(f"Invalid scale name: {key_signature.scale_name}")
+    else:
+        tonic_midi_note_number = key_formula.tonic_midi_note_number % mc.n_semitones_per_octave
+        scale_formula = key_formula.scale_formula
+
+    # 3 times scale_formula to avoid index out of range
+    scale_formula = scale_formula * 3
+
+    base_midi_note = tonic_midi_note_number + sum(
         scale_formula[:(scale_degree - 1)]
     ) + accidental_semitones
-    
+        
     return base_midi_note + 12 * octave + mc.C4_midi_note_number
 
 def key_signature_str_to_key_signature_dto(

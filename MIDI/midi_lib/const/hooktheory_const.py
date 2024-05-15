@@ -8,6 +8,10 @@ hooktheory_default_instr_name = mc.midi_program_to_instrument_name_mapper[
     hooktheory_default_instr_program
 ]
 
+chord_default_octave = -1
+
+n_octave_lower_for_bass_notes = 2
+
 class HookTheoryKeySignatureDTO:
     def __init__(self, root_note_str: str, scale: str):
         """
