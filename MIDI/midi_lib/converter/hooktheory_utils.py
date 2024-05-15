@@ -1,8 +1,5 @@
-import re
-
 from dto.KeySignatureChange import KeySignatureChangeDTO
 from dto.TempoChange import TempoChangeDTO
-from dto.Instrument import InstrumentDTO
 from dto.Note import NoteDTO
 
 import const.hooktheory_const as htc
@@ -47,60 +44,6 @@ def calculate_note_end_tick_position(
         )
     )
 
-def scale_degree_to_midi_note_number(
-    scale_degree_str: str,
-    key: htc.HookTheoryKeySignatureDTO,
-    octave: int = 0
-):
-    # Check if scale degree is n, bn or #n
-    accidental_semitones = 0
-
-    if re.match(r"^\d+$", scale_degree_str):
-        scale_degree = int(scale_degree_str)
-    elif re.match(r"^b\d+$", scale_degree_str):
-        scale_degree = int(scale_degree_str[1:])
-        accidental_semitones = -1
-    elif re.match(r"^\#\d+$", scale_degree_str):
-        scale_degree = int(scale_degree_str[1:])
-        accidental_semitones = 1
-
-    root_midi_note_number = mc.inversed_based_midi_note_numbers[key.root_note_str]
-    scale_formula = mc.scale_formulas[key.scale_name]
-    
-    base_midi_note = root_midi_note_number + sum(
-        scale_formula[:(scale_degree - 1)]
-    ) + accidental_semitones
-    
-    return base_midi_note + 12 * octave + mc.C4_midi_note_number
-
-def key_signature_str_to_hooktheory_key_signature_dto(
-    key_sig_str: str
-) -> htc.HookTheoryKeySignatureDTO:
-    """
-        Converts a key signature string to a HookTheoryKeySignatureDTO object.
-
-        key_sig_str: str
-            The key signature string to convert.
-
-            Example: "C major", "F# minor", "Bb major", "Eb minor"
-    """
-    key_sig_str = key_sig_str.replace(" ", "")
-    
-    if "b" in key_sig_str or "#" in key_sig_str:
-        key_sig_str = f"{key_sig_str[0:2]} {key_sig_str[2:]}"
-    else:
-        key_sig_str = f"{key_sig_str[0:1]} {key_sig_str[1:]}"
-    
-    key_str_parts = key_sig_str.split(" ")
-
-    root_note_str = key_str_parts[0]
-    scale = key_str_parts[1]
-
-    return htc.HookTheoryKeySignatureDTO(
-        root_note_str=root_note_str,
-        scale=scale
-    )
-
 def hooktheory_json_note_to_note_dto(
     note: dict,
     key_signature_changes: list[KeySignatureChangeDTO],
@@ -118,19 +61,19 @@ def hooktheory_json_note_to_note_dto(
         ticks_per_beat
     )
 
-    key_name_str: htc.HookTheoryKeySignatureDTO = mu.current_key_signature_from_midi_dto_key_signature_changes(
+    key_name_str: str = mu.current_key_signature_from_midi_dto_key_signature_changes(
         key_signature_changes,
         note_start_tick
     )
 
-    key = key_signature_str_to_hooktheory_key_signature_dto(
+    key = mu.key_signature_str_to_key_signature_dto(
         key_name_str
     )
     
     return NoteDTO(
         start=note_start_tick,
         end=note_end_tick,
-        pitch=scale_degree_to_midi_note_number(
+        pitch=mu.scale_degree_to_midi_note_number(
             note["sd"],
             key,
             octave=note["octave"]

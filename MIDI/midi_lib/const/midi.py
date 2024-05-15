@@ -11,6 +11,11 @@ class ScaleName:
     MINOR = "minor"
     HARMONIC_MINOR = "harmonicMinor"
     DORIAN = "dorian"
+    LYDIAN = "lydian"
+    PHRYGIAN = "phrygian"
+    LOCRIAN = "locrian"
+    PHRYGIAN_DOMINANT = "phrygianDominant"
+    MIXOLYDIAN = "mixolydian"
 
 class AccidentalIntValue:
     FLAT = -1
@@ -25,6 +30,13 @@ scale_formulas = {
     ScaleName.HARMONIC_MINOR: [2, 1, 2, 2, 1, 3, 1],
     ScaleName.DORIAN: [2, 1, 2, 2, 2, 1, 2]
 }
+
+def scale_degree_to_based_midi_note_number(scale_degree, scale_formulas, root_note):
+    scale_degree = scale_degree % len(scale_formulas)
+    based_midi_note_number = root_note % n_semitones_per_octave
+    for i in range(0, scale_degree):
+        based_midi_note_number += scale_formulas[i]
+    return based_midi_note_number
 
 C4_midi_note_number = 60
 

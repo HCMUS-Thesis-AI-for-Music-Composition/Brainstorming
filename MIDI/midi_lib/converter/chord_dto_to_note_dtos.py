@@ -17,6 +17,32 @@ def chord_dto_to_note_dtos_converter(
     
     # KEY SIGNATURE
     scale_formula = mc.scale_formulas[chord_dto.key_signature.scale_name]
+    
+    # BORROWED
+    borrowed = chord_dto.borrowed
+    if borrowed is not None:
+        if type(borrowed) == list:
+            if len(borrowed) not in [
+                len(formula)
+                for scale, formula in mc.scale_formulas
+            ]:
+                print(
+                    f"Warning: unusual scale_length = {len(borrowed)} with {borrowed} scale"
+                )
+            else:
+                print(
+                    f"Message: borrowed {borrowed} scale"
+                )
+            
+            borrowed_scale_formula = borrowed
+        elif borrowed in mc.scale_formulas:
+            scale_formula = mc.scale_formulas[borrowed]
+        else:
+            print(
+                f"Warning: not implemented scale {borrowed} (borrowed scale)"
+            )
+    else:
+        pass
 
     # ROOT
     root = chord_dto.root
@@ -67,6 +93,13 @@ def chord_dto_to_note_dtos_converter(
             + n_flat * mc.AccidentalIntValue.FLAT
         )
 
+    # ALTERNATE
+    alternate = chord_dto.alternate
+    if alternate is not None:
+        print(f"Ignored alternate value: {alternate}")
+    else:
+        pass
+
     # INVERSION
     available_voices = [
         voice
@@ -94,6 +127,6 @@ def chord_dto_to_note_dtos_converter(
 
     print(json.dumps(chord_voice_accidentals, indent=4))
     
-    raise NotImplementedError
+    # raise NotImplementedError
 
     return []
