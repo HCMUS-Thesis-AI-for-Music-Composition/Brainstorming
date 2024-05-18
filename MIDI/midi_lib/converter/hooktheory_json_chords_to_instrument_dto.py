@@ -20,13 +20,16 @@ def hooktheory_json_chords_to_instrument_dto_converter(
     )
 
     for chord in chords:
+        if chord["isRest"]:
+            continue
+        
         chord_dto = hooktheory_json_chord_to_chord_dto_converter(
             chord,
             key_signature_changes,
             ticks_per_beat,
             velocity
         )
-        print(chord)
+        
         instrument.notes.extend(
             chord_dto_to_note_dtos_converter(chord_dto)
         )

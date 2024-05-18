@@ -9,7 +9,7 @@ class ChordDTO:
             end: int - time in ticks
             type: int
             inversion: int
-            applied: int
+            applied: int - secondary chord
             adds: list[int]
             omits: list[int]
             alterations: list[str]
@@ -77,7 +77,7 @@ class ChordDTO:
             # Không kiểm tra các PHẦN TỬ trong list có thỏa mãn kiểu dữ liệu hay không
             if key in type_of_keys:
                 if key in ["borrowed", "pedal"]:
-                    pass
+                    setattr(self, key, value)
                 elif not type(value) == type_of_keys[key]:
                     raise ValueError(f"Expected {type_of_keys[key]} for {key}, got {type(value)}")
                 else:

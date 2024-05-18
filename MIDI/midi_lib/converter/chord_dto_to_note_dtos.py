@@ -28,40 +28,58 @@ def chord_dto_to_note_dtos_converter(
     
     # BORROWED
     borrowed = chord_dto.borrowed
+    
     if borrowed is not None:
         if type(borrowed) == list:
-            if len(borrowed) not in [
-                len(formula)
-                for scale, formula in mc.scale_formulas
-            ]:
-                print(
-                    f"Warning: unusual scale_length = {len(borrowed)} with {borrowed} scale"
-                )
+            n_intervals = len(borrowed)
+            if n_intervals == 0:
+                pass
             else:
-                print(
-                    f"Message: borrowed {borrowed} scale"
-                )
-            
-            key_tonic_note_number = key_tonic_note_number + borrowed[0]
+                if n_intervals not in [
+                        len(formula)
+                        for scale, formula in mc.scale_formulas.items()
+                ]:
+                    print(
+                        f"Warning: unusual scale_length = {len(borrowed)} with {borrowed} scale"
+                    )
+                else:
+                    print(
+                        f"Message: borrowed {borrowed} scale"
+                    )
+                
+                key_tonic_note_number = key_tonic_note_number + borrowed[0]
 
-            n_note_in_borrowed_scale = len(borrowed)
+                n_note_in_borrowed_scale = len(borrowed)
 
-            scale_formula = [
-                (
-                    borrowed[(i + 1) % n_note_in_borrowed_scale]
-                    + mc.n_semitones_per_octave
-                    - borrowed[i]
-                ) % mc.n_semitones_per_octave
-                for i in range(0, n_note_in_borrowed_scale)
-            ]
+                scale_formula = [
+                    (
+                        borrowed[(i + 1) % n_note_in_borrowed_scale]
+                        + mc.n_semitones_per_octave
+                        - borrowed[i]
+                    ) % mc.n_semitones_per_octave
+                    for i in range(0, n_note_in_borrowed_scale)
+                ]
         elif borrowed in mc.scale_formulas.keys():
             scale_formula = mc.scale_formulas[borrowed]
+        elif borrowed == "":
+            pass
         else:
             raise RuntimeError(
                 f"Warning: not implemented scale {borrowed} (borrowed scale)"
             )
     else:
         pass
+
+    # APPLIED
+    applied = chord_dto.applied
+    if applied is not None:
+        if applied == 0:
+            pass
+        else:
+            print(f"Ignored applied value: {applied}")
+    else:
+        pass
+    # raise NotImplementedError
 
     # TYPE
     n_note_based_on_type = (chord_dto.type - 1) // 2 + 1
@@ -129,15 +147,6 @@ def chord_dto_to_note_dtos_converter(
         chord_voice_accidentals[
             available_voices[available_voice_idx]
         ] += mc.n_semitones_per_octave
-        
-    # APPLIED
-    # raise NotImplementedError
-    applied = chord_dto.applied
-    if applied is not None:
-        print(f"Ignored applied value: {applied}")
-    else:
-        pass
-    
 
     # TODO: Implement the rest of the function
 
@@ -173,7 +182,7 @@ def chord_dto_to_note_dtos_converter(
                 )
             else:
                 lowest_voice_note_number = chord_voice_note_number
-
+            
             note_dtos.append(
                 NoteDTO(
                     pitch=chord_voice_note_number,

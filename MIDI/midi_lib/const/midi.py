@@ -28,7 +28,12 @@ scale_formulas = {
     ScaleName.MAJOR: [2, 2, 1, 2, 2, 2, 1],
     ScaleName.MINOR: [2, 1, 2, 2, 1, 2, 2],
     ScaleName.HARMONIC_MINOR: [2, 1, 2, 2, 1, 3, 1],
-    ScaleName.DORIAN: [2, 1, 2, 2, 2, 1, 2]
+    ScaleName.DORIAN: [2, 1, 2, 2, 2, 1, 2],
+    ScaleName.PHRYGIAN: [1, 2, 2, 2, 1, 2, 2],
+    ScaleName.LYDIAN: [2, 2, 2, 1, 2, 2, 1],
+    ScaleName.MIXOLYDIAN: [2, 2, 1, 2, 2, 1, 2],
+    ScaleName.LOCRIAN: [1, 2, 2, 1, 2, 2, 2],
+    ScaleName.PHRYGIAN_DOMINANT: [1, 3, 1, 2, 1, 2, 2]
 }
 
 def scale_degree_to_based_midi_note_number(scale_degree, scale_formulas, root_note):

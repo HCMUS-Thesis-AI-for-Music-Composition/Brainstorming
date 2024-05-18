@@ -91,10 +91,15 @@ def hooktheory_json_key_change_to_key_signature_changes_dto_converter(
         root_note = hooktheory_key_change["tonic"]
         scale = hooktheory_key_change["scale"]
 
-        if scale == mc.ScaleName.HARMONIC_MINOR:
-            pass
-        elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
+        # if scale == mc.ScaleName.HARMONIC_MINOR:
+        #     pass
+        # elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
+        #     raise ValueError(f"This scale was not predefined: {scale}")
+
+        if scale not in mc.scale_formulas.keys():
             raise ValueError(f"This scale was not predefined: {scale}")
+        else:
+            pass
         
         key_change_time = hooktheory_start_beat_to_tick_position(
             hooktheory_key_change["beat"],

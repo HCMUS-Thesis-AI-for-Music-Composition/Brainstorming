@@ -50,6 +50,11 @@ def hooktheory_json_chord_to_chord_dto_converter(
         hooktheory_json_chord["borrowed"] is None
     ) else hooktheory_json_chord["borrowed"]
 
+    if hooktheory_json_chord["applied"] is not None and borrowed is not None:
+        if hooktheory_json_chord["applied"] != 0 and borrowed != [] and borrowed != "":
+            print(
+                f"Warning: applied and borrowed chords are not mutually exclusive:\n    -> {hooktheory_json_chord}"
+            )
     return ChordDTO(
         key_signature=key_sig,
         root=hooktheory_json_chord["root"],
