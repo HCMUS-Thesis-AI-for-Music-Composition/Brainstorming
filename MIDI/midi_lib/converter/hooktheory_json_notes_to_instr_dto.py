@@ -18,16 +18,21 @@ def hooktheory_json_notes_to_instr_dto_converter(
     )
 
     for note in notes:
-        if note["isRest"]:
+        is_rest = note["isRest"] if "isRest" in note else False
+
+        if is_rest:
             pass
         else:
-            instrument.notes.append(
-                htu.hooktheory_json_note_to_note_dto(
-                    note,
-                    key_signature_changes,
-                    ticks_per_beat,
-                    velocity
-                )
+            note_dto = htu.hooktheory_json_note_to_note_dto(
+                note,
+                key_signature_changes,
+                ticks_per_beat,
+                velocity
             )
+
+            if note_dto != None:
+                instrument.notes.append(note_dto)
+            else:
+                pass
 
     return instrument

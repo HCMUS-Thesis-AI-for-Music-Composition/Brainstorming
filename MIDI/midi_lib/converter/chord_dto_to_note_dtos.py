@@ -147,18 +147,13 @@ def chord_dto_to_note_dtos_converter(
         pass
 
     # INVERSION
-    available_voices = [
-        voice
-        for voice, accidental in chord_voice_accidentals.items()
-        if accidental is not None
-    ]
+    for i_inversion in range(1, chord_dto.inversion + 1):
+        voice = 2 * i_inversion - 1
 
-    available_voices.sort()
-
-    for available_voice_idx in range(0, chord_dto.inversion):
-        chord_voice_accidentals[
-            available_voices[available_voice_idx]
-        ] += mc.n_semitones_per_octave
+        if chord_voice_accidentals[voice] is not None:
+            chord_voice_accidentals[voice] += mc.n_semitones_per_octave
+        else:
+            pass
 
     # PEDAL
     # Check this link: https://www.hooktheory.com/blog/pedal-harmony-hooktheory-i-excerpt/
@@ -167,10 +162,6 @@ def chord_dto_to_note_dtos_converter(
 
     lowest_voice_note_number = None
     
-    # DEBUG
-    # if borrowed == "super:2":
-    #     print(chord_voice_accidentals)
-
     for chord_voice, accidental in chord_voice_accidentals.items():
         if accidental is not None:
             chord_voice_scale_degree = (
@@ -200,11 +191,6 @@ def chord_dto_to_note_dtos_converter(
             else:
                 lowest_voice_note_number = chord_voice_note_number
             
-            # DEBUG
-            # if borrowed == "super:2":
-            #     print(f"chord_voice = {chord_voice}, accidental = {accidental}, root = {chord_root_note_scale_degree}")
-            #     print(f"chord_voice_note_number = {mc.based_midi_note_numbers[chord_voice_note_number%12]}")
-
             note_dtos.append(
                 NoteDTO(
                     pitch=chord_voice_note_number,

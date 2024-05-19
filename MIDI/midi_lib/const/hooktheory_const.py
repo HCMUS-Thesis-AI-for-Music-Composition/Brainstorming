@@ -12,6 +12,11 @@ chord_default_octave = -1
 
 n_octave_lower_for_bass_notes = 2
 
+beat_unit_to_time_signature_denominator_mapper = {
+    1: 4,
+    3: 8
+}
+
 class HookTheoryKeySignatureDTO:
     def __init__(self, root_note_str: str, scale: str):
         """

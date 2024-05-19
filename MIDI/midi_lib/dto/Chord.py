@@ -76,7 +76,7 @@ class ChordDTO:
             # Các thuộc tính dạng list chỉ được kiểm tra giá trị truyền vào có phải là list hay không
             # Không kiểm tra các PHẦN TỬ trong list có thỏa mãn kiểu dữ liệu hay không
             if key in type_of_keys:
-                if key in ["borrowed", "pedal"]:
+                if key in ["borrowed", "pedal", "alternate"]:
                     setattr(self, key, value)
                 elif not type(value) == type_of_keys[key]:
                     raise ValueError(f"Expected {type_of_keys[key]} for {key}, got {type(value)}")

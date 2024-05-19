@@ -1,8 +1,14 @@
 from miditoolkit import MidiFile, TempoChange, KeySignature, TimeSignature, Instrument, Note, Marker
 from dto.Midi import MidiDTO
+
 import const.midi as mc
+import midi_utils as mu
+
+import dto_utils as du
 
 def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
+    midi_dto = du.normalize_midi_dto(midi_dto)
+    
     midi_file_object = MidiFile()
     
     midi_file_object.ticks_per_beat = midi_dto.ticks_per_beat
@@ -22,13 +28,24 @@ def midi_dto_to_midi_file_object_converter(midi_dto: MidiDTO) -> MidiFile:
         key_name = key_signature_change.key_name
         
         root_note, scale = key_name.split(" ")
+
         scale = scale.lower().strip()
         
-        scale = "m" if (
-            scale == mc.ScaleName.MINOR
-        ) else "m" if (
-            scale == mc.ScaleName.HARMONIC_MINOR.lower()
-        ) else "" 
+        # m = minor, empty = major and other scales
+        if mc.ScaleName.MINOR.lower() in scale:
+            scale = "m"
+
+            if f"{root_note}{scale}" not in mc.miditoolkit_supported_keys[mc.ScaleName.MINOR]:
+                root_note = mu.equivalent_note_name(root_note)
+            else:
+                pass
+        else:
+            scale = ""
+            
+            if f"{root_note}{scale}" not in mc.miditoolkit_supported_keys[mc.ScaleName.MAJOR]:
+                root_note = mu.equivalent_note_name(root_note)
+            else:
+                pass
 
         key_name = f"{root_note}{scale}"
 

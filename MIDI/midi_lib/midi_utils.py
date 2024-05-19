@@ -7,6 +7,24 @@ from dto.KeyFormula import KeyFormulaDTO
 
 from const import midi as mc
 
+def equivalent_note_name(note_name: str):
+    """
+        Get the equivalent note name of a note name. Example: C# -> Db, Bb -> A#
+
+        note_name: str - note name. Example: "C", "C#", "Db", "Bb", "A#"
+    """
+    note_name = note_name.upper()
+
+    midi_note_number = mc.inversed_based_midi_note_numbers[note_name]
+
+    equiv_note_name = [
+        name 
+        for name in mc.based_midi_note_numbers[midi_note_number]
+        if note_name != name
+    ][0]
+
+    return equiv_note_name
+
 def scale_degree_to_midi_note_number(
     scale_degree_str: str,
     octave: int = 0,
@@ -14,7 +32,7 @@ def scale_degree_to_midi_note_number(
     key_formula: KeyFormulaDTO = None
 ):
     """
-        Convert a scale degree to a MIDI note number
+        Convert a scale degree to a MIDI note number.
 
         scale_degree_str: str - scale degree in string format. Examples: "1", "b2", "#3"
         key_signature: KeySignatureDTO - key signature. Use this Example: KeySignatureDTO(tonic_midi_note_number, "major"). Check const.midi.ScaleName for valid scale names.

@@ -46,24 +46,30 @@ def scale_degree_to_based_midi_note_number(scale_degree, scale_formulas, root_no
 C4_midi_note_number = 60
 
 based_midi_note_numbers = {
-    0: ["C"],
+    0: ["C", "B#"],
     1: ["C#", "Db"],
     2: ["D"],
     3: ["D#", "Eb"],
-    4: ["E"],
-    5: ["F"],
+    4: ["E", "Fb"],
+    5: ["F", "E#"],
     6: ["F#", "Gb"],
     7: ["G"],
     8: ["G#", "Ab"],
     9: ["A"],
     10: ["A#", "Bb"],
-    11: ["B"]
+    11: ["B", "Cb"]
 }
 
 inversed_based_midi_note_numbers = {
     note: midi_note_number
     for midi_note_number, notes in based_midi_note_numbers.items()
     for note in notes
+}
+
+# below values from miditoolkit are inherited from mido library
+miditoolkit_supported_keys = {
+    ScaleName.MAJOR: ['Cb', 'Gb', 'Db', 'Ab', 'Eb', 'Bb', 'F','C','G','D','A','E','B','F#','C#'],
+    ScaleName.MINOR: ['Abm', 'Ebm', 'Bbm', 'Fm', 'Cm', 'Gm', 'Dm','Am','Em','Bm','F#m','C#m','G#m','D#m','A#m']
 }
 
 midi_program_to_instrument_name_mapper = {

@@ -17,14 +17,39 @@ def hooktheory_json_chord_to_chord_dto_converter(
     """
         Convert a HookTheory JSON chord to a ChordDTO
     """
+    root_scale_degree = hooktheory_json_chord["root"]
+
+    if type(root_scale_degree) == int:
+        pass
+    elif type(root_scale_degree) == str:
+        if root_scale_degree.isdigit():
+            root_scale_degree = int(root_scale_degree)
+        else:
+            raise ValueError(
+                f"ERROR: hooktheory_json_chord_to_chord_dto_converter: root_scale_degree is not a digit: {root_scale_degree}"
+            )
+
+    start_beat = hooktheory_json_chord["beat"]
+    duration = None
+
+    if start_beat >= 1:
+        duration = hooktheory_json_chord["duration"]
+    elif start_beat < 1 and start_beat >= 0:
+        duration = hooktheory_json_chord["duration"] - start_beat
+        start_beat = 1
+
+        print(
+            f"WARNING: hooktheory_json_chord_to_chord_dto_converter: 0 < start_beat < 1: {start_beat}"
+        )
+
     start_tick = htu.hooktheory_start_beat_to_tick_position(
-        hooktheory_json_chord["beat"],
+        start_beat,
         ticks_per_beat
     )
     
     end_tick = htu.calculate_note_end_tick_position(
-        hooktheory_json_chord["beat"],
-        hooktheory_json_chord["duration"],
+        start_beat,
+        duration,
         ticks_per_beat
     )
 
@@ -50,16 +75,23 @@ def hooktheory_json_chord_to_chord_dto_converter(
         hooktheory_json_chord["borrowed"] is None
     ) else hooktheory_json_chord["borrowed"]
 
-    # DEBUG
+    # MESSAGE
     if hooktheory_json_chord["applied"] is not None and borrowed is not None:
         if hooktheory_json_chord["applied"] != 0 and borrowed != [] and borrowed != "":
             print(
-                f"Warning: applied and borrowed chords are not mutually exclusive:\n    -> {hooktheory_json_chord}"
+                f"hooktheory_json_chord_to_chord_dto_converter: Message: applied and borrowed chords are not mutually exclusive:\n    -> {hooktheory_json_chord}"
             )
 
+    alternate = None
+    
+    if "alternate" in hooktheory_json_chord:
+        alternate = hooktheory_json_chord["alternate"] 
+    else:
+        alternate = None
+    
     return ChordDTO(
         key_signature=key_sig,
-        root=hooktheory_json_chord["root"],
+        root=root_scale_degree,
         start=start_tick,
         end=end_tick,
         type=hooktheory_json_chord["type"],
@@ -70,7 +102,7 @@ def hooktheory_json_chord_to_chord_dto_converter(
         alterations=hooktheory_json_chord["alterations"],
         suspensions=hooktheory_json_chord["suspensions"],
         pedal=[],
-        alternate=hooktheory_json_chord["alternate"],
+        alternate=alternate,
         borrowed=borrowed,
         velocity=velocity
     )

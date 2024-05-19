@@ -1,4 +1,10 @@
 class KeySignatureChangeDTO:
+    """
+        Attributes:
+            time: int
+            key_name: str
+                Example: Db Major, A minor, etc.
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

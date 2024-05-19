@@ -13,13 +13,24 @@ import midi_utils as mu
 
 def hooktheory_start_beat_to_tick_position(
     beat: float,
-    ticks_per_beat: int = htc.hooktheory_ticks_per_beat
+    ticks_per_beat: int = htc.hooktheory_ticks_per_beat,
 ) -> int:
-    return position_to_tick_converter(
-        position=beat - 1,
-        tick_per_beat=ticks_per_beat,
-        position_resolution=1
-    )
+    tick_position = None
+    
+    if beat >= 1:
+        tick_position = position_to_tick_converter(
+            position=beat - 1,
+            tick_per_beat=ticks_per_beat,
+            position_resolution=1
+        ) 
+    elif beat >= 0 and beat < 1:
+        print(
+            f"WARNING: hooktheory_start_beat_to_tick_position: beat = {beat} is less than 1."
+        )
+    else:
+        pass
+
+    return tick_position
 
 def hooktheory_duration_to_tick_duration(
     duration: float,
@@ -36,21 +47,26 @@ def calculate_note_end_tick_position(
     hooktheory_duration: float,
     ticks_per_beat: int = htc.hooktheory_ticks_per_beat
 ) -> int:
-    return (
-        hooktheory_start_beat_to_tick_position(
-            hooktheory_start_beat,
-            ticks_per_beat
-        ) + hooktheory_duration_to_tick_duration(
-            hooktheory_duration,
-            ticks_per_beat
-        )
+    start_tick = hooktheory_start_beat_to_tick_position(
+        hooktheory_start_beat,
+        ticks_per_beat
     )
+    
+    tick_duration = hooktheory_duration_to_tick_duration(
+        hooktheory_duration,
+        ticks_per_beat
+    )
+
+    if start_tick == None or tick_duration == None:
+        return None
+    else:
+        return start_tick + tick_duration
 
 def hooktheory_json_note_to_note_dto(
     note: dict,
     key_signature_changes: list[KeySignatureChangeDTO],
     ticks_per_beat: int = htc.hooktheory_ticks_per_beat,
-    velocity: int = htc.hooktheory_default_velocity
+    velocity: int = htc.hooktheory_default_velocity,
 ) -> NoteDTO:
     note_start_tick = hooktheory_start_beat_to_tick_position(
         note["beat"],
@@ -63,6 +79,11 @@ def hooktheory_json_note_to_note_dto(
         ticks_per_beat
     )
 
+    if note_start_tick == None or note_end_tick == None:
+        return None
+    else:
+        pass
+
     key_name_str: str = mu.current_key_signature_from_midi_dto_key_signature_changes(
         key_signature_changes,
         note_start_tick
@@ -72,7 +93,7 @@ def hooktheory_json_note_to_note_dto(
         key_name_str
     )
     
-    return NoteDTO(
+    note_dto = NoteDTO(
         start=note_start_tick,
         end=note_end_tick,
         pitch=mu.scale_degree_to_midi_note_number(
@@ -82,10 +103,12 @@ def hooktheory_json_note_to_note_dto(
         ),
         velocity=velocity
     )
+    
+    return note_dto
 
 def hooktheory_json_key_change_to_key_signature_changes_dto_converter(
     hooktheory_key_changes: list[dict],
-    tick_per_beat: int = mc.default_ticks_per_beat
+    tick_per_beat: int = mc.default_ticks_per_beat,
 ) -> list[KeySignatureChangeDTO]:
     key_signature_changes = []
 
@@ -93,14 +116,10 @@ def hooktheory_json_key_change_to_key_signature_changes_dto_converter(
         root_note = hooktheory_key_change["tonic"]
         scale = hooktheory_key_change["scale"]
 
-        # LEGACY CODE (due to miditoolkit only supporting major and minor scales)
-        # if scale == mc.ScaleName.HARMONIC_MINOR:
-        #     pass
-        # elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
-        #     raise ValueError(f"This scale was not predefined: {scale}")
-
         if scale not in mc.scale_formulas.keys():
-            raise ValueError(f"This scale was not predefined: {scale}")
+            raise ValueError(
+                f"hooktheory_json_key_change_to_key_signature_changes_dto_converter: This scale was not predefined: {scale}"
+            )
         else:
             pass
         
@@ -155,11 +174,10 @@ def hooktheory_json_meter_change_to_time_signature_change_dto_converter(
         beatUnit = hooktheory_meter_change["beatUnit"]
 
         numerator = int(numBeats)
-        denominator = int(numBeats / beatUnit) if beatUnit != 1 else 4
-        
-        # DEBUG
-        # print(f"numerator = {numerator}, denominator = {denominator}, hooktheory_meter_change = {hooktheory_meter_change}")
-        
+        denominator = htc.beat_unit_to_time_signature_denominator_mapper[
+            int(beatUnit)
+        ]
+
         time_signature_changes.append(
             TimeSignatureChangeDTO(
                 time=meter_change_time,

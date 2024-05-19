@@ -1,4 +1,11 @@
 class TempoChangeDTO:
+    """
+        Attributes:
+            time: int
+                The time in ticks when the tempo change occurs.
+            tempo: float
+                The tempo at the time of the tempo change.
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:
