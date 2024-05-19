@@ -10,8 +10,7 @@ class TimeSignatureChangeDTO:
         """
             kwargs accepts:
                 time: int
-                numerator: int
-                denominator: int
+                time_signature: TimeSignatureDTO
         """
         self.time: int = int(0)
         self.time_signature = TimeSignatureDTO()

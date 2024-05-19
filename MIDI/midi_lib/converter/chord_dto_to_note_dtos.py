@@ -7,7 +7,6 @@ import midi_utils as mu
 
 import const.midi as mc
 
-
 def chord_dto_to_note_dtos_converter(
     chord_dto: ChordDTO
 ) -> list[NoteDTO]:
@@ -40,12 +39,10 @@ def chord_dto_to_note_dtos_converter(
                         for scale, formula in mc.scale_formulas.items()
                 ]:
                     print(
-                        f"Warning: unusual scale_length = {len(borrowed)} with {borrowed} scale"
+                        f"chord_dto_to_note_dtos_converter: Warning: unusual scale_length = {len(borrowed)} with {borrowed} scale"
                     )
                 else:
-                    print(
-                        f"Message: borrowed {borrowed} scale"
-                    )
+                    pass
                 
                 key_tonic_note_number = key_tonic_note_number + borrowed[0]
 

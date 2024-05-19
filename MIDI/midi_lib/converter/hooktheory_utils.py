@@ -1,5 +1,6 @@
 from dto.KeySignatureChange import KeySignatureChangeDTO
 from dto.TimeSignatureChange import TimeSignatureChangeDTO
+from dto.TimeSignature import TimeSignatureDTO
 from dto.TempoChange import TempoChangeDTO
 from dto.Note import NoteDTO
 
@@ -150,11 +151,22 @@ def hooktheory_json_meter_change_to_time_signature_change_dto_converter(
             tick_per_beat
         )
 
+        numBeats = hooktheory_meter_change["numBeats"]
+        beatUnit = hooktheory_meter_change["beatUnit"]
+
+        numerator = int(numBeats)
+        denominator = int(numBeats / beatUnit) if beatUnit != 1 else 4
+        
+        # DEBUG
+        # print(f"numerator = {numerator}, denominator = {denominator}, hooktheory_meter_change = {hooktheory_meter_change}")
+        
         time_signature_changes.append(
             TimeSignatureChangeDTO(
                 time=meter_change_time,
-                numerator=hooktheory_meter_change["numerator"],
-                denominator=hooktheory_meter_change["denominator"]
+                time_signature=TimeSignatureDTO(
+                    numerator=numerator,
+                    denominator=denominator
+                )
             )
         )
 
