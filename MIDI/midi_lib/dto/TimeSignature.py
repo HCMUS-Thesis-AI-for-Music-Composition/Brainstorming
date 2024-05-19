@@ -1,4 +1,9 @@
 class TimeSignatureDTO:
+    """
+        Attributes:
+            numerator: int
+            denominator: int
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

@@ -25,6 +25,12 @@ def hooktheory_json_song_part_to_midi_dto_converter(
     hooktheory_key_changes = hooktheory_json_song_part["main_data"]["keys"]
     hooktheory_tempo_changes = hooktheory_json_song_part["main_data"]["tempos"]
 
+    # DEBUG
+    if len(hooktheory_json_song_part["main_data"]["meters"]) > 1:
+        print(
+            f"Warning: more than one time signature found in\n{hooktheory_json_song_part}"
+        )
+
     midi_dto.key_signature_changes = htu.hooktheory_json_key_change_to_key_signature_changes_dto_converter(
         hooktheory_key_changes,
         tick_per_beat

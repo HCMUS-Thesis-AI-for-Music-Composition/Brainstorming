@@ -1,4 +1,5 @@
 from dto.KeySignatureChange import KeySignatureChangeDTO
+from dto.TimeSignatureChange import TimeSignatureChangeDTO
 from dto.TempoChange import TempoChangeDTO
 from dto.Note import NoteDTO
 
@@ -91,6 +92,7 @@ def hooktheory_json_key_change_to_key_signature_changes_dto_converter(
         root_note = hooktheory_key_change["tonic"]
         scale = hooktheory_key_change["scale"]
 
+        # LEGACY CODE (due to miditoolkit only supporting major and minor scales)
         # if scale == mc.ScaleName.HARMONIC_MINOR:
         #     pass
         # elif scale.lower().strip() not in [mc.ScaleName.MAJOR, mc.ScaleName.MINOR]:
@@ -135,3 +137,25 @@ def hooktheory_json_tempo_change_to_tempo_change_dto_converter(
         )
 
     return tempo_changes
+
+def hooktheory_json_meter_change_to_time_signature_change_dto_converter(
+    hooktheory_meter_changes: list[dict],
+    tick_per_beat: int = mc.default_ticks_per_beat
+) -> list[TimeSignatureChangeDTO]:
+    time_signature_changes = []
+
+    for hooktheory_meter_change in hooktheory_meter_changes:
+        meter_change_time = hooktheory_start_beat_to_tick_position(
+            hooktheory_meter_change["beat"],
+            tick_per_beat
+        )
+
+        time_signature_changes.append(
+            TimeSignatureChangeDTO(
+                time=meter_change_time,
+                numerator=hooktheory_meter_change["numerator"],
+                denominator=hooktheory_meter_change["denominator"]
+            )
+        )
+
+    return time_signature_changes

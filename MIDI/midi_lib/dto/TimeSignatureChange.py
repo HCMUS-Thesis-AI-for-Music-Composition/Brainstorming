@@ -1,6 +1,11 @@
 from dto.TimeSignature import TimeSignatureDTO
 
 class TimeSignatureChangeDTO:
+    """
+        Attributes:
+            time: int
+            time_signature: TimeSignatureDTO
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:

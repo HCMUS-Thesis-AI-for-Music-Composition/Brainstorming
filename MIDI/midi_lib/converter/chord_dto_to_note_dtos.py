@@ -70,16 +70,28 @@ def chord_dto_to_note_dtos_converter(
     else:
         pass
 
-    # APPLIED
+    # APPLIED (secondary chords)
     applied = chord_dto.applied
     if applied is not None:
         if applied == 0:
             pass
         else:
-            print(f"Ignored applied value: {applied}")
+            old_chord_root_note_note_number = mu.scale_degree_to_midi_note_number(
+                scale_degree_str=str(chord_root_note_scale_degree),
+                key_formula=KeyFormulaDTO(
+                    tonic_midi_note_number=key_tonic_note_number,
+                    scale_formula=scale_formula
+                ),
+                octave=htc.chord_default_octave
+            )
+
+            # Change to the secondary key signature
+            key_tonic_note_number = old_chord_root_note_note_number % mc.n_semitones_per_octave
+            scale_formula = mc.scale_formulas[mc.ScaleName.MAJOR]
+
+            chord_root_note_scale_degree = applied
     else:
         pass
-    # raise NotImplementedError
 
     # TYPE
     n_note_based_on_type = (chord_dto.type - 1) // 2 + 1
@@ -148,7 +160,8 @@ def chord_dto_to_note_dtos_converter(
             available_voices[available_voice_idx]
         ] += mc.n_semitones_per_octave
 
-    # TODO: Implement the rest of the function
+    # PEDAL
+    # Check this link: https://www.hooktheory.com/blog/pedal-harmony-hooktheory-i-excerpt/
 
     note_dtos = []
 
