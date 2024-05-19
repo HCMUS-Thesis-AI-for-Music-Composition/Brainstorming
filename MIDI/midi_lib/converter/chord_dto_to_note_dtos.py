@@ -58,6 +58,9 @@ def chord_dto_to_note_dtos_converter(
                 ]
         elif borrowed in mc.scale_formulas.keys():
             scale_formula = mc.scale_formulas[borrowed]
+        elif borrowed == "super:2":
+            key_tonic_note_number = key_tonic_note_number + 1
+            scale_formula = mc.scale_formulas[mc.ScaleName.LOCRIAN]
         elif borrowed == "":
             pass
         else:
@@ -164,6 +167,10 @@ def chord_dto_to_note_dtos_converter(
 
     lowest_voice_note_number = None
     
+    # DEBUG
+    # if borrowed == "super:2":
+    #     print(chord_voice_accidentals)
+
     for chord_voice, accidental in chord_voice_accidentals.items():
         if accidental is not None:
             chord_voice_scale_degree = (
@@ -193,6 +200,11 @@ def chord_dto_to_note_dtos_converter(
             else:
                 lowest_voice_note_number = chord_voice_note_number
             
+            # DEBUG
+            # if borrowed == "super:2":
+            #     print(f"chord_voice = {chord_voice}, accidental = {accidental}, root = {chord_root_note_scale_degree}")
+            #     print(f"chord_voice_note_number = {mc.based_midi_note_numbers[chord_voice_note_number%12]}")
+
             note_dtos.append(
                 NoteDTO(
                     pitch=chord_voice_note_number,
