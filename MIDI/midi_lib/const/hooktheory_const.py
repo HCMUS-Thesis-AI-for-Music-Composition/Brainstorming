@@ -18,9 +18,7 @@ hooktheory_default_melody_instrument_programs = [
     30, # Distortion Guitar
     40, # Violin
     52, # Choir Aahs
-    53, # Voice Oohs
-    80, # Lead 1 (square)
-    81 # Lead 2 (sawtooth)
+    53 # Voice Oohs
 ]
 
 hooktheory_default_chord_instrument_programs = [
@@ -37,7 +35,7 @@ hooktheory_default_chord_instrument_programs = [
 ]
 
 # melodies velocity - chords velocity
-velocity_delta = 25
+velocity_delta = 10
 
 chord_default_octave = -1
 
