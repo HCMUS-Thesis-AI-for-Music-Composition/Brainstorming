@@ -12,11 +12,23 @@ def midi_dto_to_musecoco_line_converter(
     print(f"DEBUG: midi_dto: {midi_dto.ticks_per_beat}")
     musecoco_line = []
 
+    time_sig = (
+        midi_dto.time_signature_changes[0].time_signature.numerator, 
+        midi_dto.time_signature_changes[0].time_signature.denominator
+    )
+
+    if time_sig == (12, 4):
+        time_sig = (12, 8)
+    elif time_sig == (9, 4):
+        time_sig = (9, 8)
+    else:
+        pass
+
     musecoco_line.append(
         (
             musecoco_const.str_abbr_time_signature, 
             vocab_manager.convert_ts_to_id(
-                (midi_dto.time_signature_changes[0].time_signature.numerator, midi_dto.time_signature_changes[0].time_signature.denominator)
+                time_sig
             )
         )
     )
