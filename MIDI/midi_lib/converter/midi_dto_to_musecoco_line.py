@@ -33,8 +33,9 @@ def midi_dto_to_musecoco_line_converter(
         )
     )
 
-    current_position = -1
     current_instrument_program = 0
+    current_instrument_name = ""
+    current_position = -1
     current_tempo = 0
 
     should_note_be_put_in_the_same_place_with_previous_note = False
@@ -49,7 +50,8 @@ def midi_dto_to_musecoco_line_converter(
                     )
                 ) 
                 and (current_instrument_program == instrument.program)
-                and (current_tempo == midi_dto.tempo)
+                and (current_instrument_name == instrument.name)
+                # and (current_tempo == midi_dto.tempo)
             )            
 
             if not should_note_be_put_in_the_same_place_with_previous_note:

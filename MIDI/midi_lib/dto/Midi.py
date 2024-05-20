@@ -7,6 +7,17 @@ from dto.Marker import MarkerDTO
 from const.midi import default_ticks_per_beat, default_max_tick
 
 class MidiDTO:
+    """
+        Attributes:
+            ticks_per_beat: int
+            max_tick: int
+            lyrics: str
+            tempo_changes: list[TempoChangeDTO]
+            key_signature_changes: list[KeySignatureChangeDTO]
+            time_signature_changes: list[TimeSignatureChangeDTO]
+            instruments: list[InstrumentDTO]
+            markers: list[MarkerDTO]
+    """
     def __init__(self, **kwargs):
         """
             kwargs accepts:
