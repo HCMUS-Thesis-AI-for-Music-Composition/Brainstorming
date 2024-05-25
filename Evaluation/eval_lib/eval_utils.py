@@ -82,7 +82,7 @@ def key_signature_from_midi_note_numbers(midi_note_numbers: list, root_note_numb
     Get the key signature of a song from the midi note numbers (single key detection, no key modulation processing).
     :param midi_note_numbers: the midi note numbers
     :param root_note_number: the root note number
-    :return: the key signature
+    :return: the key signature. Example: (0, "major") for C major, (9, "minor") for A minor, etc.
     """
 
     midi_note_numbers = list(set(midi_note_numbers))
@@ -154,9 +154,16 @@ def midi_key_signature_detector(midi_dto: MidiDTO):
     :param midi_file_path: the path of the midi file
     :return: the key signature
     """
+    key_changes: list[KeySignatureChangeDTO] = []
 
-    notes_in_midi = set()
+    # dict: {key_start_time (int) : notes (set)}
+    notes_in_midi: dict = {}
 
+    current_key_start_time: int = None
+
+    current_notes_in_midi = set()
+
+    # Sort notes by start time
     for instr_idx in range(len(midi_dto.instruments)):
         midi_dto.instruments[instr_idx].notes = sort_notes_by_start_time(
             midi_dto.instruments[instr_idx].notes
@@ -173,37 +180,97 @@ def midi_key_signature_detector(midi_dto: MidiDTO):
 
     is_n_notes_greater_than_common_notes_per_scale = False
 
+    instrs_note_quantity = {
+        instr_idx : len(midi_dto.instruments[instr_idx].notes)
+        for instr_idx in range(len(midi_dto.instruments))
+    }
+
+    is_all_instrs_notes_read = False
+    print("m_instruments: ", len(midi_dto.instruments))
     while not is_n_notes_greater_than_common_notes_per_scale:
         for instr_idx, note_idx in next_instr_note_indices.items():
+            # print("instr_idx: ", instr_idx, " note_idx: ", note_idx)
             if note_idx < len(midi_dto.instruments[instr_idx].notes):
                 note = midi_dto.instruments[instr_idx].notes[note_idx]
                 
+                if note.start >= note.end:
+                    print("note.start >= note.end")
+                    
+                if current_key_start_time == None:
+                    current_key_start_time = note.start
+                else:
+                    current_key_start_time = min(
+                        current_key_start_time, 
+                        note.start
+                    )
+
                 current_max_note_end_time = max(
                     current_max_note_end_time, 
                     note.end
                 )
-
+                print("break")
                 break
-            else:
-                pass
+            else:          
+                is_all_instrs_notes_read = True
 
-        for instr_idx, note_idx in next_instr_note_indices.items():
-            if is_n_notes_greater_than_common_notes_per_scale:
-                break
-
-            for i in range(note_idx, len(midi_dto.instruments[instr_idx].notes)):
-                note = midi_dto.instruments[instr_idx].notes[i]
-
-                if note.start >= current_max_note_end_time:
-                    break
-                else:
-                    if len(notes_in_midi) == common_notes_per_scale:
-                        is_n_notes_greater_than_common_notes_per_scale = True
+                for _instr_idx, _note_idx in next_instr_note_indices.items():
+                    if _note_idx < instrs_note_quantity[_instr_idx]:
+                        is_all_instrs_notes_read = False
                         break
                     else:
-                        notes_in_midi.add(note.pitch % notes_per_octave)
-                        next_instr_note_indices[instr_idx] = i + 1
-    print("NOTES IN MIDI: ", notes_in_midi)
-    key_signature = key_signature_from_midi_note_numbers(notes_in_midi)
+                        pass
 
-    return key_signature
+                if is_all_instrs_notes_read:
+                    print("is_all_instrs_notes_read running...")
+                    break
+                else:
+                    pass
+
+        if is_all_instrs_notes_read:
+            print("is_all_instrs_notes_read running...")
+            break
+        else:
+            for instr_idx, note_idx in next_instr_note_indices.items():
+                if is_n_notes_greater_than_common_notes_per_scale:
+                    print("if is_n_notes_greater_than_common_notes_per_scale running...")
+                    is_n_notes_greater_than_common_notes_per_scale = False
+
+                    notes_in_midi[
+                        current_key_start_time
+                    ] = current_notes_in_midi
+                    
+                    print("NOTES IN MIDI: ", current_notes_in_midi)
+                    
+                    current_notes_in_midi = set()
+
+                    break
+                else:
+                    for i in range(note_idx, len(midi_dto.instruments[instr_idx].notes)):
+                        note = midi_dto.instruments[instr_idx].notes[i]
+
+                        if note.start >= current_max_note_end_time:
+                            # print("if note.start >= current_max_note_end_time running...")
+                            print("     note.start: ", note.start, " current_max_note_end_time: ", current_max_note_end_time)
+                            break
+                        else:
+                            if len(notes_in_midi) == common_notes_per_scale:
+                                is_n_notes_greater_than_common_notes_per_scale = True
+                                break
+                            else:
+                                current_notes_in_midi.add(note.pitch % notes_per_octave)
+
+                                next_instr_note_indices[instr_idx] = i + 1
+
+    print("NOTES IN MIDI: ", notes_in_midi)
+    for key_start_time, notes in notes_in_midi.items():
+        print("KEY START TIME: ", key_start_time, " NOTES: ", notes)
+        print("len(notes): ", len(notes))
+        key_signature = key_signature_from_midi_note_numbers(notes)
+        key_changes.append(
+            KeySignatureChangeDTO(
+                time = key_start_time,
+                key_name = key_signature
+            )
+        )
+
+    return key_changes

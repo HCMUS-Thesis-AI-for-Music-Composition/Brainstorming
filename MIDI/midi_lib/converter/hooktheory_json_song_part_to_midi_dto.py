@@ -1,11 +1,12 @@
 import random
-import const.midi as mc
 
 from dto.Midi import MidiDTO
 
-import converter.hooktheory_utils as htu
 from converter.hooktheory_json_chords_to_instrument_dto import hooktheory_json_chords_to_instrument_dto_converter
 from converter.hooktheory_json_notes_to_instr_dto import hooktheory_json_notes_to_instr_dto_converter
+import converter.hooktheory_utils as htu
+
+import const.midi as mc
 
 def hooktheory_json_song_part_to_midi_dto_converter(
     hooktheory_json_song_part: dict,
