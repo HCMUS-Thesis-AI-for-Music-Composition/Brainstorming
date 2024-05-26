@@ -5,7 +5,7 @@ from dto.KeySignatureChange import KeySignatureChangeDTO
 from dto.KeySignature import KeySignatureDTO
 from dto.KeyFormula import KeyFormulaDTO
 
-from const import midi as mc
+from midi_lib.const import midi as mc
 
 def equivalent_note_name(note_name: str):
     """
