@@ -7,6 +7,21 @@ import pickle
 from tqdm.contrib.concurrent import process_map
 import sys
 
+# CUSTOMIZE
+
+class Language:
+    EN = "en"
+    VI = "vi"
+
+# language = Language.EN
+# language = Language.VI
+language = None
+
+with open("./language.txt", "r") as f:
+    language = f.read().strip()
+
+# END CUSTOMIZE
+
 fs = frozenset
 opj = os.path.join
 inst_label = "I1s2"
@@ -15,7 +30,8 @@ n_in_if = 0
 n_in_else = 0
 n_out_if = 0
 
-inst_class_id_to_inst_class_name = {
+if language == Language.VI:
+    inst_class_id_to_inst_class_name = {
         # piano 0:
         0: ['piano', "grand piano"],
 
@@ -101,82 +117,248 @@ inst_class_id_to_inst_class_name = {
         27: ['trống'],
     }
 
-genre_label_to_name = {
-    'New Age': "new age",
-    'Electronic': "điện tử",
-    'Rap': 'rap',
-    'Religious': 'tôn giáo',
-    'International': 'quốc tế',
-    'Easy_Listening': 'dễ nghe',
-    'Avant_Garde': 'avant-garde',
-    'RnB': 'RnB',
-    'Latin': 'Latin',
-    'Children': 'trẻ em',
-    'Jazz': 'jazz',
-    'Classical': 'cổ điển',
-    'Comedy_Spoken': 'hài kịch',
-    'Pop_Rock': 'pop',
-    'Reggae': 'reggae',
-    'Stage': 'stage',
-    'Folk': 'dân ca',
-    'Blues': 'blues',
-    'Vocal': 'vocal',
-    'Holiday': 'holiday',
-    'Country': 'đồng quê',
-    "Symphony": 'giao hưởng'
-}
-
-artist_label_to_artist_name = {
-    'beethoven': 'Beethoven',
-    'mozart': 'Mozart',
-    'chopin': 'Chopin',
-    'schubert': 'Schubert',
-    'schumann': 'Schumann',
-    'bach-js': 'Bach',
-    'haydn': 'Haydn',
-    'brahms': 'Brahms',
-    'Handel': 'Handel',
-    'tchaikovsky': 'Tchaikovsky',
-    'mendelssohn': 'Mendelssohn',
-    'dvorak': 'Dvorak',
-    'liszt': 'Liszt',
-    'stravinsky': 'Stravinsky',
-    'mahler': 'Mahler',
-    'prokofiev': 'Prokofiev',
-    'shostakovich': 'Shostakovich',
-}
-
-label_to_template_v3 = {
-    "I1":"[INSTRUMENTS]", 
-    "I3":"[INSTRUMENT]", 
-    "I4":"[INSTRUMENT]", 
-    "C1":"[]",
-    "R1":"[]",
-    "R3":"[]",
-    "S4":"[GENRE]", 
-    "S2":"[ARTIST]", 
-    "B1":"[NUM_BARS]", 
-    "TS1":"[TIME_SIGNATURE]", 
-    "K1":"[KEY]",
-    "T1":"[]",
-    "P4":"[RANGE]",
-    "ST1":"[STRUCTURE]", 
-    "EM1":"[EMOTION]", 
-    "TM1":"[TM1]",
-    "M1":"[INSTRUMENT]",
-    "M2":"[]"
+    genre_label_to_name = {
+        'New Age': "new age",
+        'Electronic': "điện tử",
+        'Rap': 'rap',
+        'Religious': 'tôn giáo',
+        'International': 'quốc tế',
+        'Easy_Listening': 'dễ nghe',
+        'Avant_Garde': 'avant-garde',
+        'RnB': 'RnB',
+        'Latin': 'Latin',
+        'Children': 'trẻ em',
+        'Jazz': 'jazz',
+        'Classical': 'cổ điển',
+        'Comedy_Spoken': 'hài kịch',
+        'Pop_Rock': 'pop',
+        'Reggae': 'reggae',
+        'Stage': 'stage',
+        'Folk': 'dân ca',
+        'Blues': 'blues',
+        'Vocal': 'vocal',
+        'Holiday': 'holiday',
+        'Country': 'đồng quê',
+        "Symphony": 'giao hưởng'
     }
 
+    artist_label_to_artist_name = {
+        'beethoven': 'Beethoven',
+        'mozart': 'Mozart',
+        'chopin': 'Chopin',
+        'schubert': 'Schubert',
+        'schumann': 'Schumann',
+        'bach-js': 'Bach',
+        'haydn': 'Haydn',
+        'brahms': 'Brahms',
+        'Handel': 'Handel',
+        'tchaikovsky': 'Tchaikovsky',
+        'mendelssohn': 'Mendelssohn',
+        'dvorak': 'Dvorak',
+        'liszt': 'Liszt',
+        'stravinsky': 'Stravinsky',
+        'mahler': 'Mahler',
+        'prokofiev': 'Prokofiev',
+        'shostakovich': 'Shostakovich',
+    }
+
+    label_to_template_v3 = {
+        "I1":"[INSTRUMENTS]", 
+        "I3":"[INSTRUMENT]", 
+        "I4":"[INSTRUMENT]", 
+        "C1":"[]",
+        "R1":"[]",
+        "R3":"[]",
+        "S4":"[GENRE]", 
+        "S2":"[ARTIST]", 
+        "B1":"[NUM_BARS]", 
+        "TS1":"[TIME_SIGNATURE]", 
+        "K1":"[KEY]",
+        "T1":"[]",
+        "P4":"[RANGE]",
+        "ST1":"[STRUCTURE]", 
+        "EM1":"[EMOTION]", 
+        "TM1":"[TM1]",
+        "M1":"[INSTRUMENT]",
+        "M2":"[]"
+    }
+else:
+    inst_class_id_to_inst_class_name = {
+            # piano 0:
+            0: ['piano', "grand piano"],
+
+            # keyboard 1:
+            1: ['keyboard', "digital keyboard", "synthesizer keyboard"],
+
+            # percussion 2:
+            2: ['percussion'],
+
+            # organ 3:
+            3: ['organ'],
+
+            # guitar 4:
+            4: ['guitar'],
+
+            # bass 5:
+            5: ['bass'],
+
+            # violin 6:
+            6: ['violin'],
+
+            # viola 7:
+            7: ['viola'],
+
+            # cello 8:
+            8: ['cello'],
+
+            # harp 9:
+            9: ['harp'],
+
+            # strings 10:
+            10: ['strings'],
+
+            # voice 11:
+            11: ['voice'],
+
+            # trumpet 12:
+            12: ['trumpet'],
+
+            # trombone 13:
+            13: ['trombone'],
+
+            # tuba 14:
+            14: ['tuba'],
+
+            # horn 15:
+            15: ['horn'],
+
+            # brass 16:
+            16: ['brass'],
+
+            # sax 17:
+            17: ['sax', "saxophone"],
+
+            # oboe 18:
+            18: ['oboe'],
+
+            # bassoon 19:
+            19: ['bassoon'],
+
+            # clarinet 20:
+            20: ['clarinet'],
+
+            # piccolo 21:
+            21: ['piccolo'],
+
+            # flute 22:
+            22: ['flute'],
+
+            # pipe 23:
+            23: ['pipe'],
+
+            # synthesizer 24:
+            24: ['synthesizer', "synth"],
+
+            # ethnic instrument 25:
+            25: ['ethnic instrument'],
+
+            # sound effect 26:
+            26: ['sound effect'],
+
+            # drum 27:
+            27: ['drum'],
+        }
+
+    genre_label_to_name = {
+        'New Age': "new age",
+        'Electronic': "electronic",
+        'Rap': 'rap',
+        'Religious': 'religious',
+        'International': 'international',
+        'Easy_Listening': 'easy listening',
+        'Avant_Garde': 'avant-garde',
+        'RnB': 'RnB',
+        'Latin': 'Latin',
+        'Children': 'children',
+        'Jazz': 'jazz',
+        'Classical': 'classical',
+        'Comedy_Spoken': 'comedy',
+        'Pop_Rock': 'pop',
+        'Reggae': 'reggae',
+        'Stage': 'stage',
+        'Folk': 'folk',
+        'Blues': 'blues',
+        'Vocal': 'vocal',
+        'Holiday': 'holiday',
+        'Country': 'country',
+        "Symphony": 'symphony'
+    }
+
+    artist_label_to_artist_name = {
+        'beethoven': 'Beethoven',
+        'mozart': 'Mozart',
+        'chopin': 'Chopin',
+        'schubert': 'Schubert',
+        'schumann': 'Schumann',
+        'bach-js': 'Bach',
+        'haydn': 'Haydn',
+        'brahms': 'Brahms',
+        'Handel': 'Handel',
+        'tchaikovsky': 'Tchaikovsky',
+        'mendelssohn': 'Mendelssohn',
+        'dvorak': 'Dvorak',
+        'liszt': 'Liszt',
+        'stravinsky': 'Stravinsky',
+        'mahler': 'Mahler',
+        'prokofiev': 'Prokofiev',
+        'shostakovich': 'Shostakovich',
+    }
+
+    label_to_template_v3 = {
+        "I1":"[INSTRUMENTS]", 
+        "I3":"[INSTRUMENT]", 
+        "I4":"[INSTRUMENT]", 
+        "C1":"[]",
+        "R1":"[]",
+        "R3":"[]",
+        "S4":"[GENRE]", 
+        "S2":"[ARTIST]", 
+        "B1":"[NUM_BARS]", 
+        "TS1":"[TIME_SIGNATURE]", 
+        "K1":"[KEY]",
+        "T1":"[]",
+        "P4":"[RANGE]",
+        "ST1":"[STRUCTURE]", 
+        "EM1":"[EMOTION]", 
+        "TM1":"[TM1]",
+        "M1":"[INSTRUMENT]",
+        "M2":"[]"
+        }
+
 # v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "template.json")))
-v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "new_template.json")))
+# v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "new_template_en.json")))
+
+v3_templates = None
+
+if language == Language.VI:
+    # v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "template_vn.json")))
+    v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "new_template_vn.json")))
+else:
+    # v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "template_en.json")))
+    v3_templates = json.load(open(os.path.join(os.path.dirname(__file__), "new_template_en.json")))
+    
 for label in v3_templates:
     v3_templates[label] = v3_templates[label].split(";")
     for i, _ in enumerate(v3_templates[label]):
         v3_templates[label][i] = _.strip()
-    
-    # print(f"{label}: {v3_templates[label]}")
 
-_chatgpt_template = json.load(open(os.path.join(os.path.dirname(__file__), "refined_template.json"), "r"))
+_chatgpt_template = None
+
+if language == Language.VI:
+    _chatgpt_template = json.load(open(os.path.join(os.path.dirname(__file__), "refined_template_vn.json"), "r"))
+else:
+    _chatgpt_template = json.load(open(os.path.join(os.path.dirname(__file__), "refined_template_en.json"), "r"))
+
 chatgpt_template = {}
 for temp in _chatgpt_template:
     attributes = fs(temp["attributes"])
@@ -248,13 +430,25 @@ class Verbalizer(object):
                     v_1 = [genre_label_to_name[_v] for _v in v[1]]
                     _attribute_values["S4_0"] = self.concat_str(v_1)
             if att == "B1s1":
-                bar_range = [
-                    ["1 ~ 4", "khoảng 3", "khoảng 2"], 
-                    ["5 ~ 8", "khoảng 7", "khoảng 6"],
-                    ["9 ~ 12", "khoảng 11", "khoảng 10"],
-                    ["13 ~ 16", "khoảng 15", "khoảng 14"],
-                        ["hơn 16"]
+                bar_range = None
+
+                if language == Language.VI:
+                    bar_range = [
+                        ["1 ~ 4", "khoảng 3", "khoảng 2"], 
+                        ["5 ~ 8", "khoảng 7", "khoảng 6"],
+                        ["9 ~ 12", "khoảng 11", "khoảng 10"],
+                        ["13 ~ 16", "khoảng 15", "khoảng 14"],
+                            ["hơn 16"]
+                        ]
+                else:
+                    bar_range = [
+                        ["1 ~ 4", "about 3", "about 2"], 
+                        ["5 ~ 8", "about 7", "about 6"],
+                        ["9 ~ 12", "about 11", "about 10"],
+                        ["13 ~ 16", "about 15", "about 14"],
+                            ["over 16"]
                     ]
+                    
                 _attribute_values["B1_1"] = random.choice(bar_range[v[1]])
             if att == "TS1s1":
                 if v == "other":
@@ -268,12 +462,24 @@ class Verbalizer(object):
             if att == "ST1":
                 _attribute_values[att+"_1"] = remove_digit(v)
             if att == "TM1":
-                time1 = [
-                    ["1 ~ 15", "khoảng 10"], 
-                    ["16 ~ 30", "khoảng 20"], 
-                    ["31 ~ 45", "khoảng 40"],
-                    ["46 ~ 60", "khoảng 50"], 
-                    ["hơn 60"]]
+                time1 = None
+
+                if language == Language.VI:
+                    time1 = [
+                        ["1 ~ 15", "khoảng 10"], 
+                        ["16 ~ 30", "khoảng 20"], 
+                        ["31 ~ 45", "khoảng 40"],
+                        ["46 ~ 60", "khoảng 50"], 
+                        ["hơn 60"]
+                    ]
+                else:
+                    time1 = [
+                        ["1 ~ 15", "about 10"], 
+                        ["16 ~ 30", "about 20"], 
+                        ["31 ~ 45", "about 40"],
+                        ["46 ~ 60", "about 50"], 
+                        ["over 60"]
+                    ]
                 _attribute_values[att+"_1"] = random.choice(time1[v[1]])
         return _attribute_values
 
@@ -293,38 +499,56 @@ class Verbalizer(object):
                 mid = str_list[i][1:]
             res += f", {str_list[i][0].lower()}{mid}"
         
-        res += f" và {str_list[-1][0].lower()}{str_list[-1][1:]}"
+        and_str = None
+        if language == Language.VI:
+            and_str = "và"
+        else:
+            and_str = "and"
+        res += f" {and_str} {str_list[-1][0].lower()}{str_list[-1][1:]}"
         return res
 
     def emotion_to_str(self, emo):
-        _emo = {
-            # "Q1": ["happiness", "excitement", 'joy', 'bliss', 'delight', 'elation', 'contentment', 'pleasure', 'satisfaction', 'cheerfulness', 'ecstasy', 'gladness', 'gratitude', 'jubilation', 'thrill', 'anticipation', 'exhilaration', 'adventure', 'stimulation', 'enthusiasm', 'euphoria', 'animation', 'zeal', 'fervor', 'verve', 'gusto'],
-            # "Q2": ["tension", "unease", 'anxiety', 'nervousness', 'apprehension', 'worry', 'distress', 'agitation', 'restlessness', 'jitters', 'uneasiness', 'disquiet', 'trepidation', 'insecurity', 'edginess', 'suspense', 'fearfulness', 'anticipation'],
-            # "Q3": ["sadness", "depression", 'grief', 'sorrow', 'despair', 'melancholy', 'misery', 'despondency', 'blues', 'heartache', 'regret', 'sullenness', 'mournfulness', 'dolefulness', 'dejection', 'hopelessness', 'pessimism', 'downheartedness'],
-            # "Q4": ["calmness", "relaxation", 'serenity', 'tranquility', 'peace', 'composure', 'ease', 'placidity', 'repose', 'quiet', 'stillness', 'restfulness', 'leisure', 'unwind', 'decompress', 'unwind', 'chill', 'out', 'rejuvenate'],
-            # 1: ["happiness", "excitement", 'joy', 'bliss', 'delight', 'elation', 'contentment', 'pleasure', 'satisfaction', 'cheerfulness', 'ecstasy', 'gladness', 'gratitude', 'jubilation', 'thrill', 'anticipation', 'exhilaration', 'adventure', 'stimulation', 'enthusiasm', 'euphoria', 'animation', 'zeal', 'fervor', 'verve', 'gusto'],
-            # 2: ["tension", "unease", 'anxiety', 'nervousness', 'apprehension', 'worry', 'distress', 'agitation', 'restlessness', 'jitters', 'uneasiness', 'disquiet', 'trepidation', 'insecurity', 'edginess', 'suspense', 'fearfulness', 'anticipation'],
-            # 3: ["sadness", "depression", 'grief', 'sorrow', 'despair', 'melancholy', 'misery', 'despondency', 'blues', 'heartache', 'regret', 'sullenness', 'mournfulness', 'dolefulness', 'dejection', 'hopelessness', 'pessimism', 'downheartedness'],
-            # 4: ["calmness", "relaxation", 'serenity', 'tranquility', 'peace', 'composure', 'ease', 'placidity', 'repose', 'quiet', 'stillness', 'restfulness', 'leisure', 'unwind', 'decompress', 'unwind', 'chill', 'out', 'rejuvenate']
-            "Q1": ["hạnh phúc", "phấn khích", "vui", "hạnh phúc tột cùng", "vui mãnh liệt", "hân hoan", "hài lòng", "vui", "hài lòng", "vui", "hạnh phúc tột đỉnh", "hân hoan", "biết ơn", "phấn khích", "hồi hộp", "trông đợi", "hồi hộp", "phiêu lưu", "kích thích", "hào hứng", "hưng phấn", "sôi động", "sôi nổi", "nhiệt huyết", "hăng say", "nhiệt tình"],
-            "Q2": ["căng thẳng", "bất an", "lo âu", "lo lắng", "lo sợ", "lo lắng", "bất an", "bối rối", "bồn chồn", "lo lắng", "lo lắng", "lo lắng", "rối loạn", "không an toàn", "bồn chồn", "hồi hộp", "sợ hãi", "trông đợi"],
-            "Q3": ["buồn bã", "trầm cảm", "đau buồn", "buồn", "tuyệt vọng", "u uất", "đau khổ", "tuyệt vọng", "buồn rầu", "đau lòng", "hối tiếc", "ảm đạm", "tang thương", "buồn rầu", "chán nản", "tuyệt vọng", "bi quan", "nản lòng"],
-            "Q4": ["bình tĩnh", "thư thái", "thanh bình", "yên bình", "hòa bình", "điềm tĩnh", "dễ chịu", "thanh thản", "yên lặng", "yên bình", "yên lặng", "thư giãn", "rảnh rỗi", "thư giãn", "bớt căng thẳng", "thư giãn", "nghỉ ngơi", "phục hồi"],
-            1: ["hạnh phúc", "phấn khích", "vui", "hạnh phúc tột cùng", "vui mãnh liệt", "hân hoan", "hài lòng", "vui", "hài lòng", "vui", "hạnh phúc tột đỉnh", "hân hoan", "biết ơn", "phấn khích", "hồi hộp", "trông đợi", "hồi hộp", "phiêu lưu", "kích thích", "hào hứng", "hưng phấn", "sôi động", "sôi nổi", "nhiệt huyết", "hăng say", "nhiệt tình"],
-            2: ["căng thẳng", "bất an", "lo âu", "lo lắng", "lo sợ", "lo lắng", "bất an", "bối rối", "bồn chồn", "lo lắng", "lo lắng", "lo lắng", "rối loạn", "không an toàn", "bồn chồn", "hồi hộp", "sợ hãi", "trông đợi"],
-            3: ["buồn bã", "trầm cảm", "đau buồn", "buồn", "tuyệt vọng", "u uất", "đau khổ", "tuyệt vọng", "buồn rầu", "đau lòng", "hối tiếc", "ảm đạm", "tang thương", "buồn rầu", "chán nản", "tuyệt vọng", "bi quan", "nản lòng"],
-            4: ["bình tĩnh", "thư thái", "thanh bình", "yên bình", "hòa bình", "điềm tĩnh", "dễ chịu", "thanh thản", "yên lặng", "yên bình", "yên lặng", "thư giãn", "rảnh rỗi", "thư giãn", "bớt căng thẳng", "thư giãn", "nghỉ ngơi", "phục hồi"]
-        }
+        _emo = None
+
+        if language == Language.VI:
+            _emo = {
+                "Q1": ["hạnh phúc", "phấn khích", "vui", "hạnh phúc tột cùng", "vui mãnh liệt", "hân hoan", "hài lòng", "vui", "hài lòng", "vui", "hạnh phúc tột đỉnh", "hân hoan", "biết ơn", "phấn khích", "hồi hộp", "trông đợi", "hồi hộp", "phiêu lưu", "kích thích", "hào hứng", "hưng phấn", "sôi động", "sôi nổi", "nhiệt huyết", "hăng say", "nhiệt tình"],
+                "Q2": ["căng thẳng", "bất an", "lo âu", "lo lắng", "lo sợ", "lo lắng", "bất an", "bối rối", "bồn chồn", "lo lắng", "lo lắng", "lo lắng", "rối loạn", "không an toàn", "bồn chồn", "hồi hộp", "sợ hãi", "trông đợi"],
+                "Q3": ["buồn bã", "trầm cảm", "đau buồn", "buồn", "tuyệt vọng", "u uất", "đau khổ", "tuyệt vọng", "buồn rầu", "đau lòng", "hối tiếc", "ảm đạm", "tang thương", "buồn rầu", "chán nản", "tuyệt vọng", "bi quan", "nản lòng"],
+                "Q4": ["bình tĩnh", "thư thái", "thanh bình", "yên bình", "hòa bình", "điềm tĩnh", "dễ chịu", "thanh thản", "yên lặng", "yên bình", "yên lặng", "thư giãn", "rảnh rỗi", "thư giãn", "bớt căng thẳng", "thư giãn", "nghỉ ngơi", "phục hồi"],
+                1: ["hạnh phúc", "phấn khích", "vui", "hạnh phúc tột cùng", "vui mãnh liệt", "hân hoan", "hài lòng", "vui", "hài lòng", "vui", "hạnh phúc tột đỉnh", "hân hoan", "biết ơn", "phấn khích", "hồi hộp", "trông đợi", "hồi hộp", "phiêu lưu", "kích thích", "hào hứng", "hưng phấn", "sôi động", "sôi nổi", "nhiệt huyết", "hăng say", "nhiệt tình"],
+                2: ["căng thẳng", "bất an", "lo âu", "lo lắng", "lo sợ", "lo lắng", "bất an", "bối rối", "bồn chồn", "lo lắng", "lo lắng", "lo lắng", "rối loạn", "không an toàn", "bồn chồn", "hồi hộp", "sợ hãi", "trông đợi"],
+                3: ["buồn bã", "trầm cảm", "đau buồn", "buồn", "tuyệt vọng", "u uất", "đau khổ", "tuyệt vọng", "buồn rầu", "đau lòng", "hối tiếc", "ảm đạm", "tang thương", "buồn rầu", "chán nản", "tuyệt vọng", "bi quan", "nản lòng"],
+                4: ["bình tĩnh", "thư thái", "thanh bình", "yên bình", "hòa bình", "điềm tĩnh", "dễ chịu", "thanh thản", "yên lặng", "yên bình", "yên lặng", "thư giãn", "rảnh rỗi", "thư giãn", "bớt căng thẳng", "thư giãn", "nghỉ ngơi", "phục hồi"]
+            }
+        else:
+            _emo = {
+                "Q1": ["happiness", "excitement", 'joy', 'bliss', 'delight', 'elation', 'contentment', 'pleasure', 'satisfaction', 'cheerfulness', 'ecstasy', 'gladness', 'gratitude', 'jubilation', 'thrill', 'anticipation', 'exhilaration', 'adventure', 'stimulation', 'enthusiasm', 'euphoria', 'animation', 'zeal', 'fervor', 'verve', 'gusto'],
+                "Q2": ["tension", "unease", 'anxiety', 'nervousness', 'apprehension', 'worry', 'distress', 'agitation', 'restlessness', 'jitters', 'uneasiness', 'disquiet', 'trepidation', 'insecurity', 'edginess', 'suspense', 'fearfulness', 'anticipation'],
+                "Q3": ["sadness", "depression", 'grief', 'sorrow', 'despair', 'melancholy', 'misery', 'despondency', 'blues', 'heartache', 'regret', 'sullenness', 'mournfulness', 'dolefulness', 'dejection', 'hopelessness', 'pessimism', 'downheartedness'],
+                "Q4": ["calmness", "relaxation", 'serenity', 'tranquility', 'peace', 'composure', 'ease', 'placidity', 'repose', 'quiet', 'stillness', 'restfulness', 'leisure', 'unwind', 'decompress', 'unwind', 'chill', 'out', 'rejuvenate'],
+                1: ["happiness", "excitement", 'joy', 'bliss', 'delight', 'elation', 'contentment', 'pleasure', 'satisfaction', 'cheerfulness', 'ecstasy', 'gladness', 'gratitude', 'jubilation', 'thrill', 'anticipation', 'exhilaration', 'adventure', 'stimulation', 'enthusiasm', 'euphoria', 'animation', 'zeal', 'fervor', 'verve', 'gusto'],
+                2: ["tension", "unease", 'anxiety', 'nervousness', 'apprehension', 'worry', 'distress', 'agitation', 'restlessness', 'jitters', 'uneasiness', 'disquiet', 'trepidation', 'insecurity', 'edginess', 'suspense', 'fearfulness', 'anticipation'],
+                3: ["sadness", "depression", 'grief', 'sorrow', 'despair', 'melancholy', 'misery', 'despondency', 'blues', 'heartache', 'regret', 'sullenness', 'mournfulness', 'dolefulness', 'dejection', 'hopelessness', 'pessimism', 'downheartedness'],
+                4: ["calmness", "relaxation", 'serenity', 'tranquility', 'peace', 'composure', 'ease', 'placidity', 'repose', 'quiet', 'stillness', 'restfulness', 'leisure', 'unwind', 'decompress', 'unwind', 'chill', 'out', 'rejuvenate']
+            }
         _ = _emo[emo]
         return random.choice(_)
 
     def feeling_to_str(self, feel):
-        _feel = {
-            # "F1": ["Bright", 'radiant', 'shining', 'luminous', 'vivid', 'brilliant', 'dazzling', 'beaming', 'glowing', 'sparkling', 'sunny', 'cheerful', 'optimistic', 'happy', 'joyful', 'lively', 'colorful'],
-            # "F2": ["Gloomy", 'melancholy', 'somber', 'depressing', 'miserable', 'dismal', 'bleak', 'desolate', 'sorrowful', 'morose', 'dark', 'dreary', 'funereal', 'disheartening', 'cheerless', 'despairing']
-            "F1": ["sáng sủa", "rực rỡ", "sáng bừng", "sáng lạn", "rõ ràng", "tuyệt vời", "lấp lánh", "rạng rỡ", "sáng lạn", "lấp lánh", "nắng sáng", "vui vẻ", "lạc quan", "hạnh phúc", "vui mừng", "sôi động", "đầy màu sắc"],
-            "F2": ["u ám", "u buồn", "buồn bã", "đáng buồn", "đau khổ", "ảm đạm", "ảm đạm", "hoang vắng", "đau khổ", "buồn rầu", "tối tăm", "buồn tẻ", "tang thương", "nản lòng", "buồn bã", "tuyệt vọng"]
-        }
+        _feel = None
+
+        if language == Language.VI:
+            _feel = {
+                "F1": ["sáng sủa", "rực rỡ", "sáng bừng", "sáng lạn", "rõ ràng", "tuyệt vời", "lấp lánh", "rạng rỡ", "sáng lạn", "lấp lánh", "nắng sáng", "vui vẻ", "lạc quan", "hạnh phúc", "vui mừng", "sôi động", "đầy màu sắc"],
+                "F2": ["u ám", "u buồn", "buồn bã", "đáng buồn", "đau khổ", "ảm đạm", "ảm đạm", "hoang vắng", "đau khổ", "buồn rầu", "tối tăm", "buồn tẻ", "tang thương", "nản lòng", "buồn bã", "tuyệt vọng"]
+            }
+        else:
+            _feel = {
+                "F1": ["Bright", 'radiant', 'shining', 'luminous', 'vivid', 'brilliant', 'dazzling', 'beaming', 'glowing', 'sparkling', 'sunny', 'cheerful', 'optimistic', 'happy', 'joyful', 'lively', 'colorful'],
+                "F2": ["Gloomy", 'melancholy', 'somber', 'depressing', 'miserable', 'dismal', 'bleak', 'desolate', 'sorrowful', 'morose', 'dark', 'dreary', 'funereal', 'disheartening', 'cheerless', 'despairing']
+            }
+
         _ = _feel[feel]
         return random.choice(_)
 
@@ -407,15 +631,9 @@ class Verbalizer(object):
         random.shuffle(attributes)
         la = len(attributes)
 
-        # DEBUG
-        # if la >= 2:
-        #     print("DEBUG: ", "len of attributes: ", la, attributes)
-
         while len(attributes) >= 2:
             attr_comb = None
             temp, attr_comb = self.select_attributes_and_replace(attributes, attribute_values)
-            # print("temp: ", temp, "\n    ", "attr_comb: ", attr_comb)
-            print("temp: ", json.dumps(temp, ensure_ascii=False), "\n    ", "attr_comb: ", attr_comb)
             if attr_comb is None:
                 break
 
@@ -425,10 +643,6 @@ class Verbalizer(object):
             res_strs.append(temp)
             for attr in attr_comb:
                 attributes.remove(attr)
-        # DEBUG
-        print("in if: ", n_in_if)
-        print("in else: ", n_in_else)
-        print("out if: ", n_out_if)
 
         for attr in attributes:
             temp = random.choice(v3_templates[attr])
@@ -482,6 +696,15 @@ class Verbalizer(object):
             return v
     
 if __name__ == "__main__":
+    # CUSTOMIZE
+
+    with open("./language.txt", "r") as f:
+        language = f.read().strip()
+
+    print("verbalizer: language:", language)
+
+    # END CUSTOMIZE
+
     bin_folder = sys.argv[1]
 
     verbalizer = Verbalizer()
@@ -548,7 +771,7 @@ if __name__ == "__main__":
                     v for v in human_test if "text" not in v or v["text"] == ""
                     ]
 
-                print(failed_sample)
+                print("failed_sample: ", failed_sample)
 
                 print(len(failed_sample) / len(human_test))
 
