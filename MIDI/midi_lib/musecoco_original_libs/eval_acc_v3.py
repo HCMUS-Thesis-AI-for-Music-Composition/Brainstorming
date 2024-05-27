@@ -123,57 +123,147 @@ for num, info in tqdm(allmidiinfo.items(), desc="Comput Accuracy"):
             allcnt = 0
             cntna = 0
             for att, vector in allinfermidivector[num][midiname]['vector'].items():
+                # DEBUG
+                
+                if ("R1" in att) or ("R3" in att) or ("K1" in att) or ("TS1s1" in att):
+                    continue
+
+                # END DEBUG
                 if vector==None:
+                    continue
                     allinfermidivector[num][midiname]['acc'][att] = "NA"
                     cntna += 1
+
+                    # DEBUG
+                    
+                    print(f"BAD ATT: {att} {midiname} at if vector==None")
+
+                    # END DEBUG
                     continue
                 if att[:4]=="I1s2":
-                    if info['gold_labels'][att][-1] == 1:
-                        allinfermidivector[num][midiname]['acc'][att] = "NA"
-                        cntna += 1
-                    elif info['gold_labels'][att][1] == 1:
-                        if vector[-1]==1 or vector[1]==1:
-                            allinfermidivector[num][midiname]['acc'][att]=1
-                            cnt += 1
-                            allcnt += 1
-                        else:
-                            allinfermidivector[num][midiname]['acc'][att]=0
-                            allcnt += 1
-                    else:
-                        if vector[0] == 1:
-                            allinfermidivector[num][midiname]['acc'][att]=1
-                            cnt += 1
-                            allcnt += 1
-                        else:
-                            allinfermidivector[num][midiname]['acc'][att]=0
-                            allcnt += 1
+                    pass
+                    # if info['gold_labels'][att][-1] == 1:
+                    #     allinfermidivector[num][midiname]['acc'][att] = "NA"
+                    #     cntna += 1
+
+                    #     # DEBUG
+                    
+                    #     print(f"BAD ATT: {att} {midiname}")
+
+                    #     # END DEBUG
+                    # elif info['gold_labels'][att][1] == 1:
+                    #     if vector[-1]==1 or vector[1]==1:
+                    #         allinfermidivector[num][midiname]['acc'][att]=1
+                    #         cnt += 1
+                    #         allcnt += 1
+
+                    #         # DEBUG
+                    
+                    #         print(f"GOOD ATT: {att} {midiname}")
+
+                    #         # END DEBUG
+                    #     else:
+                    #         allinfermidivector[num][midiname]['acc'][att]=0
+                    #         allcnt += 1
+
+                    #         # DEBUG
+
+                    #         print(f"BAD ATT: {att} {midiname}")
+
+                    #         # END DEBUG
+                    # else:
+                    #     if vector[0] == 1:
+                    #         allinfermidivector[num][midiname]['acc'][att]=1
+                    #         cnt += 1
+                    #         allcnt += 1
+
+                    #         # DEBUG
+
+                    #         print(f"GOOD ATT: {att} {midiname}")
+
+                    #         # END DEBUG
+                    #     else:
+                    #         allinfermidivector[num][midiname]['acc'][att]=0
+                    #         allcnt += 1
+
+                    #         # DEBUG
+
+                    #         print(f"BAD ATT: {att} {midiname}")
+
+                    #         # END DEBUG
                 elif att in ["S2s1", "S4", "EM1"]:
-                    allinfermidivector[num][midiname]['acc'][att] = "NA"
-                    cntna += 1
+                    # allinfermidivector[num][midiname]['acc'][att] = "NA"
+                    # cntna += 1
+
+                    # # DEBUG
+
+                    # print(f"BAD ATT: {att} {midiname}")
+
+                    # # END DEBUG
+                    pass
                 elif att=="B1s1":
                     if info['gold_labels'][att][-1]==1 or vector[-1]==1:
                         allinfermidivector[num][midiname]['acc'][att] = "NA"
                         cntna += 1
+
+                        # DEBUG
+
+                        print(f"BAD ATT: {att} {midiname} at if info['gold_labels'][att][-1]==1 or vector[-1]==1")
+
+                        # END DEBUG
                     else:
                         if vector == info['gold_labels'][att]:
                             allinfermidivector[num][midiname]['acc'][att] = 1
                             cnt += 1
                             allcnt += 1
+
+                            # DEBUG
+
+                            print(f"GOOD ATT: {att} {midiname}")
+
+                            # END DEBUG
                         else:
                             allinfermidivector[num][midiname]['acc'][att] = 0
                             allcnt += 1
+
+                            # DEBUG
+
+                            print(f"BAD ATT: {att} {midiname} at if vector == info['gold_labels'][att]")
+
+                            # END DEBUG
                 else:
+                    print("UNKNOWN ATT: ", att)
+
                     if info['gold_labels'][att][-1] == 1:
                         allinfermidivector[num][midiname]['acc'][att] = "NA"
                         cntna += 1
+
+                        # DEBUG
+
+                        print(f"BAD ATT: {att} {midiname} at if info['gold_labels'][att][-1] == 1")
+
+                        # END DEBUG
                     else:
-                        if vector == info['gold_labels'][att]:
-                            allinfermidivector[num][midiname]['acc'][att] = 1
-                            cnt += 1
-                            allcnt += 1
-                        else:
-                            allinfermidivector[num][midiname]['acc'][att] = 0
-                            allcnt += 1
+                        if "S4" not in att:
+                            if vector == info['gold_labels'][att]:
+                                allinfermidivector[num][midiname]['acc'][att] = 1
+                                cnt += 1
+                                allcnt += 1
+
+                                # DEBUG
+
+                                print(f"GOOD ATT: {att} {midiname}")
+
+                                # END DEBUG
+                            else:
+                                allinfermidivector[num][midiname]['acc'][att] = 0
+                                allcnt += 1
+
+                                # DEBUG
+
+                                print(f"BAD ATT: {att} {midiname} at if vector == info['gold_labels'][att]")
+
+                                # END DEBUG
             allinfermidivector[num][midiname]['correct_num'] = deepcopy(cnt)
             allinfermidivector[num][midiname]['NA_num'] = deepcopy(cntna)
             allinfermidivector[num][midiname]['attribute_num'] = deepcopy(allcnt)
