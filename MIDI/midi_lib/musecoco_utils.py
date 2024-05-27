@@ -47,4 +47,7 @@ def remove_structure_errors(
                     f"remove_structure_errors: {key} is not allowed after {prev_key} ({musecoco_line[i - 1]} is followed by {musecoco_line[i]})"
                 )
                 
+    if len(valid_musecoco_line) == len(musecoco_line):
+        print("remove_structure_errors: NO STRUCTURE ERRORS FOUND")
+                
     return valid_musecoco_line
