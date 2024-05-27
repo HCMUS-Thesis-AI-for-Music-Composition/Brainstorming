@@ -18,3 +18,33 @@
 #             idx += 1
             
 #     return ts_dict
+
+import const.musecoco_const as mcc
+
+def remove_structure_errors(
+    musecoco_line: list[tuple],
+    next_acceptable_keys: dict = mcc.next_acceptable_keys
+) -> list[tuple]:
+    valid_musecoco_line = None
+    
+    prev_key = musecoco_line[0][0]
+    
+    if prev_key != mcc.str_abbr_time_signature:
+        print(f"remove_structure_errors: The first key must be '{mcc.str_abbr_time_signature}'")
+    else:
+        valid_musecoco_line = []
+        
+        valid_musecoco_line.append(musecoco_line[0])
+        
+        for i in range(1, len(musecoco_line)):
+            key, value = musecoco_line[i]
+            
+            if key in next_acceptable_keys[prev_key]:
+                valid_musecoco_line.append(musecoco_line[i])
+                prev_key = key
+            else:
+                print(
+                    f"remove_structure_errors: {key} is not allowed after {prev_key} ({musecoco_line[i - 1]} is followed by {musecoco_line[i]})"
+                )
+                
+    return valid_musecoco_line
