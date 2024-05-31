@@ -125,7 +125,7 @@ for num, info in tqdm(allmidiinfo.items(), desc="Comput Accuracy"):
             for att, vector in allinfermidivector[num][midiname]['vector'].items():
                 # DEBUG
                 
-                if ("R1" in att) or ("R3" in att) or ("K1" in att) or ("TS1s1" in att):
+                if ("R1" in att) or ("R3" in att) or ("K1" in att) or ("TS1s1" in att) or ("TM1" in att):
                     continue
 
                 # END DEBUG
