@@ -1,4 +1,3 @@
-
 def musecoco_line_str_to_token_list_converter(musecoco_line_str: str):
     result = []
 
