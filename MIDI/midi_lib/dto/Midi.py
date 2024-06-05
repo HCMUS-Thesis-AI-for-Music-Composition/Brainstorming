@@ -5,7 +5,7 @@ from dto.Instrument import InstrumentDTO
 from dto.Marker import MarkerDTO
 
 # from midi_lib.const.midi import default_ticks_per_beat, default_max_tick
-from const_lib.midi import default_ticks_per_beat, default_max_tick
+from const_lib.midi_const import default_ticks_per_beat, default_max_tick
 
 class MidiDTO:
     """

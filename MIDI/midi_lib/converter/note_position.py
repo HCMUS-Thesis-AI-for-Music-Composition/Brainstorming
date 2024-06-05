@@ -1,4 +1,4 @@
-from midi_lib.const_lib.midi import default_ticks_per_beat, default_position_resolution
+from const_lib.midi_const import default_ticks_per_beat, default_position_resolution
 
 def position_to_tick_converter(
     position, 

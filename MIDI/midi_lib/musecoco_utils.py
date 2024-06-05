@@ -129,3 +129,62 @@ def remove_structure_errors(
         pass
 
     return valid_musecoco_line, printed_lines
+
+def fill_missing_keys(
+    musecoco_line: list[tuple],
+    next_acceptable_keys: dict = mcc.next_acceptable_keys,
+    should_error_be_fixed_randomly: bool = False
+) -> tuple[list[tuple], str]:
+    printed_logs = ""
+
+    valid_musecoco_line = []
+    
+    prev_key = musecoco_line[0][0]
+    
+    valid_musecoco_line.append(musecoco_line[0])
+    
+    for i in range(1, len(musecoco_line)):
+        key, value = musecoco_line[i]
+        
+        if key in next_acceptable_keys[prev_key]:
+            valid_musecoco_line.append(musecoco_line[i])
+            prev_key = key
+        else:
+            str_to_print = f"fill_missing_keys: {key} is not allowed after {prev_key} ({musecoco_line[i - 1]} is followed by {musecoco_line[i]}): {musecoco_line[i - 1]}, {musecoco_line[i]}"
+
+            print(str_to_print)
+
+            printed_logs += str_to_print + "\n"
+
+            if should_error_be_fixed_randomly:
+                random_alternative_key = random.choice(next_acceptable_keys[prev_key])
+                random_alternative_value = random.randint(10, 15)
+
+                valid_musecoco_line.append(
+                    (
+                        random_alternative_key, 
+                        random_alternative_value
+                    )
+                )
+
+                str_to_print = f"-----> fill_missing_keys: ({random_alternative_key}, {random_alternative_value}) is added instead of ({key}, {value})"
+                print(str_to_print)
+
+                printed_logs += str_to_print + "\n"
+
+                print()
+                printed_logs += "\n"
+
+                prev_key = random_alternative_key
+            else:
+                pass
+
+    if len(valid_musecoco_line) == len(musecoco_line):
+        str_to_print = "fill_missing_keys: NO MISSING KEYS FOUND"
+        print(str_to_print)
+
+        printed_logs += str_to_print + "\n"
+    else:
+        pass
+
+    return valid_musecoco_line, printed_logs
