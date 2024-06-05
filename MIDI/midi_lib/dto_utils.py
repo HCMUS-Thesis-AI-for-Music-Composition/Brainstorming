@@ -1,6 +1,6 @@
 from dto.Midi import MidiDTO
 
-import const.midi as mc
+import const_lib.midi as mc
 
 def normalize_midi_dto_pitch(
     midi_dto: MidiDTO

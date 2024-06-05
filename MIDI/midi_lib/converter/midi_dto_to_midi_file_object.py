@@ -1,7 +1,7 @@
 from miditoolkit import MidiFile, TempoChange, KeySignature, TimeSignature, Instrument, Note, Marker
 from dto.Midi import MidiDTO
 
-import const.midi as mc
+import const_lib.midi as mc
 import midi_utils as mu
 
 import dto_utils as du

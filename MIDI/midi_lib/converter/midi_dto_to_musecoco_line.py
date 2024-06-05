@@ -3,7 +3,7 @@ from musecoco_original_libs.vocab_manager import VocabManager
 
 from midi_utils import current_tempo_from_midi_dto_tempo_changes
 from converter.note_position import tick_to_position_converter
-import midi_lib.const.musecoco_const as musecoco_const
+import midi_lib.const_lib.musecoco_const as musecoco_const
 
 def midi_dto_to_musecoco_line_converter(
     midi_dto: MidiDTO, 

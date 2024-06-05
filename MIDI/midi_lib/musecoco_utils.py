@@ -21,7 +21,7 @@
 
 import random
 
-import const.musecoco_const as mcc
+import const_lib.musecoco_const as mcc
 
 def remove_structure_errors(
     musecoco_line: list[tuple],
@@ -54,40 +54,44 @@ def remove_structure_errors(
             if should_error_be_fixed_randomly:
                 v = musecoco_line[i][1]
 
-                if v > 127:
-                    str_to_print = f"remove_structure_errors: {key} is not allowed to have a value greater than 127 ({musecoco_line[i]})"
+            #     if v > 127:
+            #         str_to_print = f"remove_structure_errors: {key} is not allowed to have a value greater than 127 ({musecoco_line[i]})"
 
-                    print(str_to_print)
+            #         print(str_to_print)
 
-                    printed_lines += str_to_print + "\n"
+            #         printed_lines += str_to_print + "\n"
 
-                    musecoco_line[i] = (key, random.randint(10, 25))
+            #         musecoco_line[i] = (key, random.randint(10, 25))
 
-                    str_to_print = f"-----> remove_structure_errors: ({key}, {random_alternative_value}) is added instead of ({key}, {value})"
+            #         str_to_print = f"-----> remove_structure_errors: ({key}, {random_alternative_value}) is added instead of ({key}, {value})"
 
-                    print(str_to_print)
+            #         print(str_to_print)
 
-                    printed_lines += str_to_print + "\n"
+            #         printed_lines += str_to_print + "\n"
 
-                    print()
+            #         print()
 
-                    printed_lines += "\n"
-                else:
-                    pass
-            else:
-                pass
+            #         printed_lines += "\n"
+            #     else:
+            #         pass
+            # else:
+            #     pass
             
             if value > 127:
                 # Ignore the value
-                str_to_print = f"remove_structure_errors: {key} is not allowed to have a value greater than 127 ({musecoco_line[i]})"
-                print(str_to_print)
+                # str_to_print = f"remove_structure_errors: {key} is not allowed to have a value greater than 127 ({musecoco_line[i]})"
+                # print(str_to_print)
 
-                printed_lines += str_to_print + "\n"
+                # printed_lines += str_to_print + "\n"
+                
+                # DEBUG
+                valid_musecoco_line.append(musecoco_line[i])
+                prev_key = key
             else:
                 valid_musecoco_line.append(musecoco_line[i])
                 prev_key = key
         else:
-            str_to_print = f"remove_structure_errors: {key} is not allowed after {prev_key} ({musecoco_line[i - 1]} is followed by {musecoco_line[i]})"
+            str_to_print = f"remove_structure_errors: {key} is not allowed after {prev_key} ({musecoco_line[i - 1]} is followed by {musecoco_line[i]}): {musecoco_line[i - 1]}, {musecoco_line[i]}"
 
             print(str_to_print)
 
