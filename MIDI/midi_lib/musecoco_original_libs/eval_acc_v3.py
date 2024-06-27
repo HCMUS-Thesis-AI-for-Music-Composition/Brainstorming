@@ -119,6 +119,12 @@ for num, info in tqdm(allmidiinfo.items(), desc="Comput Accuracy"):
             allinfermidivector[num][midiname]['vector'].pop('ST1')
             allinfermidivector[num][midiname]['vector'].pop('C1')
 
+            # DEBUG
+
+            print(f"allinfermidivector[{num}][{midiname}]: {allinfermidivector[num][midiname]}")
+
+            # END DEBUG
+
             cnt = 0
             allcnt = 0
             cntna = 0
