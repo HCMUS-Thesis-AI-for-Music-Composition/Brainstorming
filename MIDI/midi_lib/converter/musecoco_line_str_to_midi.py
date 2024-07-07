@@ -23,25 +23,25 @@ log_index_folder_path = ""
 default_midi_file_name = "" 
 
 def set_default_values(
-    new_output_dir=output_dir,
-    new_log_dir=log_dir,
-    new_mid_file_name_prefix=mid_file_name_prefix,
+    output_path=output_dir,
+    log_path=log_dir,
+    midi_file_name_prefix=mid_file_name_prefix
 ):
     """
         Set the default values for the module
 
         Parameters:
-            new_output_dir (str): The new midi file output directory
-            new_log_dir (str): The new log directory
-            new_mid_file_name_prefix (str): The new midi file name prefix
+            output_path (str): The path to the output folder
+            log_path (str): The path to the log folder
+            midi_file_name_prefix (str): The prefix for the midi file name
     """
     global output_dir
     global log_dir
     global mid_file_name_prefix
 
-    output_dir = new_output_dir
-    log_dir = new_log_dir
-    mid_file_name_prefix = new_mid_file_name_prefix
+    output_dir = output_path
+    log_dir = log_path
+    mid_file_name_prefix = midi_file_name_prefix
 
 def get_current_time():
     now = datetime.now()
@@ -93,12 +93,14 @@ def default_setup():
     log_date_folder_path = f"{log_dir}/{yyyy_mm_dd}"
     log_time_folder_path = f"{log_date_folder_path}/{hh_am_pm}"
 
-    # Create the folders if it does not exist
+    # Create the folders if it does not exist (recursive)
     if not os.path.exists(log_date_folder_path):
-        os.mkdir(log_date_folder_path)
+        # os.mkdir(log_date_folder_path)
+        os.makedirs(log_date_folder_path)
 
     if not os.path.exists(log_time_folder_path):
-        os.mkdir(log_time_folder_path)
+        # os.mkdir(log_time_folder_path)
+        os.makedirs(log_time_folder_path)
 
     # Count the number of folders in the log_date_folder_path (excluding the .DS_Store file)
     log_date_folders = [f for f in os.listdir(log_date_folder_path) if not f.startswith('.')]
