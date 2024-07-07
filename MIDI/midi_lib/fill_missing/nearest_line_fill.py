@@ -359,7 +359,8 @@ def nearest_line_fill(
         are_lines_valid.append(is_token_list_valid(line))
 
     if are_all_list_elements_equal_to_value(are_lines_valid, True):
-        return musecoco_token_lines
+        pass
+        # return musecoco_token_lines
     elif are_all_list_elements_equal_to_value(are_lines_valid, False):
         print("All lines are invalid. Cannot apply by_line_nearest_fill.")
         return None
