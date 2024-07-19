@@ -1,0 +1,780 @@
+[
+    {
+        "attributes": ["K1_1", "TM1_1", "R3_0", "I1_1", "T1_0"],
+        "response": "The music is in the key of [KEY] and lasts for [TM1] seconds. The beat is very calming, featuring [INSTRUMENTS], and has a fast tempo."
+    },
+    {
+        "attributes": ["C1_0", "S4_1", "R1_1", "EM1_1", "T1_2"],
+        "response": "The song maintains a bright feeling from start to finish, belongs to the [GENRE] genre, is perfect for dancing, evokes [EMOTION] in the listener, and has a moderate tempo."
+    },
+    {
+        "attributes": ["C1_1", "R3_1", "B1_1", "TS1_1", "S2_0"],
+        "response": "The song carries a gloomy vibe from beginning to end, has a very strong beat, spans around [NUM_BARS] bars, is in [TIME_SIGNATURE] time signature, and doesn't match [ARTIST]'s usual sound."
+    },
+    {
+        "attributes": ["P4_1", "I1_0", "T1_1", "K1_1", "EM1_1"],
+        "response": "Its pitch range covers [RANGE] octaves. The song doesn't include [INSTRUMENTS], has a slow tempo, is composed in the key of [KEY], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "I1_1", "S4_0"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, features [INSTRUMENTS], and doesn't fit the typical [GENRE] style."
+    },
+    {
+        "attributes": ["R1_0", "K1_1", "S2_1", "T1_0", "B1_1"],
+        "response": "This music isn't suited for dancing, is composed in the key of [KEY], resembles the style of [ARTIST], has a fast tempo, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["C1_3", "R3_0", "TM1_1", "I1_1", "S4_1"],
+        "response": "The song begins dark and eventually brightens up, has a very calming beat, lasts for [TM1] seconds, features [INSTRUMENTS], and falls under the [GENRE] genre."
+    },
+    {
+        "attributes": ["S2_0", "T1_1", "R1_1", "K1_1", "C1_0"],
+        "response": "The song doesn't match [ARTIST]'s usual sound, has a slow tempo, is perfect for dancing, is composed in the key of [KEY], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["P4_1", "TS1_1", "C1_1", "R3_2", "I1_0"],
+        "response": "Its pitch range covers [RANGE] octaves, is in [TIME_SIGNATURE] time signature, carries a gloomy vibe from beginning to end, has a moderate beat, and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["R1_1", "EM1_1", "S4_1", "T1_2", "K1_1"],
+        "response": "This music is perfect for dancing, evokes [EMOTION] in the listener, falls under the [GENRE] genre, has a moderate tempo, and is composed in the key of [KEY]."
+    },
+    {
+        "attributes": ["TS1_o", "C1_2", "B1_1", "R3_1", "S2_1"],
+        "response": "The song uses an uncommon time signature, starts off bright but then turns dark, spans around [NUM_BARS] bars, has a very strong beat, and resembles the style of [ARTIST]."
+    },
+    {
+        "attributes": ["C1_3", "P4_1", "R1_0", "I1_1", "T1_0"],
+        "response": "The song begins dark and eventually brightens up, its pitch range covers [RANGE] octaves, isn't suited for dancing, features [INSTRUMENTS], and has a fast tempo."
+    },
+    {
+        "attributes": ["R3_2", "S4_0", "K1_1", "TM1_1", "EM1_1"],
+        "response": "The song has a moderate beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], lasts for [TM1] seconds, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "TS1_1", "I1_0", "S2_0"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, is in [TIME_SIGNATURE] time signature, doesn't include [INSTRUMENTS], and doesn't match [ARTIST]'s usual sound."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "T1_0", "K1_1", "B1_1"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, has a fast tempo, is composed in the key of [KEY], and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["S4_1", "C1_1", "R3_0", "I1_1", "TS1_o"],
+        "response": "The song falls under the [GENRE] genre, carries a gloomy vibe from beginning to end, has a very calming beat, features [INSTRUMENTS], and uses an uncommon time signature."
+    },
+    {
+        "attributes": ["R1_0", "EM1_1", "K1_1", "C1_3", "TM1_1"],
+        "response": "This music isn't suited for dancing, evokes [EMOTION] in the listener, is composed in the key of [KEY], begins dark and eventually brightens up, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["R3_2", "C1_2", "S2_1", "T1_2", "I1_0"],
+        "response": "The song has a moderate beat, starts off bright but then turns dark, resembles the style of [ARTIST], has a moderate tempo, and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "B1_1", "K1_1", "EM1_1"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, spans around [NUM_BARS] bars, is composed in the key of [KEY], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "TS1_1", "R3_1", "S4_0", "I1_1"],
+        "response": "The song maintains a bright feeling from start to finish, is in [TIME_SIGNATURE] time signature, has a very strong beat, doesn't fit the typical [GENRE] style, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "S2_0", "K1_1", "C1_3"],
+        "response": "This music isn't suited for dancing, has a fast tempo, doesn't match [ARTIST]'s usual sound, is composed in the key of [KEY], and begins dark and eventually brightens up."
+    },
+    {
+        "attributes": ["TS1_o", "C1_1", "R3_0", "I1_1", "B1_1"],
+        "response": "The song uses an uncommon time signature, carries a gloomy vibe from beginning to end, has a very calming beat, features [INSTRUMENTS], and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["S4_1", "P4_1", "R3_2", "K1_1", "T1_2"],
+        "response": "The song falls under the [GENRE] genre, its pitch range covers [RANGE] octaves, has a moderate beat, is composed in the key of [KEY], and has a moderate tempo."
+    },
+    {
+        "attributes": ["C1_0", "R1_1", "S2_1", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, is perfect for dancing, resembles the style of [ARTIST], is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+
+
+        "attributes": ["R3_1", "S4_0", "P4_1", "K1_1", "I1_0"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, its pitch range covers [RANGE] octaves, is composed in the key of [KEY], and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["C1_2", "R1_0", "T1_1", "TS1_o", "EM1_1"],
+        "response": "The song starts off bright but then turns dark, isn't suited for dancing, has a slow tempo, uses an uncommon time signature, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "I1_1", "C1_0", "K1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, features [INSTRUMENTS], maintains a bright feeling from start to finish, and is composed in the key of [KEY]."
+    },
+    {
+        "attributes": ["R1_1", "T1_0", "S2_0", "C1_3", "TM1_1"],
+        "response": "This music is perfect for dancing, has a fast tempo, doesn't match [ARTIST]'s usual sound, begins dark and eventually brightens up, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R3_0", "I1_1", "C1_1", "B1_1"],
+        "response": "Its pitch range covers [RANGE] octaves, has a very calming beat, features [INSTRUMENTS], carries a gloomy vibe from beginning to end, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["S4_0", "TS1_1", "R1_0", "K1_1", "EM1_1"],
+        "response": "The song doesn't fit the typical [GENRE] style, is in [TIME_SIGNATURE] time signature, isn't suited for dancing, is composed in the key of [KEY], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "S4_1", "R3_1", "I1_0", "T1_2"],
+        "response": "The song maintains a bright feeling from start to finish, falls under the [GENRE] genre, has a very strong beat, doesn't include [INSTRUMENTS], and has a moderate tempo."
+    },
+    {
+        "attributes": ["R1_1", "P4_1", "S2_1", "C1_2", "K1_1"],
+        "response": "This music is perfect for dancing, its pitch range covers [RANGE] octaves, resembles the style of [ARTIST], starts off bright but then turns dark, and is composed in the key of [KEY]."
+    },
+    {
+        "attributes": ["TS1_o", "R3_0", "I1_1", "C1_1", "T1_1"],
+        "response": "The song uses an uncommon time signature, has a very calming beat, features [INSTRUMENTS], carries a gloomy vibe from beginning to end, and has a slow tempo."
+    },
+    {
+        "attributes": ["S4_1", "K1_1", "R3_2", "TM1_1", "EM1_1"],
+        "response": "The song falls under the [GENRE] genre, is composed in the key of [KEY], has a moderate beat, lasts for [TM1] seconds, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_3", "P4_1", "R1_0", "S2_0", "I1_0"],
+        "response": "The song begins dark and eventually brightens up, its pitch range covers [RANGE] octaves, isn't suited for dancing, doesn't match [ARTIST]'s usual sound, and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "C1_0", "TS1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], maintains a bright feeling from start to finish, and is in [TIME_SIGNATURE] time signature."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "S2_1", "C1_2", "TM1_1"],
+        "response": "This music is perfect for dancing, has a moderate tempo, resembles the style of [ARTIST], starts off bright but then turns dark, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["TS1_o", "P4_1", "R3_0", "C1_1", "I1_1"],
+        "response": "The song uses an uncommon time signature, its pitch range covers [RANGE] octaves, has a very calming beat, carries a gloomy vibe from beginning to end, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["S4_1", "R1_0", "K1_1", "EM1_1", "C1_0"],
+        "response": "The song falls under the [GENRE] genre, isn't suited for dancing, is composed in the key of [KEY], evokes [EMOTION] in the listener, and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["R3_2", "T1_1", "S2_0", "TS1_1", "C1_3"],
+        "response": "The song has a moderate beat, has a slow tempo, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and begins dark and eventually brightens up."
+    },
+    {
+        "attributes": ["R1_1", "P4_1", "I1_1", "K1_1", "T1_0"],
+        "response": "This music is perfect for dancing, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], is composed in the key of [KEY], and has a fast tempo."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S4_1", "B1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, falls under the [GENRE] genre, spans around [NUM_BARS] bars, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["TS1_o", "S2_0", "R3_0", "C1_1", "I1_1"],
+        "response": "The song uses an uncommon time signature, doesn't match [ARTIST]'s usual sound, has a very calming beat, carries a gloomy vibe from beginning to end, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "S4_0", "K1_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_2", "R3_2", "S2_1", "I1_0", "TS1_1"],
+        "response": "The song starts off bright but then turns dark, has a moderate beat, resembles the style of [ARTIST], doesn't include [INSTRUMENTS], and is in [TIME_SIGNATURE] time signature."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_0", "T1_2", "B1_1"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, maintains a bright feeling from start to finish, has a moderate tempo, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["S4_1", "R3_1", "K1_1", "EM1_1", "I1_0"],
+        "response": "The song falls under the [GENRE] genre, has a very strong beat, is composed in the key of [KEY], evokes [EMOTION] in the listener, and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_o", "R1_0", "C1_1", "T1_1", "S2_0"],
+        "response": "The song uses an uncommon time signature, isn't suited for dancing, carries a gloomy vibe from beginning to end, has a slow tempo, and doesn't match [ARTIST]'s usual sound."
+    },
+    {
+        "attributes": ["R3_2", "P4_1",
+
+ "I1_1", "S4_0", "C1_3"],
+        "response": "The song has a moderate beat, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], doesn't fit the typical [GENRE] style, and begins dark and eventually brightens up."
+    },
+    {
+        "attributes": ["R1_1", "T1_0", "K1_1", "S2_1", "B1_1"],
+        "response": "This music is perfect for dancing, has a fast tempo, is composed in the key of [KEY], resembles the style of [ARTIST], and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S4_1", "EM1_1", "I1_0"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, falls under the [GENRE] genre, evokes [EMOTION] in the listener, and doesn't include [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_1", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, carries a gloomy vibe from beginning to end, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_2", "I1_1", "K1_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a moderate tempo, features [INSTRUMENTS], is composed in the key of [KEY], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_2", "R3_1", "S4_0", "TS1_o", "TM1_1"],
+        "response": "The song starts off bright but then turns dark, has a very strong beat, doesn't fit the typical [GENRE] style, uses an uncommon time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_0", "B1_1", "T1_0"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, maintains a bright feeling from start to finish, spans around [NUM_BARS] bars, and has a fast tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "I1_0", "EM1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], doesn't include [INSTRUMENTS], and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["TS1_o", "R3_0", "C1_1", "S2_0", "T1_1"],
+        "response": "The song uses an uncommon time signature, has a very calming beat, carries a gloomy vibe from beginning to end, doesn't match [ARTIST]'s usual sound, and has a slow tempo."
+    },
+    {
+        "attributes": ["R1_0", "T1_2", "P4_1", "I1_1", "C1_3"],
+        "response": "This music isn't suited for dancing, has a moderate tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and begins dark and eventually brightens up."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "B1_1", "C1_0"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], spans around [NUM_BARS] bars, and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["R1_1", "T1_0", "I1_0", "S2_1", "TM1_1"],
+        "response": "This music is perfect for dancing, has a fast tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["TS1_1", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_o", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, uses an uncommon time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+
+
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    },
+    {
+        "attributes": ["R3_1", "S4_0", "K1_1", "EM1_1", "B1_1"],
+        "response": "The song has a very strong beat, doesn't fit the typical [GENRE] style, is composed in the key of [KEY], evokes [EMOTION] in the listener, and spans around [NUM_BARS] bars."
+    },
+    {
+        "attributes": ["R1_1", "T1_2", "I1_0", "S2_1", "C1_0"],
+        "response": "This music is perfect for dancing, has a moderate tempo, doesn't include [INSTRUMENTS], resembles the style of [ARTIST], and maintains a bright feeling from start to finish."
+    },
+    {
+        "attributes": ["TS1_o", "R3_2", "C1_2", "K1_1", "P4_1"],
+        "response": "The song uses an uncommon time signature, has a moderate beat, starts off bright but then turns dark, is composed in the key of [KEY], and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_1", "I1_1", "S4_1", "EM1_1"],
+        "response": "This music isn't suited for dancing, has a slow tempo, features [INSTRUMENTS], falls under the [GENRE] genre, and evokes [EMOTION] in the listener."
+    },
+    {
+        "attributes": ["C1_0", "R3_1", "S2_0", "TS1_1", "TM1_1"],
+        "response": "The song maintains a bright feeling from start to finish, has a very strong beat, doesn't match [ARTIST]'s usual sound, is in [TIME_SIGNATURE] time signature, and lasts for [TM1] seconds."
+    },
+    {
+        "attributes": ["P4_1", "R1_1", "C1_1", "B1_1", "T1_2"],
+        "response": "Its pitch range covers [RANGE] octaves, is perfect for dancing, carries a gloomy vibe from beginning to end, spans around [NUM_BARS] bars, and has a moderate tempo."
+    },
+    {
+        "attributes": ["S4_1", "R3_2", "K1_1", "C1_2", "I1_1"],
+        "response": "The song falls under the [GENRE] genre, has a moderate beat, is composed in the key of [KEY], starts off bright but then turns dark, and features [INSTRUMENTS]."
+    },
+    {
+        "attributes": ["TS1_1", "R3_0", "C1_3", "S2_0", "P4_1"],
+        "response": "The music is in [TIME_SIGNATURE] time signature, has a very calming beat, begins dark and eventually brightens up, doesn't match [ARTIST]'s usual sound, and its pitch range covers [RANGE] octaves."
+    },
+    {
+        "attributes": ["R1_0", "T1_0", "P4_1", "I1_1", "C1_1"],
+        "response": "This music isn't suited for dancing, has a fast tempo, its pitch range covers [RANGE] octaves, features [INSTRUMENTS], and carries a gloomy vibe from beginning to end."
+    }
+]

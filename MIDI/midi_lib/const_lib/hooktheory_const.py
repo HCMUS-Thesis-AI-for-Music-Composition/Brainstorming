@@ -54,4 +54,3 @@ class HookTheoryKeySignatureDTO:
         """
         self.root_note_str = root_note_str
         self.scale_name = scale
-

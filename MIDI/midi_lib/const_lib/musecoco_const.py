@@ -41,3 +41,40 @@ next_acceptable_keys: dict = {
     "v": ["i", "b", "p", "o"],
     "b": ["s"],
 }
+
+# FOR DATA AUGMENTATION
+required_substring_for_attributes: dict[str, list[str]] = {
+    "I1_1" : ["[INSTRUMENTS]"],
+    "I1_0" : ["[INSTRUMENTS]"],
+    "P4_1" : ["[RANGE]"],
+    "C1_0" : ["bright", 'radiant', 'shining', 'luminous', 'vivid', 'brilliant', 'dazzling', 'beaming', 'glowing', 'sparkling', 'sunny', 'cheerful', 'optimistic', 'happy', 'joyful', 'lively', 'colorful'],
+    "C1_1" : ["gloomy", 'melancholy', 'somber', 'depressing', 'miserable', 'dismal', 'bleak', 'desolate', 'sorrowful', 'morose', 'dark', 'dreary', 'funereal', 'disheartening', 'cheerless', 'despairing'],
+    "C1_2" : ["start", "turn", "begin"],
+    "C1_3" : ["start", "turn", "begin"],
+    "R1_1" : ["dance", "dancing", "dancer", "dances", "danced"],
+    "R1_0" : ["dance", "dancing", "dancer", "dances", "danced"],
+    "R3_1" : ["strong", "powerful", "vigorous", "forceful", "potent", "intense", "robust", "sturdy", "solid", "stalwart", "resilient", "tough", "hardy", "hearty", "stout"],
+    "R3_0" : ["calm", "peaceful", "tranquil", "serene", "placid", "quiet", "still", "gentle", "mild", "soft", "soothing", "relaxing", "restful", "untroubled", "undisturbed"],
+    "R3_2" : ["moderate", "medium", "average", "middling", "intermediate", "mediocre", "ordinary", "common", "fair", "tolerable", "passable", "adequate", "acceptable", "satisfactory", "reasonable"],
+    "S4_1" : ["[GENRE]"],
+    "S4_0" : ["[GENRE]"],
+    "S2_1" : ["[ARTIST]"],
+    "S2_0" : ["[ARTIST]"],
+    "B1_1" : ["[NUM_BARS]"],
+    "TS1_1" : ["[TIME_SIGNATURE]"],
+    "TS1_o" : ["uncommon", "rare", "unique", "exceptional", "extraordinary", "unusual", "singular", "peculiar", "curious", "odd", "strange", "weird", "bizarre", "abnormal", "atypical"],
+    "K1_1" : ["[KEY]"],
+    "T1_0" : ["fast", "quick", "swift", "speedy", "rapid", "brisk", "hasty", "nimble", "fleet", "snappy", "prompt", "expeditious", "immediate", "sudden", "hurried"],
+    "T1_1" : ["slow", "sluggish", "lethargic", "lazy", "lackadaisical", "listless", "torpid", "dull", "unhurried", "unrushed", "leisurely", "easy", "relaxed", "comfortable", "plodding"],
+    "T1_2" : ["moderate", "medium", "average", "middling", "intermediate", "mediocre", "ordinary", "common", "fair", "tolerable", "passable", "adequate", "acceptable", "satisfactory", "reasonable"],
+    "EM1_1" : ["[EMOTION]"],
+    "TM1_1" : ["[TM1]"]
+}
+    
+required_substring_for_positive_and_negative_attributes: dict[str, list[str]] = {
+    "I1_0" : ["n't", "not", "unsuitable", "inappropriate", "doesn't"],
+    "R1_1" : ["suit", "perfect", "great"],
+    "R1_0" : ["n't", "not", "unsuitable", "inappropriate", "doesn't"],
+    "S4_0" : ["doesn't", "not", "unfit", "unsuitable", "inappropriate"],
+    "S2_0" : ["doesn't", "not", "unfit", "unsuitable", "inappropriate"],
+}
