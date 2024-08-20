@@ -1,0 +1,25 @@
+
+1. Model Train
+
+a. BERT Stage 1
+Chạy trên môi trường colab, các câu lệnh cài đặt thư viện và môi trường đã viết trên file TrainStage1.ipynb
+b. LoRA GPT
+Chạy trên môi trường colab, các câu lệnh cài đặt thư viện và môi trường đã viết trên file notebook GPT_lora.ipynb
+c. Fairseq
+Chạy trên môi trường colab, các câu lệnh cài đặt thư viện và môi trường đã viết trên file notebook source_train.ipynb.
+
+Cả ba mô hình sau khi cài đặt thư viện xong nhấn restart lại để chạy, sau đó Run all.
+
+
+2. Backend
+Bước 1: cd vào backend.
+Bước 2: tạo môi trường và activate
+Bước 3: pip install requirements.txt
+
+3. Frontend
+Bước 1: cd vào frontend
+Bước 2: npm install
+
+4. Data Prepare
+Cài đặt thư viện threading, selenium.
+notebook chi tiết với tên tác vụ tương ứng tên file

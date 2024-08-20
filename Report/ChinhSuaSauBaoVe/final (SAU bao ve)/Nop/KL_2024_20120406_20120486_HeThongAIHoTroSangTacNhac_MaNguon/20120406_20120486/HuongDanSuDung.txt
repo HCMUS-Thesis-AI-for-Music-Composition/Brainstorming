@@ -1,0 +1,10 @@
+1. Model
+Cả ba mô hình sau khi cài đặt thư viện xong nhấn restart lại để chạy, sau đó Run all.
+2. Backend
+Bước 1: cd vào backend.
+Bước 2: uvicorn gen_midi:app --reload    
+3. Frontend
+Bước 1: cd vào frontend
+Bước 2: npm start.
+4. Data Prepare
+Notebook từng tác vụ tương ứng với tên file.
