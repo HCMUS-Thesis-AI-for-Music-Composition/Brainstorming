@@ -1,3 +1,5 @@
+A chain of prompts: PROMPT 1, then PROMPT 2, then ..., then PROMPT n
+
 ----------------------------------- PROMPT 1 ---------------------------------
 Cho thông tin json sau:
 
@@ -59,7 +61,7 @@ trong các response có những response có lỗi diễn đạt và lỗi ngữ
 
 hãy tìm và sửa chúng lại (không được viết thường các cụm dấu ngoặc vuông vì đó là template)
 
------------------------------------ PROMPT 3 ---------------------------------
+----------------------------------- PROMPT 4 ---------------------------------
 Có một số response bị viết hoa từ không cần thiết ở giữa câu. Ví dụ: "The song is not in typical [GENRE] style. The melody brings the [EMOTION] feeling to the listener and The rhythm intensity is highly strong."
 
 Hãy tìm và sửa chúng lại (không được viết thường các cụm dấu ngoặc vuông vì đó là template).
