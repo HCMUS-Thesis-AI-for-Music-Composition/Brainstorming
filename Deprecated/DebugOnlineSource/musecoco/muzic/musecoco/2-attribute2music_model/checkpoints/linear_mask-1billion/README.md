@@ -1,1 +1,0 @@
-Down load the [checkpoint](https://drive.google.com/file/d/13yLoe4TqapbdMweo-DMjxZWgSI7QpUjV/view?usp=sharing).
